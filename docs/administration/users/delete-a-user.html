@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Delete a User | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Delete a User | XMPro ">
+      
+      
+      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/docs/administration/users/delete-a-user.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="delete-a-user">Delete a User</h1>
+
+<p>This page explains how to delete a user from the XMPro platform.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>You must have Global Administrator or Company Administrator privileges to delete users.</li>
+<li>The user must be a member of your company.</li>
+</ul>
+<h2 id="before-deleting-a-user">Before Deleting a User</h2>
+<p>Before deleting a user, consider the following:</p>
+<ul>
+<li>Deleting a user is permanent and cannot be undone.</li>
+<li>All data associated with the user will be removed from the system.</li>
+<li>Any content created by the user will remain in the system but will be reassigned or marked as created by a deleted user.</li>
+<li>Consider deactivating the user instead of deleting if you may need to restore access in the future.</li>
+</ul>
+<h2 id="accessing-user-management">Accessing User Management</h2>
+<ol>
+<li>Log in to the XMPro platform using your Administrator account.</li>
+<li>Navigate to the Administration section.</li>
+<li>Select &quot;Users&quot; from the menu.</li>
+</ol>
+<h2 id="deleting-a-user">Deleting a User</h2>
+<h3 id="steps-to-delete-a-user">Steps to Delete a User</h3>
+<ol>
+<li>On the Users page, find the user you want to delete in the list.</li>
+<li>Click the &quot;Actions&quot; button for that user.</li>
+<li>Select &quot;Delete&quot; from the dropdown menu.</li>
+<li>A confirmation dialog will appear, warning you about the consequences of deleting a user.</li>
+<li>If you want to proceed, enter the user's email address in the confirmation field.</li>
+<li>Click &quot;Delete&quot; to permanently remove the user.</li>
+</ol>
+<h3 id="alternative-method-from-user-details">Alternative Method: From User Details</h3>
+<ol>
+<li>On the Users page, click on the user's name to open their details.</li>
+<li>Navigate to the &quot;Account&quot; tab.</li>
+<li>Scroll to the bottom of the page.</li>
+<li>Click the &quot;Delete User&quot; button.</li>
+<li>A confirmation dialog will appear, warning you about the consequences of deleting a user.</li>
+<li>If you want to proceed, enter the user's email address in the confirmation field.</li>
+<li>Click &quot;Delete&quot; to permanently remove the user.</li>
+</ol>
+<h2 id="deactivating-a-user-instead-of-deleting">Deactivating a User Instead of Deleting</h2>
+<p>If you want to temporarily remove a user's access without permanently deleting their account:</p>
+<ol>
+<li>On the Users page, find the user you want to deactivate in the list.</li>
+<li>Click the &quot;Actions&quot; button for that user.</li>
+<li>Select &quot;Deactivate&quot; from the dropdown menu.</li>
+<li>A confirmation dialog will appear.</li>
+<li>Click &quot;Deactivate&quot; to temporarily remove the user's access.</li>
+</ol>
+<h2 id="reactivating-a-deactivated-user">Reactivating a Deactivated User</h2>
+<p>To restore access for a deactivated user:</p>
+<ol>
+<li>On the Users page, set the filter to show &quot;Inactive Users&quot;.</li>
+<li>Find the user you want to reactivate in the list.</li>
+<li>Click the &quot;Actions&quot; button for that user.</li>
+<li>Select &quot;Activate&quot; from the dropdown menu.</li>
+<li>A confirmation dialog will appear.</li>
+<li>Click &quot;Activate&quot; to restore the user's access.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Deleting a user will revoke all their access to the XMPro platform immediately.</li>
+<li>Deleted users will receive an email notification informing them that their account has been deleted.</li>
+<li>If a deleted user needs access again in the future, you will need to invite them as a new user.</li>
+<li>Consider exporting any important user data before deletion if it may be needed in the future.</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

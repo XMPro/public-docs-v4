@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Invite a User | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Invite a User | XMPro ">
+      
+      
+      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/docs/administration/users/invite-a-user.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="invite-a-user">Invite a User</h1>
+
+<p>This page explains how to invite a new user to the XMPro platform.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>You must have Global Administrator or Company Administrator privileges to invite users.</li>
+<li>The company must already be registered in the system.</li>
+</ul>
+<h2 id="accessing-user-management">Accessing User Management</h2>
+<ol>
+<li>Log in to the XMPro platform using your Administrator account.</li>
+<li>Navigate to the Administration section.</li>
+<li>Select &quot;Users&quot; from the menu.</li>
+</ol>
+<h2 id="inviting-a-new-user">Inviting a New User</h2>
+<h3 id="steps-to-invite-a-user">Steps to Invite a User</h3>
+<ol>
+<li>On the Users page, click the &quot;Invite User&quot; button.</li>
+<li>Fill in the user details:
+<ul>
+<li>First Name: Enter the user's first name.</li>
+<li>Last Name: Enter the user's last name.</li>
+<li>Email Address: Enter the user's email address. This will be used as their username.</li>
+<li>Business Role: Select the appropriate business role for the user.</li>
+<li>Department: Optionally, specify the user's department.</li>
+<li>Phone Number: Optionally, enter the user's phone number.</li>
+</ul>
+</li>
+<li>Configure user settings:
+<ul>
+<li>Language: Select the preferred language for the user.</li>
+<li>Time Zone: Select the appropriate time zone for the user.</li>
+<li>Other settings as required.</li>
+</ul>
+</li>
+<li>Assign subscriptions:
+<ul>
+<li>Select the subscriptions to grant to the user.</li>
+<li>For each subscription, assign a role (Viewer, Contributor, Administrator).</li>
+</ul>
+</li>
+<li>Click &quot;Send Invitation&quot; to invite the user.</li>
+</ol>
+<h3 id="customizing-the-invitation-email">Customizing the Invitation Email</h3>
+<ol>
+<li>Before sending the invitation, you can customize the invitation email:
+<ul>
+<li>Click the &quot;Customize Email&quot; button.</li>
+<li>Edit the email subject and body as needed.</li>
+<li>Use the available placeholders for dynamic content (e.g., {UserName}, {CompanyName}).</li>
+<li>Click &quot;Save&quot; to apply the changes.</li>
+</ul>
+</li>
+</ol>
+<h3 id="tracking-invitations">Tracking Invitations</h3>
+<ol>
+<li>Navigate to the &quot;Invitations&quot; tab.</li>
+<li>This tab displays all pending and completed invitations, including:
+<ul>
+<li>Recipient email</li>
+<li>Invitation date</li>
+<li>Status (Pending, Accepted, Expired)</li>
+<li>Expiration date</li>
+</ul>
+</li>
+</ol>
+<h3 id="resending-an-invitation">Resending an Invitation</h3>
+<ol>
+<li>Find the invitation you want to resend in the list.</li>
+<li>Click the &quot;Resend&quot; button for that invitation.</li>
+<li>Optionally, update the invitation details.</li>
+<li>Click &quot;Resend Invitation&quot; to send the invitation again.</li>
+</ol>
+<h3 id="canceling-an-invitation">Canceling an Invitation</h3>
+<ol>
+<li>Find the invitation you want to cancel in the list.</li>
+<li>Click the &quot;Cancel&quot; button for that invitation.</li>
+<li>Confirm the cancellation when prompted.</li>
+<li>The invitation will be canceled, and the user will no longer be able to accept it.</li>
+</ol>
+<h2 id="after-invitation">After Invitation</h2>
+<p>Once a user accepts an invitation, they will need to:</p>
+<ol>
+<li>Click the link in the invitation email.</li>
+<li>Create a password for their account.</li>
+<li>Complete any additional registration steps.</li>
+<li>Log in to the XMPro platform.</li>
+</ol>
+<h2 id="managing-existing-users">Managing Existing Users</h2>
+<p>For detailed information on managing existing users, see:</p>
+<ul>
+<li><a href="register-an-account.html">Register an Account</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="change-password.html">Change Password</a></li>
+<li><a href="reset-password.html">Reset Password</a></li>
+<li><a href="delete-a-user.html">Delete a User</a></li>
+<li><a href="business-role-for-a-user.html">Change Business Role</a></li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Invitations are valid for a limited time (typically 7 days).</li>
+<li>Users must accept the invitation and complete the registration process before they can access the platform.</li>
+<li>If an invitation expires, you can resend it to the user.</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

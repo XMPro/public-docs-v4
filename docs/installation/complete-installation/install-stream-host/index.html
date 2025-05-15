@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Stream Host Installation | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Stream Host Installation | XMPro ">
+      
+      
+      <link rel="icon" href="../../../../images/favicon.png">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/docs/installation/complete-installation/install-stream-host/index.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="stream-host-installation">Stream Host Installation</h1>
+
+<p>The XMPro Stream Host is a component that runs on a device or server and connects to the XMPro platform to execute Data Streams. This section provides installation guides for different environments.</p>
+<h2 id="overview">Overview</h2>
+<p>The Stream Host can be installed in various environments:</p>
+<ul>
+<li><a href="windows-x64.html">Windows (x64)</a> - Install on a Windows 64-bit machine</li>
+<li><a href="ubuntu-16.04%2B-x64.html">Ubuntu (16.04+ x64)</a> - Install on Ubuntu Linux</li>
+<li><a href="docker.html">Docker</a> - Run in a Docker container</li>
+<li><a href="azure-web-job.html">Azure Web Job</a> - Deploy as an Azure Web Job</li>
+</ul>
+<p>Choose the installation method that best fits your infrastructure and requirements.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before installing the Stream Host, you need:</p>
+<ol>
+<li>Access to Data Stream Designer in your XMPro environment</li>
+<li>A Collection created in Data Stream Designer</li>
+<li>Appropriate permissions to install software on your target environment</li>
+</ol>
+<h2 id="download-the-installer">Download the Installer</h2>
+<p>To download the Stream Host installer:</p>
+<ol>
+<li>Log into Data Stream Designer.</li>
+<li>Navigate to the Collections page.</li>
+<li>Select the Collection where you want to add the Stream Host.</li>
+<li>Click on the <strong>Devices</strong> tab.</li>
+<li>Click <strong>Add Device</strong>.</li>
+<li>Enter a name for your Stream Host.</li>
+<li>Click <strong>Download Installer</strong>.</li>
+<li>Select the appropriate installer for your environment:
+<ul>
+<li>Windows (x64): <code>.exe</code> installer</li>
+<li>Ubuntu (16.04+ x64): <code>.tar.gz</code> archive</li>
+<li>Docker: Use the Docker image from Docker Hub</li>
+<li>Azure Web Job: Use the Windows installer and follow the Azure Web Job guide</li>
+</ul>
+</li>
+</ol>
+<h2 id="download-the-connection-profile">Download the Connection Profile</h2>
+<p>The Connection Profile contains the configuration needed for the Stream Host to connect to your XMPro environment:</p>
+<ol>
+<li>After downloading the installer, click <strong>Download Connection Profile</strong>.</li>
+<li>Enter a File Key (password) to secure the Connection Profile.</li>
+<li>Remember this File Key as you'll need it during installation.</li>
+<li>Click <strong>Download</strong> to save the Connection Profile file.</li>
+</ol>
+<h2 id="installation-process">Installation Process</h2>
+<p>The general installation process follows these steps:</p>
+<ol>
+<li>Download the appropriate installer and Connection Profile.</li>
+<li>Install the Stream Host on your target environment.</li>
+<li>Configure the Stream Host with your Connection Profile.</li>
+<li>Start the Stream Host service.</li>
+<li>Verify the installation by checking the status in Data Stream Designer.</li>
+</ol>
+<p>For detailed instructions, refer to the specific installation guide for your environment.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If you encounter issues during installation or operation of the Stream Host:</p>
+<h3 id="common-issues">Common Issues</h3>
+<ol>
+<li><p><strong>Stream Host not appearing in Collection</strong>:</p>
+<ul>
+<li>Verify that the Stream Host service is running.</li>
+<li>Check that the Connection Profile was correctly configured.</li>
+<li>Ensure the machine has internet access and can reach the XMPro server.</li>
+</ul>
+</li>
+<li><p><strong>Connection errors</strong>:</p>
+<ul>
+<li>Check firewall settings to ensure the Stream Host can communicate with the XMPro server.</li>
+<li>Verify that the Collection ID, Secret, and Key in the Connection Profile are correct.</li>
+</ul>
+</li>
+<li><p><strong>Service not starting</strong>:</p>
+<ul>
+<li>Check the Stream Host logs for error messages.</li>
+<li>Verify that the required dependencies are installed.</li>
+<li>Ensure the user running the service has appropriate permissions.</li>
+</ul>
+</li>
+</ol>
+<h3 id="logs">Logs</h3>
+<p>The Stream Host logs can provide valuable information for troubleshooting:</p>
+<ul>
+<li><strong>Windows</strong>: Logs are stored in the installation directory under the <code>Logs</code> folder.</li>
+<li><strong>Ubuntu</strong>: Check the systemd journal with <code>journalctl -u xmpro-stream-host</code>.</li>
+<li><strong>Docker</strong>: View container logs with <code>docker logs xmpro-stream-host</code>.</li>
+<li><strong>Azure Web Job</strong>: Check the Web Job logs in the Azure Portal.</li>
+</ul>
+<h3 id="support">Support</h3>
+<p>If you continue to experience issues, contact XMPro Support with the following information:</p>
+<ul>
+<li>Stream Host version</li>
+<li>Installation environment details</li>
+<li>Relevant log files</li>
+<li>Description of the issue</li>
+<li>Steps to reproduce the issue</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

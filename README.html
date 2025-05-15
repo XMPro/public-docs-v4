@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>DocFX Documentation Pipeline | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="DocFX Documentation Pipeline | XMPro ">
+      
+      
+      <link rel="icon" href="images/favicon.png">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/README.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="docfx-documentation-pipeline">DocFX Documentation Pipeline</h1>
+
+<p>This repository contains the source files for the documentation site and an Azure DevOps CI/CD pipeline to automatically build and deploy the documentation.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>The Azure DevOps pipeline follows this workflow:</p>
+<ol>
+<li>Triggers when changes are pushed to the <code>main</code> branch or when pull requests targeting the <code>main</code> branch are created</li>
+<li>Builds the DocFX documentation site</li>
+<li>If the build is successful and the changes are on the <code>main</code> branch, commits the generated <code>_site</code> folder to the <a href="https://github.com/XMPro/public-docs-site.git">public-docs-site repository</a></li>
+</ol>
+<h3 id="pipeline-configuration">Pipeline Configuration</h3>
+<ul>
+<li><code>azure-pipelines.yml</code> - Azure DevOps pipeline definition</li>
+</ul>
+<h2 id="setup-requirements">Setup Requirements</h2>
+<p>To use this pipeline, you need to set up the following:</p>
+<ol>
+<li><p>Create a GitHub Personal Access Token (PAT) with the following permissions:</p>
+<ul>
+<li>If the target repository is private: <code>repo</code> scope (Full control of private repositories)</li>
+<li>If the target repository is public: <code>public_repo</code> scope (Access to public repositories)</li>
+</ul>
+<p>These permissions are required to push to the target repository (<code>https://github.com/XMPro/public-docs-site.git</code>)</p>
+<p><strong>Important</strong>: Make sure the GitHub account associated with the PAT has write access to the target repository. If you're getting a 403 error (Permission denied), it means the account doesn't have the necessary permissions to push to the repository.</p>
+<p>The pipeline now uses a classic PAT token stored in the <code>DOCS_DEPLOY_PAT_CLASSIC</code> variable, which should have the necessary permissions to push directly to the target repository.</p>
+</li>
+<li><p>Add the classic PAT as a pipeline variable or secret:</p>
+<ul>
+<li>Go to your Azure DevOps project</li>
+<li>Navigate to Pipelines &gt; Library</li>
+<li>Create a new Variable Group or edit an existing one</li>
+<li>Add a new variable named <code>DOCS_DEPLOY_PAT_CLASSIC</code></li>
+<li>Set the value to your GitHub classic PAT</li>
+<li>Check the &quot;Keep this value secret&quot; option</li>
+<li>Save the variable group</li>
+</ul>
+<p>Alternatively, you can add it directly to your pipeline:</p>
+<ul>
+<li>Go to your pipeline</li>
+<li>Click &quot;Edit&quot;</li>
+<li>Click the &quot;Variables&quot; button</li>
+<li>Add a new variable named <code>DOCS_DEPLOY_PAT_CLASSIC</code></li>
+<li>Set the value to your GitHub classic PAT</li>
+<li>Check the &quot;Keep this value secret&quot; option</li>
+<li>Save the pipeline</li>
+</ul>
+</li>
+</ol>
+<h2 id="local-development">Local Development</h2>
+<p>To build the documentation locally:</p>
+<ol>
+<li>Install .NET 8.0 SDK (required for the latest version of DocFX)</li>
+<li>Install DocFX: <code>dotnet tool install -g docfx</code></li>
+<li>Navigate to the public-documentation directory: <code>cd public-documentation</code></li>
+<li>Run <code>docfx docfx.json</code> to build the site</li>
+<li>The generated site will be in the <code>public-documentation/_site</code> folder</li>
+</ol>
+<h2 id="file-structure">File Structure</h2>
+<ul>
+<li><code>public-documentation/docfx.json</code> - Configuration file for DocFX</li>
+<li><code>public-documentation/index.md</code> - Main landing page</li>
+<li><code>public-documentation/toc.yml</code> - Table of contents</li>
+<li><code>public-documentation/docs/</code> - Documentation content</li>
+<li><code>azure-pipelines.yml</code> - Azure DevOps pipeline definition</li>
+<li><code>.gitignore</code> - Configured to ignore the <code>_site</code> folder in this repository</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The <code>_site</code> folder is ignored in this repository (via <code>.gitignore</code>) because it contains the build output that is automatically deployed to the target repository.</li>
+<li>Only changes to the <code>main</code> branch will trigger a deployment to the target repository.</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

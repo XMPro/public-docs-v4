@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Common Properties | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Common Properties | XMPro ">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/docs/blocks-toolbox/common-properties.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="common-properties">Common Properties</h1>
+
+<p>Many blocks in the XMPro App Designer share common properties that control their appearance, behavior, and data binding. This page describes these common properties that you'll encounter across multiple blocks.</p>
+<h2 id="basic-properties">Basic Properties</h2>
+<h3 id="id">ID</h3>
+<ul>
+<li><strong>Description</strong>: A unique identifier for the block within the page.</li>
+<li><strong>Usage</strong>: Used for referencing the block in expressions, scripts, and for data binding.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="name">Name</h3>
+<ul>
+<li><strong>Description</strong>: A human-readable name for the block.</li>
+<li><strong>Usage</strong>: Used for identifying the block in the designer and for accessibility.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="visible">Visible</h3>
+<ul>
+<li><strong>Description</strong>: Controls whether the block is visible on the page.</li>
+<li><strong>Usage</strong>: Can be set to a static value or bound to an expression to dynamically show/hide the block.</li>
+<li><strong>Type</strong>: Boolean</li>
+</ul>
+<h3 id="enabled">Enabled</h3>
+<ul>
+<li><strong>Description</strong>: Controls whether the block is enabled or disabled.</li>
+<li><strong>Usage</strong>: Can be set to a static value or bound to an expression to dynamically enable/disable the block.</li>
+<li><strong>Type</strong>: Boolean</li>
+</ul>
+<h2 id="styling-properties">Styling Properties</h2>
+<h3 id="width">Width</h3>
+<ul>
+<li><strong>Description</strong>: Controls the width of the block.</li>
+<li><strong>Usage</strong>: Can be set to a specific pixel value, percentage, or auto.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="height">Height</h3>
+<ul>
+<li><strong>Description</strong>: Controls the height of the block.</li>
+<li><strong>Usage</strong>: Can be set to a specific pixel value, percentage, or auto.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="margin">Margin</h3>
+<ul>
+<li><strong>Description</strong>: Controls the external spacing around the block.</li>
+<li><strong>Usage</strong>: Can be set for all sides or individually for top, right, bottom, and left.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="padding">Padding</h3>
+<ul>
+<li><strong>Description</strong>: Controls the internal spacing within the block.</li>
+<li><strong>Usage</strong>: Can be set for all sides or individually for top, right, bottom, and left.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="background-color">Background Color</h3>
+<ul>
+<li><strong>Description</strong>: Controls the background color of the block.</li>
+<li><strong>Usage</strong>: Can be set to a color name, hex value, or transparent.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="text-color">Text Color</h3>
+<ul>
+<li><strong>Description</strong>: Controls the text color of the block.</li>
+<li><strong>Usage</strong>: Can be set to a color name or hex value.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="border">Border</h3>
+<ul>
+<li><strong>Description</strong>: Controls the border of the block.</li>
+<li><strong>Usage</strong>: Can set the border width, style, and color.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="font">Font</h3>
+<ul>
+<li><strong>Description</strong>: Controls the font properties of the block.</li>
+<li><strong>Usage</strong>: Can set the font family, size, weight, and style.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h2 id="data-binding-properties">Data Binding Properties</h2>
+<h3 id="data-source">Data Source</h3>
+<ul>
+<li><strong>Description</strong>: Specifies the data source for the block.</li>
+<li><strong>Usage</strong>: Connects the block to a data source defined in the page.</li>
+<li><strong>Type</strong>: Object</li>
+</ul>
+<h3 id="data-field">Data Field</h3>
+<ul>
+<li><strong>Description</strong>: Specifies the field from the data source to bind to the block.</li>
+<li><strong>Usage</strong>: Used to display or edit a specific field from the data source.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="value">Value</h3>
+<ul>
+<li><strong>Description</strong>: The current value of the block.</li>
+<li><strong>Usage</strong>: Can be set directly or bound to a data source field.</li>
+<li><strong>Type</strong>: Varies based on block type</li>
+</ul>
+<h2 id="event-properties">Event Properties</h2>
+<h3 id="on-click">On Click</h3>
+<ul>
+<li><strong>Description</strong>: Action to perform when the block is clicked.</li>
+<li><strong>Usage</strong>: Can be set to navigate to another page, update a data source, or execute a custom script.</li>
+<li><strong>Type</strong>: Function</li>
+</ul>
+<h3 id="on-change">On Change</h3>
+<ul>
+<li><strong>Description</strong>: Action to perform when the value of the block changes.</li>
+<li><strong>Usage</strong>: Can be set to update a data source, validate input, or execute a custom script.</li>
+<li><strong>Type</strong>: Function</li>
+</ul>
+<h3 id="on-load">On Load</h3>
+<ul>
+<li><strong>Description</strong>: Action to perform when the block is loaded.</li>
+<li><strong>Usage</strong>: Can be set to initialize the block, load data, or execute a custom script.</li>
+<li><strong>Type</strong>: Function</li>
+</ul>
+<h2 id="accessibility-properties">Accessibility Properties</h2>
+<h3 id="tooltip">Tooltip</h3>
+<ul>
+<li><strong>Description</strong>: Text to display when hovering over the block.</li>
+<li><strong>Usage</strong>: Provides additional information about the block's purpose or functionality.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="aria-label">ARIA Label</h3>
+<ul>
+<li><strong>Description</strong>: Accessible label for screen readers.</li>
+<li><strong>Usage</strong>: Improves accessibility for users with screen readers.</li>
+<li><strong>Type</strong>: String</li>
+</ul>
+<h3 id="tab-index">Tab Index</h3>
+<ul>
+<li><strong>Description</strong>: Controls the tab order of the block.</li>
+<li><strong>Usage</strong>: Determines the order in which blocks receive focus when tabbing through the page.</li>
+<li><strong>Type</strong>: Number</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>These common properties provide a consistent way to control the appearance, behavior, and data binding of blocks in the XMPro App Designer. While not all blocks support all of these properties, understanding these common properties will help you work more efficiently with the various blocks in the toolbox.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

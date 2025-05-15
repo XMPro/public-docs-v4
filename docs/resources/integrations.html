@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Integrations | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Integrations | XMPro ">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/docs/resources/integrations.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="integrations">Integrations</h1>
+
+<h2 id="overview">Overview</h2>
+<p>XMPro has several different integrations:</p>
+<ul>
+<li><a href="#agents">Agents</a> are the building blocks of <em>Data Stream Designer</em> <br>
+(default Agents bulk download <a href="#download-default-agents">here</a>).</li>
+<li><a href="#connectors">Connectors</a> integrate to third-party data sources in <em>App Designer</em><br>
+(default Connectors bulk download <a href="#connectors">here</a>)</li>
+<li><a href="#visualization-blocks">Visualization Blocks</a> are the building blocks of <em>App Designer</em> to create rich user experiences</li>
+</ul>
+<h2 id="agents">Agents</h2>
+<p>An <a href="../concepts/agent/"><em>Agent</em></a> is a reusable object that forms the building block of a Data Stream. When several Agents are connected, a Data Stream is formed.</p>
+<p>Each Agent is designed to perform a specific function in the stream. For example, they can be used to retrieve data from a database in real-time, display data, filter, sort the data, or save the data somewhere else, depending on the function of that individual Agent.</p>
+<p>Looking for an Agent that is not on the list? Send us a <a href="mailto:support@xmpro.com">request</a> or check out the <a href="../how-tos/agents/building-agents.html#overview">Framework</a> to create a new Agent yourself.</p>
+<h3 id="generative-ai--large-language-models">Generative AI &amp; Large Language Models</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Azure%20AI%20Document%20Intelligence.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-ai-document-intelligence">Azure AI Document Intelligence</a></td>
+<td>Generative AI</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/openai-logo.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-openai/">Azure OpenAI</a></td>
+<td>Generative AI</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img src="images/openai-logo.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/openai-assistant/">OpenAI Assistant</a></td>
+<td>Generative AI</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/ollama.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/ollama/">Ollama</a></td>
+<td>Generative AI</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai--machine-learning">AI &amp; Machine Learning</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/anomaly-detection.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/anomaly-detection/">Anomaly Detection</a></td>
+<td>AI &amp; Machine Learning*</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Azure%20ML.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-ml/">Azure ML</a></td>
+<td>AI &amp; Machine Learning</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Binary%20Classification.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/binary-classification/">Binary Classification</a></td>
+<td>AI &amp; Machine Learning*</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Amber.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/boon-amber/">Boon Amber</a></td>
+<td>AI &amp; Machine Learning</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img src="images/Forecasting.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/forecasting-agent/">Forecasting</a></td>
+<td>AI &amp; Machine Learning*</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/KMeans%20Clustering.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/kmeans-clustering/">Kmeans Clustering</a></td>
+<td>AI &amp; Machine Learning*</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/MLflow%20icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/mlflow/">MLflow</a></td>
+<td>AI &amp; Machine Learning</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/issue-labeler.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/multi-class-classification/">Multi Class Classification</a></td>
+<td>AI &amp; Machine Learning*</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/python2.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/python/">Python</a></td>
+<td>AI &amp; Machine Learning</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Regression.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/regression/">Regression</a></td>
+<td>AI &amp; Machine Learning*</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/R.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/rscript/">RScript</a></td>
+<td>AI &amp; Machine Learning</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="social--communication">Social &amp; Communication</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Email.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/email/">Email</a></td>
+<td>Listener, Action Agent</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img src="images/Twilio.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/twilio/">Twilio</a></td>
+<td>Action Agent</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database--technology">Database &amp; Technology</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/icon%20(1).png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-data-explorer/">Azure Data Explorer</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Azure%20Data%20Factory%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-data-factory/">Azure Data Factory</a></td>
+<td>Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/azure%20data%20lake.svg" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-data-lake/">Azure Data Lake</a></td>
+<td>Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/AzureDigitalTwin.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-digital-twin/">Azure Digital Twin</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Azure%20Event%20Hub.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-event-hub/">Azure Event Hub</a></td>
+<td>Listener, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/azure-iot-hub.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-iot-hub/">Azure IoT Hub</a></td>
+<td>Listener</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/cognite.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/cognite/">Cognite</a></td>
+<td>Listener, Context Provider</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Ethereum%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/ethereum-smart-contract/">Ethereum Smart Contract</a></td>
+<td>Listener, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Excel%20File%20Reader.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/excel-file-reader/">Excel File Reader</a></td>
+<td>Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/ifm.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/ifm/">ifm</a></td>
+<td>Listener</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/influx%20db.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/influxdb/">InfluxDB</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Litmus.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/litmus-edge-opc-ua/">Litmus Edge OPC UA</a></td>
+<td>Listener, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/mongodb-icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/mongodb/">MongoDB</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/MOVUS.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/movus/">MOVUS</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/mysql.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/mysql/">MySQL</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Neo4j%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/neo4j/">Neo4j</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/OData.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/odata/">OData</a></td>
+<td>Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/ODBC%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/odbc/">ODBC</a></td>
+<td>Listener, Context Provider</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/opc%20(2).png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/opc-da/">OPC DA</a></td>
+<td>Listener, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/opc.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/opc-ua/">OPC UA</a></td>
+<td>Listener, Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Oracle.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/oracle/">Oracle</a></td>
+<td>Action Agent</td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Snowflake%20logo.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/snowflake/">Snowflake</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="erp">ERP</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Coupa%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/coupa">Coupa</a></td>
+<td>Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/Erbessed.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/erbessd/">Erbessed</a></td>
+<td>Listener, Context Provider</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/iPOS.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/ipos/">iPOS</a></td>
+<td>Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/FinOps.PNG" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/finops/">FinOps</a></td>
+<td>Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/OSIsoft.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/osisoft-pi/">OSIsoft PI</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/Salesforce.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/salesforce/">Salesforce</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/sap.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/sap/">SAP</a></td>
+<td>Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/sap%20(1).png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/sap-hana/">SAP HANA</a></td>
+<td>Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="advanced-app">Advanced App</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/FFT.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/fft/">FFT</a></td>
+<td>Function</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img src="images/Nanoprecise.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/nanoprecise/">Nanoprecise</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/SignalFilter.jpg" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/signal-filter/">Signal Filter</a></td>
+<td>Function</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img src="images/sparkplug%20icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/sparkplug-b/">Sparkplug B</a></td>
+<td>Listener, Action Agent</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img src="images/Tango.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/tango/">Tango</a></td>
+<td>Listener, Context Provider</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/deviceWISE_favicon_144x144.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/telit-devicewise/">Telit deviceWise</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/image%20(1).png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/telit-mqtt">Telit MQTT</a></td>
+<td>Listener, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/image%20(1)%20(1).png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/telit-opc-ua/">Telit OPC UA</a></td>
+<td>Listener, Action Agent</td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/webscraper%20icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/webscraper/">WebScraper</a></td>
+<td>Context Provider</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="open-source">Open Source</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/AzureSQL.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-sql/">Azure SQL</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/CFU.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/convert-flow-units/">Convert Flow Units</a></td>
+<td>Function</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/crc16/">CRC16</a></td>
+<td>Function</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/CSV.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/csv/">CSV</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Fixed%20Width.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/fixed-width-file-reader/">Fixed Width File Reader</a></td>
+<td>Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/GoalSeek.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/goal-seek/">Goal Seek</a></td>
+<td>Function</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/hivemq-bee.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/hivemq/">HiveMQ</a></td>
+<td>Listener, Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/JSON%20File%20Context%20Provider.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/json/">JSON</a></td>
+<td>Context Provider, Transformation</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/linear%20interpolation.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/linear-interpolation/">Linear Interpolation</a></td>
+<td>Function</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Min%20Max.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/min-max/">Min Max</a></td>
+<td>Function</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/MQTT.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/mqtt-listener/">MQTT</a></td>
+<td>Listener, Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/pdf%20converter.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/pdf-converter/">PDF Converter</a></td>
+<td>Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/rest.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/rest-api/">REST API</a></td>
+<td>Context Provider, Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/Rounding.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/rounding/">Rounding</a></td>
+<td>Function</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/SQL%20Server.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/sql-server/">SQL Server</a></td>
+<td>Listener, Context Provider, Action Agent</td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/XML%20Reader.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/xml-file-reader/">XML File Reader</a></td>
+<td>Action Agent</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xmpro-internal">XMPro Internal</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Aggregate.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/aggregate/">Aggregate</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/alter-attribute-64.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/alter-attributes/">Alter Attributes</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/AUC.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/area-under-the-curve/">Area Under the Curve</a></td>
+<td>Function</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Batch%20Identifier.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/batch-identifier/">Batch Identifier</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Broadcast.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/broadcast/">Broadcast</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Calculated%20Field.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/calculated-field/">Calculated Field</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/concat.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/concatenate-row-values/">Concatenate Row Values</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Data%20Conversion.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/data-conversion">Data Conversion</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Edge%20Analysis.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/edge-analysis/">Edge Analysis</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Event%20Printer.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/event-printer/">Event Printer</a></td>
+<td>Action Agent</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Event%20Simulator.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/event-simulator/">Event Simulator</a></td>
+<td>Listener</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/File%20Monitor.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/file/">File Listener</a></td>
+<td>Listener</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Filter.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/filter/">Filter</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/GeoFence.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/geofence/">Geofence</a></td>
+<td>Function</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Group%20and%20Merge.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/group-and-merge/">Group &amp; Merge</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Join.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/join/">Join</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Meta%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/meta/">Meta</a></td>
+<td>Action Agent</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Missing%20Values%20Detector.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/missing-values-detector/">Missing Value Detector</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Missing%20Values%20Substitutor.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/missing-value-substitutor/">Missing Value Substitutor</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/NormalizeFieldsIcon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/normalize-fields/">Normalize Fields</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Pass%20Through.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/pass-through/">Pass Through</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/pivot.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/pivot-table/">Pivot Table</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/RandomNumberIcon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/random-numbers/">Random Number</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Row%20Count.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/row-count/">Row Count</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Row%20Padding.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/row-padding/">Row Padding</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Sort.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/sort/">Sort</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Threshold%20Monitor.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/threshold-monitor/">Threshold Monitor</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/pivot.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/transpose/">Transpose</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Trim.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/trim/">Trim</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Union.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/union/">Union</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/UnzipIcon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/unzip/">Unzip</a></td>
+<td>Action Agent</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Window.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/window/">Window</a></td>
+<td>Transformation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/XMPro%20App.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/xmpro-app/">XMPro App</a></td>
+<td>Action Agent</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recommendations">Recommendations</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Category</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/ActionRequestIcon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/action-request-agents/">Close Action Request</a></td>
+<td>Recommendation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/ActionRequestIcon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/action-request-agents/">Read Action Request</a></td>
+<td>Recommendation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Read%20Recommendation.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/read-recommendation/">Read Recommendation</a></td>
+<td>Recommendation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Resolve%20Recommendation.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/resolve-recommendation/">Resolve Recommendation</a></td>
+<td>Recommendation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Run%20Recommendation.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/run-recommendation">Run Recommendation</a></td>
+<td>Recommendation</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/Update%20Recommendation.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/update-recommendation/">Update Recommendation</a></td>
+<td>Recommendation</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="download-default-agents">Download Default Agents</h3>
+<h4 id="tier-5">Tier 5</h4>
+<p>Download the tier 5 files <a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20-%20Agents.zip">here</a>.</p>
+<p>Use these individual files if you are not on v4.1.13 or higher:</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20-%20Action%20Agents.zip">Action Agents</a><br><a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20-%20AI_ML.zip">AI &amp; ML</a></th>
+<th><a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20-%20Context%20Providers.zip">Context Providers</a><br><a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20-%20Functions.zip">Functions</a></th>
+<th><a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20-%20Listeners.zip">Listeners</a></th>
+</tr>
+</thead>
+</table>
+<p>*Note: Links for the larger AI &amp; ML Agents are on their individual documentation pages.</p>
+<h4 id="tier-6">Tier 6</h4>
+<p>Download the tier 6 files <a href="https://xmappstore.blob.core.windows.net/tier6/Tier%206%20-%20Agents.zip">here</a>.</p>
+<p>Use these individual files if you are not on v4.1.13 or higher:</p>
+<table>
+<thead>
+<tr>
+<th><a href="https://xmappstore.blob.core.windows.net/tier6/Tier%206%20-%20Action%20Agents.zip">Action Agents</a><br><a href="https://xmappstore.blob.core.windows.net/tier6/Tier%206%20-%20Functions.zip">Functions</a></th>
+<th><a href="https://xmappstore.blob.core.windows.net/tier6/Tier%206%20-%20Listeners.zip">Listeners</a><br><a href="https://xmappstore.blob.core.windows.net/tier6/Tier%206%20-%20Recommendations.zip">Recommendations</a></th>
+<th><a href="https://xmappstore.blob.core.windows.net/tier6/Tier%206%20-%20Transformations.zip">Transformations</a></th>
+</tr>
+</thead>
+</table>
+<h2 id="connectors">Connectors</h2>
+<p>A <a href="../concepts/connector.html"><em>Connector</em></a> is a pre-built integration plug-in for the XMPro App Designer that allows you to connect to third-party data sources without coding.</p>
+<p>Whereas the Agents in a published Data Stream continuously poll for data, the Connectors in a published App retrieve data on an ad-hoc basis.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Download the tier 5 &amp; 6 Connector files <a href="https://xmappstore.blob.core.windows.net/tier5/Tier%205%20%26%206%20-%20Connectors.zip">here</a>.</p>
+</div>
+<h3 id="database--technology-1">Database &amp; Technology</h3>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/icon%20(1).png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-data-explorer-connector/">Azure Data Explorer</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Azure%20Data%20Explorer%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/tsa-azure-data-explorer-connector">TSA Azure Data Explorer</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/AzureDigitalTwin.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-digital-twin-connector/">Azure Digital Twin</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Neo4j%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/neo4j-connector/">Neo4J</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><img src="images/Snowflake%20logo.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/snowflake-connector/">Snowflake</a></td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="erp-1">ERP</h3>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Erbessd%20Logo.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/erbessd-connector/">Erbessd</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/OSIsoft.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/osisoft-pi-connector/">OSIsoft PI</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><img src="images/OSIsoft.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/osisoft-pi-histogram-connector/">OSIsoftPI Histogram</a></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="advanced-app-1">Advanced App</h3>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Nanoprecise.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/nanoprecise-connector/">Nanoprecise</a></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="open-source-1">Open Source</h3>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/AzureSQL.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/azure-sql-connector/">Azure SQL</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/http%20icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/http-connector/">HTTP</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/JSON.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/json-connector/">JSON</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/rest.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/rest-api-connector/">REST API</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/SQL%20Server.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/sql-server-connector/">SQL Server</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><img src="images/SQL%20Server.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/tsa-sql-server-connector/">TSA SQL Server</a></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xmpro-internal-1">XMPro Internal</h3>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/DS%20Icon.png" alt="" style="height:20px;"> <a href="https://xmpro.gitbook.io/data-streams-connector/">Data Streams</a></td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="visualization-blocks">Visualization Blocks</h2>
+<p>An App Designer <a href="../blocks-toolbox/visualizations/"><em>visualization block</em></a> allows a no-code way to integrate with third-party systems and create rich user experiences. Listed below are <em>some</em> of the integration blocks found in the App Designer toolbox:</p>
+<table>
+<thead>
+<tr>
+<th>Visualization Block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Autodesk-Forge-icon%20(1).png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/autodesk-forge.md">Autodesk Forge</a></td>
+</tr>
+<tr>
+<td><img src="images/d3widget-icon.png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/d3-visualization.md">D3 Visualization</a></td>
+</tr>
+<tr>
+<td><img src="images/esri-arcgis-icon.png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/esri-map.md">Esri Map</a></td>
+</tr>
+<tr>
+<td><img src="images/pivot-grid-icon.png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/pivot-grid.md">Pivot Grid</a></td>
+</tr>
+<tr>
+<td><img src="images/powerbi-icon.png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/power-bi.md">Power BI</a></td>
+</tr>
+<tr>
+<td><img src="images/trendchart-icon.png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/time-series-analysis.md">Time Series Chart</a></td>
+</tr>
+<tr>
+<td><img src="images/unity-icon.png" alt="" style="height:20px;"> <a href="../blocks-toolbox/visualizations/unity-1.md">Unity</a></td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
