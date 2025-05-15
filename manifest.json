@@ -27,6 +27,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "VERSION-SWITCHING-README.md",
+      "output": {
+        ".html": {
+          "relative_path": "VERSION-SWITCHING-README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/administration/administrative-accounts.md",
       "output": {
         ".html": {

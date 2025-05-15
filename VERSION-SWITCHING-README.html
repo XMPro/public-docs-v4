@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Version Switching for XMPro Documentation | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Version Switching for XMPro Documentation | XMPro ">
+      
+      
+      <link rel="icon" href="images/favicon.png">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/VERSION-SWITCHING-README.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="version-switching-for-xmpro-documentation">Version Switching for XMPro Documentation</h1>
+
+<p>This document explains how the version switching mechanism works for the XMPro documentation site.</p>
+<h2 id="overview">Overview</h2>
+<p>The documentation site supports two versions of the XMPro product:</p>
+<ul>
+<li>XMPro v5</li>
+<li>XMPro v4</li>
+</ul>
+<p>The top-level navigation in <code>toc.yml</code> allows users to switch between these versions. The implementation ensures that the version switching works both locally and when deployed.</p>
+<h2 id="how-it-works">How It Works</h2>
+<h3 id="structure">Structure</h3>
+<ul>
+<li>The <code>toc.yml</code> file uses JavaScript functions for the version links:
+<pre><code class="lang-yaml">- name: XMPro v5
+  href: javascript:switchVersion('v5')
+- name: XMPro v4
+  href: javascript:switchVersion('v4')
+</code></pre>
+</li>
+<li>The <code>main.js</code> file contains the <code>switchVersion</code> function that handles the navigation based on the environment</li>
+</ul>
+<h3 id="local-development">Local Development</h3>
+<p>When running the site locally:</p>
+<ol>
+<li>Clicking on a version link will call the <code>switchVersion</code> function</li>
+<li>The function detects that the site is running locally and keeps you on the local site</li>
+</ol>
+<h3 id="deployed-site">Deployed Site</h3>
+<p>When the site is deployed:</p>
+<ol>
+<li>Clicking on a version link will call the <code>switchVersion</code> function</li>
+<li>The function detects that the site is deployed and navigates to the appropriate GitHub Pages URL:
+<ul>
+<li>XMPro v5: <a href="https://xmpro.github.io/public-docs-v5/">https://xmpro.github.io/public-docs-v5/</a></li>
+<li>XMPro v4: <a href="https://xmpro.github.io/public-docs-v4/">https://xmpro.github.io/public-docs-v4/</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="testing-locally">Testing Locally</h2>
+<p>To test the documentation site locally:</p>
+<ol>
+<li>Navigate to the <code>public-documentation</code> directory</li>
+<li>Run <code>docfx docfx.json --serve</code></li>
+<li>Open a browser and navigate to <code>http://localhost:8080</code></li>
+<li>Test the version switching by clicking on the version links in the top-level navigation</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p>The site is automatically deployed to GitHub Pages using the Azure DevOps pipeline defined in <code>azure-pipelines.yml</code>. The pipeline:</p>
+<ol>
+<li>Builds the documentation site using DocFX</li>
+<li>Deploys the site to the appropriate GitHub Pages repositories:
+<ul>
+<li>XMPro v4: <a href="https://github.com/XMPro/public-docs-v4">https://github.com/XMPro/public-docs-v4</a></li>
+<li>XMPro v5: <a href="https://github.com/XMPro/public-docs-v5">https://github.com/XMPro/public-docs-v5</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If the version switching doesn't work as expected:</p>
+<ol>
+<li>Check the browser console for any JavaScript errors</li>
+<li>Ensure that the <code>main.js</code> file contains the correct <code>switchVersion</code> function</li>
+<li>Verify that the <code>toc.yml</code> file contains the correct JavaScript function calls</li>
+</ol>
+<h2 id="known-issues">Known Issues</h2>
+<ul>
+<li>The top-level breadcrumb navigation may not show when using this approach</li>
+<li>This is a limitation of how DocFX handles JavaScript function calls in the navigation</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
