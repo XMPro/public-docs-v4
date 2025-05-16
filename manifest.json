@@ -166,19 +166,6 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "docs/administration/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/administration/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/administration/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "docs/administration/users/business-role-for-a-user.md",
       "output": {
@@ -444,6 +431,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/blocks-toolbox/advanced/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/advanced/metablock.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/advanced/metablock.html"
         }
       },
       "version": ""
@@ -1414,6 +1411,206 @@
       "output": {
         ".html": {
           "relative_path": "docs/blocks-toolbox/visualizations/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/autodesk-forge-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/autodesk-forge-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/autodesk-forge.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/autodesk-forge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/azure-digital-twin-hierarchy.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/azure-digital-twin-hierarchy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/bar-gauge.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/bar-gauge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/chart.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/chart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/circular-gauge.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/circular-gauge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/d3-visualization.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/d3-visualization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/esri-map.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/esri-map.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/image-map.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/image-map.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/linear-gauge.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/linear-gauge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/map.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/map.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/pie-chart.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/pie-chart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/pivot-grid.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/pivot-grid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/polar-chart.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/polar-chart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/power-bi.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/power-bi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/sparkline.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/sparkline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/time-series-analysis.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/time-series-analysis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/tree-map.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/tree-map.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/unity-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/unity-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/unity.html"
         }
       },
       "version": ""
@@ -4144,6 +4341,66 @@
       "output": {
         ".html": {
           "relative_path": "docs/how-tos/connectors/building-connectors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/how-tos/connectors/configure-connectors.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/how-tos/connectors/configure-connectors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/how-tos/connectors/manage-connector-instances.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/how-tos/connectors/manage-connector-instances.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/how-tos/connectors/manage-connector-logs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/how-tos/connectors/manage-connector-logs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/how-tos/connectors/manage-connector-packages.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/how-tos/connectors/manage-connector-packages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/how-tos/connectors/manage-connector-subscriptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/how-tos/connectors/manage-connector-subscriptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/how-tos/connectors/manage-connector-versions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/how-tos/connectors/manage-connector-versions.html"
         }
       },
       "version": ""
@@ -7469,14 +7726,21 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "docs/installation/toc.yml",
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation/install.md",
       "output": {
         ".html": {
-          "relative_path": "docs/installation/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/installation/toc.json"
+          "relative_path": "docs/installation/install.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation/overview.html"
         }
       },
       "version": ""
@@ -7487,19 +7751,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/release-notes/archived/release-notes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "docs/release-notes/archived/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/release-notes/archived/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/release-notes/archived/toc.json"
         }
       },
       "version": ""
@@ -7723,19 +7974,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/release-notes/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "docs/release-notes/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/release-notes/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/release-notes/toc.json"
         }
       },
       "version": ""
@@ -8206,6 +8444,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/resources/faqs/external-content/blogs/2015/from-many-one--the-nature-of-complex-event-processing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/resources/faqs/external-content/blogs/2015/herding-cats-what-enterprise-architects-need-to-know-about-business process-management.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/resources/faqs/external-content/blogs/2015/herding-cats-what-enterprise-architects-need-to-know-about-business process-management.html"
         }
       },
       "version": ""
