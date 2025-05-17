@@ -8917,76 +8917,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Demo-App-DrillDown.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Demo-App-DrillDown.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Demo-App-Landing-Page.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Demo-App-Landing-Page.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Demo-Data-Stream.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Demo-Data-Stream.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Demo-Recommendation.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Demo-Recommendation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Drag-DS-Arrow.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Drag-DS-Arrow.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/E2E Edit Panes 3.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E Edit Panes 3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/E2E Edit Panes.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E Edit Panes.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/E2E-Edit-Panes-3.png",
       "output": {
         "resource": {
@@ -9137,640 +9067,710 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/beta-icon.png",
+      "source_relative_path": "docs/images/beta_icon.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/beta-icon.png"
+          "relative_path": "docs/images/beta_icon.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/free-trial.png",
+      "source_relative_path": "docs/images/demo_app_drilldown.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/free-trial.png"
+          "relative_path": "docs/images/demo_app_drilldown.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1029.png",
+      "source_relative_path": "docs/images/demo_app_landing_page.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1029.png"
+          "relative_path": "docs/images/demo_app_landing_page.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1040.png",
+      "source_relative_path": "docs/images/demo_data_stream.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1040.png"
+          "relative_path": "docs/images/demo_data_stream.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1077.png",
+      "source_relative_path": "docs/images/demo_recommendation.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1077.png"
+          "relative_path": "docs/images/demo_recommendation.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1116.png",
+      "source_relative_path": "docs/images/drag_ds_arrow.gif",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1116.png"
+          "relative_path": "docs/images/drag_ds_arrow.gif"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1119.png",
+      "source_relative_path": "docs/images/e2e_edit_panes.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1119.png"
+          "relative_path": "docs/images/e2e_edit_panes.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-118.png",
+      "source_relative_path": "docs/images/e2e_edit_panes_3.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-118.png"
+          "relative_path": "docs/images/e2e_edit_panes_3.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1201.png",
+      "source_relative_path": "docs/images/free_trial.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1201.png"
+          "relative_path": "docs/images/free_trial.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-121.png",
+      "source_relative_path": "docs/images/image_1029.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-121.png"
+          "relative_path": "docs/images/image_1029.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1270.png",
+      "source_relative_path": "docs/images/image_1040.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1270.png"
+          "relative_path": "docs/images/image_1040.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1278.png",
+      "source_relative_path": "docs/images/image_1077.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1278.png"
+          "relative_path": "docs/images/image_1077.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1340.png",
+      "source_relative_path": "docs/images/image_1116.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1340.png"
+          "relative_path": "docs/images/image_1116.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-137.png",
+      "source_relative_path": "docs/images/image_1119.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-137.png"
+          "relative_path": "docs/images/image_1119.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1383.png",
+      "source_relative_path": "docs/images/image_118.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1383.png"
+          "relative_path": "docs/images/image_118.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1401.png",
+      "source_relative_path": "docs/images/image_1201.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1401.png"
+          "relative_path": "docs/images/image_1201.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1410.png",
+      "source_relative_path": "docs/images/image_121.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1410.png"
+          "relative_path": "docs/images/image_121.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1451.png",
+      "source_relative_path": "docs/images/image_1270.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1451.png"
+          "relative_path": "docs/images/image_1270.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1458.png",
+      "source_relative_path": "docs/images/image_1278.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1458.png"
+          "relative_path": "docs/images/image_1278.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-148.png",
+      "source_relative_path": "docs/images/image_1340.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-148.png"
+          "relative_path": "docs/images/image_1340.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1510.png",
+      "source_relative_path": "docs/images/image_137.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1510.png"
+          "relative_path": "docs/images/image_137.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1511.png",
+      "source_relative_path": "docs/images/image_1383.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1511.png"
+          "relative_path": "docs/images/image_1383.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1538.png",
+      "source_relative_path": "docs/images/image_1401.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1538.png"
+          "relative_path": "docs/images/image_1401.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1550.png",
+      "source_relative_path": "docs/images/image_1410.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1550.png"
+          "relative_path": "docs/images/image_1410.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-16.png",
+      "source_relative_path": "docs/images/image_1451.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-16.png"
+          "relative_path": "docs/images/image_1451.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1668.png",
+      "source_relative_path": "docs/images/image_1458.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1668.png"
+          "relative_path": "docs/images/image_1458.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1681.png",
+      "source_relative_path": "docs/images/image_148.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1681.png"
+          "relative_path": "docs/images/image_148.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1717.png",
+      "source_relative_path": "docs/images/image_1510.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-1717.png"
+          "relative_path": "docs/images/image_1510.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-190.png",
+      "source_relative_path": "docs/images/image_1511.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-190.png"
+          "relative_path": "docs/images/image_1511.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-2.png",
+      "source_relative_path": "docs/images/image_1538.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-2.png"
+          "relative_path": "docs/images/image_1538.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-218.png",
+      "source_relative_path": "docs/images/image_1550.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-218.png"
+          "relative_path": "docs/images/image_1550.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-226.png",
+      "source_relative_path": "docs/images/image_16.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-226.png"
+          "relative_path": "docs/images/image_16.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-265.png",
+      "source_relative_path": "docs/images/image_1668.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-265.png"
+          "relative_path": "docs/images/image_1668.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-269.png",
+      "source_relative_path": "docs/images/image_1681.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-269.png"
+          "relative_path": "docs/images/image_1681.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-27.png",
+      "source_relative_path": "docs/images/image_1717.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-27.png"
+          "relative_path": "docs/images/image_1717.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-283.png",
+      "source_relative_path": "docs/images/image_190.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-283.png"
+          "relative_path": "docs/images/image_190.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-36.png",
+      "source_relative_path": "docs/images/image_2.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-36.png"
+          "relative_path": "docs/images/image_2.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-405.png",
+      "source_relative_path": "docs/images/image_218.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-405.png"
+          "relative_path": "docs/images/image_218.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-417.png",
+      "source_relative_path": "docs/images/image_226.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-417.png"
+          "relative_path": "docs/images/image_226.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-448.png",
+      "source_relative_path": "docs/images/image_265.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-448.png"
+          "relative_path": "docs/images/image_265.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-46.png",
+      "source_relative_path": "docs/images/image_269.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-46.png"
+          "relative_path": "docs/images/image_269.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-490.png",
+      "source_relative_path": "docs/images/image_27.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-490.png"
+          "relative_path": "docs/images/image_27.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-519.png",
+      "source_relative_path": "docs/images/image_283.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-519.png"
+          "relative_path": "docs/images/image_283.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-520.png",
+      "source_relative_path": "docs/images/image_36.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-520.png"
+          "relative_path": "docs/images/image_36.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-522.png",
+      "source_relative_path": "docs/images/image_405.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-522.png"
+          "relative_path": "docs/images/image_405.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-558.png",
+      "source_relative_path": "docs/images/image_417.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-558.png"
+          "relative_path": "docs/images/image_417.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-58.png",
+      "source_relative_path": "docs/images/image_448.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-58.png"
+          "relative_path": "docs/images/image_448.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-609.png",
+      "source_relative_path": "docs/images/image_46.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-609.png"
+          "relative_path": "docs/images/image_46.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-618.png",
+      "source_relative_path": "docs/images/image_490.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-618.png"
+          "relative_path": "docs/images/image_490.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-656.png",
+      "source_relative_path": "docs/images/image_519.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-656.png"
+          "relative_path": "docs/images/image_519.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-703.png",
+      "source_relative_path": "docs/images/image_520.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-703.png"
+          "relative_path": "docs/images/image_520.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-715.png",
+      "source_relative_path": "docs/images/image_522.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-715.png"
+          "relative_path": "docs/images/image_522.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-761.png",
+      "source_relative_path": "docs/images/image_558.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-761.png"
+          "relative_path": "docs/images/image_558.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-785.png",
+      "source_relative_path": "docs/images/image_58.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-785.png"
+          "relative_path": "docs/images/image_58.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-790.png",
+      "source_relative_path": "docs/images/image_609.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-790.png"
+          "relative_path": "docs/images/image_609.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-796.png",
+      "source_relative_path": "docs/images/image_618.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-796.png"
+          "relative_path": "docs/images/image_618.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-808.png",
+      "source_relative_path": "docs/images/image_656.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-808.png"
+          "relative_path": "docs/images/image_656.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-885.png",
+      "source_relative_path": "docs/images/image_703.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-885.png"
+          "relative_path": "docs/images/image_703.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-894.png",
+      "source_relative_path": "docs/images/image_715.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-894.png"
+          "relative_path": "docs/images/image_715.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-913.png",
+      "source_relative_path": "docs/images/image_761.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-913.png"
+          "relative_path": "docs/images/image_761.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-924.png",
+      "source_relative_path": "docs/images/image_785.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-924.png"
+          "relative_path": "docs/images/image_785.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-928.png",
+      "source_relative_path": "docs/images/image_790.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-928.png"
+          "relative_path": "docs/images/image_790.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-989.png",
+      "source_relative_path": "docs/images/image_796.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-989.png"
+          "relative_path": "docs/images/image_796.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-999.png",
+      "source_relative_path": "docs/images/image_808.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/image-999.png"
+          "relative_path": "docs/images/image_808.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_885.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_885.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_894.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_894.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_913.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_913.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_924.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_924.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_928.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_928.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_989.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_989.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image_999.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image_999.png"
         }
       },
       "version": ""
@@ -65627,6 +65627,16 @@
       "output": {
         ".html": {
           "relative_path": "migration-tasks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "scripts/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "scripts/README.html"
         }
       },
       "version": ""
