@@ -14409,6 +14409,66 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/faq-bad-actors.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/faq-bad-actors.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/faq-easy-wins.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/faq-easy-wins.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/faq-predictive-maintenance-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/faq-predictive-maintenance-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/faq-predictive-maintenance-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/faq-predictive-maintenance-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/tsc-faq-fig-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/tsc-faq-fig-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/tsc-faq-fig-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/tsc-faq-fig-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/resources/faqs/implementation.md",
       "output": {
