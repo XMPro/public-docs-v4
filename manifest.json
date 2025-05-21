@@ -65693,10 +65693,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration-docs/IMAGE-VERIFICATION-README.md",
+      "source_relative_path": "migration-docs/CONTRIBUTOR-GUIDE.md",
       "output": {
         ".html": {
-          "relative_path": "migration-docs/IMAGE-VERIFICATION-README.html"
+          "relative_path": "migration-docs/CONTRIBUTOR-GUIDE.html"
         }
       },
       "version": ""
@@ -65713,40 +65713,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration-docs/NAVIGATION-FIX-README.md",
+      "source_relative_path": "migration-docs/MIGRATION-TRACKER.md",
       "output": {
         ".html": {
-          "relative_path": "migration-docs/NAVIGATION-FIX-README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration-docs/NAVIGATION-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration-docs/NAVIGATION-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration-docs/PHASE6-COMPLETION.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration-docs/PHASE6-COMPLETION.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration-docs/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration-docs/README.html"
+          "relative_path": "migration-docs/MIGRATION-TRACKER.html"
         }
       },
       "version": ""
