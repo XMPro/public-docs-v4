@@ -14450,6 +14450,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/resources/faqs/images/faq-run-recommendation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/resources/faqs/images/faq-run-recommendation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/resources/faqs/images/tsc-faq-fig-1.png",
       "output": {
         "resource": {
@@ -65637,6 +65647,16 @@
       "output": {
         ".html": {
           "relative_path": "migration-docs/IMAGE-VERIFICATION-README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration-docs/MIGRATION-FUNCTION.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration-docs/MIGRATION-FUNCTION.html"
         }
       },
       "version": ""

@@ -91,28 +91,22 @@
 <h2 id="app-designer">App Designer</h2>
 <h3 id="how-do-i-rotate-text-in-app-designer">How do I rotate text in App Designer?</h3>
 <p>In the video below, we demonstrate how to rotate text -90 degrees around the z-axis using block styling's transform option.</p>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3eQHzy5nAy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <h4 id="further-reading">Further Reading</h4>
 <ul>
 <li><a href="../../concepts/application/block-styling.html#extra">Block Styling - Extra</a></li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p><strong>Video Reference:</strong> How to rotate text in App Designer</p>
-<p>This video demonstrates how to rotate text -90 degrees around the z-axis using block styling's transform option.</p>
-<p><a href="https://www.youtube.com/watch?v=3eQHzy5nAy0">Watch on YouTube</a></p>
-</div>
 <h3 id="how-do-i-export-grid-data-from-my-app-to-microsoft-excel">How do I export Grid Data from my App to Microsoft Excel?</h3>
 <p>In the video below, we demonstrate how to toggle on your Data Grid's export button so that at runtime the grid contents can be exported to Excel.</p>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KrUothBHQVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <h4 id="further-reading-1">Further Reading</h4>
 <ul>
 <li><a href="../../blocks-toolbox/basic/data-grid.html#allow-export-to-excel">Data Grid Properties - Allow Export To Excel</a></li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p><strong>Video Reference:</strong> How to export Grid Data from App to Microsoft Excel</p>
-<p>This video demonstrates how to toggle on your Data Grid's export button so that at runtime the grid contents can be exported to Excel.</p>
-<p><a href="https://www.youtube.com/watch?v=KrUothBHQVg">Watch on YouTube</a></p>
-</div>
 <h3 id="why-doesnt-the-date-selector-in-my-app-match-my-computers-local-date-format">Why doesn't the Date selector in my App match my computer's local date format?</h3>
 <p><em>&quot;My computer is configured to use the date format DD/MM/YYYY, but my date selector is formatted as MM/DD/YYYY. How do I change it?&quot;</em></p>
 <p>The <a href="../../blocks-toolbox/basic/date-selector.html">Date Selector</a> date display format is based on the browser display language, not your computer's local settings. For example:</p>
@@ -133,24 +127,18 @@
 </ul>
 <h3 id="how-do-i-view-errors-on-my-stream-host">How do I view errors on my Stream Host?</h3>
 <p>In the video below, we demonstrate how to view the log for a particular Stream Host in a Collection. The log contains errors encountered when publishing or running a Data Stream.</p>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_HYBmBCug2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <h4 id="further-reading-3">Further Reading</h4>
 <ul>
 <li><a href="../../how-tos/stream-host.html">Stream Host Logs</a></li>
 <li><a href="../../how-tos/data-streams/check-data-stream-logs.html">How to check Data Stream Logs</a></li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p><strong>Video Reference:</strong> How to view errors on Stream Host</p>
-<p>This video demonstrates how to view the log for a particular Stream Host in a Collection. The log contains errors encountered when publishing or running a Data Stream.</p>
-<p><a href="https://youtu.be/_HYBmBCug2I?si=y1l5pccS44Ap5VHk">Watch on YouTube</a></p>
-</div>
 <h3 id="how-are-the-stream-load-metrics-calculated">How are the Stream Load Metrics calculated?</h3>
 <p><em>&quot;I'm trying to reconcile the Stream Load metric in Data Stream designer with what I'm expecting based on the listeners. Is the metric calculated on the stream outputs or the inputs?</em></p>
 <p><em>I have 3 listeners, each running at a 1 second interval, so I expect a 180/min metric. Is the ~360/min metric because there are double the number of outputs (action agents) per listener?&quot;</em></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Stream load is calculated based on the total number of events published by all Stream Objects on the canvas.</p>
-</div>
+<p><img src="images/faq-run-recommendation.png" alt="Stream Load Metrics"></p>
 <p>Stream load is different from ingestion rate. The Stream load represents the total number of events published by all Stream Objects on the canvas. In this case, 60 x the total number of agents on the screen (assuming your Listeners bring back 1 record on every poll).</p>
 <p>You would notice the actual number is much less because although you want it to run every second, the calls to dependencies like SQL etc do not return its data as quickly and hence the actual rate is less.</p>
 <p>Generally, the number of events published per Agent decreases as you work through your data stream, because the intention is to work towards a smaller payload focused on the event in which you're interested.</p>
@@ -158,6 +146,7 @@
 <p>We advise you to only have one recommendation agent on a data stream.</p>
 <p>A recommendation rule is configured against a single Data Stream, not a given Stream Object in a Stream. It will find the first Run Recommendation in the selected Data Stream and let you define your Recommendation Rule against the output payload of that Agent. If the payload differs at runtime, you may get weird results when triggering a recommendation alert.</p>
 <p>If the data cannot be merged (using a join or union transformation) and used in the different recommendations, then consider creating 3 different data streams. Remember you can have one <strong>data stream</strong> feed data to as many <strong>recommendations</strong> as you want to, BUT you should only have one <em>run recommendation agent</em> on a data stream canvas.</p>
+<p><img src="images/faq-run-recommendation.png" alt="Run Recommendation"></p>
 <h3 id="my-data-stream-connector-can-do-everything-why-use-the-other-connectors">My Data Stream Connector can do everything. Why use the other Connectors?</h3>
 <p>Although a wide variety of data can be surfaced from a Data Stream into your Application using the Data Stream Connector, there is a downside. The Data Stream is constantly pushing data, which can lead to out-of-resource errors - which appear as XMPro product errors. If your data requirement is ad-hoc, consider the other Connectors.</p>
 <h4 id="further-reading-4">Further Reading</h4>
