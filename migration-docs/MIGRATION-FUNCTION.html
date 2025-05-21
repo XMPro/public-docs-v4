@@ -121,11 +121,13 @@
 <li>Ensure formatting is consistent</li>
 </ul>
 </li>
-<li><p><strong>BuildAndTest()</strong></p>
+<li><p><strong>BuildAndTest()</strong> ⚠️ <strong>CRITICAL</strong></p>
 <ul>
-<li>Run <code>docfx docfx.json</code> in the public-documentation folder to rebuild the site</li>
+<li><strong>ALWAYS</strong> run <code>docfx docfx.json</code> in the public-documentation folder to rebuild the site</li>
+<li>This is a REQUIRED step after ANY content migration to ensure content is properly processed</li>
 <li>The site is typically already being served, so this rebuilds the content</li>
 <li>Check the site in your browser to ensure everything renders correctly before committing</li>
+<li>Failure to execute this step may result in missing/broken content</li>
 </ul>
 </li>
 </ol>
@@ -277,9 +279,11 @@ We call these patterns 'Composable Business Capabilities'. (CBC[1]) The customer
 </ul>
 </li>
 <li>Never modify, renumber, or reformat reference links as they form a critical academic citation system</li>
-<li>After modifying any documentation, run <code>docfx docfx.json</code> to rebuild the site</li>
+<li>⚠️ <strong>CRITICAL</strong>: After modifying ANY documentation, ALWAYS run <code>docfx docfx.json</code> to rebuild the site</li>
+<li>This is a REQUIRED step after any content migration or update</li>
 <li>Assume the site is already being served, so this just rebuilds the content</li>
 <li>Refresh your browser to view the changes</li>
+<li>Failure to rebuild the site will result in content not being properly processed</li>
 </ul>
 <h2 id="image-verification">Image Verification</h2>
 <p>When migrating images from GitBook to DocFX, it's critical to ensure that the correct images are being transferred. Some images may have similar names but different content. Follow these verification steps:</p>
