@@ -246,6 +246,46 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/assets/pdfs/Chart_Comparison_Appendix.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "docs/assets/pdfs/Chart_Comparison_Appendix.pdf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/assets/pdfs/Design_Patterns_for_APM_Capabilities_and_Recommendation_Alerts_2025_v3.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "docs/assets/pdfs/Design_Patterns_for_APM_Capabilities_and_Recommendation_Alerts_2025_v3.pdf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/assets/pdfs/pdf-styles.css",
+      "output": {
+        "resource": {
+          "relative_path": "docs/assets/pdfs/pdf-styles.css"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/assets/pdfs/pdf-viewer.html",
+      "output": {
+        "resource": {
+          "relative_path": "docs/assets/pdfs/pdf-viewer.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/blocks-toolbox/actions/README.md",
       "output": {

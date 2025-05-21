@@ -88,6 +88,7 @@
 <ul>
 <li><strong>incremental-verify-image-references-optimized.ps1</strong>: Optimized version with minimal memory usage</li>
 <li><strong>run-image-verification-optimized.ps1</strong>: Wrapper script for the optimized verification</li>
+<li><strong>verify-image-references.sh</strong>: Bash script to verify images match between GitBook and DocFX using file size and dimensions</li>
 <li><strong>IMAGE-VERIFICATION-README.md</strong>: Documentation for image verification tools</li>
 <li><strong>image-verification-progress.json</strong>: Progress file for incremental verification</li>
 <li><strong>image-verification-report.csv</strong>: Report of image verification results</li>
@@ -99,7 +100,8 @@
 ./migration-docs/run-navigation-fix.ps1
 </code></pre>
 <h3 id="running-image-verification">Running Image Verification</h3>
-<p>The optimized image verification script can be run with:</p>
+<h4 id="powershell-verification-windows">PowerShell Verification (Windows)</h4>
+<p>The optimized PowerShell image verification script can be run with:</p>
 <pre><code class="lang-powershell">cd docs-docfx
 ./migration-docs/run-image-verification-optimized.ps1 -batchSize 1 -fix
 </code></pre>
@@ -107,6 +109,18 @@
 <pre><code class="lang-powershell">cd docs-docfx
 ./migration-docs/run-image-verification-optimized.ps1 -progressFile &quot;progress-part1.json&quot; -csvReport &quot;report-part1.csv&quot;
 </code></pre>
+<h4 id="bash-verification-linuxmacwsl">Bash Verification (Linux/Mac/WSL)</h4>
+<p>For quick verification using file sizes and dimensions with the Bash script:</p>
+<pre><code class="lang-bash">cd public-documentation
+./migration-docs/verify-image-references.sh /path/to/gitbook/.gitbook/assets /home/work/projects/xmpro-development-ubuntu/public-documentation/docs/images
+</code></pre>
+<p>The script will:</p>
+<ul>
+<li>Compare file sizes between GitBook and DocFX images</li>
+<li>Compare image dimensions if ImageMagick is installed</li>
+<li>Generate a CSV report of discrepancies</li>
+<li>Provide a summary of potential issues</li>
+</ul>
 <h2 id="backup">Backup</h2>
 <p>Other migration-related files that are no longer needed have been moved to the <code>backup</code> folder for reference. These include:</p>
 <ul>
