@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>GitBook to DocFX Migration Contributor Guide | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="GitBook to DocFX Migration Contributor Guide | XMPro ">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/migration/CONTRIBUTOR-GUIDE.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="gitbook-to-docfx-migration-contributor-guide">GitBook to DocFX Migration Contributor Guide</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>This guide outlines the process for contributing to the XMPro documentation migration from GitBook to DocFX. Each contributor should follow this standardized workflow to ensure consistency and quality across the migrated documentation.</p>
+<h2 id="setup">Setup</h2>
+<ol>
+<li>Clone the repository and ensure you're on the correct branch (<code>20290-migrate-public-docs</code>)</li>
+<li>Familiarize yourself with the <a href="MIGRATION-FUNCTION.html">MIGRATION-FUNCTION.md</a> document which contains detailed instructions on how to convert GitBook syntax to DocFX</li>
+<li>Start the DocFX site locally to preview changes:
+<pre><code class="lang-bash">cd /path/to/public-documentation
+docfx docfx.json --serve
+</code></pre>
+This will build the site and start a local web server at http://localhost:8080</li>
+</ol>
+<h2 id="migration-workflow">Migration Workflow</h2>
+<h3 id="1-claim-a-section">1. Claim a Section</h3>
+<p>Before starting work:</p>
+<ol>
+<li>Update the <a href="MIGRATION-TRACKER.html">MIGRATION-TRACKER.md</a> file to claim a section</li>
+<li>Add your name to the section you're working on</li>
+<li>Commit this change to avoid duplicate work by other contributors</li>
+</ol>
+<h3 id="2-page-migration-process">2. Page Migration Process</h3>
+<p>For each page in your assigned section:</p>
+<ol>
+<li><p><strong>Compare the Source and Destination Files</strong></p>
+<ul>
+<li>Source: <code>/gitbook/docs/path/to/file.md</code></li>
+<li>Destination: <code>/docs/path/to/file.md</code></li>
+<li>Use <code>MigrateContent(sourcePath, destinationPath)</code> command if available</li>
+</ul>
+</li>
+<li><p><strong>Identify and Fix Differences</strong></p>
+<ul>
+<li>Check for GitBook-specific syntax that needs conversion</li>
+<li>Pay special attention to:
+<ul>
+<li>Video embeds</li>
+<li>Images</li>
+<li>Notes/warnings</li>
+<li>PDF file references</li>
+<li>Reference links</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Manage Images</strong></p>
+<ul>
+<li>Verify that all images in the source file exist in the destination's <code>images/</code> folder</li>
+<li>Follow the image naming convention (kebab-case)</li>
+<li>Compare file sizes to ensure they match</li>
+</ul>
+</li>
+<li><p><strong>Fix Video Embeds</strong></p>
+<ul>
+<li>Replace GitBook video embeds with proper HTML iframe embeds</li>
+<li>Example:
+<pre><code class="lang-html">&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VIDEO_ID&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Handle PDF References</strong></p>
+<ul>
+<li>Copy PDFs to <code>/docs/assets/pdfs/</code></li>
+<li>Update references using the format:
+<pre><code class="lang-markdown">[PDF Name.pdf](/docs/assets/pdfs/pdf-viewer.html?pdf=PDF_Name.pdf)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Convert Notes and Warnings</strong></p>
+<ul>
+<li>Replace GitBook hints with DocFX note syntax:
+<pre><code class="lang-markdown">&gt; [!NOTE]
+&gt; Important information here
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>⚠️ CRITICAL: Rebuild the Site</strong></p>
+<ul>
+<li>ALWAYS run <code>docfx docfx.json</code> in the public-documentation folder</li>
+<li>This is REQUIRED after ANY content migration to ensure proper processing</li>
+<li>If you're not already running the site with <code>--serve</code>, you can rebuild and start the server with:
+<pre><code class="lang-bash">cd /path/to/public-documentation
+docfx docfx.json --serve
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Verify in Browser</strong></p>
+<ul>
+<li>Check the rendered page at http://localhost:8080 to ensure everything displays correctly</li>
+<li>Pay special attention to videos, images, and formatting</li>
+<li>Test navigation links and any interactive elements</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-commit-changes">3. Commit Changes</h3>
+<p>For each page or related set of pages:</p>
+<ol>
+<li>Create a single commit with clear, descriptive message</li>
+<li>Include details about what was changed</li>
+<li>Example commit message format:
+<pre><code>Migration: Add XMPro Notebook page
+
+- Fixed YouTube embed format
+- Verified all images are present and correct
+- Updated note syntax to DocFX format
+</code></pre>
+</li>
+</ol>
+<h3 id="4-update-tracker">4. Update Tracker</h3>
+<p>After completing a section:</p>
+<ol>
+<li>Update the <a href="MIGRATION-TRACKER.html">MIGRATION-TRACKER.md</a> file</li>
+<li>Mark your section as complete</li>
+<li>Commit this change</li>
+</ol>
+<h2 id="common-issues-and-solutions">Common Issues and Solutions</h2>
+<h3 id="video-embeds">Video Embeds</h3>
+<ul>
+<li>Problem: DocFX doesn't support GitBook's video embed syntax</li>
+<li>Solution: Use HTML iframe in a container div (see example in step 4 above)</li>
+</ul>
+<h3 id="images">Images</h3>
+<ul>
+<li>Problem: Missing or incorrectly named images</li>
+<li>Solution: Copy from GitBook assets folder and rename to kebab-case</li>
+</ul>
+<h3 id="noteswarnings">Notes/Warnings</h3>
+<ul>
+<li>Problem: GitBook hint syntax doesn't work in DocFX</li>
+<li>Solution: Convert to DocFX note syntax (see step 6 above)</li>
+</ul>
+<h3 id="pdf-references">PDF References</h3>
+<ul>
+<li>Problem: GitBook file references don't work in DocFX</li>
+<li>Solution: Use the DocFX PDF viewer link format (see step 5 above)</li>
+</ul>
+<h2 id="helpful-tips">Helpful Tips</h2>
+<ol>
+<li>Use the <a href="MIGRATION-FUNCTION.html">MIGRATION-FUNCTION.md</a> as your reference</li>
+<li>Always run <code>docfx docfx.json</code> after making changes</li>
+<li>Use <code>docfx docfx.json --serve</code> to continuously preview changes as you work</li>
+<li>Make focused commits for each page or logical group of pages</li>
+<li>When in doubt, compare with already migrated pages for examples</li>
+<li>If you encounter errors in the local server, check the console output for details</li>
+</ol>
+<h2 id="contact">Contact</h2>
+<p>If you have questions or encounter issues not covered in this guide, contact the project lead for assistance.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

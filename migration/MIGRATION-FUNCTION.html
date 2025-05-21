@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>GitBook to DocFX Migration Function | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="GitBook to DocFX Migration Function | XMPro ">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/migration/MIGRATION-FUNCTION.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="gitbook-to-docfx-migration-function">GitBook to DocFX Migration Function</h1>
+
+<h2 id="quick-reference">Quick Reference</h2>
+<pre><code>MigrateContent(gitbookPath, docfxPath)
+</code></pre>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li><code>gitbookPath</code>: Path to the GitBook markdown file</li>
+<li><code>docfxPath</code>: Path to the corresponding DocFX markdown file</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li><p><strong>PreserveMetadata()</strong></p>
+<ul>
+<li>Ensure DocFX front matter is preserved (title, description)</li>
+</ul>
+</li>
+<li><p><strong>IdentifyDifferences()</strong></p>
+<ul>
+<li>Compare both files to spot differences</li>
+<li>Special focus on: images, video embeds, notes, HTML elements</li>
+</ul>
+</li>
+<li><p><strong>ConvertSyntax()</strong></p>
+<ul>
+<li>✓ Video embeds: <code>{% embed url=&quot;...&quot; %}</code> → HTML iframe embeds</li>
+<li>✓ Images: <code>&lt;figure&gt;&lt;img...&gt;&lt;/figure&gt;</code> → <code>![Alt text](images/file.png)</code></li>
+<li>✓ HTML anchors: Remove <code>&lt;a href=&quot;#id&quot; id=&quot;id&quot;&gt;&lt;/a&gt;</code> from headers</li>
+<li>✓ Notes: <code>{% hint style=&quot;info&quot; %}</code> → <code>&gt; [!NOTE]</code></li>
+<li>✓ Warnings: <code>{% hint style=&quot;warning&quot; %}</code> → <code>&gt; [!WARNING]</code></li>
+<li>✓ Path references: Fix directory paths (e.g., <code>2.-deployment</code> → <code>deployment</code>)</li>
+<li>✓ File refs: <code>{% file src=&quot;...&quot; %}</code> → <code>[PDF Name.pdf](/docs/assets/pdfs/pdf-viewer.html?pdf=PDF_Name.pdf)</code></li>
+<li>✓ External links: Preserve external URLs (e.g., GitHub, website references)</li>
+</ul>
+</li>
+<li><p><strong>ManageImages()</strong></p>
+<ul>
+<li>Copy any missing images from GitBook to DocFX</li>
+<li>Verify the copied image is correct (see Image Verification section below)</li>
+<li>Convert filenames to kebab-case: <code>Image Name.png</code> → <code>image-name.png</code></li>
+<li>Correct path references in markdown</li>
+</ul>
+</li>
+<li><p><strong>VerifyOutput()</strong></p>
+<ul>
+<li>Check for remaining GitBook-specific syntax</li>
+<li>Validate all images and links</li>
+<li>Ensure formatting is consistent</li>
+</ul>
+</li>
+<li><p><strong>BuildAndTest()</strong> ⚠️ <strong>CRITICAL</strong></p>
+<ul>
+<li><strong>ALWAYS</strong> run <code>docfx docfx.json</code> in the public-documentation folder to rebuild the site</li>
+<li>This is a REQUIRED step after ANY content migration to ensure content is properly processed</li>
+<li>The site is typically already being served, so this rebuilds the content</li>
+<li>Check the site in your browser to ensure everything renders correctly before committing</li>
+<li>Failure to execute this step may result in missing/broken content</li>
+</ul>
+</li>
+</ol>
+<h2 id="example-usage">Example Usage</h2>
+<h3 id="image-migration">Image Migration</h3>
+<p>When you find an image in GitBook but missing in DocFX:</p>
+<pre><code>// GitBook format
+&lt;figure&gt;&lt;img src=&quot;../../.gitbook/assets/FAQ Run Recommendation.png&quot; alt=&quot;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+
+// Copy the image
+cp /path/to/gitbook/.gitbook/assets/FAQ\ Run\ Recommendation.png /path/to/docfx/images/faq-run-recommendation.png
+
+// Verify the image is correct by comparing file sizes
+ls -la /path/to/gitbook/.gitbook/assets/FAQ\ Run\ Recommendation.png
+ls -la /path/to/docfx/images/faq-run-recommendation.png
+
+// DocFX format
+![FAQ Run Recommendation](images/faq-run-recommendation.png)
+</code></pre>
+<h3 id="video-embed-migration">Video Embed Migration</h3>
+<pre><code>// GitBook format
+{% embed url=&quot;https://www.youtube.com/watch?v=VIDEO_ID&quot; %}
+
+// DocFX format - Embedded iframe approach (preferred)
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VIDEO_ID&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+// Alternative DocFX format - Note block with link
+&gt; [!NOTE]
+&gt; **Video Reference:** Video Title
+&gt;
+&gt; Brief description of the video content.
+&gt;
+&gt; [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+</code></pre>
+<h3 id="note-migration">Note Migration</h3>
+<pre><code>// GitBook format
+{% hint style=&quot;info&quot; %}
+Important information here
+{% endhint %}
+
+// DocFX format
+&gt; [!NOTE]
+&gt; Important information here
+</code></pre>
+<h3 id="pdf-file-reference-migration">PDF File Reference Migration</h3>
+<pre><code>// GitBook format
+{% file src=&quot;../../.gitbook/assets/Design Patterns for APM Capabilities and Recommendation Alerts 2025 v3.pdf&quot; %}
+
+// DocFX format
+[Design Patterns for APM Capabilities and Recommendation Alerts 2025 v3.pdf](/docs/assets/pdfs/pdf-viewer.html?pdf=Design_Patterns_for_APM_Capabilities_and_Recommendation_Alerts_2025_v3.pdf)
+</code></pre>
+<h3 id="external-link-with-references-migration">External Link with References Migration</h3>
+<pre><code>// GitBook format
+We call these patterns 'Composable Business Capabilities'. (CBC[1]) The customer will need to adapt the design pattern to their own situation. Some of the Design Patterns have been further developed and are available as Apps in our GitHub[2] – these are enabled 'Packaged Business Capabilities' (PBC)[3].
+
+***
+
+[1] Gartner Reference Model for Intelligent Composable Business Applications
+[2] https://xmpro.github.io/Blueprints-Accelerators-Patterns/
+[3] Gartner Reference Model for Intelligent Composable Business Applications
+
+// DocFX format - preserve exactly as is, including reference links
+We call these patterns 'Composable Business Capabilities'. (CBC[1]) The customer will need to adapt the design pattern to their own situation. Some of the Design Patterns have been further developed and are available as Apps in our GitHub[2] – these are enabled 'Packaged Business Capabilities' (PBC)[3].
+
+***
+
+[1] Gartner Reference Model for Intelligent Composable Business Applications
+[2] https://xmpro.github.io/Blueprints-Accelerators-Patterns/
+[3] Gartner Reference Model for Intelligent Composable Business Applications
+</code></pre>
+<p>Note: It's vital to preserve the reference numbering system exactly as it appears in the original GitBook. The reference numbers such as [1], [2], [3] in text must match their corresponding definitions at the bottom of the section or document.</p>
+<h2 id="common-patterns">Common Patterns</h2>
+<table>
+<thead>
+<tr>
+<th>Content Type</th>
+<th>GitBook Pattern</th>
+<th>DocFX Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Video</td>
+<td><code>{% embed url=&quot;...&quot; %}</code></td>
+<td>HTML iframe embed</td>
+</tr>
+<tr>
+<td>Image</td>
+<td><code>&lt;figure&gt;&lt;img src=&quot;...&quot;&gt;&lt;/figure&gt;</code></td>
+<td><code>![Alt](images/file.png)</code></td>
+</tr>
+<tr>
+<td>Note</td>
+<td><code>{% hint style=&quot;info&quot; %}</code></td>
+<td><code>&gt; [!NOTE]</code></td>
+</tr>
+<tr>
+<td>Warning</td>
+<td><code>{% hint style=&quot;warning&quot; %}</code></td>
+<td><code>&gt; [!WARNING]</code></td>
+</tr>
+<tr>
+<td>File</td>
+<td><code>{% file src=&quot;...&quot; %}</code></td>
+<td><code>[PDF Name.pdf](/docs/assets/pdfs/pdf-viewer.html?pdf=PDF_Name.pdf)</code></td>
+</tr>
+<tr>
+<td>HTML anchor</td>
+<td><code>&lt;a href=&quot;#id&quot; id=&quot;id&quot;&gt;&lt;/a&gt;</code></td>
+<td>Remove entirely</td>
+</tr>
+<tr>
+<td>External link</td>
+<td><code>[Link text](https://example.com)</code></td>
+<td><code>[Link text](https://example.com)</code> (preserve as-is)</td>
+</tr>
+<tr>
+<td>Reference links</td>
+<td>Text with <code>[1]</code>, <code>[2]</code> references and matching <code>[1] URL</code> definitions</td>
+<td>Preserve exactly as-is with all reference numbers and link definitions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-points">Key Points</h2>
+<ul>
+<li>Always manually review both files to catch context-specific issues</li>
+<li>Images in DocFX should use kebab-case filenames</li>
+<li>DocFX requires frontmatter for metadata</li>
+<li>Image references should be relative to the markdown file</li>
+<li>Copy images to a subdirectory called <code>images</code> next to the markdown file</li>
+<li><strong>Verify that copied images match the original GitBook images</strong> by comparing file sizes and dimensions</li>
+<li>Use the image verification methods in the &quot;Image Verification&quot; section to ensure correctness</li>
+<li>For YouTube videos, convert the video ID for iframe embedding (from watch URL to embed URL format)</li>
+<li>PDF files should be copied to the <code>/docs/assets/pdfs/</code> directory with proper filename formatting (kebab-case or snake_case)</li>
+<li>Extract the exact PDF filename from the GitBook reference and format it for the link</li>
+<li>Use format: <code>[PDF Name.pdf](/docs/assets/pdfs/pdf-viewer.html?pdf=PDF_Name.pdf)</code></li>
+<li>Ensure the PDF file exists in the target location before committing</li>
+<li>The PDF viewer HTML wrapper ensures the XMPro favicon is shown when viewing PDFs</li>
+<li><strong>Preserve all external links</strong> to third-party sites like GitHub, product websites, etc.</li>
+<li><strong>CRITICAL</strong>: Always preserve the entire reference link system (<code>[n]</code> in text with corresponding <code>[n]</code> definitions)</li>
+<li>Ensure that reference numbers in text (e.g., <code>GitHub[2]</code>) correctly match their definitions (e.g., <code>[2] https://xmpro.github.io/...</code>)</li>
+<li>Numbered references may appear:
+<ul>
+<li>At the bottom of the document</li>
+<li>At the end of a section (separated by horizontal rule <code>***</code>)</li>
+<li>Immediately after a paragraph</li>
+</ul>
+</li>
+<li>Never modify, renumber, or reformat reference links as they form a critical academic citation system</li>
+<li>⚠️ <strong>CRITICAL</strong>: After modifying ANY documentation, ALWAYS run <code>docfx docfx.json</code> to rebuild the site</li>
+<li>This is a REQUIRED step after any content migration or update</li>
+<li>Assume the site is already being served, so this just rebuilds the content</li>
+<li>Refresh your browser to view the changes</li>
+<li>Failure to rebuild the site will result in content not being properly processed</li>
+</ul>
+<h2 id="image-verification">Image Verification</h2>
+<p>When migrating images from GitBook to DocFX, it's critical to ensure that the correct images are being transferred. Some images may have similar names but different content. Follow these verification steps:</p>
+<h3 id="quick-verification-methods">Quick Verification Methods</h3>
+<ol>
+<li><p><strong>File Size Comparison</strong>:</p>
+<pre><code class="lang-bash"># Compare the file sizes of source and destination images
+ls -la /path/to/gitbook/.gitbook/assets/original_image.png
+ls -la /path/to/docfx/images/original-image.png
+</code></pre>
+<ul>
+<li>If file sizes differ significantly, they are likely different images</li>
+<li>Even small differences (within a few bytes) might indicate different images</li>
+</ul>
+</li>
+<li><p><strong>Image Dimensions Check</strong>:</p>
+<pre><code class="lang-bash"># Using ImageMagick to check dimensions
+identify /path/to/gitbook/.gitbook/assets/original_image.png
+identify /path/to/docfx/images/original-image.png
+</code></pre>
+<ul>
+<li>Dimensions should match exactly between source and destination</li>
+</ul>
+</li>
+<li><p><strong>Visual Comparison</strong>:</p>
+<ul>
+<li>For critical images, open both files side by side</li>
+<li>Verify that content, quality, and composition match</li>
+</ul>
+</li>
+</ol>
+<h3 id="automated-verification-options">Automated Verification Options</h3>
+<p>For batch verification of multiple images:</p>
+<pre><code class="lang-bash"># Create a simple verification script
+echo &quot;#!/bin/bash&quot; &gt; verify_images.sh
+echo &quot;# Usage: ./verify_images.sh &lt;gitbook_dir&gt; &lt;docfx_dir&gt;&quot; &gt;&gt; verify_images.sh
+echo &quot;GITBOOK_DIR=\&quot;\$1\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;DOCFX_DIR=\&quot;\$2\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;echo \&quot;File,GitBook Size,DocFX Size,Match\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;find \$DOCFX_DIR -type f -name \&quot;*.png\&quot; -o -name \&quot;*.jpg\&quot; -o -name \&quot;*.gif\&quot; | while read file; do&quot; &gt;&gt; verify_images.sh
+echo &quot;  filename=\$(basename \&quot;\$file\&quot; | sed 's/-/_/g')&quot; &gt;&gt; verify_images.sh
+echo &quot;  gitbook_file=\$(find \$GITBOOK_DIR -name \&quot;\$filename\&quot; | head -1)&quot; &gt;&gt; verify_images.sh
+echo &quot;  if [ -n \&quot;\$gitbook_file\&quot; ]; then&quot; &gt;&gt; verify_images.sh
+echo &quot;    gitbook_size=\$(stat -c%s \&quot;\$gitbook_file\&quot;)&quot; &gt;&gt; verify_images.sh
+echo &quot;    docfx_size=\$(stat -c%s \&quot;\$file\&quot;)&quot; &gt;&gt; verify_images.sh
+echo &quot;    if [ \&quot;\$gitbook_size\&quot; -eq \&quot;\$docfx_size\&quot; ]; then&quot; &gt;&gt; verify_images.sh
+echo &quot;      match=\&quot;Yes\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;    else&quot; &gt;&gt; verify_images.sh
+echo &quot;      match=\&quot;No\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;    fi&quot; &gt;&gt; verify_images.sh
+echo &quot;    echo \&quot;\$filename,\$gitbook_size,\$docfx_size,\$match\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;  else&quot; &gt;&gt; verify_images.sh
+echo &quot;    echo \&quot;\$filename,Not Found,\$(stat -c%s \&quot;\$file\&quot;),N/A\&quot;&quot; &gt;&gt; verify_images.sh
+echo &quot;  fi&quot; &gt;&gt; verify_images.sh
+echo &quot;done&quot; &gt;&gt; verify_images.sh
+chmod +x verify_images.sh
+
+# Run the verification script
+./verify_images.sh /path/to/gitbook/.gitbook/assets /path/to/docfx/images &gt; image_verification_report.csv
+</code></pre>
+<h3 id="common-image-issues-and-fixes">Common Image Issues and Fixes</h3>
+<ol>
+<li><p><strong>Wrong Image Copied</strong>:</p>
+<ul>
+<li>Always double-check the image filename in the GitBook markdown</li>
+<li>Some images might have similar names but different content</li>
+<li>Use the verification methods above to confirm</li>
+</ul>
+</li>
+<li><p><strong>Image Quality Loss</strong>:</p>
+<ul>
+<li>If the DocFX image appears lower quality, ensure you're copying the original</li>
+<li>Avoid saving/re-saving images as this can cause compression losses</li>
+</ul>
+</li>
+<li><p><strong>Image Not Found</strong>:</p>
+<ul>
+<li>Images might be in different subdirectories in GitBook</li>
+<li>Use find command to locate the original image:
+<pre><code class="lang-bash">find /path/to/gitbook/.gitbook/assets -name &quot;*keyword*&quot; -type f
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Animation Lost (GIFs)</strong>:</p>
+<ul>
+<li>Ensure GIF animations are preserved when copying</li>
+<li>Check file sizes carefully for GIFs as static versions are much smaller</li>
+</ul>
+</li>
+</ol>
+<h3 id="best-practices">Best Practices</h3>
+<ul>
+<li>Always verify at least file size and dimensions for every copied image</li>
+<li>For critical UI screenshots or diagrams, perform a visual comparison</li>
+<li>Keep a verification log of checked images (the script above creates this)</li>
+<li>When in doubt, reference the original GitBook site to compare visually</li>
+<li>For large migrations, consider batch verification first, then manual verification of any images that don't match</li>
+</ul>
+<h2 id="video-embedding-css">Video Embedding CSS</h2>
+<p>For proper display of embedded videos, ensure this CSS is included in your DocFX theme:</p>
+<pre><code class="lang-css">.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</code></pre>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -27,16 +27,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "VERSION-SWITCHING-README.md",
-      "output": {
-        ".html": {
-          "relative_path": "VERSION-SWITCHING-README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/administration/administrative-accounts.md",
       "output": {
         ".html": {
@@ -65693,40 +65683,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration-docs/CONTRIBUTOR-GUIDE.md",
+      "source_relative_path": "migration/CONTRIBUTOR-GUIDE.md",
       "output": {
         ".html": {
-          "relative_path": "migration-docs/CONTRIBUTOR-GUIDE.html"
+          "relative_path": "migration/CONTRIBUTOR-GUIDE.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration-docs/MIGRATION-FUNCTION.md",
+      "source_relative_path": "migration/MIGRATION-FUNCTION.md",
       "output": {
         ".html": {
-          "relative_path": "migration-docs/MIGRATION-FUNCTION.html"
+          "relative_path": "migration/MIGRATION-FUNCTION.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration-docs/MIGRATION-TRACKER.md",
+      "source_relative_path": "migration/MIGRATION-TRACKER.md",
       "output": {
         ".html": {
-          "relative_path": "migration-docs/MIGRATION-TRACKER.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration-tasks.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration-tasks.html"
+          "relative_path": "migration/MIGRATION-TRACKER.html"
         }
       },
       "version": ""
