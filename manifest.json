@@ -9117,6 +9117,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/collection-configuration.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/collection-configuration.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/demo_app_drilldown.png",
       "output": {
         "resource": {
@@ -9151,6 +9161,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/demo_recommendation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/download-connection-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/download-connection-profile.png"
         }
       },
       "version": ""
@@ -9811,6 +9831,76 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image_999.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/publish-unpublish-data-streams.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/publish-unpublish-data-streams.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/remote-receivers-publishers-example-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/remote-receivers-publishers-example-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/remote-receivers-publishers-example-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/remote-receivers-publishers-example-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/search-collections.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/search-collections.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/set-log-level.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/set-log-level.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/stream-host-rank-example-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/stream-host-rank-example-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/stream-host-rank-example-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/stream-host-rank-example-2.png"
         }
       },
       "version": ""
