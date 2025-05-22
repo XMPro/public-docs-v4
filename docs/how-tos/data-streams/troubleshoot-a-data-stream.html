@@ -88,40 +88,46 @@
 <h1 id="troubleshoot-a-data-stream">Troubleshoot a Data Stream</h1>
 
 <p>When creating and configuring a Data Stream, there is a chance it may not be working as expected, and you may have to find out more information as to why it is not behaving the way it should. There are a few options available on how to troubleshoot a Data Stream. Troubleshooting is required if you want to make sure the flow of data is accurate.</p>
-<p>{% hint style=&quot;info&quot; %}
-It is recommended that you read the article listed below to improve your understanding of Data Streams.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you read the article listed below to improve your understanding of Data Streams.</p>
 <ul>
 <li><a href="../../concepts/data-stream/">Data Stream</a></li>
-<li><a href="manage-data-streams.html">How to Manage Data Streams</a>
-{% endhint %}</li>
+<li><a href="manage-data-streams.html">How to Manage Data Streams</a></li>
 </ul>
+</div>
 <h2 id="troubleshoot-using-live-view">Troubleshoot using Live View</h2>
 <p>To troubleshoot using the Live View, follow the steps below:</p>
 <ol>
 <li>Click on <em>Publish</em>.</li>
 </ol>
-<p>![](/docs/images/_1 (1).png&gt;)</p>
-<p>2. Click on <em>Live View</em>.<br>
-3. Select the Agent/s to view the Live Data for.<br>
-4. Click <em>Save</em>.</p>
-<p>![](/docs/images/_2 (1).png&gt;)</p>
-<p>{% hint style=&quot;info&quot; %}
-If data is not being displayed when it should be, or if the values are not being displayed as expected, something may be going wrong with the Agent.
-{% endhint %}</p>
-<p><img src="/docs/images/_HowToOpen2.png%3E" alt=""></p>
-<p><img src="../images/_4.png" alt=""></p>
+<p><img src="/docs/assets/data-streams/troubleshooting/TS_1%20(1).png" alt="Click Publish button to publish the data stream"></p>
+<ol start="2">
+<li>Click on <em>Live View</em>.</li>
+<li>Select the Agent/s to view the Live Data for.</li>
+<li>Click <em>Save</em>.</li>
+</ol>
+<p><img src="/docs/assets/data-streams/troubleshooting/TS_2%20(1).png" alt="Select agents in Live View to monitor data flow"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If data is not being displayed when it should be, or if the values are not being displayed as expected, something may be going wrong with the Agent.</p>
+</div>
+<p><img src="/docs/assets/data-streams/troubleshooting/Manage%20DS_HowToOpen2.png" alt="Live View interface showing data stream monitoring"></p>
+<p><img src="/docs/assets/data-streams/troubleshooting/TS_4.png" alt="Example of live data being displayed"></p>
 <h2 id="troubleshooting-using-error-endpoints">Troubleshooting using Error Endpoints</h2>
 <p>To Troubleshoot using the Error Endpoints, follow the steps below:</p>
 <ol>
-<li>Drag an <em>Event Printer</em> agent onto the canvas. They can be found under ‘Action Agents.’</li>
+<li>Drag an <em>Event Printer</em> agent onto the canvas. They can be found under 'Action Agents.'</li>
 <li>Add an arrow from the error endpoint connected to the Event Printer.</li>
 <li>Click on <em>Publish</em>.</li>
 </ol>
-<p>![](/docs/images/_5 (1).png&gt;)</p>
-<p>4. Click on <em>Live View</em>.<br>
-5. Select the <em>Event Printer</em>.<br>
-6. Click <em>Save</em>.</p>
-<p><img src="/docs/images/_6.png" alt=""></p>
+<p><img src="/docs/assets/data-streams/troubleshooting/TS_5%20(1).png" alt="Using Event Printer to capture errors from error endpoints"></p>
+<ol start="4">
+<li>Click on <em>Live View</em>.</li>
+<li>Select the <em>Event Printer</em>.</li>
+<li>Click <em>Save</em>.</li>
+</ol>
+<p><img src="/docs/assets/data-streams/troubleshooting/TS_6.png" alt="Viewing error output in Event Printer"></p>
 <h2 id="troubleshooting-when-there-is-no-data-visible">Troubleshooting when there is no data visible</h2>
 <p>In some cases, the Event Printer does not show any data when trying to troubleshoot the Data Stream. If this is the case, the Collections Stream Host may be able to give some information.</p>
 <ol>
@@ -131,16 +137,17 @@ If data is not being displayed when it should be, or if the values are not being
 <li>Select the Stream Host.</li>
 <li>View the logs from the Stream Host.</li>
 </ol>
-<p>{% hint style=&quot;info&quot; %}
-Any errors that are generated from an Agent which are printed from the error endpoint are also printed in the Stream Host logs.
-{% endhint %}</p>
-<p>![](/docs/images/image (1005).png&gt;)</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any errors that are generated from an Agent which are printed from the error endpoint are also printed in the Stream Host logs.</p>
+</div>
+<p><img src="/docs/assets/data-streams/troubleshooting/image%20(1005).png" alt="Accessing Stream Host logs from Collections page"></p>
 <h2 id="troubleshooting-when-there-are-no-stream-hosts">Troubleshooting when there are no Stream Hosts</h2>
-<p>If the Stream Host is not running at all, you can view the logs from the install directory of the Stream Host on your computer. the install folder is named <em>XMPro Stream Host</em> and is usually found in the <em>Program Files</em> in the <em>C Drive</em>.</p>
-<p>![](/docs/images/image (1333).png&gt;)</p>
-<p><img src="/docs/images/_9.png" alt=""></p>
-<p><img src="/docs/images/_10.png" alt=""></p>
-<p><img src="/docs/images/_11.png" alt=""></p>
+<p>If the Stream Host is not running at all, you can view the logs from the install directory of the Stream Host on your computer. The install folder is named <em>XMPro Stream Host</em> and is usually found in the <em>Program Files</em> in the <em>C Drive</em>.</p>
+<p><img src="/docs/assets/data-streams/troubleshooting/image%20(1333).png" alt="Stream Host installation directory location"></p>
+<p><img src="/docs/assets/data-streams/troubleshooting/Troubleshoot_9.png" alt="Navigating to Stream Host logs in Program Files"></p>
+<p><img src="/docs/assets/data-streams/troubleshooting/Troubleshoot_10.png" alt="Stream Host logs directory structure"></p>
+<p><img src="/docs/assets/data-streams/troubleshooting/Troubleshoot_11.png" alt="Viewing Stream Host log files for troubleshooting"></p>
 
 </article>
 
