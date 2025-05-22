@@ -6797,6 +6797,86 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/recurrent-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/recurrent-8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/how-tos/data-streams/images/remote-receivers-1.png",
       "output": {
         "resource": {
