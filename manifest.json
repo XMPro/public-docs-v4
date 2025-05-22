@@ -6737,6 +6737,66 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/C1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/C1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/C4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/C4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/C6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/C6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/collection-delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/collection-delete.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/collection-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/collection-key.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/collection-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/collection-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/how-tos/data-streams/images/remote-receivers-1.png",
       "output": {
         "resource": {
