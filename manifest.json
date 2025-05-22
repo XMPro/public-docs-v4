@@ -9107,6 +9107,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/agent/agent-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/agent/agent-properties.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/agent/data-stream-canvas-and-agent-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/agent/data-stream-canvas-and-agent-settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/agent/data-stream-toolbox-interface.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/agent/data-stream-toolbox-interface.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/agent/searching-for-agent.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/agent/searching-for-agent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/beta_icon.png",
       "output": {
         "resource": {
