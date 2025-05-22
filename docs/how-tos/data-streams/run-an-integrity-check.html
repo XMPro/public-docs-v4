@@ -88,14 +88,15 @@
 <h1 id="run-an-integrity-check">Run an Integrity Check</h1>
 
 <p>When running an Integrity Check on a Data Stream, each Stream Object is checked to verify that it is configured correctly. Errors for the Agent will be displayed if there are any issues found with their configurations. This is done to ensure the integrity of your Data Stream and to make sure all input fields are valid and accurate.</p>
-<p>{% hint style=&quot;info&quot; %}
-It is recommended that you read the article listed below to improve your understanding of an Integrity Check.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you read the article listed below to improve your understanding of an Integrity Check.</p>
 <ul>
 <li><a href="../../concepts/agent/">Agent</a></li>
 <li><a href="../../concepts/data-stream/verifying-stream-integrity.html">Verifying Stream Integrity</a></li>
-<li><a href="manage-data-streams.html">How to Manage Data Streams</a>
-{% endhint %}</li>
+<li><a href="manage-data-streams.html">How to Manage Data Streams</a></li>
 </ul>
+</div>
 <h2 id="running-an-integrity-check">Running an Integrity Check</h2>
 <p>To run an Integrity Check on a Data Stream, follow the steps below:</p>
 <ol>
@@ -103,19 +104,21 @@ It is recommended that you read the article listed below to improve your underst
 <li>Wait for the Integrity Check to complete. This can be seen by watching the loading bar on each Agent.</li>
 <li>When the Integrity Check is completed, Agents will show their errors if they exist.</li>
 </ol>
-<p><img src="../images/_1.png" alt=""></p>
-<p><img src="../images/_2.png" alt=""></p>
-<p>{% hint style=&quot;success&quot; %}
-Agents with a blank background have passed their Integrity Check with no errors.
-{% endhint %}</p>
-<p>{% hint style=&quot;danger&quot; %}
-Agents with a red background have reported back some errors in their configuration.
-{% endhint %}</p>
-<p>4. Hover over the Agent with errors to view a list of errors.</p>
-<p><img src="../images/_3.png" alt=""></p>
-<p>{% hint style=&quot;info&quot; %}
-An Integrity Check cannot be run on Agents that have unsaved changes. To run an Integrity Check, discard or save all changes made.
-{% endhint %}</p>
+<p><img src="images/integrity-check-1.png" alt="Running an Integrity Check"></p>
+<p><img src="images/integrity-check-2.png" alt="Integrity Check in Progress"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>✅ <strong>SUCCESS:</strong> Agents with a blank background have passed their Integrity Check with no errors.<br><br>
+❌<strong>ERROR:</strong> Agents with a red background have reported back some errors in their configuration.</p>
+</div>
+<ol start="4">
+<li>Hover over the Agent with errors to view a list of errors.</li>
+</ol>
+<p><img src="images/integrity-check-3.png" alt="Viewing Integrity Check Errors"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>An Integrity Check cannot be run on Agents that have unsaved changes. To run an Integrity Check, discard or save all changes made.</p>
+</div>
 <h2 id="fixing-integrity-check-errors">Fixing Integrity Check errors</h2>
 <p>The errors are saved to the Stream Object and are not removed until another Integrity Check is performed. Open the configuration panel for the Agents that are showing errors, and fix any errors in the inputted values. In this case, the text file Agent did not have a file path specified.</p>
 <ol>
@@ -124,10 +127,12 @@ An Integrity Check cannot be run on Agents that have unsaved changes. To run an 
 <li>Click on Apply.</li>
 <li>Click on Save.</li>
 </ol>
-<p><img src="../images/_4.png" alt=""></p>
-<p>5. Click on <em>Integrity Check</em> to run it again.<br>
-6. Check if the background is no longer red.</p>
-<p><img src="../images/_5.png" alt=""></p>
+<p><img src="images/integrity-check-4.png" alt="Fixing Integrity Check Errors"></p>
+<ol start="5">
+<li>Click on <em>Integrity Check</em> to run it again.</li>
+<li>Check if the background is no longer red.</li>
+</ol>
+<p><img src="images/integrity-check-5.png" alt="Successful Integrity Check"></p>
 
 </article>
 

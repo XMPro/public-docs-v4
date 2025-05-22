@@ -6817,6 +6817,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/integrity-check-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/integrity-check-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/integrity-check-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/integrity-check-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/integrity-check-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/integrity-check-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/integrity-check-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/integrity-check-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/integrity-check-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/integrity-check-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/how-tos/data-streams/images/notes-1.png",
       "output": {
         "resource": {
