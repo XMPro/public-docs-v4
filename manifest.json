@@ -6767,6 +6767,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/business-case-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/business-case-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/business-case-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/business-case-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/how-tos/data-streams/images/collection-delete.png",
       "output": {
         "resource": {
@@ -6791,6 +6811,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/how-tos/data-streams/images/collection-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/notes-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/notes-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/data-streams/images/notes-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/data-streams/images/notes-2.png"
         }
       },
       "version": ""
