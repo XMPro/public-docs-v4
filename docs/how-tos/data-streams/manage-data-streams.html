@@ -88,12 +88,13 @@
 <h1 id="manage-data-streams">Manage Data Streams</h1>
 
 <p>A Data Stream is a visual representation of a flow of data, which is depicted by the use of Agents that are connected by arrows that allow data to flow from one Agent to the next. Data streams are built in an interactive canvas environment that allows you to drag Agents from the toolbox to a drawing area. These Agents allow you to complete certain actions on the data. This includes aggregating, filtering, displaying, or re-saving the data into another database.</p>
-<p>{% hint style=&quot;info&quot; %}
-It is recommended that you read the article listed below to improve your understanding of Data Streams.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you read the article listed below to improve your understanding of Data Streams.</p>
 <ul>
-<li><a href="../../concepts/data-stream/">Data Stream</a>
-{% endhint %}</li>
+<li><a href="../../concepts/data-stream/">Data Stream</a></li>
 </ul>
+</div>
 <h2 id="creating-a-data-stream">Creating a Data Stream</h2>
 <p>To create a Data Stream, follow the steps below:</p>
 <ol>
@@ -106,8 +107,14 @@ It is recommended that you read the article listed below to improve your underst
 <li>Enter the Collection the Data Stream will have.</li>
 <li>Click <em>Save</em>.</li>
 </ol>
-<p><img src="/docs/images/_HowToCreate1.png%3E" alt="Fig 1: Creating a Data Stream"></p>
-<p><img src="/docs/images/_HowToCreate2.png%3E" alt="Fig 2: A newly created Data Stream"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToCreate1.png" alt="Creating a Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 1: Creating a Data Stream</figcaption>
+</figure>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToCreate2.png" alt="A newly created Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 2: A newly created Data Stream</figcaption>
+</figure>
 <h2 id="opening-a-data-stream">Opening a Data Stream</h2>
 <p>Data Streams can be opened via the <em>Data Streams</em> Page on the left-hand menu, or via the main page that contains the list of Categories.</p>
 <p>To open Data Streams from the left-hand menu:</p>
@@ -115,15 +122,26 @@ It is recommended that you read the article listed below to improve your underst
 <li>Open the <em>Data Streams</em> page from the left-hand menu.</li>
 <li>Select the Data Stream you want to open.</li>
 </ol>
-<p><img src="/docs/images/_HowToOpen1.png%3E" alt="Fig 3: Opening a Data Stream from the left-hand menu"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToOpen1.png" alt="Opening a Data Stream from the left-hand menu">
+  <figcaption style="text-align: center; color: #666;">Fig 3: Opening a Data Stream from the left-hand menu</figcaption>
+</figure>
 <p>To open Data Streams from the list of categories:</p>
 <ol>
 <li>Click the Logo to open the landing page.</li>
 <li>Click the Category of the Data Stream.</li>
 </ol>
-<p>![Fig 4: Finding a Data Stream from the landing page of categories](/docs/images/_HowToOpen2 (1).png&gt;)</p>
-<p>3. Click the Data Stream you want to open.</p>
-<p><img src="/docs/images/_HowToOpen3.png%3E" alt="Fig 5: Opening a Data Stream from a category"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToOpen2.png" alt="Finding a Data Stream from the landing page of categories">
+  <figcaption style="text-align: center; color: #666;">Fig 4: Finding a Data Stream from the landing page of categories</figcaption>
+</figure>
+<ol start="3">
+<li>Click the Data Stream you want to open.</li>
+</ol>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToOpen3.png" alt="Opening a Data Stream from a category">
+  <figcaption style="text-align: center; color: #666;">Fig 5: Opening a Data Stream from a category</figcaption>
+</figure>
 <h2 id="adding-an-agent-to-the-canvas">Adding an Agent to the Canvas</h2>
 <p>To add Agents to the canvas, drag and drop Agents from the left-hand toolbox to make up the data flow for your Data Stream. An Agent that has been added to the canvas is called a Stream Object. <a href="../../concepts/agent/">See the Agents article for more information on Agents.</a></p>
 <ol>
@@ -131,8 +149,14 @@ It is recommended that you read the article listed below to improve your underst
 <li>Click and drag an agent onto the Canvas.</li>
 <li>Click the output endpoint and drag it to an input endpoint to connect two Stream Objects.</li>
 </ol>
-<p><img src="/docs/images/_HowToAddAgent1.png%3E" alt="Fig 6: Adding an Agent to the Canvas "></p>
-<p><img src="/docs/images/_HowToAddAgent2.png%3E" alt="Fig 7: Connecting two Agents"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToAddAgent1.png" alt="Adding an Agent to the Canvas">
+  <figcaption style="text-align: center; color: #666;">Fig 6: Adding an Agent to the Canvas</figcaption>
+</figure>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToAddAgent2.png" alt="Connecting two Agents">
+  <figcaption style="text-align: center; color: #666;">Fig 7: Connecting two Agents</figcaption>
+</figure>
 <h2 id="copying-and-pasting-stream-objects">Copying and Pasting Stream Objects</h2>
 <p>Stream Objects that are in the Data Stream can be copied and pasted using keyboard shortcuts. To copy a Stream object:</p>
 <ol>
@@ -141,31 +165,44 @@ It is recommended that you read the article listed below to improve your underst
 <li>Once the Stream Object(s) are highlighted in yellow, press and hold ctrl + C.</li>
 <li>To paste the Stream Object that was just copied, press and hold ctrl + P.</li>
 </ol>
-<p>{% hint style=&quot;info&quot; %}
-You can also copy a Stream Object from one Data Stream and paste it into a different Data Stream.
-{% endhint %}</p>
-<p><img src="../images/olRa9jDFBz.gif" alt="images/olRa9jDFBz.gif"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can also copy a Stream Object from one Data Stream and paste it into a different Data Stream.</p>
+</div>
+<figure style="text-align: center;">
+  <img src="../../resources/images/olRa9jDFBz.gif" alt="Copying a Stream Object">
+  <figcaption style="text-align: center; color: #666;">Fig 8: Copying a Stream Object</figcaption>
+</figure>
 <h2 id="deleting-a-stream-object">Deleting a Stream Object</h2>
 <p>To delete a Stream Object on the canvas, follow the steps below:</p>
 <ol>
 <li>Click a Stream Object to select it.</li>
 <li>Click Delete.</li>
 </ol>
-<p><img src="/docs/images/_HowToDeleteStreamObject.png%3E" alt="Fig 9: Deleting a Stream Object using the Delete Button"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToDeleteStreamObject.png" alt="Deleting a Stream Object using the Delete Button">
+  <figcaption style="text-align: center; color: #666;">Fig 9: Deleting a Stream Object using the Delete Button</figcaption>
+</figure>
 <p>You can also delete Stream Objects that are on the Data Stream canvas by using the 'delete' keyboard shortcut.</p>
 <ol>
 <li>Select an Agent to highlight it.</li>
 <li>To highlight multiple Agents, hold the ctrl key while you are selecting them.</li>
 <li>Once the Stream Object/s are highlighted in yellow, click on the delete key on the keyboard.</li>
 </ol>
-<p>![Fig 10: Deleting a Stream Object using the keyboard](/docs/images/Delete Canvas Object.gif&gt;)</p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Delete%20Canvas%20Object.gif" alt="Deleting a Stream Object using the keyboard">
+  <figcaption style="text-align: center; color: #666;">Fig 10: Deleting a Stream Object using the keyboard</figcaption>
+</figure>
 <h2 id="deleting-a-data-stream">Deleting a Data Stream</h2>
 <p>To delete a Data Stream, follow the steps below:</p>
 <ol>
 <li>Click Properties.</li>
 <li>Click Delete.</li>
 </ol>
-<figure><img src="/docs/images/Manage DS_HowToDelete.png" alt=""><figcaption><p>Fig 11: Deleting a Data Stream</p></figcaption></figure>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToDelete.png" alt="Deleting a Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 11: Deleting a Data Stream</figcaption>
+</figure>
 <h2 id="sharing-access-to-a-data-stream">Sharing Access to a Data Stream</h2>
 <p>Data Streams can be shared between users with differing permisson. <a href="../../concepts/manage-access.html">See the Manage Access article to read more about managing access to users.</a> To share a Data Stream, follow the steps below:</p>
 <ol>
@@ -175,17 +212,28 @@ You can also copy a Stream Object from one Data Stream and paste it into a diffe
 <li>Choose between read, write, or co-owner permissions.</li>
 <li>Click <em>Ok</em>.</li>
 </ol>
-<p><img src="/docs/images/_HowToShare1.png%3E" alt="Fig 12: Sharing Access to a Data Stream"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToShare1.png" alt="Sharing Access to a Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 12: Sharing Access to a Data Stream</figcaption>
+</figure>
 <h2 id="changing-access-to-a-data-stream">Changing Access to a Data Stream</h2>
 <p>To change permissions of existing users, follow the steps below:</p>
 <ol>
 <li>Click on <em>Manage Access.</em></li>
 <li>Select the user.</li>
 </ol>
-<p><img src="/docs/images/_HowToShare2.png%3E" alt="Fig 13: Changing Access to a Data Stream"></p>
-<p>3. Change their permissions.<br>
-4. Or, delete permissions for the user.</p>
-<p><img src="/docs/images/_HowToShare3.png%3E" alt="Fig 14: Changing or deleting permission to a Data Stream"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToShare2.png" alt="Changing Access to a Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 13: Changing Access to a Data Stream</figcaption>
+</figure>
+<ol start="3">
+<li>Change their permissions.\</li>
+<li>Or, delete permissions for the user.</li>
+</ol>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToShare3.png" alt="Changing or deleting permission to a Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 14: Changing or deleting permission to a Data Stream</figcaption>
+</figure>
 <h2 id="removing-access-to-a-data-stream">Removing Access to a Data Stream</h2>
 <p>To remove the permissions for multiple users, follow the steps below:</p>
 <ol>
@@ -194,18 +242,27 @@ You can also copy a Stream Object from one Data Stream and paste it into a diffe
 <li>Select multiple users.</li>
 <li>Click <em>Delete</em>.</li>
 </ol>
-<p><img src="/docs/images/_HowToShare4.png%3E" alt="Fig 15: Removing Access to a Data Stream for multiple users"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToShare4.png" alt="Removing Access to a Data Stream for multiple users">
+  <figcaption style="text-align: center; color: #666;">Fig 15: Removing Access to a Data Stream for multiple users</figcaption>
+</figure>
 <h2 id="cloning-a-data-stream">Cloning a Data Stream</h2>
 <p>To clone a Data Stream, follow the steps below:</p>
 <ol>
 <li>From within the Data Stream canvas, click <em>Properties</em>.</li>
-<li>Click <em>Clone</em>. This button may not initially be visible on the <em>Properties</em> page but can be found in the menu that appears if you hover with your mouse cursor over the “<em>More</em>” button.</li>
+<li>Click <em>Clone</em>. This button may not initially be visible on the <em>Properties</em> page but can be found in the menu that appears if you hover with your mouse cursor over the &quot;<em>More</em>&quot; button.</li>
 <li>Specify the name for the cloned Data Stream.</li>
 <li>Choose a category to copy the Data Steam to. Please note that this should not be the same as the category of the original Data Stream.</li>
 <li>Click <em>Save</em>.</li>
 </ol>
-<p><img src="/docs/images/_HowToClone1.png%3E" alt="Fig 16: Closing a Data Stream"></p>
-<p><img src="/docs/images/_HowToClone2.png%3E" alt="Fig 17: The cloned Data Stream"></p>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToClone1.png" alt="Closing a Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 16: Closing a Data Stream</figcaption>
+</figure>
+<figure style="text-align: center;">
+  <img src="../../resources/images/Manage%20DS_HowToClone2.png" alt="The cloned Data Stream">
+  <figcaption style="text-align: center; color: #666;">Fig 17: The cloned Data Stream</figcaption>
+</figure>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="manage-recurrent-data-streams.html">How to Manage Recurrent Data Streams</a></li>
