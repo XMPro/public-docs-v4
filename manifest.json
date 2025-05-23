@@ -10237,6 +10237,116 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_config.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/logs_export.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/logs_export.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/red_error.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/red_error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connector-logs/yellow_error.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connector-logs/yellow_error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/datasources/datasources_1.png",
       "output": {
         "resource": {
