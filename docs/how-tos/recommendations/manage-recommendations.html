@@ -88,22 +88,24 @@
 <h1 id="manage-recommendations">Manage Recommendations</h1>
 
 <p>If a Run Recommendation Agent is added to a <a href="../../concepts/data-stream/">Data Stream</a>, the Recommendation will read the live data in real-time and compare it to the conditions and <a href="../../concepts/recommendation/rule.html">Rules</a> configured. If any data falls into a Rule's condition then a <a href="../../concepts/recommendation/recommendation-alert.html">Recommendation Alert</a> is created. A Recommendation Alert notifies specific users of pending issues or dangers associated with the data and allows them to act upon them.</p>
-<p>{% hint style=&quot;info&quot; %}
-It is recommended that you read the article listed below to improve your understanding of Recommendations.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you read the article listed below to improve your understanding of Recommendations.</p>
 <ul>
-<li><a href="../../concepts/recommendation/">Recommendation</a>
-{% endhint %}</li>
+<li><a href="../../concepts/recommendation/">Recommendation</a></li>
 </ul>
+</div>
 <h2 id="manage-recommendations-1">Manage Recommendations</h2>
 <p>To access the Recommendation management page, follow the steps below:</p>
 <ol>
 <li>In the App Designer, click the <em>Recommendations</em> button in the left-hand menu.</li>
 <li>Click the <em>Manage Recommendations</em> button.</li>
 </ol>
-<p>{% hint style=&quot;info&quot; %}
-If you do not have the right to view Recommendation Alerts, the Recommendation Alerts grid will not be shown and the second step can be skipped.
-{% endhint %}</p>
-<p>![](/docs/images/image (1491).png&gt;)</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you do not have the right to view Recommendation Alerts, the Recommendation Alerts grid will not be shown and the second step can be skipped.</p>
+</div>
+<p><img src="../../images/image%20(1491).png" alt=""></p>
 <h2 id="create-a-recommendation">Create a Recommendation</h2>
 <p>To create a new Recommendation, follow the steps below after navigating to the Recommendation management page:</p>
 <ol>
@@ -111,20 +113,26 @@ If you do not have the right to view Recommendation Alerts, the Recommendation A
 <li>Specify a name for your new Recommendation.</li>
 <li>Select or create a new Category.</li>
 </ol>
-<p>![](/docs/images/Recommendations - Manage Recommendations - Create Recommendation.png&gt;)</p>
+<p><img src="../../images/Recommendations%20-%20Manage%20Recommendations%20-%20Create%20Recommendation.png" alt=""></p>
 <p>a. Click the Plus button.</p>
-<p>![](/docs/images/Recommendations - Manage Recommendations - Create Recommendation 2.png&gt;)</p>
+<p><img src="../../images/Recommendations%20-%20Manage%20Recommendations%20-%20Create%20Recommendation%202.png" alt=""></p>
 <p>b. Specify the Name.</p>
 <p>c. Specify the Score Factor for Category</p>
 <p>c. Click Save.</p>
-<p>![](/docs/images/Recommendations - Manage Recommendations - Create Recommendation 3 (1).png&gt;)</p>
-<p>4. Specify the Score Factor for the Recommendation</p>
-<p>5. Choose a Data Stream to receive data from</p>
-<p>6. Click Save</p>
-<p>![](/docs/images/Recommendations - Manage Recommendations - Create Recommendation 4.png&gt;)</p>
-<p>{% hint style=&quot;info&quot; %}
-A Recommendation needs Rules. <a href="create-rules.html#create-a-rule">See the Manage Rules article to find out how to create a Rule</a>.
-{% endhint %}</p>
+<p><img src="../../images/Recommendations%20-%20Manage%20Recommendations%20-%20Create%20Recommendation%203%20(1).png" alt=""></p>
+<ol start="4">
+<li><p>Specify the Score Factor for the Recommendation</p>
+</li>
+<li><p>Choose a Data Stream to receive data from</p>
+</li>
+<li><p>Click Save</p>
+</li>
+</ol>
+<p><img src="../../images/Recommendations%20-%20Manage%20Recommendations%20-%20Create%20Recommendation%204.png" alt=""></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A Recommendation needs Rules. <a href="create-rules.html#create-a-rule">See the Manage Rules article to find out how to create a Rule</a>.</p>
+</div>
 <h2 id="view-recommendation-timeline">View Recommendation Timeline</h2>
 <p>The Timeline shows the changes that occur when details in the recommendation is being edited. Follow the steps below to view the timeline:</p>
 <ol>
@@ -132,8 +140,8 @@ A Recommendation needs Rules. <a href="create-rules.html#create-a-rule">See the 
 <li>Click More</li>
 <li>Click Timeline</li>
 </ol>
-<figure><img src="/docs/images/Recommendations - Manage Recommendations - View Recommendation.png" alt=""><figcaption></figcaption></figure>
-<figure><img src="/docs/images/Recommendations - Manage Recommendations - View Recommendation 2.png" alt=""><figcaption></figcaption></figure>
+<p><img src="../../images/Recommendations%20-%20Manage%20Recommendations%20-%20View%20Recommendation.png" alt=""></p>
+<p><img src="../../images/Recommendations%20-%20Manage%20Recommendations%20-%20View%20Recommendation%202.png" alt=""></p>
 <h2 id="delete-a-recommendation">Delete a Recommendation</h2>
 <p>To delete an existing Recommendation, follow the steps below:</p>
 <ol>
@@ -141,15 +149,19 @@ A Recommendation needs Rules. <a href="create-rules.html#create-a-rule">See the 
 <li>Hover over More.</li>
 <li>Click the Delete button.</li>
 </ol>
-<p>![](/docs/images/image (1115).png&gt;)</p>
-<p>4. Confirm the action.</p>
-<p>![](/docs/images/image (1279).png&gt;)</p>
-<p>{% hint style=&quot;info&quot; %}
-Deleting a Recommendation will not permanently delete it or any Recommendation Alerts generated by it. Deletion can be undone or made permanent from <a href="../../concepts/recommendation/deleted-items.html">Deleted Items</a>.
-{% endhint %}</p>
+<p><img src="../../images/image%20(1115).png" alt=""></p>
+<ol start="4">
+<li>Confirm the action.</li>
+</ol>
+<p><img src="../../images/image%20(1279).png" alt=""></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Deleting a Recommendation will not permanently delete it or any Recommendation Alerts generated by it. Deletion can be undone or made permanent from <a href="../../concepts/recommendation/deleted-items.html">Deleted Items</a>.</p>
+</div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="create-rules.html">How to Manage Rules</a></li>
+<li><a href="manage-categories.html">How to Manage Categories</a></li>
 <li><a href="subscribe-to-notifications.html">How to Subscribe to Notifications</a></li>
 <li><a href="manage-forms.html">How to Manage Forms</a></li>
 <li><a href="manage-variables.html">How to Manage Variables</a></li>

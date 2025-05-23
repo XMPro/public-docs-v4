@@ -10087,6 +10087,106 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Manage Categories - Create Category 1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Manage Categories - Create Category 1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Manage Category - Category Timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Manage Category - Category Timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Manage Category - Delete Category 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Manage Category - Delete Category 2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Manage Category - Delete Category.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Manage Category - Delete Category.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 3 (1).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 3 (1).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation 2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Theme_1.png",
       "output": {
         "resource": {
@@ -12537,10 +12637,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image (1115).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1115).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image (1153).png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image (1153).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image (1279).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1279).png"
         }
       },
       "version": ""
@@ -12557,10 +12677,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image (1491).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1491).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image (1765).png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image (1765).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image (953).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (953).png"
         }
       },
       "version": ""
