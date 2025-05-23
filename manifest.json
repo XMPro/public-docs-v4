@@ -11937,6 +11937,136 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/confirm_delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/confirm_delete.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/create_widget_dialog.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/create_widget_dialog.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/delete_widget.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/delete_widget.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/drag_widget.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/drag_widget.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/export_file_key.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/export_file_key.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/export_widgets_select.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/export_widgets_select.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/import_widgets_dialog.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/import_widgets_dialog.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/imported_widgets_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/imported_widgets_list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/new_widget_created.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/new_widget_created.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/select_blocks.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/select_blocks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/select_widgets_import.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/select_widgets_import.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/widget_in_toolbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/widget_in_toolbox.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/widgets/widget_on_canvas.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/widgets/widget_on_canvas.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/beta_icon.png",
       "output": {
         "resource": {
