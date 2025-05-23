@@ -10137,6 +10137,106 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/app_edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/app_edit.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/conn_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/conn_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/connections/data_stream_connections.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/connections/data_stream_connections.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/datasources/datasources_1.png",
       "output": {
         "resource": {
