@@ -10347,6 +10347,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/app_editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/app_editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/create_datasource.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/create_datasource.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/datasources/datasources_1.png",
       "output": {
         "resource": {
@@ -10491,6 +10511,86 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/apps/datasources/datasources_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/delete_app_editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/delete_app_editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/delete_datasource.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/delete_datasource.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/delete_open_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/delete_open_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/edit_app_editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/edit_app_editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/edit_datasource.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/edit_datasource.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/edit_open_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/edit_open_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/open_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/open_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/datasources/primary_key.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/datasources/primary_key.png"
         }
       },
       "version": ""
