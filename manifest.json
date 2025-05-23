@@ -10827,6 +10827,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/page-data/page_data_add.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/page-data/page_data_add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/page-data/page_data_example.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/page-data/page_data_example.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/page-data/page_data_remove.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/page-data/page_data_remove.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/pages/pages_1.png",
       "output": {
         "resource": {
