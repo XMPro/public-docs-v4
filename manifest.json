@@ -9937,6 +9937,236 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_11.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_13.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_14.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_15.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_15.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Files_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Files_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Theme_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Theme_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/What_is_XMPro_Search_Light.png",
       "output": {
         "resource": {
@@ -12301,6 +12531,36 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/free_trial.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image (1153).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1153).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image (1403).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1403).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image (1765).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1765).png"
         }
       },
       "version": ""
