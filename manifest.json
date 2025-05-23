@@ -10097,6 +10097,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/chart-drilldown/chart_drilldown_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/datasources/datasources_1.png",
       "output": {
         "resource": {
@@ -10891,6 +10931,176 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/apps/pages/pages_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/app_edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/app_edit.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/param_create.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/param_create.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_11.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_13.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_14.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_15.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_15.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/parameters/params_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/parameters/params_9.png"
         }
       },
       "version": ""
