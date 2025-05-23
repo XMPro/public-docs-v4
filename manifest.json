@@ -10627,6 +10627,166 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/app_link.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/app_link.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/backurl_1-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/backurl_1-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/backurl_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/backurl_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/backurl_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/backurl_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_11.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/nav_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/nav_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/navigation/page_link.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/navigation/page_link.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/pages/pages_1.png",
       "output": {
         "resource": {
