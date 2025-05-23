@@ -10187,6 +10187,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Theme_1.png",
       "output": {
         "resource": {
@@ -12661,6 +12711,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image (1279).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image (1310).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image (1310).png"
         }
       },
       "version": ""
