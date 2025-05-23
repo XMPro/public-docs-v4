@@ -10597,6 +10597,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/dynamic-properties/dynamic_props_binding.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/dynamic-properties/dynamic_props_binding.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/dynamic-properties/dynamic_props_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/dynamic-properties/dynamic_props_icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/flex/flex_1.png",
       "output": {
         "resource": {
