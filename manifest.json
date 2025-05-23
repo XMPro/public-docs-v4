@@ -10617,6 +10617,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/expression-properties/build_expression.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/expression-properties/build_expression.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/expression-properties/expression_props_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/expression-properties/expression_props_icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/flex/flex_1.png",
       "output": {
         "resource": {
