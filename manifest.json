@@ -11177,6 +11177,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apps/notes/add_notes.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/notes/add_notes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/notes/open_app_editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/notes/open_app_editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/notes/style_options_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/notes/style_options_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/notes/style_options_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/notes/style_options_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/apps/notes/style_options_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apps/notes/style_options_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/page-data/page_data_add.png",
       "output": {
         "resource": {
