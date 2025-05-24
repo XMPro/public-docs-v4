@@ -1077,16 +1077,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/blocks-toolbox/advanced/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/blocks-toolbox/advanced/README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/blocks-toolbox/advanced/metablock.md",
       "output": {
         ".html": {
@@ -4291,16 +4281,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/blocks-toolbox/layout/toolbar.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/blocks-toolbox/recommendations/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/blocks-toolbox/recommendations/README.html"
         }
       },
       "version": ""
@@ -10687,6 +10667,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/alert-action-enable-focus.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-action-enable-focus.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-action-mark-as-resolved.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-action-mark-as-resolved.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-action-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-action-type.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/alert-analytics.png",
       "output": {
         "resource": {
@@ -10717,10 +10727,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/alert-discussion-functionality.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-discussion-functionality.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/alert-discussion-search-and-send-message.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/alert-discussion-search-and-send-message.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-discussion-summary.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-discussion-summary.gif"
         }
       },
       "version": ""
@@ -10737,6 +10767,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/alert-event-data.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-event-data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/alert-form.png",
       "output": {
         "resource": {
@@ -10747,10 +10787,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/alert-list-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-list-id.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-list-recommendations.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-list-recommendations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/alert-reassign-popup.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/alert-reassign-popup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-survey.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-survey.png"
         }
       },
       "version": ""
@@ -10771,6 +10841,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/alert-triage-instruction.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-triage.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-triage.png"
         }
       },
       "version": ""
@@ -12871,6 +12951,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/apps/widgets/widget_on_canvas.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/autodesk-forge-viewer-img.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/autodesk-forge-viewer-img.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/autodesk-forge-viewer-with-auth-img.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/autodesk-forge-viewer-with-auth-img.png"
         }
       },
       "version": ""
@@ -15337,6 +15437,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/metablock-enhance-chart-display.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/metablock-enhance-chart-display.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/metablock-pump-status-display.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/metablock-pump-status-display.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/moving-toolbar-items.gif",
       "output": {
         "resource": {
@@ -15351,6 +15471,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/nLryP9xJvq.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/navigate-to-url-timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/navigate-to-url-timeline.png"
         }
       },
       "version": ""
@@ -15391,6 +15521,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/publish-unpublish-data-streams.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recommendation-chart.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recommendation-chart.png"
         }
       },
       "version": ""
