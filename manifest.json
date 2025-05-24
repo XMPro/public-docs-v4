@@ -4516,6 +4516,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/concepts/agent/images/Virtual_vs_Non-Virtual.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/concepts/agent/images/Virtual_vs_Non-Virtual.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/concepts/agent/index.md",
       "output": {
