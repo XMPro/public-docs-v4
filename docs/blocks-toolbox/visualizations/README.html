@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Visualizations Blocks | XMPro </title>
+      <title>Visualizations | XMPro </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Visualizations Blocks | XMPro ">
+      <meta name="title" content="Visualizations | XMPro ">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -85,12 +85,13 @@
         </div>
 
         <article data-uid="">
-<h1 id="visualizations-blocks">Visualizations Blocks</h1>
+<h1 id="visualizations">Visualizations</h1>
 
 <p>Visualization blocks in XMPro App Designer provide powerful tools for displaying data in visual formats. These blocks enable you to create charts, maps, gauges, and other visual representations that help users understand complex data at a glance.</p>
-<h2 id="available-visualizations-blocks">Available Visualizations Blocks</h2>
+<h2 id="available-visualizations">Available Visualizations</h2>
 <ul>
 <li><a href="autodesk-forge.html">Autodesk Forge</a> - 3D model viewer powered by Autodesk Forge</li>
+<li><a href="autodesk-forge-1.html">Autodesk Forge (Legacy)</a> - Legacy version of Autodesk Forge visualization</li>
 <li><a href="azure-digital-twin-hierarchy.html">Azure Digital Twin Hierarchy</a> - Hierarchical view of Azure Digital Twins</li>
 <li><a href="bar-gauge.html">Bar Gauge</a> - Visual representation of a value within a range using a bar</li>
 <li><a href="chart.html">Chart</a> - Versatile charting component for various chart types</li>
@@ -99,7 +100,6 @@
 <li><a href="esri-map.html">Esri Map</a> - Geographic mapping using Esri ArcGIS</li>
 <li><a href="image-map.html">Image Map</a> - Interactive image with clickable regions</li>
 <li><a href="linear-gauge.html">Linear Gauge</a> - Visual representation of a value within a range using a linear gauge</li>
-<li><a href="autodesk-forge-1.html">Live Feed</a> - Real-time data feed visualization</li>
 <li><a href="map.html">Map</a> - Geographic mapping component</li>
 <li><a href="pie-chart.html">Pie Chart</a> - Circular chart divided into sectors</li>
 <li><a href="pivot-grid.html">Pivot Grid</a> - Interactive pivot table for data analysis</li>
@@ -111,83 +111,24 @@
 <li><a href="unity.html">Unity</a> - 3D visualization using Unity</li>
 <li><a href="unity-1.html">Unity (Legacy)</a> - Legacy version of Unity visualization</li>
 </ul>
-<h2 id="best-practices-for-using-visualizations-blocks">Best Practices for Using Visualizations Blocks</h2>
+<h2 id="best-practices-for-using-visualizations">Best Practices for Using Visualizations</h2>
 <ol>
-<li><p><strong>Choose the right visualization</strong>: Select the appropriate visualization type based on the data you want to display and the insights you want to convey. For example, use line charts for trends over time, bar charts for comparisons, and pie charts for showing proportions.</p>
+<li><p><strong>Choose the right visualization</strong>: Select the appropriate visualization type based on the data you want to display and the insights you want to convey.</p>
 </li>
-<li><p><strong>Keep it simple</strong>: Avoid cluttering visualizations with unnecessary elements. Focus on the key data points and insights you want to communicate.</p>
+<li><p><strong>Keep it simple</strong>: Avoid cluttering visualizations with unnecessary elements. Focus on the key data points and insights.</p>
 </li>
-<li><p><strong>Use consistent styling</strong>: Maintain consistent colors, fonts, and styles across your visualizations to provide a cohesive user experience.</p>
+<li><p><strong>Use consistent styling</strong>: Maintain consistent colors, fonts, and styles across your visualizations for a cohesive user experience.</p>
 </li>
-<li><p><strong>Provide context</strong>: Include titles, labels, and legends to help users understand what they're looking at. Consider adding brief explanations or annotations for complex visualizations.</p>
+<li><p><strong>Provide context</strong>: Include titles, labels, and legends to help users understand what they're looking at.</p>
 </li>
-<li><p><strong>Enable interactivity</strong>: Where appropriate, enable interactive features such as tooltips, zooming, and filtering to allow users to explore the data in more detail.</p>
+<li><p><strong>Enable interactivity</strong>: Where appropriate, enable interactive features such as tooltips, zooming, and filtering.</p>
 </li>
-<li><p><strong>Optimize for performance</strong>: Be mindful of the amount of data you're visualizing, especially for real-time or large datasets. Consider aggregating or sampling data to maintain performance.</p>
+<li><p><strong>Optimize for performance</strong>: Be mindful of the amount of data you're visualizing, especially for real-time or large datasets.</p>
 </li>
-<li><p><strong>Ensure accessibility</strong>: Make sure your visualizations are accessible to all users, including those with visual impairments. Provide alternative text descriptions and consider color contrast.</p>
+<li><p><strong>Ensure accessibility</strong>: Make sure your visualizations are accessible to all users, including those with visual impairments.</p>
 </li>
 </ol>
-<h2 id="examples">Examples</h2>
-<h3 id="dashboard-with-multiple-visualizations">Dashboard with Multiple Visualizations</h3>
-<pre><code>Box (Dashboard Container)
-├── Layout Grid
-│   ├── Card (Key Metrics)
-│   │   ├── Bar Gauge (Metric 1)
-│   │   ├── Bar Gauge (Metric 2)
-│   │   ├── Bar Gauge (Metric 3)
-│   ├── Card (Trend Analysis)
-│   │   ├── Chart (Line Chart)
-│   │       ├── Series (Data Series 1)
-│   │       ├── Series (Data Series 2)
-│   ├── Card (Distribution)
-│   │   ├── Pie Chart
-│   │       ├── Series (Category Distribution)
-│   ├── Card (Geographic Data)
-│   │   ├── Map
-│   │       ├── Layer (Data Points)
-</code></pre>
-<h3 id="asset-monitoring-dashboard">Asset Monitoring Dashboard</h3>
-<pre><code>Box (Asset Monitoring Container)
-├── Layout Grid
-│   ├── Card (Asset Status)
-│   │   ├── Circular Gauge (Temperature)
-│   │   ├── Circular Gauge (Pressure)
-│   │   ├── Circular Gauge (Vibration)
-│   ├── Card (Performance Trends)
-│   │   ├── Time Series Analysis
-│   │       ├── Series (Temperature Over Time)
-│   │       ├── Series (Pressure Over Time)
-│   │       ├── Series (Vibration Over Time)
-│   ├── Card (Asset Location)
-│   │   ├── Map
-│   │       ├── Layer (Asset Locations)
-│   ├── Card (3D Model)
-│   │   ├── Unity
-│   │       ├── Model (Asset 3D Model)
-</code></pre>
-<h3 id="financial-analysis-dashboard">Financial Analysis Dashboard</h3>
-<pre><code>Box (Financial Analysis Container)
-├── Layout Grid
-│   ├── Card (Financial Summary)
-│   │   ├── Bar Gauge (Revenue vs Target)
-│   │   ├── Bar Gauge (Expenses vs Budget)
-│   │   ├── Bar Gauge (Profit Margin)
-│   ├── Card (Revenue Breakdown)
-│   │   ├── Pie Chart
-│   │       ├── Series (Revenue by Product)
-│   ├── Card (Financial Trends)
-│   │   ├── Chart (Line Chart)
-│   │       ├── Series (Revenue)
-│   │       ├── Series (Expenses)
-│   │       ├── Series (Profit)
-│   ├── Card (Detailed Analysis)
-│   │   ├── Pivot Grid
-│   │       ├── Rows (Product, Region)
-│   │       ├── Columns (Quarter, Month)
-│   │       ├── Values (Revenue, Expenses, Profit)
-</code></pre>
-<p>By effectively using visualization blocks, you can create powerful dashboards and reports that help users gain insights from complex data. These visualizations can support decision-making, monitoring, and analysis across a wide range of business scenarios.</p>
+<p>By effectively using visualization blocks, you can create powerful dashboards and reports that help users gain insights from complex data and support decision-making across a wide range of business scenarios.</p>
 
 </article>
 

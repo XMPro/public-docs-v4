@@ -12957,6 +12957,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/autodesk-1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/autodesk-1.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/autodesk-forge-viewer-img.png",
       "output": {
         "resource": {
@@ -15517,6 +15527,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/power-bi-1.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/power-bi-1.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/publish-unpublish-data-streams.png",
       "output": {
         "resource": {
@@ -15841,6 +15861,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/wouj0j6m7o.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/xBwzL8XAze.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/xBwzL8XAze.gif"
         }
       },
       "version": ""
