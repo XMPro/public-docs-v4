@@ -12897,6 +12897,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/encrypt-value.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/encrypt-value.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/end-to-end-use-case-configure-post-pump-overview-xmpro-ap-to-cache-20-rows.png",
       "output": {
         "resource": {
@@ -14517,6 +14527,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/search-variables.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/search-variables.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/set-log-level.png",
       "output": {
         "resource": {
@@ -14571,6 +14591,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/untitled-project.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/using-a-variable-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/using-a-variable-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/using-a-variable-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/using-a-variable-2.png"
         }
       },
       "version": ""
