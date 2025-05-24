@@ -89,26 +89,28 @@
 
 <p>An Action Request is a mechanism to trigger actions in another system while attending to an Alert, such as updating data, sending notifications, or additional processing.</p>
 <p>This is made possible with the <a href="https://app.gitbook.com/o/-MZASoMaVZCmWsNG58Xo/s/W7YjChsX4E0ykdadpG6O/">Action Request Agents</a> in the Data Stream Designer.</p>
-<p>{% hint style=&quot;info&quot; %}
-It is recommended that you read this documentation along with the articles listed below to improve your understanding of how action requests work.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you read this documentation along with the articles listed below to improve your understanding of how action requests work.</p>
 <ul>
 <li><a href="recommendation-alert.html">Recommendation Alert</a></li>
 <li><a href="form.html">Form</a></li>
 <li><a href="../data-stream/">Data Stream</a></li>
-<li><a href="../data-stream/stream-object-configuration.html">Stream Object Configuration</a>
-{% endhint %}</li>
+<li><a href="../data-stream/stream-object-configuration.html">Stream Object Configuration</a></li>
 </ul>
+</div>
 <h2 id="open-an-action-request">Open an Action Request</h2>
 <p>An Action Request is opened when a user clicks a button on a user-defined Form in a Recommendation Alert. The Action Request includes data derived from the Alert, Form, and Button clicked.</p>
-<p>{% hint style=&quot;info&quot; %}
-If you add a button to a Form, ensure there is a corresponding Data Stream to process the Action Requests - or they will remain open and unprocessed.
-{% endhint %}</p>
-<p>![](/docs/images/image (681).png&gt;)</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you add a button to a Form, ensure there is a corresponding Data Stream to process the Action Requests - or they will remain open and unprocessed.</p>
+</div>
+<p><img src="../../images/image-681.png" alt="Action Request Form Button"></p>
 <h2 id="process-an-action-request">Process an Action Request</h2>
 <p>The Read Action Request Agent polls App Designer for new Action Requests for the specified Recommendation and passes that data to the next Stream Object in the Data Stream for processing.</p>
 <p>The Read Action Request Agent also sends all open Action Requests when the Data Stream is first published - so that any Action Requests opened while the stream was not running can be processed.</p>
 <p>The Close Action Request Agent closes Action Requests from upstream. Processed Action Requests must be closed, or they will be reprocessed if the Data Stream is restarted.</p>
-<p>![](/docs/images/image (1070).png&gt;)</p>
+<p><img src="../../images/image-1070.png" alt="Action Request Data Stream"></p>
 <h2 id="outputs-of-the-read-action-request-stream-object">Outputs of the Read Action Request Stream Object</h2>
 <table>
 <thead>

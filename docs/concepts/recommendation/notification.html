@@ -89,7 +89,7 @@
 
 <p>A Notification defines how users will be notified when a <a href="recommendation-alert.html">Recommendation Alert</a> occurs. A Recommendation Alert occurs when a <a href="rule.html">Rule</a> condition is met and triggers the Alert to happen. Notifications are set for a recommendation Rule. Each Rule can have multiple Notifications, each based on different conditions that can trigger an Alert.</p>
 <p>You can add a new Notification by pressing the <em>plus</em> button on the top right of the notifications.</p>
-<p><img src="/docs/images/_1.png" alt=""></p>
+<p><img src="../../images/add-notification-button.png" alt="Add Notification Button"></p>
 <h2 id="triggers">Triggers</h2>
 <p>Notifications have several triggers. When they happen, will notify everyone who is <a href="notification.html#subscribe">subscribed</a> to the notification. The triggers are as follows:</p>
 <h3 id="new-recommendation">New Recommendation</h3>
@@ -103,26 +103,28 @@
 <p>When &quot;<strong>Send a notification after</strong>&quot; is checked, subscribers will be notified the specified amount of time after a Recommendation Alert is created from the same Rule if the Alert has not been resolved.</p>
 <p>When &quot;<strong>And repeat notification</strong>&quot; is checked, subscribers will be notified the specified number of times, waiting the specified amount of time between each notification, if a Recommendation Alert has still not been resolved.</p>
 <p>For example, in the image below, subscribed users will be notified once every hour for two hours that a Recommendation Alert has not been created and hasn't been resolved.</p>
-<p><img src="/docs/images/_2.png" alt=""></p>
+<p><img src="../../images/time-pending-configuration.png" alt="Time Pending Configuration"></p>
 <h2 id="channels">Channels</h2>
 <h3 id="email">Email</h3>
 <p>When a trigger occurs, everyone who has subscribed and has entered a correct email address in their profile will receive an email.</p>
 <h3 id="sms">SMS</h3>
 <p>When a trigger occurs, everyone who has subscribed and has entered a correct mobile phone number (in international format) in their profile will receive an email.</p>
-<p>{% hint style=&quot;info&quot; %}
-The email and mobile number that you use to receive notifications can be changed when <a href="../../administration/users/profile.html">updating the user settings</a>.
-{% endhint %}</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The email and mobile number that you use to receive notifications can be changed when <a href="../../administration/users/profile.html">updating the user settings</a>.</p>
+</div>
 <h2 id="notification-template">Notification Template</h2>
 <p>When a <a href="recommendation-alert.html">Recommendation Alert</a> is triggered by a critical event, the user can receive a notification via text message or email. The notification contains a message that notifies the user of the Recommendation Alert. You can choose to create a custom message template for when a notification is triggered, or use a default template provided.</p>
-<p>{% hint style=&quot;info&quot; %}
-To learn more about Notification Templates, visit the <a href="../../how-tos/recommendations/manage-notification-templates.html">How to Manage Notification Templates article</a>.
-{% endhint %}</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To learn more about Notification Templates, visit the <a href="../../how-tos/recommendations/manage-notification-templates.html">How to Manage Notification Templates article</a>.</p>
+</div>
 <h2 id="subscribe">Subscribe</h2>
 <p>Notification Settings are available only if the user has run access.</p>
 <p>Notification Settings are managed individually by each User. To manage your subscriptions, hover over your user profile in the top-right of the page in App Designer, and click &quot;Notification Settings&quot;.</p>
 <p>By default, you will not be subscribed to any Notifications. You can subscribe to an individual Notification, Rule, Recommendation, or Category by checking it in the list and saving.</p>
 <p>If an item is checked, you are subscribed to all Notifications — as well as Notifications that may be created in the future — within the item, and you will be notified when Notifications are triggered.</p>
-<p>![](/docs/images/image (731).png&gt;)</p>
+<p><img src="../../images/image-731.png" alt="Notification Settings"></p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../../how-tos/recommendations/manage-notifications.html">How to Create and Manage Notifications</a></li>

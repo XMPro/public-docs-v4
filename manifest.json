@@ -10347,6 +10347,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/add-notification-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/add-notification-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/agent/agent-properties.png",
       "output": {
         "resource": {
@@ -10381,6 +10391,96 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/agent/searching-for-agent.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-analytics.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-analytics.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-basic-information.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-basic-information.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-discussion-box-mention-user.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-discussion-box-mention-user.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-discussion-search-and-send-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-discussion-search-and-send-message.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-discussion.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-discussion.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-form.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-form.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-reassign-popup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-reassign-popup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/alert-triage-instruction.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/alert-triage-instruction.png"
         }
       },
       "version": ""
@@ -12727,6 +12827,106 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/fig-1-recommendation-factor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-1-recommendation-factor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-10-recommendation-and-rule-timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-10-recommendation-and-rule-timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-2-category-factor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-2-category-factor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-3-rule-factor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-3-rule-factor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-4-optional-factor.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-4-optional-factor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-5-recommendation-alerts-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-5-recommendation-alerts-list.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-6-step-1-of-3-where-to-find-open-manage-recommendations.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-6-step-1-of-3-where-to-find-open-manage-recommendations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-7-step-2-of-3-where-to-find-and-step-3-of-3-where-to-find-score-factor-matrix.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-7-step-2-of-3-where-to-find-and-step-3-of-3-where-to-find-score-factor-matrix.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-8-score-factor-matrix.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-8-score-factor-matrix.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/fig-9-category-timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/fig-9-category-timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/free_trial.png",
       "output": {
         "resource": {
@@ -12827,10 +13027,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1070.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1070.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1105.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1105.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-111.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-111.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1151.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1151.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1230.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1230.png"
         }
       },
       "version": ""
@@ -12847,6 +13087,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1337.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1337.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1433.png",
       "output": {
         "resource": {
@@ -12857,10 +13107,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1441.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1441.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1520.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1520.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1559.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1559.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1604.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1604.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1614.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1614.png"
         }
       },
       "version": ""
@@ -12897,10 +13187,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1748.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1748.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-176.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-176.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1850.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1850.png"
         }
       },
       "version": ""
@@ -12917,10 +13227,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-20.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-20.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-288.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-288.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-304.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-304.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-309.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-309.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-379.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-379.png"
         }
       },
       "version": ""
@@ -12937,10 +13287,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-583.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-583.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-60.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-60.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-604.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-604.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-607.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-607.png"
         }
       },
       "version": ""
@@ -12957,10 +13337,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-681.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-681.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-682.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-682.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-722.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-722.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-731.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-731.png"
         }
       },
       "version": ""
@@ -12997,10 +13407,70 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-78.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-78.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-812.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-812.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-844.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-844.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-86.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-86.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-898.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-898.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-912.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-912.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-969.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-969.png"
         }
       },
       "version": ""
@@ -13837,6 +14307,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/manage-recommendations.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-recommendations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/nLryP9xJvq.gif",
       "output": {
         "resource": {
@@ -13851,6 +14331,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/publish-unpublish-data-streams.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recommendations-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recommendations-menu.png"
         }
       },
       "version": ""
@@ -13887,6 +14377,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/search-reco-alerts.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/search-reco-alerts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/set-log-level.png",
       "output": {
         "resource": {
@@ -13911,6 +14411,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/stream-host-rank-example-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/time-pending-configuration.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/time-pending-configuration.png"
         }
       },
       "version": ""
@@ -68377,6 +68887,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/MIGRATION-TRACKER.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/RECOMMENDATION-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/RECOMMENDATION-MIGRATION-PLAN.html"
         }
       },
       "version": ""
