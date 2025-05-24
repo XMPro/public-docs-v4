@@ -78,7 +78,12 @@
 <h2 id="setup">Setup</h2>
 <ol>
 <li>Clone the repository and ensure you're on the correct branch (<code>20290-migrate-public-docs</code>)</li>
-<li>Use the <code>/project:public-documents:migrate-page</code> custom slash command which contains detailed instructions on how to convert GitBook syntax to DocFX</li>
+<li>Use the custom slash commands for migration:
+<ul>
+<li><code>/project:public-documents:migrate-page</code> for individual pages</li>
+<li><code>/project:public-documents:migrate-folder</code> for entire folders</li>
+</ul>
+</li>
 <li>Start the DocFX site locally to preview changes:
 <pre><code class="lang-bash">cd /path/to/public-documentation
 docfx docfx.json --serve
@@ -93,14 +98,26 @@ This will build the site and start a local web server at http://localhost:8080</
 <li>Add your name to the section you're working on</li>
 <li>Commit this change to avoid duplicate work by other contributors</li>
 </ol>
-<h3 id="2-page-migration-process">2. Page Migration Process</h3>
+<h3 id="2-migration-process">2. Migration Process</h3>
+<p><strong>For Individual Pages:</strong>
+Use the <code>/project:public-documents:migrate-page</code> slash command for single file migration.</p>
+<p><strong>For Entire Folders:</strong>
+Use the <code>/project:public-documents:migrate-folder</code> slash command to process all markdown files in a folder automatically. This command:</p>
+<ul>
+<li>Processes all <code>.md</code> files in the specified folder</li>
+<li>Creates kebab-case copies of all images (PNG, JPG, GIF)</li>
+<li>Applies full GitBook to DocFX conversion</li>
+<li>Runs DocFX build verification</li>
+<li>Stages changes in git</li>
+<li>Provides progress tracking and resume capability</li>
+</ul>
+<p><strong>Manual Process (when commands aren't suitable):</strong></p>
 <p>For each page in your assigned section:</p>
 <ol>
 <li><p><strong>Compare the Source and Destination Files</strong></p>
 <ul>
 <li>Source: <code>/gitbook/docs/path/to/file.md</code></li>
 <li>Destination: <code>/docs/path/to/file.md</code></li>
-<li>Use the <code>/project:public-documents:migrate-page</code> slash command for automated migration</li>
 </ul>
 </li>
 <li><p><strong>Identify and Fix Differences</strong></p>
@@ -216,12 +233,19 @@ docfx docfx.json --serve
 </ul>
 <h2 id="helpful-tips">Helpful Tips</h2>
 <ol>
-<li>Use the <code>/project:public-documents:migrate-page</code> slash command as your reference</li>
-<li>Always run <code>docfx docfx.json</code> after making changes</li>
+<li><strong>Use the custom slash commands first:</strong>
+<ul>
+<li><code>/project:public-documents:migrate-folder</code> for bulk migration of entire sections</li>
+<li><code>/project:public-documents:migrate-page</code> for individual pages or fine-tuning</li>
+</ul>
+</li>
+<li>Always run <code>docfx docfx.json</code> after making changes (automated in slash commands)</li>
 <li>Use <code>docfx docfx.json --serve</code> to continuously preview changes as you work</li>
 <li>Make focused commits for each page or logical group of pages</li>
 <li>When in doubt, compare with already migrated pages for examples</li>
 <li>If you encounter errors in the local server, check the console output for details</li>
+<li>The migrate-folder command handles image kebab-case conversion automatically</li>
+<li>Both commands include git staging - review changes before committing</li>
 </ol>
 <h2 id="contact">Contact</h2>
 <p>If you have questions or encounter issues not covered in this guide, contact the project lead for assistance.</p>
