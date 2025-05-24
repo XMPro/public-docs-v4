@@ -10487,6 +10487,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/all-employees-business-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/all-employees-business-role.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/apps_1.png",
       "output": {
         "resource": {
@@ -12577,6 +12587,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/business-roles-management.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/business-roles-management.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/change-business-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/change-business-role.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/collection-configuration.png",
       "output": {
         "resource": {
@@ -14357,6 +14387,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/manage-access-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-access-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/manage-access-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-access-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/manage-access-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-access-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/manage-recommendations.png",
       "output": {
         "resource": {
@@ -14411,6 +14471,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/remote-receivers-publishers-example-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/run-access-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/run-access-example.png"
         }
       },
       "version": ""
