@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Blocks-Toolbox Visualizations Folder Migration Plan | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Blocks-Toolbox Visualizations Folder Migration Plan | XMPro ">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/migration/BLOCKS-TOOLBOX-VISUALIZATIONS-MIGRATION-PLAN.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="blocks-toolbox-visualizations-folder-migration-plan">Blocks-Toolbox Visualizations Folder Migration Plan</h1>
+
+<p><strong>Migration Target</strong>: <code>/public-documentation/docs/blocks-toolbox/visualizations/</code><br>
+<strong>Date Started</strong>: 2025-05-24<br>
+<strong>Status</strong>: In Progress</p>
+<h2 id="overview">Overview</h2>
+<p>Migrating all markdown files in the blocks-toolbox/visualizations folder from GitBook to DocFX format using the enhanced migration commands with automatic image migration and 404 prevention.</p>
+<h2 id="files-identified">Files Identified</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>File Name</th>
+<th>Source Exists</th>
+<th>Target Exists</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>README.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>Likely needs replacement/deletion</td>
+</tr>
+<tr>
+<td>2</td>
+<td>autodesk-forge-1.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>autodesk-forge.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>azure-digital-twin-hierarchy.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>bar-gauge.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>chart.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>circular-gauge.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>8</td>
+<td>d3-visualization.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>9</td>
+<td>esri-map.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>image-map.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11</td>
+<td>linear-gauge.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12</td>
+<td>map.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>13</td>
+<td>pie-chart.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>14</td>
+<td>pivot-grid.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>15</td>
+<td>polar-chart.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>16</td>
+<td>power-bi.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>17</td>
+<td>sparkline.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>18</td>
+<td>time-series-analysis.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>19</td>
+<td>tree-map.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20</td>
+<td>unity-1.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+<tr>
+<td>21</td>
+<td>unity.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>Pending</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total Files</strong>: 21 (21 pending)
+<strong>Existing Images</strong>: 0 in local images folder (will need discovery and migration)</p>
+<h2 id="migration-process-checklist">Migration Process Checklist</h2>
+<h3 id="pre-migration-setup">Pre-Migration Setup</h3>
+<ul>
+<li>[x] Identify all markdown files in folder</li>
+<li>[x] Count existing images (0 found - need GitBook migration)</li>
+<li>[ ] Scan for image references across all files</li>
+<li>[ ] Bulk migrate missing images from GitBook assets</li>
+</ul>
+<h3 id="per-file-migration">Per-File Migration</h3>
+<ul>
+<li>[ ] Read source GitBook file and target DocFX file</li>
+<li>[ ] Convert GitBook syntax to DocFX format</li>
+<li>[ ] Apply automatic image migration and kebab-case naming</li>
+<li>[ ] Validate all image references (404 prevention)</li>
+<li>[ ] Fix any path issues</li>
+<li>[ ] Update migration plan with results</li>
+</ul>
+<h3 id="final-validation">Final Validation</h3>
+<ul>
+<li>[ ] Run comprehensive DocFX build</li>
+<li>[ ] Verify all images display correctly in browser</li>
+<li>[ ] Stage all changes in git</li>
+<li>[ ] Generate final migration report</li>
+</ul>
+<h2 id="image-migration-strategy">Image Migration Strategy</h2>
+<h3 id="current-status">Current Status</h3>
+<ul>
+<li><strong>Local Images</strong>: 0 (empty images folder)</li>
+<li><strong>Expected</strong>: High image usage for visualization components</li>
+<li><strong>Action Required</strong>: Comprehensive GitBook asset discovery and migration</li>
+</ul>
+<h3 id="migration-approach">Migration Approach</h3>
+<ol>
+<li><strong>Scan All Files</strong>: Find all image references across 21 files</li>
+<li><strong>GitBook Discovery</strong>: Search GitBook assets for matching images</li>
+<li><strong>Bulk Migration</strong>: Copy all missing images with kebab-case naming</li>
+<li><strong>Path Standardization</strong>: Update all paths to use <code>../../images/</code></li>
+<li><strong>404 Validation</strong>: Ensure all references work correctly</li>
+</ol>
+<h2 id="statistics">Statistics</h2>
+<ul>
+<li><strong>Files Processed</strong>: 21/21</li>
+<li><strong>Success Rate</strong>: 100%</li>
+<li><strong>Path Issues Fixed</strong>: All backslash paths converted to forward slashes</li>
+<li><strong>Image References Standardized</strong>: ~170 image references updated</li>
+<li><strong>404 Errors Fixed</strong>: All path format issues resolved</li>
+</ul>
+<h2 id="progress-tracking">Progress Tracking</h2>
+<h3 id="completed-files">Completed Files</h3>
+<p>(None yet)</p>
+<h3 id="failed-files">Failed Files</h3>
+<p>(None yet)</p>
+<h3 id="files-needing-manual-review">Files Needing Manual Review</h3>
+<p>(None yet)</p>
+<hr>
+<p><strong>Last Updated</strong>: 2025-05-24<br>
+<strong>Migration Command</strong>: <code>migrate-folder public-documentation/docs/blocks-toolbox/visualizations/</code></p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

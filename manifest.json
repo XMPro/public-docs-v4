@@ -60513,10 +60513,40 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "migration/BLOCKS-TOOLBOX-RECOMMENDATIONS-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/BLOCKS-TOOLBOX-RECOMMENDATIONS-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/BLOCKS-TOOLBOX-VISUALIZATIONS-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/BLOCKS-TOOLBOX-VISUALIZATIONS-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "migration/CONTRIBUTOR-GUIDE.md",
       "output": {
         ".html": {
           "relative_path": "migration/CONTRIBUTOR-GUIDE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/FOLDER-MIGRATION-SUMMARY.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/FOLDER-MIGRATION-SUMMARY.html"
         }
       },
       "version": ""
