@@ -5937,16 +5937,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/concepts/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/concepts/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/concepts/insights/data-delivery-insights.md",
       "output": {
         ".html": {
@@ -10497,6 +10487,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/app-data-stream-indicators.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/app-data-stream-indicators.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/apps_1.png",
       "output": {
         "resource": {
@@ -12597,6 +12597,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/category-reordering-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/category-reordering-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/category-reordering-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/category-reordering-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/change-business-role.png",
       "output": {
         "resource": {
@@ -12611,6 +12631,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/collection-configuration.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/concepts-landing-page.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/concepts-landing-page.png"
         }
       },
       "version": ""
@@ -12801,6 +12831,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/data-streams/Logs - timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/default-category.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/default-category.png"
         }
       },
       "version": ""
@@ -14397,6 +14437,86 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/landing-page-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-page-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-page-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-page-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-page.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-pages-fave-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-pages-fave-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-pages-fave-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-pages-fave-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-pages-fave-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-pages-fave-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-pages-fave-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-pages-fave-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/landing-pages-fave-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/landing-pages-fave-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/manage-access-1.png",
       "output": {
         "resource": {
@@ -14491,6 +14611,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/run-access-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/search-categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/search-categories.png"
         }
       },
       "version": ""
@@ -14621,6 +14751,66 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/variables-example.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/version-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/version-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/version-copying-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/version-copying-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/version-copying-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/version-copying-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/version-deleting.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/version-deleting.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/version-latest.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/version-latest.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/version-published.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/version-published.png"
         }
       },
       "version": ""
