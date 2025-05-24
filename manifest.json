@@ -67803,16 +67803,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration/MIGRATION-FUNCTION.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/MIGRATION-FUNCTION.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "migration/MIGRATION-TRACKER.md",
       "output": {
         ".html": {

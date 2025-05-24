@@ -78,7 +78,7 @@
 <h2 id="setup">Setup</h2>
 <ol>
 <li>Clone the repository and ensure you're on the correct branch (<code>20290-migrate-public-docs</code>)</li>
-<li>Familiarize yourself with the <a href="MIGRATION-FUNCTION.html">MIGRATION-FUNCTION.md</a> document which contains detailed instructions on how to convert GitBook syntax to DocFX</li>
+<li>Use the <code>/project:public-documents:migrate-page</code> custom slash command which contains detailed instructions on how to convert GitBook syntax to DocFX</li>
 <li>Start the DocFX site locally to preview changes:
 <pre><code class="lang-bash">cd /path/to/public-documentation
 docfx docfx.json --serve
@@ -100,7 +100,7 @@ This will build the site and start a local web server at http://localhost:8080</
 <ul>
 <li>Source: <code>/gitbook/docs/path/to/file.md</code></li>
 <li>Destination: <code>/docs/path/to/file.md</code></li>
-<li>Use <code>MigrateContent(sourcePath, destinationPath)</code> command if available</li>
+<li>Use the <code>/project:public-documents:migrate-page</code> slash command for automated migration</li>
 </ul>
 </li>
 <li><p><strong>Identify and Fix Differences</strong></p>
@@ -216,7 +216,7 @@ docfx docfx.json --serve
 </ul>
 <h2 id="helpful-tips">Helpful Tips</h2>
 <ol>
-<li>Use the <a href="MIGRATION-FUNCTION.html">MIGRATION-FUNCTION.md</a> as your reference</li>
+<li>Use the <code>/project:public-documents:migrate-page</code> slash command as your reference</li>
 <li>Always run <code>docfx docfx.json</code> after making changes</li>
 <li>Use <code>docfx docfx.json --serve</code> to continuously preview changes as you work</li>
 <li>Make focused commits for each page or logical group of pages</li>
