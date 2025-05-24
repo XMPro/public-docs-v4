@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Blocks-Toolbox Layout Folder Migration Plan | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Blocks-Toolbox Layout Folder Migration Plan | XMPro ">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/migration/BLOCKS-TOOLBOX-LAYOUT-MIGRATION-PLAN.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="blocks-toolbox-layout-folder-migration-plan">Blocks-Toolbox Layout Folder Migration Plan</h1>
+
+<p><strong>Migration Target</strong>: <code>/public-documentation/docs/blocks-toolbox/layout/</code><br>
+<strong>Date Started</strong>: 2025-05-24<br>
+<strong>Status</strong>: In Progress</p>
+<h2 id="overview">Overview</h2>
+<p>Migrating all markdown files in the blocks-toolbox/layout folder from GitBook to DocFX format. This includes comprehensive syntax conversion, image management, and 404 prevention.</p>
+<h2 id="files-identified">Files Identified</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>File Name</th>
+<th>Source Exists</th>
+<th>Target Exists</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>accordion.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>Images converted to kebab-case</td>
+</tr>
+<tr>
+<td>2</td>
+<td>box-and-data-repeater-box.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>Previously migrated</td>
+</tr>
+<tr>
+<td>3</td>
+<td>card-and-content-card.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>Image migrated and path fixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>field-and-fieldset.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>Images already kebab-case</td>
+</tr>
+<tr>
+<td>5</td>
+<td>horizontal-and-vertical-stacked-layouts.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>6 images converted to kebab-case</td>
+</tr>
+<tr>
+<td>6</td>
+<td>layout-grid.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>✅ 404 errors fixed - images migrated</td>
+</tr>
+<tr>
+<td>7</td>
+<td>menu.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>7 image paths fixed</td>
+</tr>
+<tr>
+<td>8</td>
+<td>scroll-box.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>✅ 404 errors fixed - 3 GIFs migrated</td>
+</tr>
+<tr>
+<td>9</td>
+<td>tabs.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>✅ 404 errors fixed - 8 images migrated</td>
+</tr>
+<tr>
+<td>10</td>
+<td>templated-list.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>✅ 404 errors fixed - 9 images migrated</td>
+</tr>
+<tr>
+<td>11</td>
+<td>toolbar.md</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ Completed</td>
+<td>✅ 404 errors fixed - 6 images migrated</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total Files</strong>: 11 (11 completed)</p>
+<h2 id="migration-process-checklist">Migration Process Checklist</h2>
+<p>For each file, the following steps will be performed:</p>
+<h3 id="pre-migration-validation">Pre-Migration Validation</h3>
+<ul>
+<li>[ ] Read source GitBook file</li>
+<li>[ ] Read existing DocFX target file</li>
+<li>[ ] Identify differences and required changes</li>
+</ul>
+<h3 id="content-migration">Content Migration</h3>
+<ul>
+<li>[ ] Convert GitBook syntax to DocFX format</li>
+<li>[ ] Handle video embeds (YouTube iframes)</li>
+<li>[ ] Convert hint blocks to DocFX note blocks</li>
+<li>[ ] Update image references</li>
+</ul>
+<h3 id="image-management">Image Management</h3>
+<ul>
+<li>[ ] Validate all image references exist</li>
+<li>[ ] Fix 404 errors with correct relative paths</li>
+<li>[ ] Convert image filenames to kebab-case</li>
+<li>[ ] Update markdown references to kebab-case names</li>
+</ul>
+<h3 id="final-validation">Final Validation</h3>
+<ul>
+<li>[ ] Run 404 validation checks</li>
+<li>[ ] Build DocFX site to verify success</li>
+<li>[ ] Stage changes in git</li>
+</ul>
+<h2 id="key-conversion-patterns">Key Conversion Patterns</h2>
+<h3 id="video-embeds">Video Embeds</h3>
+<pre><code>GitBook: {% embed url=&quot;https://www.youtube.com/watch?v=VIDEO_ID&quot; %}
+DocFX:   &lt;iframe&gt; HTML embed
+</code></pre>
+<h3 id="notes-and-warnings">Notes and Warnings</h3>
+<pre><code>GitBook: {% hint style=&quot;info&quot; %}
+DocFX:   &gt; [!NOTE]
+
+GitBook: {% hint style=&quot;warning&quot; %}
+DocFX:   &gt; [!WARNING]
+</code></pre>
+<h3 id="images">Images</h3>
+<pre><code>GitBook: &lt;figure&gt;&lt;img src=&quot;../../.gitbook/assets/Image Name.png&quot;&gt;&lt;/figure&gt;
+DocFX:   ![Image Name](../../images/kebab-case-name.png)
+</code></pre>
+<h2 id="expected-issues-and-solutions">Expected Issues and Solutions</h2>
+<h3 id="image-path-issues">Image Path Issues</h3>
+<ul>
+<li><strong>Problem</strong>: Incorrect relative paths causing 404 errors</li>
+<li><strong>Solution</strong>: Use <code>../../images/</code> for files in <code>/docs/blocks-toolbox/layout/</code></li>
+</ul>
+<h3 id="image-naming-issues">Image Naming Issues</h3>
+<ul>
+<li><strong>Problem</strong>: Spaces in filenames cause rendering issues</li>
+<li><strong>Solution</strong>: Convert all to kebab-case (e.g., &quot;Image Name.png&quot; → &quot;image-name.png&quot;)</li>
+</ul>
+<h3 id="gitbook-syntax-remnants">GitBook Syntax Remnants</h3>
+<ul>
+<li><strong>Problem</strong>: Hint blocks and embed tags remain</li>
+<li><strong>Solution</strong>: Convert to DocFX equivalents</li>
+</ul>
+<h2 id="progress-tracking">Progress Tracking</h2>
+<h3 id="completed-files">Completed Files</h3>
+<ol>
+<li>box-and-data-repeater-box.md ✅ (Previously completed)</li>
+</ol>
+<h3 id="failed-files">Failed Files</h3>
+<p>(None yet)</p>
+<h3 id="files-needing-manual-review">Files Needing Manual Review</h3>
+<p>(None yet)</p>
+<h2 id="statistics">Statistics</h2>
+<ul>
+<li><strong>Files Processed</strong>: 11/11</li>
+<li><strong>Success Rate</strong>: 100%</li>
+<li><strong>Images Converted to Kebab-Case</strong>: 35+</li>
+<li><strong>404 Errors Fixed</strong>: 73+ (ALL FIXED!)</li>
+<li><strong>Images Migrated from GitBook</strong>: 33 total
+<ul>
+<li>Layout Grid: 7 images</li>
+<li>Scroll Box: 3 GIFs</li>
+<li>Tabs: 8 images/GIFs</li>
+<li>Templated List: 9 images/GIFs</li>
+<li>Toolbar: 6 images/GIFs</li>
+</ul>
+</li>
+</ul>
+<h2 id="resume-instructions">Resume Instructions</h2>
+<p>To resume this migration:</p>
+<ol>
+<li>Check this plan for the next pending file</li>
+<li>Run the migrate-page command for that file</li>
+<li>Update this plan with the results</li>
+<li>Continue with the next file</li>
+</ol>
+<h2 id="final-validation-1">Final Validation</h2>
+<p>After all files are processed:</p>
+<ul>
+<li>[x] Run comprehensive DocFX build ✅ (Build succeeded with warnings)</li>
+<li>[x] Verify all images display correctly ✅ (All 404 errors fixed - user confirmed)</li>
+<li>[x] Check for any remaining GitBook syntax ✅ (All converted to DocFX format)</li>
+<li>[ ] Commit all changes to git</li>
+</ul>
+<h2 id="image-migration-completed">Image Migration Completed</h2>
+<p>✅ <strong>All missing images have been successfully migrated from GitBook assets:</strong></p>
+<ol>
+<li><strong>33 images migrated</strong> with proper kebab-case naming</li>
+<li><strong>All 404 errors resolved</strong> - images display correctly in browser</li>
+<li><strong>Zero remaining image issues</strong> for layout folder files</li>
+</ol>
+<p>The layout folder migration is now <strong>100% complete</strong> with full image support!</p>
+<hr>
+<p><strong>Last Updated</strong>: 2025-05-24<br>
+<strong>Migration Command</strong>: <code>migrate-folder public-documentation/docs/blocks-toolbox/layout/</code></p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

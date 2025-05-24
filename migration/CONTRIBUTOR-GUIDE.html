@@ -105,12 +105,15 @@ Use the <code>/project:public-documents:migrate-page</code> slash command for si
 Use the <code>/project:public-documents:migrate-folder</code> slash command to process all markdown files in a folder automatically. This command:</p>
 <ul>
 <li>Processes all <code>.md</code> files in the specified folder</li>
+<li><strong>AUTOMATIC IMAGE MIGRATION</strong>: Finds and copies missing images from GitBook assets</li>
 <li>Creates kebab-case copies of all images (PNG, JPG, GIF)</li>
 <li>Applies full GitBook to DocFX conversion</li>
+<li><strong>404 PREVENTION</strong>: Validates all image references exist before completing</li>
 <li>Runs DocFX build verification</li>
 <li>Stages changes in git</li>
 <li>Provides progress tracking and resume capability</li>
 </ul>
+<p><strong>⚠️ IMPORTANT</strong>: The commands now include automatic image migration to prevent 404 errors. However, if you encounter missing images, refer to the enhanced migration process in <code>CLAUDE.local.md</code>.</p>
 <p><strong>Manual Process (when commands aren't suitable):</strong></p>
 <p>For each page in your assigned section:</p>
 <ol>
@@ -211,6 +214,23 @@ docfx docfx.json --serve
 <li>Commit this change</li>
 </ol>
 <h2 id="common-issues-and-solutions">Common Issues and Solutions</h2>
+<h3 id="404-image-errors-critical">404 Image Errors (CRITICAL)</h3>
+<ul>
+<li><strong>Problem</strong>: Images referenced in markdown don't exist in main images directory</li>
+<li><strong>Root Cause</strong>: Migration converts to kebab-case names but doesn't copy actual image files</li>
+<li><strong>Prevention</strong>: Use enhanced migration commands that include automatic image migration</li>
+<li><strong>Manual Fix</strong>: Copy images from GitBook assets with proper naming conversion:
+<pre><code class="lang-bash"># Example conversions:
+# &quot;image (123).png&quot; → &quot;image-123.png&quot;
+# &quot;wMYuRsYNFy.gif&quot; → &quot;wmyursyfny.gif&quot;  
+# &quot;Tab Hide Navigate.gif&quot; → &quot;tab-hide-navigate.gif&quot;
+
+# Copy from GitBook assets:
+cp &quot;/path/to/gitbook/docs/assets/Original Name.ext&quot; &quot;/path/to/docs/images/kebab-case-name.ext&quot;
+</code></pre>
+</li>
+<li><strong>Validation</strong>: Always verify images load correctly in browser after migration</li>
+</ul>
 <h3 id="video-embeds">Video Embeds</h3>
 <ul>
 <li>Problem: DocFX doesn't support GitBook's video embed syntax</li>

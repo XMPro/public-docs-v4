@@ -87,140 +87,125 @@
         <article data-uid="">
 <h1 id="common-properties">Common Properties</h1>
 
-<p>Many blocks in the XMPro App Designer share common properties that control their appearance, behavior, and data binding. This page describes these common properties that you'll encounter across multiple blocks.</p>
-<h2 id="basic-properties">Basic Properties</h2>
-<h3 id="id">ID</h3>
+<h2 id="appearance">Appearance</h2>
+<p>This determines how the control looks. For example, this may include colors, text, or the visibility of certain aspects of the control.</p>
+<h4 id="visible">Visible</h4>
+<p>This determines if the Block can be seen or if it is hidden.</p>
+<p><img src="../images/image-1757.png" alt="Visible Property"></p>
+<h4 id="styling-mode">Styling Mode</h4>
+<p>This specifies the style of the control, including if it is underlined, highlighted, or outlined.</p>
+<p><img src="../images/image-1026.png" alt="Styling Mode"></p>
+<h4 id="placeholder">Placeholder</h4>
+<p>This will show a temporary hint or description inside the field to help the user know what information is required. It disappears when the user enters a value.</p>
+<p><img src="../images/image-1465.png" alt="Placeholder Property"></p>
+<h4 id="tooltip">Tooltip</h4>
+<p>This displays extra information about the field when the user hovers their mouse over it.</p>
+<p><img src="../images/image-81.png" alt="Tooltip Property"></p>
+<h4 id="show-clear-button">Show Clear Button</h4>
+<p>This determines if a clear button shows next to the value that the user entered. The clear button will clear the entered value if it is clicked.</p>
+<p><img src="../images/image-1356.png" alt="Show Clear Button"></p>
+<h4 id="icon">Icon</h4>
+<p>The mode of the icon refers to the different ways the icon can be uploaded or added onto the control. This includes adding a pre-built icon from the library, uploading your own icon, or using the URL of an icon that exists on the web.</p>
+<p><img src="../images/image-70.png" alt="Icon Property"></p>
+<h4 id="format">Format</h4>
+<p>The format refers to the type or way that data is presented. Options for these include currency, decimal, exponential, fixed point, large number, percent, thousands, millions, billions, trillions, milliseconds, seconds, minutes, or hours.</p>
+<p><img src="../images/image-1821.png" alt="Format Options"></p>
+<p><img src="../images/image-567.png" alt="Format Examples"></p>
+<h2 id="behavior">Behavior</h2>
+<p>This describes the behavior of a control. For example, read-only or disabled prevents the user from modifying the control.</p>
+<h4 id="read-only">Read Only</h4>
+<p><img src="../images/image-261.png" alt="Read Only Property"></p>
+<h4 id="disabled">Disabled</h4>
+<p><img src="../images/image-110.png" alt="Disabled Property"></p>
+<h2 id="value">Value</h2>
+<p>The value is the value that is taken from the control such as the user input, or the default value of the control that you predefine.</p>
+<p><img src="../images/image-333.png" alt="Value Property"></p>
+<h2 id="data-source">Data Source</h2>
+<p>Data Sources can be created for a page in the application and can be used to display contextual or real-time data to the user. Data sources can include databases or data streams and can be bound to controls on the page.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you read the article listed below to improve your understanding of Data Sources.</p>
 <ul>
-<li><strong>Description</strong>: A unique identifier for the block within the page.</li>
-<li><strong>Usage</strong>: Used for referencing the block in expressions, scripts, and for data binding.</li>
-<li><strong>Type</strong>: String</li>
+<li><a href="../how-tos/apps/manage-data-sources.html">How to Create and Manage Data Sources</a></li>
 </ul>
-<h3 id="name">Name</h3>
+</div>
+<h4 id="filter">Filter</h4>
+<p>This allows you to filter the records to only display certain results that meet a condition. For example, displaying all records last modified in 2021.</p>
+<p><img src="../images/image-1647.png" alt="Filter Property"></p>
+<h4 id="sort">Sort</h4>
+<p>This allows you to sort records in increasing or decreasing order.</p>
+<p><img src="../images/image-180.png" alt="Sort Property"></p>
+<h4 id="show--of-results">Show # of Results</h4>
+<p>Shows a limited number of results.</p>
+<p><img src="../images/image-849.png" alt="Show Number of Results"></p>
+<h4 id="skip--of-results">Skip # of Results</h4>
+<p>This will skip a number of records in the list.</p>
+<p><img src="../images/image-547.png" alt="Skip Number of Results"></p>
+<h4 id="show-default-row">Show Default Row</h4>
+<p>This will determine if the default row is always shown, only shown when empty, or never shown.</p>
+<h2 id="validation">Validation</h2>
+<p>Validation involves making sure the user enters the correct information on controls such as a form. Fields or Fieldsets (a group of fields) can be added to the page with a corresponding confirm button for the form. If the button and fields are configured to have validation and the user clicks on the confirm button, the fields in the form will be validated.</p>
+<h3 id="field">Field</h3>
+<h4 id="validation-group">Validation Group</h4>
+<p>The validation group is able to group multiple forms on a page, each with its own action button. For example, if the user clicks on the confirm button for validation group 1, only the fields under that validation group will be validated.</p>
+<p><img src="../images/image-1065.png" alt="Validation Group"></p>
+<h4 id="required">Required</h4>
+<p>If the field is blank, the form will not be submitted and an error will show.</p>
+<p><img src="../images/image-1274.png" alt="Required Property"></p>
+<h4 id="pattern">Pattern</h4>
+<p>If the user enters a value that does not match a specific pattern (for example, the input must contain at least two words), the form will not be submitted and an error will show.</p>
+<p><img src="../images/image-483.png" alt="Pattern Validation"></p>
+<p>Validation patterns use Regular Expressions (regex) to pattern search the value and determine validity.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on Regular Expressions, see the <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">JavaScript RegExp Reference article</a> on w3schools.</p>
+</div>
+<h4 id="message">Message</h4>
+<p>This is the text that displays to the user when the user did not enter the value correctly.</p>
+<h3 id="action">Action</h3>
+<h4 id="groups-to-validate">Groups to Validate</h4>
+<p>This is an option for buttons that allows you to choose the validation group the button should validate.</p>
+<h2 id="action-1">Action</h2>
+<p>The action refers to any event that may be triggered when the user clicks on a Block or part of a Block. For example, the page may redirect to another page or website, a data source may be updated, or a confirmation dialog may appear.</p>
+<h4 id="navigate-to">Navigate To</h4>
+<p>This configures the page or website that the webpage will navigate to when the user clicks on a control. The options are:</p>
 <ul>
-<li><strong>Description</strong>: A human-readable name for the block.</li>
-<li><strong>Usage</strong>: Used for identifying the block in the designer and for accessibility.</li>
-<li><strong>Type</strong>: String</li>
+<li>Landing Page takes you to the current App's landing page</li>
+<li>Page takes you to the specified page of the current App, optionally in a new tab/window</li>
+<li>Previous Page takes you to the previous page of the browser</li>
+<li>URL takes you to the specified URL (any website), optionally in a new tab/window</li>
 </ul>
-<h3 id="visible">Visible</h3>
-<ul>
-<li><strong>Description</strong>: Controls whether the block is visible on the page.</li>
-<li><strong>Usage</strong>: Can be set to a static value or bound to an expression to dynamically show/hide the block.</li>
-<li><strong>Type</strong>: Boolean</li>
-</ul>
-<h3 id="enabled">Enabled</h3>
-<ul>
-<li><strong>Description</strong>: Controls whether the block is enabled or disabled.</li>
-<li><strong>Usage</strong>: Can be set to a static value or bound to an expression to dynamically enable/disable the block.</li>
-<li><strong>Type</strong>: Boolean</li>
-</ul>
-<h2 id="styling-properties">Styling Properties</h2>
-<h3 id="width">Width</h3>
-<ul>
-<li><strong>Description</strong>: Controls the width of the block.</li>
-<li><strong>Usage</strong>: Can be set to a specific pixel value, percentage, or auto.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="height">Height</h3>
-<ul>
-<li><strong>Description</strong>: Controls the height of the block.</li>
-<li><strong>Usage</strong>: Can be set to a specific pixel value, percentage, or auto.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="margin">Margin</h3>
-<ul>
-<li><strong>Description</strong>: Controls the external spacing around the block.</li>
-<li><strong>Usage</strong>: Can be set for all sides or individually for top, right, bottom, and left.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="padding">Padding</h3>
-<ul>
-<li><strong>Description</strong>: Controls the internal spacing within the block.</li>
-<li><strong>Usage</strong>: Can be set for all sides or individually for top, right, bottom, and left.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="background-color">Background Color</h3>
-<ul>
-<li><strong>Description</strong>: Controls the background color of the block.</li>
-<li><strong>Usage</strong>: Can be set to a color name, hex value, or transparent.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="text-color">Text Color</h3>
-<ul>
-<li><strong>Description</strong>: Controls the text color of the block.</li>
-<li><strong>Usage</strong>: Can be set to a color name or hex value.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="border">Border</h3>
-<ul>
-<li><strong>Description</strong>: Controls the border of the block.</li>
-<li><strong>Usage</strong>: Can set the border width, style, and color.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="font">Font</h3>
-<ul>
-<li><strong>Description</strong>: Controls the font properties of the block.</li>
-<li><strong>Usage</strong>: Can set the font family, size, weight, and style.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h2 id="data-binding-properties">Data Binding Properties</h2>
-<h3 id="data-source">Data Source</h3>
-<ul>
-<li><strong>Description</strong>: Specifies the data source for the block.</li>
-<li><strong>Usage</strong>: Connects the block to a data source defined in the page.</li>
-<li><strong>Type</strong>: Object</li>
-</ul>
-<h3 id="data-field">Data Field</h3>
-<ul>
-<li><strong>Description</strong>: Specifies the field from the data source to bind to the block.</li>
-<li><strong>Usage</strong>: Used to display or edit a specific field from the data source.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="value">Value</h3>
-<ul>
-<li><strong>Description</strong>: The current value of the block.</li>
-<li><strong>Usage</strong>: Can be set directly or bound to a data source field.</li>
-<li><strong>Type</strong>: Varies based on block type</li>
-</ul>
-<h2 id="event-properties">Event Properties</h2>
-<h3 id="on-click">On Click</h3>
-<ul>
-<li><strong>Description</strong>: Action to perform when the block is clicked.</li>
-<li><strong>Usage</strong>: Can be set to navigate to another page, update a data source, or execute a custom script.</li>
-<li><strong>Type</strong>: Function</li>
-</ul>
-<h3 id="on-change">On Change</h3>
-<ul>
-<li><strong>Description</strong>: Action to perform when the value of the block changes.</li>
-<li><strong>Usage</strong>: Can be set to update a data source, validate input, or execute a custom script.</li>
-<li><strong>Type</strong>: Function</li>
-</ul>
-<h3 id="on-load">On Load</h3>
-<ul>
-<li><strong>Description</strong>: Action to perform when the block is loaded.</li>
-<li><strong>Usage</strong>: Can be set to initialize the block, load data, or execute a custom script.</li>
-<li><strong>Type</strong>: Function</li>
-</ul>
-<h2 id="accessibility-properties">Accessibility Properties</h2>
-<h3 id="tooltip">Tooltip</h3>
-<ul>
-<li><strong>Description</strong>: Text to display when hovering over the block.</li>
-<li><strong>Usage</strong>: Provides additional information about the block's purpose or functionality.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="aria-label">ARIA Label</h3>
-<ul>
-<li><strong>Description</strong>: Accessible label for screen readers.</li>
-<li><strong>Usage</strong>: Improves accessibility for users with screen readers.</li>
-<li><strong>Type</strong>: String</li>
-</ul>
-<h3 id="tab-index">Tab Index</h3>
-<ul>
-<li><strong>Description</strong>: Controls the tab order of the block.</li>
-<li><strong>Usage</strong>: Determines the order in which blocks receive focus when tabbing through the page.</li>
-<li><strong>Type</strong>: Number</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>These common properties provide a consistent way to control the appearance, behavior, and data binding of blocks in the XMPro App Designer. While not all blocks support all of these properties, understanding these common properties will help you work more efficiently with the various blocks in the toolbox.</p>
+<h4 id="page">Page</h4>
+<p>The page to which the user is redirected, which is applicable when <a href="common-properties.html#navigate-to">Navigate To</a> is set to 'Page'.</p>
+<p><img src="../images/image-672.png" alt="Page Property"></p>
+<p>See the <a href="../how-tos/apps/navigate-between-pages.html">Navigate Between Pages article </a>for more information about navigating between pages.</p>
+<h4 id="url">URL</h4>
+<p>The URL to which the user is redirected, which is applicable when <a href="common-properties.html#navigate-to">Navigate To</a> is set to 'URL'.</p>
+<p><img src="../images/url2.png" alt="URL Property"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can use a <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto">mailto</a> link with the URL navigation to open a default mail program (for example, Microsoft Outlook) with an email address already added into the receiver field.</p>
+</div>
+<p>See the <a href="../how-tos/apps/navigate-between-pages.html#navigating-using-back-url">Navigating Using Back URL article</a> for more information about appending a back URL so that the user can return to the page.</p>
+<h4 id="open-in-new-tabwindow">Open in New Tab/Window</h4>
+<p>Tick for the URL to open in a new tab/window, instead of redirecting the current tab. This applies when <a href="common-properties.html#navigate-to">Navigate To</a> is set to 'Page' or 'URL'.</p>
+<p><img src="../images/image-420.png" alt="Open in New Tab/Window"></p>
+<h4 id="pass-page-parameters">Pass Page Parameters</h4>
+<p>You can use parameters if you want to send particular values to another page. For example, you may want to send the value of a control to another page as the user is navigating to it, in order to change the data on that page dynamically.</p>
+<p>See the <a href="../how-tos/apps/pass-parameters-between-pages.html">Pass Parameters between Pages article</a> for more information about how to pass parameters between pages.</p>
+<h4 id="update-page-data">Update Page Data</h4>
+<p>You can configure what and how the data should be updated on the current page. See the <a href="../how-tos/apps/page-data.html">Page Data article</a> for more information.</p>
+<h4 id="update-data-sources">Update Data Sources</h4>
+<p>Operations include inserting records, updating, deleting, or refreshing a data source. For example, if the user clicks on a button, the details they entered can then be inserted as a record in the database. If multiple operations are required, the order that these actions are executed can be changed. For example, you may want to update the database first before deleting a record.</p>
+<p>If the execution condition option is set to true, you will then be able to add a condition that will be checked before operations are executed. You also have the option to override the fields that are in the data source.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you're enabling an operation on a Block that does not populate or visualize from a Data Source, such as a Button, first bind a <a href="common-properties.html#data-source">Data Source</a> to either the Block or its parent.</p>
+</div>
+<h4 id="confirmation-dialog">Confirmation Dialog</h4>
+<p>If the confirmation dialog option is enabled, a confirmation message dialog box will appear when the user clicks on the button.</p>
+<p>The title and message of the dialog box can be configured as well as the text on the continue and cancel buttons.</p>
+<p><img src="../images/image-1555.png" alt="Confirmation Dialog"></p>
 
 </article>
 
