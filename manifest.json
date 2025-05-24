@@ -12587,6 +12587,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/connectors-adding-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-adding-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-adding-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-adding-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-edit-applications.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-edit-applications.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-publish-unpublish.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-publish-unpublish.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-versions.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-versions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/cycle-property-mode.gif",
       "output": {
         "resource": {
@@ -14371,6 +14421,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/search-collections.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/search-connectors.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/search-connectors.png"
         }
       },
       "version": ""
