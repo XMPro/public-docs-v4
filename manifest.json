@@ -10027,26 +10027,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/12-Hour Clock (1 Line).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/12-Hour Clock (1 Line).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/12-Hour Clock (2 Lines).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/12-Hour Clock (2 Lines).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/12-hour-clock-1-line.png",
       "output": {
         "resource": {
@@ -10081,26 +10061,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/1NaUfFWDUo.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/24-Hour Clock (1 Line).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/24-Hour Clock (1 Line).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/24-Hour Clock (2 Lines).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/24-Hour Clock (2 Lines).png"
         }
       },
       "version": ""
@@ -10557,40 +10517,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Adding dynamic templates (1).gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Adding dynamic templates (1).gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Adding static content.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Adding static content.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/Axes.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/Axes.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Azure_AI_Document_Intelligence.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Azure_AI_Document_Intelligence.png"
         }
       },
       "version": ""
@@ -10631,16 +10561,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Catmull-Rom.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Chart example.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Chart example.gif"
         }
       },
       "version": ""
@@ -10767,56 +10687,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Disable Toolbar.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Disable Toolbar.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Display Avg, Min, Max, and Envelope.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Display Avg, Min, Max, and Envelope.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/E2E-Edit-Panes-3.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E-Edit-Panes-3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/E2E-Edit-Panes.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E-Edit-Panes.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/E2E_-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E_-1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/E2E_1.png",
       "output": {
         "resource": {
@@ -10831,16 +10701,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/E2E_10.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/E2E_11.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E_11.png"
         }
       },
       "version": ""
@@ -10907,16 +10767,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/E2E_9.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/E2E_9.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/E2e_6.png",
       "output": {
         "resource": {
@@ -10931,36 +10781,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/EPb8odj6Me.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Enable Toolbar.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Enable Toolbar.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Esri Map API Key.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Esri Map API Key.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Esri markers.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Esri markers.PNG"
         }
       },
       "version": ""
@@ -11127,16 +10947,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Hide Legend.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Hide Legend.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/Hierarchy.gif",
       "output": {
         "resource": {
@@ -11161,36 +10971,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/ImageMap_StaticContentDynamicData.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Imagery Hybrid.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Imagery Hybrid.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Imagery.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Imagery.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Initial Selection Unit of Time.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Initial Selection Unit of Time.png"
         }
       },
       "version": ""
@@ -11227,26 +11007,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Installation_Overview.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Installation_Overview.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Installation_Preparation.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Installation_Preparation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/LWR-Recording.gif",
       "output": {
         "resource": {
@@ -11271,56 +11031,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Linear.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Live Feed Block.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Live Feed Block.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Manage Categories - Create Category 1.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Manage Categories - Create Category 1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Manage Category - Category Timeline.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Manage Category - Category Timeline.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Manage Category - Delete Category 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Manage Category - Delete Category 2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Manage Category - Delete Category.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Manage Category - Delete Category.png"
         }
       },
       "version": ""
@@ -11367,236 +11077,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Oceans.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Oceans.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/OpenStreetMap.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/OpenStreetMap.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/PI2GwPRNfr.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/PI2GwPRNfr.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Pan & Zoom Compact.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Pan & Zoom Compact.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Pan & Zoom Full.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Pan & Zoom Full.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Pan & Zoom Hidden.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Pan & Zoom Hidden.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 3 (1).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 3 (1).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 4.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation 4.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Recommendations - Create Recommendation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation 2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Recommendations - View Recommendation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 1.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 3.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Rules - Create Rule 3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 2.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 2.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 3.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Recommendations - Manage Rules - View Timeline 3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Removing dynamic templates (1).gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Removing dynamic templates (1).gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Removing static content.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Removing static content.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Restart_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Restart_3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Show Dots.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Show Dots.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Show Legend.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Show Legend.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Static Templates Position Configuration (2).gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Static Templates Position Configuration (2).gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/Step.png",
       "output": {
         "resource": {
@@ -11627,56 +11107,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Stream_Host_Online_Status.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Stream_Host_Online_Status.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Stream_Host_Windows_Connection_Profile.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Stream_Host_Windows_Connection_Profile.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Stream_Host_Windows_Services.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Stream_Host_Windows_Services.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Stream_Host_Windows_Setup_Wizard.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Stream_Host_Windows_Setup_Wizard.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Theme_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Theme_1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/Theme_2.png",
       "output": {
         "resource": {
@@ -11691,26 +11121,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Theme_3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Theme_4.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Theme_4.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Theme_5.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Theme_5.png"
         }
       },
       "version": ""
@@ -11747,70 +11157,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Title Color (1).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Title Color (1).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Tooltip Imagemap.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Tooltip Imagemap.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/Tooltip.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/Tooltip.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Topographic.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Topographic.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Tree Map breadcrumbs.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Tree Map breadcrumbs.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Tree Map overview.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Tree Map overview.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Tree Map tooltip.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Tree Map tooltip.png"
         }
       },
       "version": ""
@@ -11831,16 +11181,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Windows_Architecture.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Y Axis Type.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Y Axis Type.gif"
         }
       },
       "version": ""
@@ -14657,16 +13997,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/darkgrey.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/darkgrey.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/data-repeater-box-appearance-properties.png",
       "output": {
         "resource": {
@@ -14821,46 +14151,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/delete-a-user-v3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/demo_app_drilldown.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/demo_app_drilldown.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/demo_app_landing_page.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/demo_app_landing_page.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/demo_data_stream.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/demo_data_stream.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/demo_recommendation.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/demo_recommendation.png"
         }
       },
       "version": ""
@@ -15137,16 +14427,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/free_trial.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/free_trial.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/fsvl8qu8vl.gif",
       "output": {
         "resource": {
@@ -15201,96 +14481,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/iis-manager.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1115).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1115).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1153).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1153).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1279).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1279).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1310).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1310).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1403).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1403).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1491).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1491).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (1765).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (1765).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image (953).png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image (953).png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image map example.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image map example.gif"
         }
       },
       "version": ""
@@ -16157,16 +15347,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/image-1684.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image-1684.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/image-1685.png",
       "output": {
         "resource": {
@@ -16221,16 +15401,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1710.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image-1716.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image-1716.png"
         }
       },
       "version": ""
@@ -17401,16 +16571,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-839.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/image-844.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/image-844.png"
         }
       },
       "version": ""
@@ -20347,16 +19507,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/lightgrey.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/lightgrey.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/live-feed-block.png",
       "output": {
         "resource": {
@@ -20491,16 +19641,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/nLryP9xJvq.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/nationalgeo.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/nationalgeo.PNG"
         }
       },
       "version": ""
@@ -20987,40 +20127,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/streets night.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/streets night.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/streets.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/streets.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "docs/images/tab-hide-navigate.gif",
       "output": {
         "resource": {
           "relative_path": "docs/images/tab-hide-navigate.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/terrain.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/terrain.PNG"
         }
       },
       "version": ""
@@ -21041,16 +20151,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/time-pending-configuration.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/timeline-version-filter.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/timeline-version-filter.png"
         }
       },
       "version": ""
@@ -21111,46 +20211,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/unique-identifier.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/unity example 2.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/unity example 2.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/unity loading half.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/unity loading half.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/unity loading no image.PNG",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/unity loading no image.PNG"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/unity pump example.gif",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/unity pump example.gif"
         }
       },
       "version": ""
