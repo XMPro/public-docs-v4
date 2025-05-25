@@ -87,83 +87,48 @@
         <article data-uid="">
 <h1 id="manage-license">Manage License</h1>
 
-<p>This page explains how to manage licenses for a company in the XMPro platform.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>You must have Global Administrator privileges to manage company licenses.</li>
-<li>The company must already be registered in the system.</li>
-</ul>
-<h2 id="accessing-license-management">Accessing License Management</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>This section is intended for Global Administrative users. No other type of user can manage data about companies and their subscription Subscriptions.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Each product must have at least one user assigned an admin role, to configure product admin settings and respond to a license expiry warning.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As noted <a href="../../concepts/xmpro-ai/xmpro-notebook.html#licensing">here</a>, separate licenses are required for AI and XMPro Notebook to access the AI functionality.</p>
+</div>
+<h2 id="request-a-new-license">Request a new License</h2>
+<p>If a company needs to be given access to a product, such as Data Stream Designer, the Company Administrator for that company needs to submit a license request - which is approved by a Global Administrator.</p>
+<p><img src="../../images/image-1358.png" alt="Fig 1: Request a new License"></p>
+<h2 id="update-a-license">Update a License</h2>
+<p>If a Company's license is expiring or expired it will need to be updated. To do this follow the steps below:</p>
 <ol>
-<li>Log in to the XMPro platform using your Global Administrator account.</li>
-<li>Navigate to the Administration section.</li>
-<li>Select &quot;Companies&quot; from the menu.</li>
-<li>Find the company you want to manage in the list of companies.</li>
-<li>Click on the company name or the &quot;Manage&quot; button to access the company management page.</li>
-<li>Navigate to the &quot;License&quot; tab.</li>
+<li>Click Company in the left menu to open the Companies page.</li>
+<li>Click on the Company.</li>
+<li>Click on the Subscriptions gauge to open the Subscriptions page.</li>
+<li>Click on a Subscription.</li>
+<li>Click the Update License button in the command bar.</li>
+<li>Click <em>Generate a license request</em>, enter the number of days, and submit.</li>
+<li>When you have received the license from <a href="http://xmpro.com/support/">XMPro support</a>, upload it.</li>
+<li>Click Save.</li>
 </ol>
-<h2 id="managing-company-licenses">Managing Company Licenses</h2>
-<h3 id="view-current-license-information">View Current License Information</h3>
-<p>The License tab displays the current license information for the company, including:</p>
-<ul>
-<li>License key</li>
-<li>License type</li>
-<li>Issue date</li>
-<li>Expiration date</li>
-<li>Licensed products</li>
-<li>Number of users allowed</li>
-<li>Current usage</li>
-</ul>
-<h3 id="apply-a-new-license">Apply a New License</h3>
-<ol>
-<li>On the License tab, click the &quot;Apply New License&quot; button.</li>
-<li>Enter the new license key in the provided field.</li>
-<li>Click &quot;Apply&quot; to activate the new license.</li>
-<li>The system will validate the license key and update the license information if the key is valid.</li>
-</ol>
-<h3 id="update-an-existing-license">Update an Existing License</h3>
-<ol>
-<li>On the License tab, click the &quot;Update License&quot; button.</li>
-<li>Enter the updated license key in the provided field.</li>
-<li>Click &quot;Update&quot; to apply the changes.</li>
-<li>The system will validate the license key and update the license information if the key is valid.</li>
-</ol>
-<h3 id="export-license-information">Export License Information</h3>
-<ol>
-<li>On the License tab, click the &quot;Export&quot; button.</li>
-<li>Choose the export format (PDF, CSV, etc.).</li>
-<li>The license information will be exported in the selected format.</li>
-</ol>
-<h2 id="license-types">License Types</h2>
-<p>XMPro offers different types of licenses:</p>
-<ul>
-<li><strong>Trial License</strong>: Limited-time access for evaluation purposes.</li>
-<li><strong>Standard License</strong>: Regular license with standard features.</li>
-<li><strong>Enterprise License</strong>: License with advanced features and capabilities.</li>
-</ul>
-<h2 id="license-allocation">License Allocation</h2>
-<p>Licenses are allocated to users within the company. The number of users that can access the platform is determined by the license.</p>
-<h3 id="view-license-allocation">View License Allocation</h3>
-<ol>
-<li>On the License tab, navigate to the &quot;Allocation&quot; section.</li>
-<li>This section displays:
-<ul>
-<li>Total number of licenses available</li>
-<li>Number of licenses currently in use</li>
-<li>Users who have been assigned licenses</li>
-</ul>
-</li>
-</ol>
-<h3 id="manage-license-allocation">Manage License Allocation</h3>
-<p>For detailed information on managing user access to subscriptions and licenses, see <a href="../subscriptions-admin/manage-user-access.html">Manage User Access</a>.</p>
-<h2 id="requesting-a-license">Requesting a License</h2>
-<p>For detailed information on requesting and applying a license, see <a href="../subscriptions-admin/request-and-apply-a-license.html">Request and Apply a License</a>.</p>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Changes to company licenses may affect all users within that company.</li>
-<li>If a license expires, users may lose access to certain features or the entire platform.</li>
-<li>License management is typically performed by Global Administrators during the setup and maintenance of the XMPro platform.</li>
-</ul>
+<p><img src="../../images/manage-license-update-license.png" alt="Fig 2: Update a License"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can see the expiry date and the number of days remaining for each product on the Subscriptions page.</p>
+</div>
+<h2 id="expiring-license">Expiring License</h2>
+<p>When a Company's Subscription has less than 30 days remaining before it expires, a banner will appear at the top of the page of the Product. It will prompt you to <a href="http://xmpro.com/support/">contact support</a> to renew the license and ensure you do not lose access to the Product.</p>
+<p><img src="../../images/image-598.png" alt="Fig 3: Expiring License"></p>
+<h2 id="expired-license">Expired License</h2>
+<p>When a Company's Subscription has expired, a banner will appear at the top of the page of the Product and you will not be able to do anything with the Product. Please <a href="http://xmpro.com/support/">contact support</a> to renew your license.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If your subscription has expired, you will need to sign out and back in again for the new license to take effect.</p>
+</div>
+<p><img src="../../images/image-1282.png" alt="Fig 4: Expired License"></p>
 
 </article>
 

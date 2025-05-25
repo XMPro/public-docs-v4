@@ -87,81 +87,55 @@
         <article data-uid="">
 <h1 id="manage-a-company">Manage a Company</h1>
 
-<p>This page explains how to manage an existing company in the XMPro platform.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>You must have Global Administrator privileges to manage companies.</li>
-<li>The company must already be registered in the system.</li>
-</ul>
-<h2 id="accessing-company-management">Accessing Company Management</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Please note that this section is intended for Global Administrative users. No other type of user is allowed to manage data about companies and their Subscriptions.</p>
+</div>
+<h2 id="approveactivate-access">Approve/Activate Access</h2>
+<p>Global Administrators may need to grant or modify access for new or existing companies from time to time, for example, when a new company signs up to use Subscription Manager. In this section, we will look at how to approve access for newly registered companies and companies requesting access to certain products.</p>
+<h3 id="approving-access-for-new-companies">Approving Access for New Companies</h3>
+<p>When a user signs up via the Register page and marks his company as being a new company, the new company will be created, but will not have access to Subscription Manager automatically. Subscription access needs to be approved by a Global Administrator, after which the new user will receive an email and be able to log in to the system as an administrator of his/her company.</p>
+<p>To approve such a request, please follow the steps below.</p>
 <ol>
-<li>Log in to the XMPro platform using your Global Administrator account.</li>
-<li>Navigate to the Administration section.</li>
-<li>Select &quot;Companies&quot; from the menu.</li>
-<li>Find the company you want to manage in the list of companies.</li>
-<li>Click on the company name or the &quot;Manage&quot; button to access the company management page.</li>
+<li>Open the Company page from the menu.</li>
+<li>Click on the Company.</li>
+<li>Click on <em>Subscription Requests.</em></li>
+<li>Click on the Request.</li>
+<li>Click <em>Save.</em></li>
 </ol>
-<h2 id="company-management-options">Company Management Options</h2>
-<h3 id="edit-company-details">Edit Company Details</h3>
+<p><img src="../../images/image-273.png" alt="Company Subscription Requests"></p>
+<h2 id="editing-companies"><strong>Editing Companies</strong></h2>
+<p>To edit the information of a Company, please follow the steps below.</p>
 <ol>
-<li>On the company management page, click the &quot;Edit&quot; button.</li>
-<li>Update the company details as needed:
-<ul>
-<li>Company Name</li>
-<li>Company Code</li>
-<li>Address</li>
-<li>Contact Information</li>
-</ul>
-</li>
-<li>Click &quot;Save&quot; to apply the changes.</li>
+<li>Open the Company's page from the left-hand menu.</li>
+<li>Select the Company that you would like to edit.</li>
+<li>Click on <em>Edit.</em></li>
+<li>Change the Company information, as required. To change the Company logo, click on the plus-image button and select a new image.</li>
+<li>Click on <em>Save</em></li>
 </ol>
-<h3 id="configure-company-settings">Configure Company Settings</h3>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Please note that the Company's icon will replace the XMPro logo in the top-left corner (Whitelabel).</p>
+</div>
+<p><img src="../../images/logo-remove3-1.png" alt="Company Logo Management"></p>
+<h2 id="upload-a-company-logo"><strong>Upload a Company Logo</strong></h2>
+<p>Company Logos can be uploaded when managing a company. To upload a Company Logo, follow the steps below:</p>
 <ol>
-<li>Navigate to the &quot;Settings&quot; tab on the company management page.</li>
-<li>Configure the company settings:
-<ul>
-<li>Time Zone: Update the time zone for the company.</li>
-<li>Language: Change the default language for the company.</li>
-<li>Other settings as required.</li>
-</ul>
-</li>
-<li>Click &quot;Save&quot; to apply the settings.</li>
+<li>Open the Company's page from the left-hand menu.</li>
+<li>Select the Company that you would like to edit.</li>
+<li>Click on Edit.</li>
+<li>Upload your company icon.</li>
+<li>Click on Save.</li>
 </ol>
-<h3 id="manage-company-users">Manage Company Users</h3>
-<ol>
-<li>Navigate to the &quot;Users&quot; tab on the company management page.</li>
-<li>Here you can:
-<ul>
-<li>View all users associated with the company</li>
-<li>Add new users to the company</li>
-<li>Remove users from the company</li>
-<li>Edit user details and permissions</li>
-</ul>
-</li>
-</ol>
-<h3 id="manage-company-subscriptions">Manage Company Subscriptions</h3>
-<p>For detailed information on managing company subscriptions, see <a href="manage-company-subscriptions.html">Manage Company Subscriptions</a>.</p>
-<h3 id="manage-company-license">Manage Company License</h3>
-<p>For detailed information on managing company licenses, see <a href="manage-license.html">Manage License</a>.</p>
-<h2 id="deactivating-a-company">Deactivating a Company</h2>
-<ol>
-<li>On the company management page, click the &quot;Deactivate&quot; button.</li>
-<li>Confirm the deactivation when prompted.</li>
-<li>The company will be deactivated, and users will no longer be able to access the platform.</li>
-</ol>
-<h2 id="reactivating-a-company">Reactivating a Company</h2>
-<ol>
-<li>Navigate to the list of companies.</li>
-<li>Find the deactivated company in the list.</li>
-<li>Click the &quot;Reactivate&quot; button.</li>
-<li>The company will be reactivated, and users will be able to access the platform again.</li>
-</ol>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Changes to company settings may affect all users within that company.</li>
-<li>Deactivating a company will prevent all users from that company from accessing the platform.</li>
-<li>Company management is typically performed by Global Administrators during the setup and maintenance of the XMPro platform.</li>
-</ul>
+<p><img src="../../images/logo1.png" alt="Upload Company Logo"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Any user that logs into that company will be able to see the icon in the top-left corner of App Designer.</p>
+</div>
+<p><img src="../../images/logo2-1.png" alt="Company Logo Display"></p>
+<h2 id="active-vs-inactive-companies"><strong>Active vs Inactive Companies</strong></h2>
+<p>Companies in Subscription Manager can be listed as being either active or inactive. A Company can be deactivated by a Global Administrator if, for example, the Company decided not to use XMPro anymore. If a Company is deactivated, users in that Company will lose their ability to access the system.</p>
+<p>Inactive Companies can be found by pressing the <em>View Inactive</em> command in the Companies list.</p>
 
 </article>
 

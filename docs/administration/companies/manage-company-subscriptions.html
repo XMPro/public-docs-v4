@@ -87,84 +87,36 @@
         <article data-uid="">
 <h1 id="manage-company-subscriptions">Manage Company Subscriptions</h1>
 
-<p>This page explains how to manage subscriptions for a company in the XMPro platform.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>You must have Global Administrator privileges to manage company subscriptions.</li>
-<li>The company must already be registered in the system.</li>
-</ul>
-<h2 id="accessing-company-subscription-management">Accessing Company Subscription Management</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Please note that this section is intended for Global Administrative users. No other type of user is allowed to manage data about companies and their Subscriptions.</p>
+</div>
+<h2 id="adding-a-subscription-for-the-new-company"><strong>Adding a Subscription for the new Company</strong></h2>
+<p>After the Company is successfully created, you will have to add a Subscription to XMPro Tools for it. To add a Subscription, please follow the steps below.</p>
 <ol>
-<li>Log in to the XMPro platform using your Global Administrator account.</li>
-<li>Navigate to the Administration section.</li>
-<li>Select &quot;Companies&quot; from the menu.</li>
-<li>Find the company you want to manage in the list of companies.</li>
-<li>Click on the company name or the &quot;Manage&quot; button to access the company management page.</li>
-<li>Navigate to the &quot;Subscriptions&quot; tab.</li>
+<li>Click on the <em>Subscriptions</em> gauge on the detailed page of the Company.</li>
+<li>Click on <em>Add</em>.</li>
+<li>Choose the Data Stream Designer Product. The exact name will depend on your installation, in this example, it is &quot;DataStreams&quot;.</li>
+<li>Request a License.</li>
 </ol>
-<h2 id="managing-company-subscriptions">Managing Company Subscriptions</h2>
-<h3 id="view-current-subscriptions">View Current Subscriptions</h3>
-<p>The Subscriptions tab displays all current subscriptions for the company, including:</p>
-<ul>
-<li>Product name</li>
-<li>Subscription type</li>
-<li>Start date</li>
-<li>End date</li>
-<li>Status (Active, Expired, Pending)</li>
-<li>Number of licenses</li>
-</ul>
-<h3 id="add-a-new-subscription">Add a New Subscription</h3>
-<ol>
-<li>On the Subscriptions tab, click the &quot;Add Subscription&quot; button.</li>
-<li>Select the product you want to add a subscription for.</li>
-<li>Choose the subscription type:
-<ul>
-<li>Trial: Limited-time access for evaluation purposes.</li>
-<li>Standard: Regular subscription with standard features.</li>
-<li>Enterprise: Subscription with advanced features and capabilities.</li>
-</ul>
-</li>
-<li>Specify the number of licenses required.</li>
-<li>Set the start and end dates for the subscription.</li>
-<li>Click &quot;Add&quot; to create the subscription.</li>
-</ol>
-<h3 id="edit-an-existing-subscription">Edit an Existing Subscription</h3>
-<ol>
-<li>Find the subscription you want to edit in the list.</li>
-<li>Click the &quot;Edit&quot; button for that subscription.</li>
-<li>Update the subscription details as needed:
-<ul>
-<li>Subscription type</li>
-<li>Number of licenses</li>
-<li>End date</li>
-</ul>
-</li>
-<li>Click &quot;Save&quot; to apply the changes.</li>
-</ol>
-<h3 id="renew-a-subscription">Renew a Subscription</h3>
-<ol>
-<li>Find the subscription you want to renew in the list.</li>
-<li>Click the &quot;Renew&quot; button for that subscription.</li>
-<li>Specify the new end date for the subscription.</li>
-<li>Click &quot;Renew&quot; to extend the subscription.</li>
-</ol>
-<h3 id="cancel-a-subscription">Cancel a Subscription</h3>
-<ol>
-<li>Find the subscription you want to cancel in the list.</li>
-<li>Click the &quot;Cancel&quot; button for that subscription.</li>
-<li>Confirm the cancellation when prompted.</li>
-<li>The subscription will be marked as canceled, and users will no longer have access to the product when the subscription period ends.</li>
-</ol>
-<h2 id="managing-user-access-to-subscriptions">Managing User Access to Subscriptions</h2>
-<p>For detailed information on managing user access to subscriptions, see <a href="../subscriptions-admin/manage-user-access.html">Manage User Access</a>.</p>
-<h2 id="setting-up-auto-approval-and-default-subscriptions">Setting Up Auto-Approval and Default Subscriptions</h2>
-<p>For detailed information on setting up auto-approval and default subscriptions, see <a href="../subscriptions-admin/setup-auto-approvals-default-subscriptions.html">Setup Auto Approval/Default Subscriptions</a>.</p>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Changes to company subscriptions may affect all users within that company.</li>
-<li>Canceling a subscription will prevent users from accessing the associated product when the subscription period ends.</li>
-<li>Subscription management is typically performed by Global Administrators during the setup and maintenance of the XMPro platform.</li>
-</ul>
+<p>Clicking <em>Request a new License</em> will send a request to the <a href="http://xmpro.com/support/">XMPro support team</a> for a license for Data Stream Designer for this Company.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Clicking <em>Request a new license</em> will only send a license request to XMPro if you have enabled email notifications at the time of installing Subscription Manager</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The steps above need to be completed for both the Data Stream Designer and App Designer Products.</p>
+</div>
+<p><img src="../../images/image-303.png" alt="Company Subscriptions Page"></p>
+<p>Change the Product to App Designer and request another license. Licenses are given on an individual basis by the <a href="http://xmpro.com/support/">XMPro support team</a>.</p>
+<p>When you have received a license for each product, return to this page. Select the Data Stream Designer product and upload its corresponding license and press Save.</p>
+<p><img src="../../images/image-921.png" alt="Upload License for Data Stream Designer"></p>
+<p>Then click Add on the Subscriptions page and repeat the steps above for the App Designer product.</p>
+<p><img src="../../images/image-470.png" alt="Upload License for App Designer"></p>
+<p>Now we will add the user to each subscription. Click on the Data Stream Designer product and click the Add button. Select the user and role as well as the permissions the user should have in the product, and click Save.</p>
+<p><img src="../../images/image-280.png" alt="Add User to Subscription"></p>
+<p>Follow the above steps for the App Designer.</p>
 
 </article>
 

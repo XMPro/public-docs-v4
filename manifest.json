@@ -97,16 +97,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/administration/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/administration/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/administration/language.md",
       "output": {
         ".html": {
@@ -14687,6 +14677,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1282.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1282.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1283.png",
       "output": {
         "resource": {
@@ -14781,6 +14781,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1356.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1358.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1358.png"
         }
       },
       "version": ""
@@ -15507,6 +15517,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-273.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-273.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-280.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-280.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-288.png",
       "output": {
         "resource": {
@@ -15531,6 +15561,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-30.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-303.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-303.png"
         }
       },
       "version": ""
@@ -15737,6 +15777,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-470.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-470.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-471.png",
       "output": {
         "resource": {
@@ -15861,6 +15911,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-596.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-598.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-598.png"
         }
       },
       "version": ""
@@ -16341,6 +16401,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-918.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-921.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-921.png"
         }
       },
       "version": ""
@@ -17437,6 +17507,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/logo-remove3-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logo-remove3-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logo1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logo1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logo2-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logo2-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/manage-access-1.png",
       "output": {
         "resource": {
@@ -17461,6 +17561,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/manage-access-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/manage-license-update-license.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-license-update-license.png"
         }
       },
       "version": ""
@@ -62847,6 +62957,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/404-PREVENTION-SOLUTION.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/ADMINISTRATION-COMPANIES-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/ADMINISTRATION-COMPANIES-MIGRATION-PLAN.html"
         }
       },
       "version": ""
