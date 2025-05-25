@@ -23547,6 +23547,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/release-notes/archived/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/release-notes/archived/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/release-notes/archived/release-notes.md",
       "output": {
         ".html": {
@@ -65697,6 +65707,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/RECOMMENDATION-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/RELEASE-NOTES-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/RELEASE-NOTES-MIGRATION-PLAN.html"
         }
       },
       "version": ""
