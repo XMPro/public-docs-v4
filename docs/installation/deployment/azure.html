@@ -95,7 +95,7 @@
 </ul>
 <h2 id="architecture">Architecture</h2>
 <p>The following deployment diagram shows an example architecture and the necessary resources for the XMPro platform in Microsoft Azure.</p>
-<p><img src="../images/Azure_Architecture.png" alt="Example XMPro architecture in Azure"></p>
+<p><img src="../../images/Azure_Architecture.png" alt="Example XMPro architecture in Azure"></p>
 <p>Set up of Cloud Stream Host, Master Data, <a href="https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache">Azure Cache</a>, or <a href="../index.html#twilio-account-optional">Twilio</a> is optional and is dependent on client requirements. As a result, these resources will be excluded from this deployment.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>In order to proceed with the deployment, you are required to complete the steps in the <strong>1. Preparation</strong> guide:</p>
@@ -114,22 +114,22 @@
 <li>Log on to the Azure Portal <a href="https://portal.azure.com/">https://portal.azure.com/</a> (with Company Administrator access)</li>
 <li>In the search bar type &quot;Deploy&quot; and select &quot;Deploy a custom template&quot;</li>
 </ol>
-<p><img src="../images/Azure-ARMTemplate-Search.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-search.png" alt="Azure ARM Template Search"></p>
 <ol start="3">
 <li>Click &quot;Build your own template in the editor&quot;</li>
 </ol>
-<p><img src="../images/image_146.png" alt=""></p>
+<p><img src="../../images/image_146.png" alt=""></p>
 <ol start="4">
 <li><p>Download the latest mainTemplate_[Version].json file from your XMPro account manager or support team.</p>
 </li>
 <li><p>Select &quot;Load File&quot; and then Open the downloaded &quot;mainTemplate_[Version].json&quot;</p>
 </li>
 </ol>
-<p><img src="../images/Azure-ARMTemplate-Upload.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-upload.png" alt="Azure ARM Template Upload"></p>
 <ol start="6">
 <li>Once loaded, click Save - do not change the template.</li>
 </ol>
-<p><img src="../images/Azure-ARMTemplate-Save.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-save.png" alt="Azure ARM Template Save"></p>
 <ol start="7">
 <li>Complete the form.</li>
 </ol>
@@ -141,11 +141,11 @@
 <li>Take note of the passwords used as this will not be displayed again and they are required later.</li>
 </ul>
 </div>
-<p><img src="../images/Azure-ARMTemplate-Form.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-form.png" alt="Azure ARM Template Form"></p>
 <ol start="8">
 <li>Verify the information is correct and click Create.</li>
 </ol>
-<p><img src="../images/image_338.png" alt=""></p>
+<p><img src="../../images/image_338.png" alt=""></p>
 <p>After successful deployment, the following items have been installed:</p>
 <ul>
 <li>Subscription Manager</li>
@@ -159,19 +159,19 @@
 <ol>
 <li>Type &quot;Resource groups&quot; in the search bar and select &quot;Resource groups&quot;.</li>
 </ol>
-<p><img src="../images/Azure-ARMTemplate-Restart-1.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-restart-1.png" alt="Azure ARM Template Restart Step 1"></p>
 <ol start="2">
 <li>Search for the Resource Group created during installation and select it.</li>
 </ol>
-<p><img src="../images/Azure-ARMTemplate-Restart-2.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-restart-2.png" alt="Azure ARM Template Restart Step 2"></p>
 <ol start="3">
 <li>Select Subscription Manager, Data Stream Designer, and App Designer and restart the applications.</li>
 </ol>
-<p><img src="../images/Restart_3.png" alt=""></p>
+<p><img src="../../images/restart-3.png" alt="Restart App Services"></p>
 <ol start="4">
 <li>The below GIF shows how to restart your app service.</li>
 </ol>
-<p><img src="../images/PI2GwPRNfr.gif" alt=""></p>
+<p><img src="../../images/pi2gwprnfr.gif" alt="Restarting App Service Process"></p>
 <h3 id="logins">Logins</h3>
 <table>
 <thead>
@@ -211,7 +211,7 @@
 <li>Click Save.</li>
 </ol>
 <p>This sends a request to XMPro for an App Designer license for this Company.</p>
-<p><img src="../images/image_423.png" alt=""></p>
+<p><img src="../../images/image_423.png" alt=""></p>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>The <em>Generate a license request</em> link will only work if SMTP was set up during installation.</p>
@@ -224,7 +224,7 @@
 <p>Licenses are given on an individual basis by the <a href="http://xmpro.com/support/">XMPro support team</a>.</p>
 </div>
 <p>When you have received a license for each product through an email sent to the email address given during installation, follow the steps below to upload the license for both App Designer and Data Stream Designer.</p>
-<p><img src="../images/License_3.png" alt=""></p>
+<p><img src="../../images/License_3.png" alt=""></p>
 <h3 id="next-step-complete-installation">Next Step: Complete Installation</h3>
 <p>The installation of the XMPro Platform is now complete but before you can use the platform, some steps are needed to set up the environment. Further instructions about the configuration can be found below:</p>
 <p><a href="../complete-installation/install-connectors.html">Install Connectors</a></p>
@@ -238,18 +238,18 @@
 <li>Download and use the latest &quot;mainTemplate_[Version].json&quot;.</li>
 <li>Use the same Resource Group and credentials used during the <strong>original</strong> Install when completing the Custom deployment form.</li>
 </ul>
-<p><img src="../images/Azure-ARMTemplate-Upgrade.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-upgrade.png" alt="Azure ARM Template Upgrade"></p>
 <h2 id="uninstall">Uninstall</h2>
 <p>This section provides information about uninstalling the XMPro platform from Azure.</p>
 <ol>
 <li>Open the resource group where XMPro is installed</li>
 <li>Click Delete resource group</li>
 </ol>
-<p><img src="../images/Delete_1.png" alt=""></p>
+<p><img src="../../images/Delete_1.png" alt=""></p>
 <ol start="3">
 <li>Enter the name of the resource group and click <em>Delete</em></li>
 </ol>
-<p><img src="../images/Azure-ARMTemplate-Delete.PNG" alt=""></p>
+<p><img src="../../images/azure-armtemplate-delete.png" alt="Azure ARM Template Delete"></p>
 
 </article>
 
