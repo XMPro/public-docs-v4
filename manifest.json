@@ -13677,6 +13677,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/change-password-blade.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/change-password-blade.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/chart-example.gif",
       "output": {
         "resource": {
@@ -13957,6 +13967,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/delete-a-user-v3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/delete-a-user-v3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/demo_app_drilldown.png",
       "output": {
         "resource": {
@@ -14071,6 +14091,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/e3xpp6te1g.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/edit-profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/edit-profile.png"
         }
       },
       "version": ""
@@ -14727,6 +14757,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-129.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-129.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1299.png",
       "output": {
         "resource": {
@@ -14751,6 +14791,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1309.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1314.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1314.png"
         }
       },
       "version": ""
@@ -14841,6 +14891,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1379.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-138.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-138.png"
         }
       },
       "version": ""
@@ -15891,6 +15951,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-492.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-513.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-513.png"
         }
       },
       "version": ""
@@ -17797,6 +17867,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/profile-change-password.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/profile-change-password.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/publish-unpublish-data-streams.png",
       "output": {
         "resource": {
@@ -17831,6 +17911,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/rego.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/rego2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/rego2.png"
         }
       },
       "version": ""
@@ -17891,6 +17981,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/request-license2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/reset-password1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/reset-password1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/reset-password2-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/reset-password2-3.png"
         }
       },
       "version": ""
@@ -18241,6 +18351,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/url2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/users-change-business-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/users-change-business-role.png"
         }
       },
       "version": ""
@@ -63077,6 +63197,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/ADMINISTRATION-SUBSCRIPTIONS-ADMIN-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/ADMINISTRATION-USERS-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/ADMINISTRATION-USERS-MIGRATION-PLAN.html"
         }
       },
       "version": ""
