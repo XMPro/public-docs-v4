@@ -1612,7 +1612,7 @@
   "migration/MIGRATION-TRACKER.html": {
     "href": "migration/MIGRATION-TRACKER.html",
     "title": "GitBook to DocFX Migration Tracking | XMPro",
-    "summary": "GitBook to DocFX Migration Tracking This document tracks the progress of migrating content from GitBook to DocFX format. Contributors should update this file to claim sections they're working on and mark them as complete when finished. Sections Assignment Section Assigned To Status Notes Getting Started Dan ✓ Resources Dan ✓ Don't worry too much about external resources, we may remove these for now Concepts Dan ✓ How-To Guides Jackson ↻ Blocks Dan ✓ Administration Dan ✓ Installation Dan ↻ Release Notes"
+    "summary": "GitBook to DocFX Migration Tracking This document tracks the progress of migrating content from GitBook to DocFX format. Contributors should update this file to claim sections they're working on and mark them as complete when finished. Sections Assignment Section Assigned To Status Notes Getting Started Dan ✓ Resources Dan ✓ Don't worry too much about external resources, we may remove these for now Concepts Dan ✓ How-To Guides Jackson ↻ Blocks Dan ✓ Administration Dan ✓ Installation Dan ↻ Release Notes Dan ↻"
   },
   "migration/RECOMMENDATION-MIGRATION-PLAN.html": {
     "href": "migration/RECOMMENDATION-MIGRATION-PLAN.html",
