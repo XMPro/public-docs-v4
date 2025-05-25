@@ -87,97 +87,33 @@
         <article data-uid="">
 <h1 id="setup-auto-approvaldefault-subscriptions">Setup Auto Approval/Default Subscriptions</h1>
 
-<p>This page explains how to set up auto-approval and default subscriptions in the XMPro platform.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>You must have Global Administrator or Company Administrator privileges to set up auto-approval and default subscriptions.</li>
-<li>The company and subscriptions must already be set up in the system.</li>
-</ul>
-<h2 id="accessing-auto-approval-and-default-subscription-settings">Accessing Auto-Approval and Default Subscription Settings</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Please note that this section is intended for Administrative users. No other type of user is allowed to manage a Company's Subscriptions.</p>
+</div>
+<h2 id="auto-approval">Auto Approval</h2>
+<p>Company Administrators in the Subscription Manager can set up Auto Approval for any users who sign up using the Company name. If Auto Approval is enabled, the Company Administrator does not need to approve access requests individually, instead, the user will automatically gain access to XMPro.</p>
+<p>To enable Auto Approval, first log in to XMPro Subscription Manager as a Company Administrator. Then:</p>
 <ol>
-<li>Log in to the XMPro platform using your Administrator account.</li>
-<li>Navigate to the Administration section.</li>
-<li>Select &quot;Subscriptions&quot; from the menu.</li>
-<li>Navigate to the &quot;Auto-Approval &amp; Defaults&quot; tab.</li>
+<li>Click Users in the left menu to open the Users page.</li>
+<li>Open the Access Requests page by clicking the Registration Requests button in the command bar.</li>
+<li>Open the Auto Approve page by clicking the Setup Auto Approve button in the command bar.</li>
+<li>Check the <em>Enable auto approve</em> checkbox.</li>
+<li>Choose a Default Role that will be given to new users.</li>
+<li>Click Save.</li>
 </ol>
-<h2 id="setting-up-auto-approval-for-subscriptions">Setting Up Auto-Approval for Subscriptions</h2>
-<p>Auto-approval allows users to gain access to certain subscriptions automatically without requiring administrator approval.</p>
-<h3 id="configure-auto-approval">Configure Auto-Approval</h3>
+<p><img src="../../images/image-143.png" alt="Auto Approval Setup"></p>
+<h2 id="default-subscriptions"><strong>Default Subscriptions</strong></h2>
+<p>Company Administrators in the Subscription Manager have the ability to determine if users signing up to the Subscription Manager are given access to products by default. They can also assign users a default specific role, according to what they have configured.</p>
+<p>For example, if a Company Administrator set the Data Stream Designer to be a default product and set the default role for this product to &quot;General User&quot;, any new person signing up will be given access to the Data Stream Designer as a general user when the Company Administrator approves their request for access to Subscription Manager. Thus, there is no need to have every user signing up request a subscription to every product they need access to, on top of Subscription Manager, and approve every request individually. To set this up, follow the steps below:</p>
 <ol>
-<li>On the Auto-Approval &amp; Defaults tab, locate the &quot;Auto-Approval Settings&quot; section.</li>
-<li>Click the &quot;Configure&quot; button.</li>
-<li>Select the subscriptions that should be auto-approved:
-<ul>
-<li>Check the box next to each subscription that should be auto-approved.</li>
-<li>Uncheck the box for subscriptions that require manual approval.</li>
-</ul>
-</li>
-<li>Configure auto-approval conditions:
-<ul>
-<li>Domain-based: Auto-approve users from specific email domains.</li>
-<li>Role-based: Auto-approve users with specific roles.</li>
-<li>Department-based: Auto-approve users from specific departments.</li>
-</ul>
-</li>
-<li>Click &quot;Save&quot; to apply the auto-approval settings.</li>
+<li>Click on <em>Subscriptions</em> from the left-hand menu.</li>
+<li>Select the product you would like to be a default product.</li>
+<li>Select the &quot;<em>Is default?</em>&quot; check box.</li>
+<li>Select the role that the new users should hold on this product after they have been automatically been given access from the &quot;<em>Default Role</em>&quot; drop-down.</li>
+<li>Click <em>Save.</em></li>
 </ol>
-<h3 id="edit-auto-approval-settings">Edit Auto-Approval Settings</h3>
-<ol>
-<li>On the Auto-Approval &amp; Defaults tab, locate the &quot;Auto-Approval Settings&quot; section.</li>
-<li>Click the &quot;Edit&quot; button.</li>
-<li>Update the auto-approval settings as needed.</li>
-<li>Click &quot;Save&quot; to apply the changes.</li>
-</ol>
-<h3 id="disable-auto-approval">Disable Auto-Approval</h3>
-<ol>
-<li>On the Auto-Approval &amp; Defaults tab, locate the &quot;Auto-Approval Settings&quot; section.</li>
-<li>Click the &quot;Disable&quot; button.</li>
-<li>Confirm the action when prompted.</li>
-<li>Auto-approval will be disabled, and all subscription requests will require manual approval.</li>
-</ol>
-<h2 id="setting-up-default-subscriptions">Setting Up Default Subscriptions</h2>
-<p>Default subscriptions are automatically assigned to new users when they are added to the system.</p>
-<h3 id="configure-default-subscriptions">Configure Default Subscriptions</h3>
-<ol>
-<li>On the Auto-Approval &amp; Defaults tab, locate the &quot;Default Subscriptions&quot; section.</li>
-<li>Click the &quot;Configure&quot; button.</li>
-<li>Select the subscriptions that should be assigned by default:
-<ul>
-<li>Check the box next to each subscription that should be assigned by default.</li>
-<li>Uncheck the box for subscriptions that should not be assigned by default.</li>
-</ul>
-</li>
-<li>Configure default subscription conditions:
-<ul>
-<li>Domain-based: Assign default subscriptions to users from specific email domains.</li>
-<li>Role-based: Assign default subscriptions to users with specific roles.</li>
-<li>Department-based: Assign default subscriptions to users from specific departments.</li>
-</ul>
-</li>
-<li>Click &quot;Save&quot; to apply the default subscription settings.</li>
-</ol>
-<h3 id="edit-default-subscription-settings">Edit Default Subscription Settings</h3>
-<ol>
-<li>On the Auto-Approval &amp; Defaults tab, locate the &quot;Default Subscriptions&quot; section.</li>
-<li>Click the &quot;Edit&quot; button.</li>
-<li>Update the default subscription settings as needed.</li>
-<li>Click &quot;Save&quot; to apply the changes.</li>
-</ol>
-<h3 id="disable-default-subscriptions">Disable Default Subscriptions</h3>
-<ol>
-<li>On the Auto-Approval &amp; Defaults tab, locate the &quot;Default Subscriptions&quot; section.</li>
-<li>Click the &quot;Disable&quot; button.</li>
-<li>Confirm the action when prompted.</li>
-<li>Default subscriptions will be disabled, and new users will not be automatically assigned any subscriptions.</li>
-</ol>
-<h2 id="managing-user-access-to-subscriptions">Managing User Access to Subscriptions</h2>
-<p>For detailed information on managing user access to subscriptions, see <a href="manage-user-access.html">Manage User Access</a>.</p>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Auto-approval and default subscription settings apply to all new users who meet the specified conditions.</li>
-<li>These settings can help streamline the onboarding process for new users.</li>
-<li>Auto-approval and default subscription settings can be updated at any time to reflect changes in the organization's needs.</li>
-</ul>
+<p><img src="../../images/image-278.png" alt="Default Subscriptions Setup"></p>
 
 </article>
 

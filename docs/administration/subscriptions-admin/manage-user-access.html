@@ -87,97 +87,671 @@
         <article data-uid="">
 <h1 id="manage-user-access">Manage User Access</h1>
 
-<p>This page explains how to manage user access to subscriptions in the XMPro platform.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>You must have Global Administrator or Company Administrator privileges to manage user access to subscriptions.</li>
-<li>The company and subscriptions must already be set up in the system.</li>
-</ul>
-<h2 id="accessing-user-access-management">Accessing User Access Management</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Please note that this section is intended for Administrative users. No other type of user is allowed to manage a Company's Subscriptions.</p>
+</div>
+<h2 id="adding-users-to-a-subscription"><strong>Adding Users to a Subscription</strong></h2>
+<p>Follow the steps below to give access to a product for a user in a company other than XMPro.</p>
 <ol>
-<li>Log in to the XMPro platform using your Administrator account.</li>
-<li>Navigate to the Administration section.</li>
-<li>Select &quot;Subscriptions&quot; from the menu.</li>
-<li>Navigate to the &quot;User Access&quot; tab.</li>
+<li>Open the Subscriptions page from the left-hand menu.</li>
+<li>Click on the product the user needs access to.</li>
+<li>Click the Users button in the command bar.</li>
+<li>Click on <em>Add</em>.</li>
+<li>Select the user from the drop-down.</li>
+<li>Select a role for the user.</li>
+<li>Select the rights the selected user needs on the product.</li>
+<li>Click <em>Save</em>.</li>
+<li>The user will receive an email that access has been granted for the selected product.</li>
 </ol>
-<h2 id="managing-user-access-to-subscriptions">Managing User Access to Subscriptions</h2>
-<h3 id="view-current-user-access">View Current User Access</h3>
-<p>The User Access tab displays all users and their current subscription access, including:</p>
-<ul>
-<li>User name</li>
-<li>Email address</li>
-<li>Assigned subscriptions</li>
-<li>Access status (Active, Pending, Denied)</li>
-<li>Role within each subscription</li>
-</ul>
-<h3 id="grant-access-to-a-subscription">Grant Access to a Subscription</h3>
+<p><img src="../../images/image-616.png" alt="Adding Users to a Subscription"></p>
+<h2 id="approve-user-access-request">Approve User Access Request</h2>
+<p>If there is <a href="setup-auto-approvals-default-subscriptions.html">no Auto Approval or Default Subscription</a> setup, the Admin needs to approve a user's Access Request.</p>
+<p>If someone in your company lodged an access request for a product, an email will be sent to all Company Administrators within your company. The first available person with an administrative role within the Subscription Manager can approve the request. To approve an access request for a user, please follow the steps below.</p>
 <ol>
-<li>On the User Access tab, click the &quot;Grant Access&quot; button.</li>
-<li>Select the user you want to grant access to.</li>
-<li>Choose the subscription from the available subscriptions.</li>
-<li>Assign a role for the user within the subscription:
-<ul>
-<li>Viewer: Can view content but cannot make changes.</li>
-<li>Contributor: Can view and contribute content but cannot manage settings.</li>
-<li>Administrator: Has full access to manage the subscription.</li>
-</ul>
-</li>
-<li>Click &quot;Grant&quot; to provide access.</li>
+<li>Open the Subscriptions page from the left-hand menu.</li>
+<li>Select the product for which the access request was lodged. A counter next to the product name will indicate the number of pending access requests you have for that product.</li>
+<li>Click on <em>Access Requests</em>.</li>
+<li>Click on the name of the user that lodged the request.</li>
+<li>Select the role that the user should have on the product from the drop-down, for example, &quot;<em>General User</em>&quot;.</li>
+<li>Select the rights the user should have on the product, for example, the <a href="manage-user-access.html#data-stream-designer-rights-and-roles">rights and roles for Data Stream Designer</a> or <a href="manage-user-access.html#app-designer-rights-and-roles">rights and roles for the App Designer</a>.</li>
+<li>Click <em>Save</em>.</li>
+<li>The user who lodged the request will receive an email notifying him/ her that they have been granted access to the product.</li>
 </ol>
-<h3 id="edit-user-access">Edit User Access</h3>
+<p><img src="../../images/image-266.png" alt="Approve User Access Request"></p>
+<h2 id="editing-rights-and-access-for-a-user"><strong>Editing Rights and Access for a User</strong></h2>
+<p>If you need to edit rights for a user or a user's role on a product, follow the steps below.</p>
 <ol>
-<li>Find the user whose access you want to edit in the list.</li>
-<li>Click the &quot;Edit&quot; button for that user.</li>
-<li>Update the user's access details as needed:
-<ul>
-<li>Change the assigned role</li>
-<li>Modify access permissions</li>
-</ul>
-</li>
-<li>Click &quot;Save&quot; to apply the changes.</li>
+<li>Open the Subscriptions page from the left-hand menu.</li>
+<li>Select the product that you are looking to change a user's rights or access.</li>
+<li>Click Users in the command bar to open the Users page.</li>
+<li>Select the user whose rights or role you would like to change on a product.</li>
+<li>Make any changes to the role of the selected user, as required.</li>
+<li>Make any changes to the rights of the selected user, as required.</li>
+<li>Click <em>Save.</em></li>
 </ol>
-<h3 id="revoke-user-access">Revoke User Access</h3>
+<p><img src="../../images/image-1379.png" alt="Editing Rights and Access for a User"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Advise the user to sign out and back in again for the changes to take effect.</p>
+</div>
+<h2 id="removing-access-for-a-user"><strong>Removing Access for a User</strong></h2>
+<p>If you need to remove access for a user on a product, follow the steps below.</p>
 <ol>
-<li>Find the user whose access you want to revoke in the list.</li>
-<li>Click the &quot;Revoke&quot; button for that user.</li>
-<li>Confirm the revocation when prompted.</li>
-<li>The user will no longer have access to the subscription.</li>
+<li>Open the Subscriptions page from the left-hand menu.</li>
+<li>Select the product that you are looking to revoke a user's access.</li>
+<li>Click Users in the command bar to open the Users page.</li>
+<li>Select the user whose rights or role you would like to change on a product.</li>
+<li>Click <em>Revoke Access</em>.</li>
+<li>Confirm that you would like to remove access for the selected user on the selected product by clicking <em>Yes.</em></li>
 </ol>
-<h2 id="managing-access-requests">Managing Access Requests</h2>
-<h3 id="view-access-requests">View Access Requests</h3>
-<ol>
-<li>Navigate to the &quot;Access Requests&quot; tab.</li>
-<li>This tab displays all pending requests for subscription access, including:
-<ul>
-<li>User name</li>
-<li>Email address</li>
-<li>Requested subscription</li>
-<li>Request date</li>
-</ul>
-</li>
-</ol>
-<h3 id="approve-an-access-request">Approve an Access Request</h3>
-<ol>
-<li>Find the access request you want to approve in the list.</li>
-<li>Click the &quot;Approve&quot; button for that request.</li>
-<li>Assign a role for the user within the subscription.</li>
-<li>Click &quot;Confirm&quot; to approve the request.</li>
-</ol>
-<h3 id="deny-an-access-request">Deny an Access Request</h3>
-<ol>
-<li>Find the access request you want to deny in the list.</li>
-<li>Click the &quot;Deny&quot; button for that request.</li>
-<li>Optionally, provide a reason for the denial.</li>
-<li>Click &quot;Confirm&quot; to deny the request.</li>
-</ol>
-<h2 id="setting-up-auto-approval-for-subscriptions">Setting Up Auto-Approval for Subscriptions</h2>
-<p>For detailed information on setting up auto-approval for subscriptions, see <a href="setup-auto-approvals-default-subscriptions.html">Setup Auto Approval/Default Subscriptions</a>.</p>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>Changes to user access may affect the user's ability to access certain features or products.</li>
-<li>Access management is typically performed by Administrators during the setup and maintenance of the XMPro platform.</li>
-<li>Users can request access to subscriptions through the platform, which will appear in the Access Requests tab for administrator approval.</li>
-</ul>
+<p><img src="../../images/image-1103.png" alt="Removing Access for a User"></p>
+<h2 id="data-stream-designer-rights-and-roles">Data Stream Designer Rights and Roles</h2>
+<p>Several rights are maintained in Subscription Manager for Data Stream Designer. Each of these rights represents an aspect of the Data Stream Designer system that a user is allowed to see or access. Persons with administrative rights in Subscription Manager manage all rights.</p>
+<h3 id="data-stream-designer-rights">Data Stream Designer Rights</h3>
+<p>The table below lists the rights that can be assigned to a user.</p>
+<table>
+<thead>
+<tr>
+<th>Right</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreateAgent</td>
+<td>Allows for an Agent to be uploaded.</td>
+</tr>
+<tr>
+<td>CreateCategory</td>
+<td>Allows for a Category to be created.</td>
+</tr>
+<tr>
+<td>CreateCollection</td>
+<td>Allows for a Collection to be created.</td>
+</tr>
+<tr>
+<td>CreateUseCase</td>
+<td>Allows for a Data Stream to be created, in which a user can create a Data Stream.</td>
+</tr>
+<tr>
+<td>DeleteAgent</td>
+<td>Allows for an Agent to be deleted.</td>
+</tr>
+<tr>
+<td>DeleteCategory</td>
+<td>Allows for a Category to be deleted.</td>
+</tr>
+<tr>
+<td>DeleteCollection</td>
+<td>Allows for a Collection to be deleted.</td>
+</tr>
+<tr>
+<td>DeleteUseCase</td>
+<td>Allows for a Data Stream to be deleted.</td>
+</tr>
+<tr>
+<td>DesignUseCase</td>
+<td>Allows for changes to be made to a Data Stream. This right allows a user to save changes to a Data Stream, as well as configure or delete Agents in a Data Stream. This right also allows for a user to copy a version of the Stream.</td>
+</tr>
+<tr>
+<td>DisconnectCollectionHosts</td>
+<td>Allows for the user to disconnect Stream Hosts.</td>
+</tr>
+<tr>
+<td>EditAgent</td>
+<td>Allows for an Agent to be edited. This includes managing the versions available in Data Stream Designer for the Agent.</td>
+</tr>
+<tr>
+<td>EditBusinessCase</td>
+<td>Allows for a Business Case to be edited.</td>
+</tr>
+<tr>
+<td>EditCategory</td>
+<td>Allows for Categories to be edited.</td>
+</tr>
+<tr>
+<td>EditCollection</td>
+<td>Allows for a Collection to be edited.</td>
+</tr>
+<tr>
+<td>EditNotes</td>
+<td>Allows for Notes to be edited.</td>
+</tr>
+<tr>
+<td>EditUseCase</td>
+<td>Allows for a Data Stream to be edited.</td>
+</tr>
+<tr>
+<td>LiveView</td>
+<td>Allows for Live Data from a published Data Stream to be viewed.</td>
+</tr>
+<tr>
+<td>ManageVariables</td>
+<td>Allows for the management of Variables.</td>
+</tr>
+<tr>
+<td>PublishUseCase</td>
+<td>Allows for a user to publish a Data Stream.</td>
+</tr>
+<tr>
+<td>RevokeCollectionKey</td>
+<td>Allows for a Collection key to be replaced with a new key.</td>
+</tr>
+<tr>
+<td>SetHostLogLevel</td>
+<td>Allows you to change the Host Log Levels between Info or Trace. See the Collection and Stream Host article for more information.</td>
+</tr>
+<tr>
+<td>ShareUseCase</td>
+<td>Allows for Data Streams to be shared.</td>
+</tr>
+<tr>
+<td>ViewAgent</td>
+<td>Allows for a list of Agents to be viewed.</td>
+</tr>
+<tr>
+<td>ViewCategory</td>
+<td>Allows for a Category to be viewed.</td>
+</tr>
+<tr>
+<td>ViewCollection</td>
+<td>Allows for a Collection to be viewed.</td>
+</tr>
+<tr>
+<td>ViewHostLogs</td>
+<td>Allows for the ability to view logs created for Stream Hosts that are running.</td>
+</tr>
+<tr>
+<td>ViewHosts</td>
+<td>Allows for a list of the available Stream Hosts to be viewed.</td>
+</tr>
+<tr>
+<td>ViewUseCase</td>
+<td>Allows for a Data Stream to be viewed.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-stream-designer-default-roles">Data Stream Designer Default Roles</h3>
+<p>A user is assigned a role and each role has appropriate rights for that function enabled.</p>
+<p>The table below illustrates which rights are included with each of the default roles. These default roles can be amended by the global administrator - who can also add new roles.</p>
+<table>
+<thead>
+<tr>
+<th>Right</th>
+<th>Administrator</th>
+<th>User</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreateAgent</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>CreateCategory</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>CreateCollection</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>CreateUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>DeleteAgent</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DeleteCategory</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DeleteCollection</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DeleteUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>DesignUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>DisconnectCollectionHosts</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditAgent</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditBusinessCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>EditCategory</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditCollection</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditNotes</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>EditUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>LiveView</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ManageVariables</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>PublishUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>RevokeCollectionKey</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>SetHostLogLevel</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ShareUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewAgent</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewCategory</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewCollection</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewHostLogs</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ViewHosts</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ViewUseCase</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="app-designer-rights-and-roles">‌App Designer Rights and Roles</h2>
+<p>‌Several App Designer rights are maintained in Subscription Manager. Each of these rights represents an aspect of the App Designer system that a user is allowed to see or access. Persons with administrative rights in Subscription Manager manage all rights.</p>
+<h3 id="app-designer-rights">App Designer Rights</h3>
+<p>The table below lists the rights that can be assigned to a user.</p>
+<table>
+<thead>
+<tr>
+<th>Right</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreateApp</td>
+<td>Allows for an Application to be created.</td>
+</tr>
+<tr>
+<td>CreateCategory</td>
+<td>Allows for a Category to be created.</td>
+</tr>
+<tr>
+<td>CreateConnector</td>
+<td>Allows for a Connector to be created.</td>
+</tr>
+<tr>
+<td>DeleteApp</td>
+<td>Allows for an Application to be deleted.</td>
+</tr>
+<tr>
+<td>DeleteAppFile</td>
+<td>Allows for an App File to be deleted.</td>
+</tr>
+<tr>
+<td>DeleteCategory</td>
+<td>Allows for a Category to be deleted</td>
+</tr>
+<tr>
+<td>DeleteConnector</td>
+<td>Allows for a Connector to be deleted.</td>
+</tr>
+<tr>
+<td>DesignForm</td>
+<td>Allows for changes to be made to a Form. This right allows a user to add, edit, and delete Forms. If a user has the DesignRecommendation right they are able to select Forms for Rules, but not add, edit, or delete a Form.</td>
+</tr>
+<tr>
+<td>DesignRecommendation</td>
+<td>Allows for changes to be made to a Recommendation. This right allows a user to save changes to a Recommendation.</td>
+</tr>
+<tr>
+<td>EditApp</td>
+<td>Allows for an Application to be edited.</td>
+</tr>
+<tr>
+<td>EditCategory</td>
+<td>Allows for a Category to be edited.</td>
+</tr>
+<tr>
+<td>EditConnector</td>
+<td>Allows for a Connector to be edited.</td>
+</tr>
+<tr>
+<td>ManageAccess</td>
+<td>Allows for Design and Run Access to Apps to be managed.</td>
+</tr>
+<tr>
+<td>ManageAppConnections</td>
+<td>Allows for Connections to be added, edited, and deleted.</td>
+</tr>
+<tr>
+<td>ManageConnectorCategories</td>
+<td>Allows for categories of Connectors to be added, edited, and deleted.</td>
+</tr>
+<tr>
+<td>ManageRecommendationAccess</td>
+<td>Allows for Design and Run Access to Recommendations to be managed.</td>
+</tr>
+<tr>
+<td>ManageRecommendationCategories</td>
+<td>Allows for categories of Recommendations to be added, edited, and deleted.</td>
+</tr>
+<tr>
+<td>ManageTemplate</td>
+<td>Allows for Templates to be added, edited, and deleted.</td>
+</tr>
+<tr>
+<td>ManageVariables</td>
+<td>Allows for Variables to be added, edited, and deleted</td>
+</tr>
+<tr>
+<td>UploadAppFile</td>
+<td>Allows for an App File to be uploaded.</td>
+</tr>
+<tr>
+<td>ViewApp</td>
+<td>Allows for the user to view Applications in runtime mode.</td>
+</tr>
+<tr>
+<td>ViewAppBar</td>
+<td>Allows for the left menu bar to be viewed.</td>
+</tr>
+<tr>
+<td>ViewCategory</td>
+<td>Allows for Categories to be viewed.</td>
+</tr>
+<tr>
+<td>ViewConnector</td>
+<td>Allows for Connectors to be viewed.</td>
+</tr>
+<tr>
+<td>ViewRecommendationAlert</td>
+<td>Allows for Recommendation Alerts to be viewed.</td>
+</tr>
+<tr>
+<td>ViewTemplate</td>
+<td>Allows for Templates to be viewed.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="app-designer-default-roles">App Designer Default Roles</h3>
+<p>A user is assigned a role and each role has appropriate rights for that function enabled.</p>
+<p>The table below illustrates which rights are included with each of the default roles. These default roles can be amended by the global administrator - who can also add new roles.</p>
+<table>
+<thead>
+<tr>
+<th>Right</th>
+<th>Administrator</th>
+<th>Design User</th>
+<th>User</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreateApp</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>CreateCategory</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>CreateConnector</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DeleteApp</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DeleteAppFile</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>DeleteCategory</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DeleteConnector</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DesignForm</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>DesignRecommendation</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditApp</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditCategory</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>EditConnector</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageAccess</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageAppConnections</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageConnectorCategories</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageRecommendationAccess</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageRecommendationCategories</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageTemplate</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ManageVariables</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>UploadAppFile</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewApp</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewAppBar</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewCategory</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewConnector</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>ViewRecommendationAlert</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>ViewTemplate</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai-rights-and-roles">‌AI Rights and Roles</h2>
+<p>One right is maintained in Subscription Manager for XMPro AI. It represents an aspect of the AI system that a user is allowed to see or access. Persons with administrative rights in Subscription Manager manage it.</p>
+<h3 id="ai-rights">AI Rights</h3>
+<p>The table below lists the right that can be assigned to a user.</p>
+<table>
+<thead>
+<tr>
+<th>Right</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access Jupyter</td>
+<td>Allows for XMPro Notebook to be accessed.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-default-roles">AI Default Roles</h3>
+<p>A user is assigned a role and each role has appropriate rights for that function enabled.</p>
+<p>The table below illustrates which rights are included with each of the default roles. These default roles can be amended by the global administrator - who can also add new roles.</p>
+<table>
+<thead>
+<tr>
+<th>Right</th>
+<th>Administrator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access Jupyter</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="xmpro-notebook-rights-and-roles">‌XMPro Notebook Rights and Roles</h2>
+<p>Access rights for XMPro Notebook are controlled in Jupyter, not Subscription Manager.</p>
 
 </article>
 

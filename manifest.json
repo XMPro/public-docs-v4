@@ -11497,6 +11497,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/apply-license.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/apply-license.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/apps/apps_1.png",
       "output": {
         "resource": {
@@ -14487,6 +14497,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1103.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1103.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1104.png",
       "output": {
         "resource": {
@@ -14817,6 +14837,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1379.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1379.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1394.png",
       "output": {
         "resource": {
@@ -14841,6 +14871,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1418.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-143.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-143.png"
         }
       },
       "version": ""
@@ -15507,6 +15547,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-266.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-266.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-270.png",
       "output": {
         "resource": {
@@ -15521,6 +15571,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-273.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-278.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-278.png"
         }
       },
       "version": ""
@@ -15951,6 +16011,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-607.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-616.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-616.png"
         }
       },
       "version": ""
@@ -17801,6 +17871,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/removing-static-content.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/request-license.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/request-license.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/request-license2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/request-license2.png"
         }
       },
       "version": ""
@@ -62977,6 +63067,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/ADMINISTRATION-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/ADMINISTRATION-SUBSCRIPTIONS-ADMIN-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/ADMINISTRATION-SUBSCRIPTIONS-ADMIN-MIGRATION-PLAN.html"
         }
       },
       "version": ""
