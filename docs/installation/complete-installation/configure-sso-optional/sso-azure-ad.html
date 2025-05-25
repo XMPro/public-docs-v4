@@ -96,10 +96,7 @@
 <h5>Warning</h5>
 <p>Copy this ID. You will add it in Subscription Manager's <em>web.config</em> file shortly.</p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: copy-client-id.png</p>
-</div>
+<p><img src="../../../images/copy-client-id.png" alt="Copy application client ID"></p>
 <h2 id="credentials">Credentials</h2>
 <p>Next, create a secret for Subscription Manager. Follow the steps below:</p>
 <ol>
@@ -109,10 +106,8 @@
 <li>Choose a duration.</li>
 <li>Click <em>Add.</em></li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Images not available: add-secret-1-1.png, add-secret-2-2.png</p>
-</div>
+<p><img src="../../../images/add-secret-1-1.png" alt="Add secret step 1"></p>
+<p><img src="../../../images/add-secret-2-2.png" alt="Add secret step 2"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Both the application client ID and the secret need to be added to Subscription Manager's <em>web.config</em> file.</p>
@@ -130,10 +125,7 @@
 <li>Add the application (client) ID that you copied earlier to the <code>clientId</code> attribute of the <code>azureAD</code> element</li>
 <li>Copy the secret and add it to the <em>web.config</em>.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: SSO_AzureAD_web_config_clientId_and_key.png</p>
-</div>
+<p><img src="../../../images/sso-azuread-web-config-clientid-and-key.png" alt="Azure AD web config clientId and key"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you're using the Azure key store to manage app settings and secrets, use the <code>${}</code> syntax for the azureAD attributes in the <em>web.config</em>, similar to:
@@ -164,10 +156,7 @@
 <ol start="12">
 <li>Copy the baseUrl value in the <em>web.config</em> - you will need it later in this guide.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: SSO_AzureAD_web_config_baseUrl.png</p>
-</div>
+<p><img src="../../../images/sso-azuread-web-config-baseurl.png" alt="Azure AD web config baseUrl"></p>
 <ol start="13">
 <li>In Azure Portal, click on <em>Authentication</em> and add the following URL in the space provided:</li>
 </ol>
@@ -176,27 +165,18 @@
 <p>Example: <em>https://mysampleserver/xmprosubscriptionmanager/identity/signin-azuread</em></p>
 </li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: authentication-4.png</p>
-</div>
+<p><img src="../../../images/authentication-4.png" alt="Authentication configuration"></p>
 <ol start="14">
 <li>On the Authentication page, scroll down until you see &quot;<em>Advanced Settings</em>&quot;.</li>
 <li>Select &quot;<em>ID tokens</em>&quot; and click <em>Save</em>.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: authentication-advanced-settings.png</p>
-</div>
+<p><img src="../../../images/authentication-advanced-settings.png" alt="Authentication advanced settings"></p>
 <h2 id="api-permissions">API permissions</h2>
 <ol start="16">
 <li>Select <em>API permissions</em> on the left-hand menu.</li>
 <li>Make sure the permissions set on the application correspond to the image below.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: permissions-1.png</p>
-</div>
+<p><img src="../../../images/permissions-1.png" alt="API permissions configuration"></p>
 <h2 id="sync-azure-ad-role-to-sms-business-role">Sync Azure AD Role to SM's Business Role</h2>
 <p>This optional functionality allows a user's Business Role to be synced to a corresponding Azure AD Claim each time they log in.</p>
 <ol>
@@ -210,10 +190,7 @@
 <p><a href="../../../concepts/manage-access.html#sync-business-roles-with-an-external-identity-provider">See the Sync Business Roles from Azure AD article for more information</a>.</p>
 <h2 id="guest-user-access-across-tenants">Guest User access across Tenants</h2>
 <p>When your Azure AD is in a different Tenant to Subscription Manager and the User has Guest membership in Azure AD, then add the TenantID for Azure AD.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: SSO_AzureAD_web_config_guest_tenant.png</p>
-</div>
+<p><img src="../../../images/sso-azuread-web-config-guest-tenant.png" alt="Azure AD web config guest tenant"></p>
 
 </article>
 

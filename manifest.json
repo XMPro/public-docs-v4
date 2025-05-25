@@ -10687,6 +10687,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Complete-Installation-Add-Agents-see-categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Complete-Installation-Add-Agents-see-categories.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Complete-Installation-Add-Agents-select-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Complete-Installation-Add-Agents-select-file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Configure-Health-Check-setup-step-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Configure-Health-Check-setup-step-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Configure-Health-Check-setup-step-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Configure-Health-Check-setup-step-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Configure-Health-Check-setup-step-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Configure-Health-Check-setup-step-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/DSD_Encryption_Upgrade_1.png",
       "output": {
         "resource": {
@@ -11157,6 +11207,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Installation_Agents_and_Connectors.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Installation_Agents_and_Connectors.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Installation_Complete_Installation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Installation_Complete_Installation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Installation_Overview.png",
       "output": {
         "resource": {
@@ -11557,6 +11627,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Stream_Host_Online_Status.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Stream_Host_Online_Status.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Stream_Host_Windows_Connection_Profile.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Stream_Host_Windows_Connection_Profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Stream_Host_Windows_Services.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Stream_Host_Windows_Services.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Stream_Host_Windows_Setup_Wizard.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Stream_Host_Windows_Setup_Wizard.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Theme_1.png",
       "output": {
         "resource": {
@@ -11747,10 +11857,60 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/access-control-policy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/access-control-policy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/add-adfs-credentials.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/add-adfs-credentials.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/add-data-manually.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/add-data-manually.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/add-notification-button.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/add-notification-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/add-secret-1-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/add-secret-1-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/add-secret-2-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/add-secret-2-2.png"
         }
       },
       "version": ""
@@ -11781,6 +11941,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/adding-toolbar-items-1.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/adfs-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/adfs-button.png"
         }
       },
       "version": ""
@@ -14127,6 +14297,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/authentication-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/authentication-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/authentication-advanced-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/authentication-advanced-settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/autodesk-1.gif",
       "output": {
         "resource": {
@@ -14317,10 +14507,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/choose-a-display-name.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/choose-a-display-name.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/choose-a-name-for-the-rule.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/choose-a-name-for-the-rule.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/ckm05sf4in.gif",
       "output": {
         "resource": {
           "relative_path": "docs/images/ckm05sf4in.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/click-on-add-relying-trust.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/click-on-add-relying-trust.png"
         }
       },
       "version": ""
@@ -14401,6 +14621,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/connectors-versions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/copy-client-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/copy-client-id.png"
         }
       },
       "version": ""
@@ -14717,10 +14947,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/edit-claim-insurance-policy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/edit-claim-insurance-policy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/edit-profile.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/edit-profile.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/edit-rule.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/edit-rule.png"
         }
       },
       "version": ""
@@ -15557,6 +15807,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1391.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1391.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1394.png",
       "output": {
         "resource": {
@@ -15671,6 +15931,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1488.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1489.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1489.png"
         }
       },
       "version": ""
@@ -16047,6 +16317,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1761.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1761.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1767.png",
       "output": {
         "resource": {
@@ -16061,6 +16341,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1772.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-178.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-178.png"
         }
       },
       "version": ""
@@ -16211,6 +16501,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-237.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-241.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-241.png"
         }
       },
       "version": ""
@@ -16637,6 +16937,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-552.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-552.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-564.png",
       "output": {
         "resource": {
@@ -16807,6 +17117,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-665.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-665.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-674.png",
       "output": {
         "resource": {
@@ -16897,10 +17217,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-713.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-713.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-722.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-722.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-726.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-726.png"
         }
       },
       "version": ""
@@ -19977,6 +20317,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/last-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/last-screen.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ldap.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ldap.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/lgub9xbnke.gif",
       "output": {
         "resource": {
@@ -20157,6 +20517,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/open-ad-fs-management.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/open-ad-fs-management.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/open-sub-mgr-app.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/open-sub-mgr-app.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/open-web-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/open-web-config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/ovjtnjidha.gif",
       "output": {
         "resource": {
@@ -20191,6 +20581,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/pan-and-zoom-hidden.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/permissions-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/permissions-1.png"
         }
       },
       "version": ""
@@ -20457,6 +20857,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/select-claims-aware.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/select-claims-aware.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/set-log-level.png",
       "output": {
         "resource": {
@@ -20497,10 +20907,60 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/sso-adfs-web-config-metadata-address.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sso-adfs-web-config-metadata-address.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sso-azuread-web-config-baseurl.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sso-azuread-web-config-baseurl.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sso-azuread-web-config-clientid-and-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sso-azuread-web-config-clientid-and-key.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sso-azuread-web-config-guest-tenant.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sso-azuread-web-config-guest-tenant.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/static-templates-position-configuration-2.gif",
       "output": {
         "resource": {
           "relative_path": "docs/images/static-templates-position-configuration-2.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/stream-host-install-download.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/stream-host-install-download.png"
         }
       },
       "version": ""
@@ -20641,6 +21101,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/tree-map-tooltip.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/unique-identifier.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/unique-identifier.png"
         }
       },
       "version": ""
@@ -20887,6 +21357,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/wsf-protocol.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/wsf-protocol.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/xBwzL8XAze.gif",
       "output": {
         "resource": {
@@ -20951,16 +21431,6 @@
       "output": {
         ".html": {
           "relative_path": "docs/installation/complete-installation/configure-logging-optional.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/installation/complete-installation/configure-sso-optional/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/installation/complete-installation/configure-sso-optional/index.html"
         }
       },
       "version": ""
@@ -65573,80 +66043,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration/ADMINISTRATION-COMPANIES-MIGRATION-PLAN.md",
+      "source_relative_path": "migration/COMPLETE-INSTALLATION-MIGRATION-PLAN.md",
       "output": {
         ".html": {
-          "relative_path": "migration/ADMINISTRATION-COMPANIES-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/ADMINISTRATION-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/ADMINISTRATION-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/ADMINISTRATION-SUBSCRIPTIONS-ADMIN-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/ADMINISTRATION-SUBSCRIPTIONS-ADMIN-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/ADMINISTRATION-USERS-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/ADMINISTRATION-USERS-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/BLOCKS-TOOLBOX-LAYOUT-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/BLOCKS-TOOLBOX-LAYOUT-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/BLOCKS-TOOLBOX-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/BLOCKS-TOOLBOX-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/BLOCKS-TOOLBOX-RECOMMENDATIONS-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/BLOCKS-TOOLBOX-RECOMMENDATIONS-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/BLOCKS-TOOLBOX-VISUALIZATIONS-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/BLOCKS-TOOLBOX-VISUALIZATIONS-MIGRATION-PLAN.html"
+          "relative_path": "migration/COMPLETE-INSTALLATION-MIGRATION-PLAN.html"
         }
       },
       "version": ""
@@ -65673,26 +66073,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "migration/INSTALLATION-DEPLOYMENT-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/INSTALLATION-DEPLOYMENT-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/INSTALLATION-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/INSTALLATION-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "migration/MIGRATION-TRACKER.md",
       "output": {
         ".html": {
@@ -65707,26 +66087,6 @@
       "output": {
         ".html": {
           "relative_path": "migration/OUTSTANDING-MIGRATION-WORK.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/RECOMMENDATION-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/RECOMMENDATION-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/RELEASE-NOTES-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/RELEASE-NOTES-MIGRATION-PLAN.html"
         }
       },
       "version": ""

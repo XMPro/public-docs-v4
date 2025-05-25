@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Run Stream Host as an Azure Web Job | XMPro </title>
+      <title>Azure Web Job | XMPro </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Run Stream Host as an Azure Web Job | XMPro ">
+      <meta name="title" content="Azure Web Job | XMPro ">
       
       
       <link rel="icon" href="../../../../images/favicon.png">
@@ -85,218 +85,73 @@
         </div>
 
         <article data-uid="">
-<h1 id="run-stream-host-as-an-azure-web-job">Run Stream Host as an Azure Web Job</h1>
+<h1 id="azure-web-job">Azure Web Job</h1>
 
-<p>This guide will walk you through the process of deploying the XMPro Stream Host as an Azure Web Job.</p>
 <h2 id="prerequisites">Prerequisites</h2>
+<p>The first Azure Web Job is created as part of the Azure ARM Template and has already met the <a href="../../install.html#hardware-requirements"><strong>hardware</strong> requirements</a> and <a href="../../install.html#software-requirements"><strong>software</strong> requirements</a>.</p>
+<p>If you require more Stream Hosts, follow these steps to add additional Azure Web Job Stream hosts.</p>
+<h2 id="setting-up-a-web-job">Setting up a Web Job</h2>
+<p>XMPro Stream Host can be hosted as a Web Job in Azure. Following are the steps required to set up a web job:</p>
+<ol>
+<li>Install a Stream Host locally as a Console Application</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Read the instructions in the <a href="windows-x64.html">Install Stream Host on Windows x64 article</a>.</p>
+</div>
+<ol start="2">
+<li>Copy the installed files and add them to this <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-legacy-files/o/assets%2F-MZAQh4Gn3jXbTJU2Mb4%2F-MdQnhG4EDOuuKUgRaen%2F-Md__5-am8y9M1w3Ms85%2FSH%20WebJob.zip?alt=media&amp;token=31a4ebd0-111a-4081-af43-dbfef057e559">zip</a></li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Installed files can usually be found at <em>C:\Program Files\XMPro Stream Host\*</em></p>
+</div>
+<ol start="3">
+<li>Azure may restrict file uploads to 50Mb. If so, remove these from the zip to cut down the size:</li>
+</ol>
 <ul>
-<li>An Azure subscription</li>
-<li>An existing Azure App Service or the ability to create one</li>
-<li>A valid <a href="index.html#download-the-connection-profile">Connection Profile</a> from Data Stream Designer</li>
+<li>Cache folder</li>
+<li>Logs folder</li>
+<li>*.jar files</li>
+<li>*.pdb</li>
 </ul>
-<h2 id="overview">Overview</h2>
-<p>Azure Web Jobs provide a way to run background processes in the context of an App Service. This is an ideal way to host the XMPro Stream Host in Azure, as it provides:</p>
+<ol start="4">
+<li><p>Create a Web Job as per the instructions on the <a href="https://docs.microsoft.com/en-us/azure/app-service/webjobs-create#CreateContinuous">Microsoft Documentation site</a>.</p>
+</li>
+<li><p>Choose the following settings:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File Upload</td>
+<td>Select the zip created above</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>Single Instance</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended to use a separate App service for Web Jobs to keep Data Stream Designer and Stream Hosts separate.</p>
+</div>
+<h2 id="next-step-agents--connectors">Next Step: Agents &amp; Connectors</h2>
+<p>The stream host installation is complete. Please click below to install the default Agents &amp; Connectors:</p>
 <ul>
-<li>Integration with Azure's infrastructure</li>
-<li>Automatic scaling capabilities</li>
-<li>Monitoring and logging through Application Insights</li>
-<li>Simplified deployment and management</li>
+<li><a href="../install-connectors.html">Install Connectors</a></li>
 </ul>
-<h2 id="deployment-steps">Deployment Steps</h2>
-<h3 id="1-prepare-the-stream-host-package">1. Prepare the Stream Host Package</h3>
-<ol>
-<li><p><a href="index.html#download-the-installer">Download the Stream Host installer</a> for Windows (x64) from Data Stream Designer.</p>
-</li>
-<li><p>Extract the contents of the installer to a local folder.</p>
-</li>
-<li><p><a href="index.html#download-the-connection-profile">Download the Connection Profile</a> from Data Stream Designer.</p>
-</li>
-<li><p>Create a file named <code>settings.job</code> in the same folder with the following content:</p>
-<pre><code class="lang-json">{
-  &quot;schedule&quot;: &quot;0 */5 * * * *&quot;,
-  &quot;is_singleton&quot;: true
-}
-</code></pre>
-<p>This configures the Web Job to run continuously and restart every 5 minutes if it stops.</p>
-</li>
-<li><p>Create a file named <code>run.cmd</code> in the same folder with the following content:</p>
-<pre><code class="lang-cmd">@echo off
-XMPro.StreamHost.exe
-</code></pre>
-</li>
-<li><p>Create a file named <code>appsettings.json</code> in the same folder with the following content:</p>
-<pre><code class="lang-json">{
-  &quot;ConnectionProfile&quot;: {
-    &quot;Path&quot;: &quot;D:\\home\\site\\wwwroot\\App_Data\\jobs\\continuous\\StreamHost\\connection-profile.json&quot;,
-    &quot;FileKey&quot;: &quot;your-file-key&quot;
-  },
-  &quot;Logging&quot;: {
-    &quot;LogLevel&quot;: {
-      &quot;Default&quot;: &quot;Information&quot;,
-      &quot;Microsoft&quot;: &quot;Warning&quot;,
-      &quot;System&quot;: &quot;Warning&quot;
-    }
-  }
-}
-</code></pre>
-<p>Replace <code>your-file-key</code> with the key you used when downloading the Connection Profile.</p>
-</li>
-<li><p>Copy your Connection Profile file to the folder and rename it to <code>connection-profile.json</code>.</p>
-</li>
-<li><p>Create a ZIP file containing all the files in the folder.</p>
-</li>
-</ol>
-<h3 id="2-create-an-azure-app-service">2. Create an Azure App Service</h3>
-<p>If you don't already have an App Service, you'll need to create one:</p>
-<ol>
-<li><p>Log in to the <a href="https://portal.azure.com">Azure Portal</a>.</p>
-</li>
-<li><p>Click on <strong>Create a resource</strong> &gt; <strong>Web</strong> &gt; <strong>Web App</strong>.</p>
-</li>
-<li><p>Configure the Web App:</p>
-<ul>
-<li><strong>Subscription</strong>: Select your Azure subscription</li>
-<li><strong>Resource Group</strong>: Create a new one or select an existing one</li>
-<li><strong>Name</strong>: Enter a unique name for your App Service</li>
-<li><strong>Publish</strong>: Code</li>
-<li><strong>Runtime stack</strong>: .NET Core 3.1</li>
-<li><strong>Operating System</strong>: Windows</li>
-<li><strong>Region</strong>: Select a region close to your XMPro server</li>
-<li><strong>App Service Plan</strong>: Create a new one or select an existing one</li>
-</ul>
-</li>
-<li><p>Click <strong>Review + create</strong>, then <strong>Create</strong>.</p>
-</li>
-<li><p>Wait for the deployment to complete.</p>
-</li>
-</ol>
-<h3 id="3-deploy-the-stream-host-as-a-web-job">3. Deploy the Stream Host as a Web Job</h3>
-<ol>
-<li><p>In the Azure Portal, navigate to your App Service.</p>
-</li>
-<li><p>In the left menu, under <strong>Settings</strong>, click on <strong>WebJobs</strong>.</p>
-</li>
-<li><p>Click <strong>Add</strong>.</p>
-</li>
-<li><p>Configure the Web Job:</p>
-<ul>
-<li><strong>Name</strong>: StreamHost</li>
-<li><strong>File Upload</strong>: Select the ZIP file you created earlier</li>
-<li><strong>Type</strong>: Continuous</li>
-</ul>
-</li>
-<li><p>Click <strong>OK</strong> to create the Web Job.</p>
-</li>
-<li><p>The Web Job will start automatically. You can monitor its status in the WebJobs list.</p>
-</li>
-</ol>
-<h2 id="configuring-application-settings">Configuring Application Settings</h2>
-<p>For better security, you can store sensitive information like the File Key in the App Service's Application Settings:</p>
-<ol>
-<li><p>In the Azure Portal, navigate to your App Service.</p>
-</li>
-<li><p>In the left menu, under <strong>Settings</strong>, click on <strong>Configuration</strong>.</p>
-</li>
-<li><p>Under the <strong>Application settings</strong> tab, click <strong>New application setting</strong>.</p>
-</li>
-<li><p>Add a setting:</p>
-<ul>
-<li><strong>Name</strong>: CONNECTION_PROFILE_FILE_KEY</li>
-<li><strong>Value</strong>: Your file key</li>
-</ul>
-</li>
-<li><p>Click <strong>OK</strong>, then <strong>Save</strong>.</p>
-</li>
-<li><p>Update your <code>appsettings.json</code> file to use this environment variable:</p>
-<pre><code class="lang-json">{
-  &quot;ConnectionProfile&quot;: {
-    &quot;Path&quot;: &quot;D:\\home\\site\\wwwroot\\App_Data\\jobs\\continuous\\StreamHost\\connection-profile.json&quot;,
-    &quot;FileKey&quot;: &quot;%CONNECTION_PROFILE_FILE_KEY%&quot;
-  },
-  &quot;Logging&quot;: {
-    &quot;LogLevel&quot;: {
-      &quot;Default&quot;: &quot;Information&quot;,
-      &quot;Microsoft&quot;: &quot;Warning&quot;,
-      &quot;System&quot;: &quot;Warning&quot;
-    }
-  }
-}
-</code></pre>
-</li>
-<li><p>Re-create the ZIP file and redeploy the Web Job.</p>
-</li>
-</ol>
-<h2 id="monitoring-and-logging">Monitoring and Logging</h2>
-<p>You can monitor the Stream Host Web Job using the Azure Portal:</p>
-<ol>
-<li><p>In the Azure Portal, navigate to your App Service.</p>
-</li>
-<li><p>In the left menu, under <strong>Settings</strong>, click on <strong>WebJobs</strong>.</p>
-</li>
-<li><p>Click on the <strong>StreamHost</strong> Web Job.</p>
-</li>
-<li><p>Click on <strong>Logs</strong> to view the Web Job logs.</p>
-</li>
-</ol>
-<p>For more detailed logging, you can set up Application Insights:</p>
-<ol>
-<li><p>In the Azure Portal, navigate to your App Service.</p>
-</li>
-<li><p>In the left menu, under <strong>Settings</strong>, click on <strong>Application Insights</strong>.</p>
-</li>
-<li><p>Click <strong>Turn on Application Insights</strong>.</p>
-</li>
-<li><p>Configure Application Insights and click <strong>Apply</strong>.</p>
-</li>
-<li><p>Once configured, you can view detailed telemetry in the Application Insights resource.</p>
-</li>
-</ol>
-<h2 id="verifying-the-installation">Verifying the Installation</h2>
-<p>To verify that the Stream Host is running correctly:</p>
-<ol>
-<li><p>Check the Web Job status in the Azure Portal. It should show as &quot;Running&quot;.</p>
-</li>
-<li><p>Check the Web Job logs for any error messages.</p>
-</li>
-<li><p>Log into Data Stream Designer, navigate to the Collections page, and select the Collection you used in the Connection Profile. The Stream Host should appear in the Devices list with a status of &quot;Online&quot;.</p>
-</li>
-</ol>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>If your Stream Host is not appearing in the Collection:</p>
-<ol>
-<li><p>Check the Web Job logs for any error messages.</p>
-</li>
-<li><p>Verify that the Connection Profile was correctly configured.</p>
-</li>
-<li><p>Ensure that the App Service has outbound internet access and can reach the XMPro server.</p>
-</li>
-<li><p>Check if the Web Job is running. If it's stopped, start it manually.</p>
-</li>
-<li><p>For more detailed troubleshooting, refer to the <a href="index.html#troubleshooting">Troubleshooting section</a> in the main Stream Host documentation.</p>
-</li>
-</ol>
-<h2 id="scaling">Scaling</h2>
-<p>One of the advantages of running the Stream Host as an Azure Web Job is the ability to scale:</p>
-<ol>
-<li><p>In the Azure Portal, navigate to your App Service.</p>
-</li>
-<li><p>In the left menu, under <strong>Settings</strong>, click on <strong>Scale up (App Service plan)</strong> to change the VM size.</p>
-</li>
-<li><p>Alternatively, click on <strong>Scale out (App Service plan)</strong> to configure auto-scaling based on metrics like CPU usage.</p>
-</li>
-</ol>
-<h2 id="uninstalling">Uninstalling</h2>
-<p>To remove the Stream Host Web Job:</p>
-<ol>
-<li><p>In the Azure Portal, navigate to your App Service.</p>
-</li>
-<li><p>In the left menu, under <strong>Settings</strong>, click on <strong>WebJobs</strong>.</p>
-</li>
-<li><p>Select the <strong>StreamHost</strong> Web Job.</p>
-</li>
-<li><p>Click <strong>Delete</strong> and confirm the deletion.</p>
-</li>
-</ol>
 
 </article>
 

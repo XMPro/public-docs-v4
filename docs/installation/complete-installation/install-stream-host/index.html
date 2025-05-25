@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Stream Host Installation | XMPro </title>
+      <title>Install Stream Host | XMPro </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Stream Host Installation | XMPro ">
+      <meta name="title" content="Install Stream Host | XMPro ">
       
       
       <link rel="icon" href="../../../../images/favicon.png">
@@ -85,104 +85,87 @@
         </div>
 
         <article data-uid="">
-<h1 id="stream-host-installation">Stream Host Installation</h1>
+<h1 id="install-stream-host">Install Stream Host</h1>
 
-<p>The XMPro Stream Host is a component that runs on a device or server and connects to the XMPro platform to execute Data Streams. This section provides installation guides for different environments.</p>
-<h2 id="overview">Overview</h2>
-<p>The Stream Host can be installed in various environments:</p>
-<ul>
-<li><a href="windows-x64.html">Windows (x64)</a> - Install on a Windows 64-bit machine</li>
-<li><a href="ubuntu-16.04%2B-x64.html">Ubuntu (16.04+ x64)</a> - Install on Ubuntu Linux</li>
-<li><a href="docker.html">Docker</a> - Run in a Docker container</li>
-<li><a href="azure-web-job.html">Azure Web Job</a> - Deploy as an Azure Web Job</li>
-</ul>
-<p>Choose the installation method that best fits your infrastructure and requirements.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Before installing the Stream Host, you need:</p>
-<ol>
-<li>Access to Data Stream Designer in your XMPro environment</li>
-<li>A Collection created in Data Stream Designer</li>
-<li>Appropriate permissions to install software on your target environment</li>
-</ol>
-<h2 id="download-the-installer">Download the Installer</h2>
-<p>To download the Stream Host installer:</p>
-<ol>
-<li>Log into Data Stream Designer.</li>
-<li>Navigate to the Collections page.</li>
-<li>Select the Collection where you want to add the Stream Host.</li>
-<li>Click on the <strong>Devices</strong> tab.</li>
-<li>Click <strong>Add Device</strong>.</li>
-<li>Enter a name for your Stream Host.</li>
-<li>Click <strong>Download Installer</strong>.</li>
-<li>Select the appropriate installer for your environment:
-<ul>
-<li>Windows (x64): <code>.exe</code> installer</li>
-<li>Ubuntu (16.04+ x64): <code>.tar.gz</code> archive</li>
-<li>Docker: Use the Docker image from Docker Hub</li>
-<li>Azure Web Job: Use the Windows installer and follow the Azure Web Job guide</li>
-</ul>
-</li>
-</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Want to run Stream Host in Docker?</strong> Please jump to &quot;<a href="docker.html">Docker instructions for Stream Host</a>&quot;.</p>
+</div>
 <h2 id="download-the-connection-profile">Download the Connection Profile</h2>
-<p>The Connection Profile contains the configuration needed for the Stream Host to connect to your XMPro environment:</p>
+<p>Each Data Stream created in Data Stream Designer must belong to a <a href="../../../concepts/collection.html">Collection</a>. You can download the information in a Collection as a file, known as a Connection Profile. This profile includes the <em>device name, collection ID, server URL, secret,</em> and <em>key</em>.</p>
+<p>To simplify installing a Stream Host (also called a device), download the Connection Profile to avoid manually copying Collection details from Data Stream Designer to the installer.</p>
+<p>To obtain a Connection Profile, follow the steps below.</p>
 <ol>
-<li>After downloading the installer, click <strong>Download Connection Profile</strong>.</li>
-<li>Enter a File Key (password) to secure the Connection Profile.</li>
-<li>Remember this File Key as you'll need it during installation.</li>
-<li>Click <strong>Download</strong> to save the Connection Profile file.</li>
+<li><a href="../../../administration/users/register-an-account.html">Log into Data Stream Designer</a> and open the <em>Collections</em> page from the left-hand menu.</li>
+<li>Select the Collection you wish to use. If there isn't a Collection available, you can <a href="../../../how-tos/data-streams/manage-collections.html">create one</a> by clicking the <em>New</em> button, choosing a name for the collection, and clicking <em>Ok</em>.</li>
+<li>Click on <em>Connection Profile</em>.</li>
+<li>Choose a name for the device.</li>
+<li>Enter the File Key.</li>
+<li>Click <em>Ok</em>. The Connection Profile will automatically begin to download.</li>
 </ol>
-<h2 id="installation-process">Installation Process</h2>
-<p>The general installation process follows these steps:</p>
+<p><img src="../../../images/image-1761.png" alt="Fig 1. Steps to Set Up a Connection Profile"></p>
+<h2 id="download-the-installer">Download the Installer</h2>
+<p>Follow the steps below to download the XMPro Stream Host installer. From v4.4.7 onwards, ensure your network policy allows access to the <code>download.app.xmpro.com</code> domain.</p>
 <ol>
-<li>Download the appropriate installer and Connection Profile.</li>
-<li>Install the Stream Host on your target environment.</li>
-<li>Configure the Stream Host with your Connection Profile.</li>
-<li>Start the Stream Host service.</li>
-<li>Verify the installation by checking the status in Data Stream Designer.</li>
+<li>Log into Data Stream Designer and open the <em>Collections</em> page from the left-hand menu.</li>
+<li>Select the collection you wish to use.</li>
+<li>Click on <em>Download Host</em>.</li>
+<li>Select your desired platform.</li>
+<li>Click on the Download button to begin the download.</li>
 </ol>
-<p>For detailed instructions, refer to the specific installation guide for your environment.</p>
+<p><img src="../../../images/stream-host-install-download.png" alt="Fig 2. Steps to Download the Installer"></p>
+<h2 id="choose-your-platform">Choose your Platform</h2>
+<p>Choose the platform where you will install the Stream Host:</p>
+<ul>
+<li><a href="windows-x64.html">Windows (x64)</a></li>
+<li><a href="azure-web-job.html">Azure Web Job</a></li>
+<li><a href="ubuntu-16.04%2B-x64.html">Ubuntu (16.04+ x64)</a></li>
+<li><a href="docker.html">Docker</a></li>
+</ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<p>If you encounter issues during installation or operation of the Stream Host:</p>
-<h3 id="common-issues">Common Issues</h3>
+<p>If your Stream Host is not appearing in a Data Stream Collection, follow these steps to troubleshoot:</p>
 <ol>
-<li><p><strong>Stream Host not appearing in Collection</strong>:</p>
+<li>Check the Stream Host logs:
 <ul>
-<li>Verify that the Stream Host service is running.</li>
-<li>Check that the Connection Profile was correctly configured.</li>
-<li>Ensure the machine has internet access and can reach the XMPro server.</li>
+<li>By default, the Stream Host writes logs to STDOUT on the platform where it's running.</li>
+<li>Review these logs for details on why your Stream Host is unable to connect.</li>
 </ul>
 </li>
-<li><p><strong>Connection errors</strong>:</p>
+<li>Configure additional logging:
 <ul>
-<li>Check firewall settings to ensure the Stream Host can communicate with the XMPro server.</li>
-<li>Verify that the Collection ID, Secret, and Key in the Connection Profile are correct.</li>
+<li>For more detailed information, you can <a href="../configure-logging-optional.html#stream-hosts">configure additional logging</a> for the Stream Host.</li>
 </ul>
 </li>
-<li><p><strong>Service not starting</strong>:</p>
+<li>Verify Stream Host settings:
 <ul>
-<li>Check the Stream Host logs for error messages.</li>
-<li>Verify that the required dependencies are installed.</li>
-<li>Ensure the user running the service has appropriate permissions.</li>
+<li>Ensure the Stream Host is properly configured with the correct endpoint and credentials.</li>
+</ul>
+</li>
+<li>Check system requirements:
+<ul>
+<li>Confirm that your system meets the minimum requirements for running the Stream Host.</li>
+</ul>
+</li>
+<li>Ensure accurate date and time settings:
+<ul>
+<li>Verify that the date and time on the Stream Host platform are exactly synchronized with the XMPro server time.</li>
+<li>Even a one-minute discrepancy can cause authorization issues and prevent the Stream Host from connecting.</li>
+</ul>
+</li>
+<li>Common issues to look for:
+<ul>
+<li>Network connectivity problems</li>
+<li>Incorrect configuration settings</li>
+<li>Authentication issues</li>
+<li>Time synchronization errors</li>
+</ul>
+</li>
+<li>If issues persist:
+<ul>
+<li>If you're still experiencing problems after checking these points, contact XMPro support for further assistance.</li>
 </ul>
 </li>
 </ol>
-<h3 id="logs">Logs</h3>
-<p>The Stream Host logs can provide valuable information for troubleshooting:</p>
-<ul>
-<li><strong>Windows</strong>: Logs are stored in the installation directory under the <code>Logs</code> folder.</li>
-<li><strong>Ubuntu</strong>: Check the systemd journal with <code>journalctl -u xmpro-stream-host</code>.</li>
-<li><strong>Docker</strong>: View container logs with <code>docker logs xmpro-stream-host</code>.</li>
-<li><strong>Azure Web Job</strong>: Check the Web Job logs in the Azure Portal.</li>
-</ul>
-<h3 id="support">Support</h3>
-<p>If you continue to experience issues, contact XMPro Support with the following information:</p>
-<ul>
-<li>Stream Host version</li>
-<li>Installation environment details</li>
-<li>Relevant log files</li>
-<li>Description of the issue</li>
-<li>Steps to reproduce the issue</li>
-</ul>
 
 </article>
 

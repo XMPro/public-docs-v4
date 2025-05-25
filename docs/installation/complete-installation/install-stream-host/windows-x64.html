@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Install Stream Host on Windows (x64) | XMPro </title>
+      <title>Windows x64 | XMPro </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Install Stream Host on Windows (x64) | XMPro ">
+      <meta name="title" content="Windows x64 | XMPro ">
       
       
       <link rel="icon" href="../../../../images/favicon.png">
@@ -85,81 +85,89 @@
         </div>
 
         <article data-uid="">
-<h1 id="install-stream-host-on-windows-x64">Install Stream Host on Windows (x64)</h1>
+<h1 id="windows-x64">Windows x64</h1>
 
-<p>This guide will walk you through the process of installing the XMPro Stream Host on a Windows 64-bit system.</p>
 <h2 id="prerequisites">Prerequisites</h2>
+<h3 id="downloads"><strong>Downloads</strong></h3>
+<p>Follow the instructions in the <a href="./">Install Stream Host</a> guide to download the connection profile and installer.</p>
+<h3 id="hardware-and-software"><strong>Hardware and Software</strong></h3>
+<p>XMPro Stream Host requires certain hardware and software specifications in order to install and run. Complete these steps in the <strong>1. Preparation</strong> guide:</p>
+<ol>
+<li>Meet the <a href="../../install.html#hardware-requirements"><strong>hardware</strong> requirements</a></li>
+<li>Install the <a href="../../install.html#software-requirements"><strong>software</strong> requirements</a></li>
+</ol>
+<h2 id="initial-steps">Initial Steps</h2>
+<ol>
+<li><p>Run the executable installer file that you've downloaded as administrator</p>
+</li>
+<li><p>When the installation wizard opens, click Next</p>
+</li>
+</ol>
+<p><img src="../../../images/image-726.png" alt="Installation wizard"></p>
+<ol start="3">
+<li>Read and accept the license agreement by ticking the check box at the bottom and click Next</li>
+</ol>
+<p><img src="../../../images/image-241.png" alt="License agreement"></p>
+<ol start="4">
+<li><p>Click the Change button to choose the location for the Stream Host to be installed</p>
+</li>
+<li><p>Browse to the directory you would like to use, or use the default, and click Next</p>
+</li>
+</ol>
+<p><img src="../../../images/image-178.png" alt="Directory selection"></p>
+<h2 id="host-type-selection">Host Type Selection</h2>
+<ol>
+<li>Select the host type and click Next</li>
+</ol>
+<p><img src="../../../images/image-665.png" alt="Host type selection"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><em>Console Application</em> is recommended for testing purposes.</p>
+<p>It will be listed in the Start menu under the name &quot;<em>XMPro Stream Host</em>&quot; and <strong>must be</strong> <strong>manually run as administrator</strong> from the Start menu.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p><em>Windows Service</em> is recommended for production environments.</p>
+<p>It will automatically start after installation completes and the name of the service will be the same as the &quot;<em>Device Name</em>&quot; you specified when you downloaded the Connection Profile file or manually added the name to the installer.</p>
+</div>
+<h2 id="connection-profile">Connection Profile</h2>
+<ol>
+<li>Select your preferred setup mode and click Next</li>
+</ol>
+<p><img src="../../../images/image-552.png" alt="Setup mode selection"></p>
+<h3 id="upload-a-collection-profile">Upload a Collection Profile</h3>
+<p>Follow these steps if you selected <em>Connection Profile:</em></p>
+<ol>
+<li><p>Click Browse and select the Connection Profile file you downloaded earlier in the <a href="./">guide</a></p>
+</li>
+<li><p>In the File Key textbox enter the key used to create the Connection Profile</p>
+</li>
+<li><p>Click Next and let the wizard install the Stream Host</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you selected <em>Manual</em>, see the section below for instructions on how to set it up.</p>
+</div>
+<p><img src="../../../images/image-713.png" alt="Connection profile configuration"></p>
+<h3 id="manual-settings">Manual Settings</h3>
+<p>If you decide to manually set up the connection settings for the Stream Host, you can find the values you need by following the steps below.</p>
+<ol>
+<li>Choose a name for the device</li>
+<li>Log into Data Stream Designer and open the <em>Collections</em> page from the left-hand menu</li>
+<li>Select the Collection you wish to use</li>
+<li>Copy the <em>ID</em> of the Collection from Data Stream Designer to your clipboard by clicking on the <em>copy</em> button and paste it into the <em>Collection ID</em> field in the installer</li>
+<li>Copy the <em>Key</em> of the Collection from Data Stream Designer to your clipboard by clicking on the <em>copy</em> button and paste it into the <em>Collection Secret</em> field in the installer</li>
+<li>Add the <em>Server URL</em> for Data Stream Designer in the installer, for example, &quot;<em>http://localhost/DataStreams</em>&quot;</li>
+<li>Add an encryption key that can be used in the <em>Encryption Key</em> field in the installer</li>
+<li>Click <em>Next</em> and let the wizard install the Stream Host</li>
+</ol>
+<p><img src="../../../images/image-1391.png" alt="Manual settings configuration"></p>
+<h2 id="next-step-agents--connectors">Next Step: Agents &amp; Connectors</h2>
+<p>The stream host installation is complete. Please click below to install the default Agents &amp; Connectors:</p>
 <ul>
-<li>Windows 10 or later (64-bit)</li>
-<li>.NET Framework 4.7.2 or later</li>
-<li>Administrator privileges on the machine</li>
-<li>A valid <a href="index.html#download-the-connection-profile">Connection Profile</a> from Data Stream Designer</li>
+<li><a href="../install-connectors.html">Install Connectors</a></li>
 </ul>
-<h2 id="installation-steps">Installation Steps</h2>
-<ol>
-<li><p><a href="index.html#download-the-installer">Download the Stream Host installer</a> for Windows (x64) from Data Stream Designer.</p>
-</li>
-<li><p>Locate the downloaded installer file (typically named <code>XMPro.StreamHost.Installer.exe</code>) and double-click to run it.</p>
-</li>
-<li><p>If prompted by User Account Control (UAC), click <strong>Yes</strong> to allow the installer to make changes to your device.</p>
-</li>
-<li><p>The XMPro Stream Host Setup Wizard will appear. Click <strong>Next</strong> to continue.</p>
-<p><img src="../../images/Stream_Host_Windows_Setup_Wizard.png" alt="Stream Host Setup Wizard"></p>
-</li>
-<li><p>Read the License Agreement, select <strong>I accept the terms in the license agreement</strong>, and click <strong>Next</strong>.</p>
-</li>
-<li><p>Choose the installation folder or accept the default location, then click <strong>Next</strong>.</p>
-</li>
-<li><p>On the Connection Profile screen, click <strong>Browse</strong> and select the Connection Profile file you downloaded earlier.</p>
-<p><img src="../../images/Stream_Host_Windows_Connection_Profile.png" alt="Connection Profile Selection"></p>
-</li>
-<li><p>Enter the File Key that you used when downloading the Connection Profile, then click <strong>Next</strong>.</p>
-</li>
-<li><p>Review your installation settings and click <strong>Install</strong> to begin the installation process.</p>
-</li>
-<li><p>Once the installation is complete, click <strong>Finish</strong> to exit the setup wizard.</p>
-</li>
-</ol>
-<h2 id="running-as-a-windows-service">Running as a Windows Service</h2>
-<p>The Stream Host is installed as a Windows Service and will start automatically after installation. You can manage the service through the Windows Services console:</p>
-<ol>
-<li>Press <strong>Win + R</strong>, type <code>services.msc</code>, and press Enter.</li>
-<li>Locate the service named <strong>XMPro Stream Host</strong>.</li>
-<li>You can start, stop, or restart the service as needed.</li>
-</ol>
-<p><img src="../../images/Stream_Host_Windows_Services.png" alt="Windows Services Console"></p>
-<h2 id="verifying-the-installation">Verifying the Installation</h2>
-<p>To verify that the Stream Host is running correctly:</p>
-<ol>
-<li>Log into Data Stream Designer.</li>
-<li>Navigate to the Collections page.</li>
-<li>Select the Collection you used in the Connection Profile.</li>
-<li>The Stream Host should appear in the Devices list with a status of &quot;Online&quot;.</li>
-</ol>
-<p><img src="../../images/Stream_Host_Online_Status.png" alt="Stream Host Online Status"></p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>If your Stream Host is not appearing in the Collection:</p>
-<ol>
-<li>Check that the Windows Service is running.</li>
-<li>Verify that the Connection Profile was correctly configured.</li>
-<li>Ensure that the machine has internet access and can reach the XMPro server.</li>
-<li>Check the Stream Host logs for any error messages:
-<ul>
-<li>Logs are stored in the installation directory under the <code>Logs</code> folder.</li>
-<li>The default location is <code>C:\Program Files\XMPro\Stream Host\Logs</code>.</li>
-</ul>
-</li>
-<li>For more detailed troubleshooting, refer to the <a href="index.html#troubleshooting">Troubleshooting section</a> in the main Stream Host documentation.</li>
-</ol>
-<h2 id="uninstalling">Uninstalling</h2>
-<p>To uninstall the Stream Host:</p>
-<ol>
-<li>Open the Windows Control Panel.</li>
-<li>Go to <strong>Programs and Features</strong> (or <strong>Apps &amp; features</strong> in Windows 10/11).</li>
-<li>Find <strong>XMPro Stream Host</strong> in the list of installed programs.</li>
-<li>Select it and click <strong>Uninstall</strong>.</li>
-<li>Follow the prompts to complete the uninstallation process.</li>
-</ol>
 
 </article>
 

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Install Stream Host on Ubuntu (16.04+ x64) | XMPro </title>
+      <title>Ubuntu 20.04 x64 | XMPro </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Install Stream Host on Ubuntu (16.04+ x64) | XMPro ">
+      <meta name="title" content="Ubuntu 20.04 x64 | XMPro ">
       
       
       <link rel="icon" href="../../../../images/favicon.png">
@@ -85,201 +85,71 @@
         </div>
 
         <article data-uid="">
-<h1 id="install-stream-host-on-ubuntu-1604-x64">Install Stream Host on Ubuntu (16.04+ x64)</h1>
+<h1 id="ubuntu-2004-x64">Ubuntu 20.04 x64</h1>
 
-<p>This guide will walk you through the process of installing the XMPro Stream Host on Ubuntu 16.04 or later (64-bit).</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>Ubuntu 16.04 or later (64-bit)</li>
-<li>.NET Core 3.1 or later installed</li>
-<li>Sudo privileges on the machine</li>
-<li>A valid <a href="index.html#download-the-connection-profile">Connection Profile</a> from Data Stream Designer</li>
-</ul>
-<h2 id="installation-steps">Installation Steps</h2>
-<h3 id="1-install-net-core-runtime">1. Install .NET Core Runtime</h3>
-<p>If you don't have .NET Core installed, you'll need to install it first:</p>
-<pre><code class="lang-bash"># Add the Microsoft package repository
-wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+<h3 id="downloads"><strong>Downloads</strong></h3>
+<p>Follow the instructions in the <a href="./">Install Stream Host</a> guide to download the connection profile and installer.</p>
+<h3 id="hardware-and-software"><strong>Hardware and Software</strong></h3>
+<p>XMPro Stream Host requires certain hardware and software specifications in order to install and run.</p>
+<p>Refer to the <a href="../../install.html#hardware-requirements"><strong>hardware</strong> requirements</a> and the <a href="../../install.html#software-requirements"><strong>software</strong> requirements</a> in the <strong>1. Preparation</strong> guide.</p>
+<h3 id="software-install-commands"><strong>Software Install Commands</strong></h3>
+<p>Install required dependencies using the following commands:</p>
+<pre><code class="lang-bash">sudo apt-get update
+sudo apt-get install -y wget liblttng-ust0 libkrb5-3 zlib1g uuid-runtime systemd 
+
+# Install Dotnet Runtime
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
-
-# Install .NET Core Runtime
 sudo apt-get update
-sudo apt-get install -y apt-transport-https
-sudo apt-get update
-sudo apt-get install -y dotnet-runtime-3.1
-</code></pre>
-<h3 id="2-download-the-stream-host">2. Download the Stream Host</h3>
-<ol>
-<li><p><a href="index.html#download-the-installer">Download the Stream Host installer</a> for Linux (x64) from Data Stream Designer.</p>
-</li>
-<li><p>Create a directory for the Stream Host:</p>
-<pre><code class="lang-bash">sudo mkdir -p /opt/xmpro/stream-host
-</code></pre>
-</li>
-<li><p>Extract the downloaded archive to the directory:</p>
-<pre><code class="lang-bash">sudo tar -xzf XMPro.StreamHost.Linux-x64.tar.gz -C /opt/xmpro/stream-host
-</code></pre>
-</li>
-<li><p>Set the appropriate permissions:</p>
-<pre><code class="lang-bash">sudo chmod +x /opt/xmpro/stream-host/XMPro.StreamHost
-</code></pre>
-</li>
-</ol>
-<h3 id="3-configure-the-connection-profile">3. Configure the Connection Profile</h3>
-<ol>
-<li><p><a href="index.html#download-the-connection-profile">Download the Connection Profile</a> from Data Stream Designer.</p>
-</li>
-<li><p>Copy the Connection Profile to the Stream Host directory:</p>
-<pre><code class="lang-bash">sudo cp /path/to/your/connection-profile.json /opt/xmpro/stream-host/
-</code></pre>
-</li>
-<li><p>Create a configuration file:</p>
-<pre><code class="lang-bash">sudo nano /opt/xmpro/stream-host/appsettings.json
-</code></pre>
-</li>
-<li><p>Add the following content, replacing the placeholders with your actual values:</p>
-<pre><code class="lang-json">{
-  &quot;ConnectionProfile&quot;: {
-    &quot;Path&quot;: &quot;/opt/xmpro/stream-host/connection-profile.json&quot;,
-    &quot;FileKey&quot;: &quot;your-file-key&quot;
-  },
-  &quot;Logging&quot;: {
-    &quot;LogLevel&quot;: {
-      &quot;Default&quot;: &quot;Information&quot;,
-      &quot;Microsoft&quot;: &quot;Warning&quot;,
-      &quot;System&quot;: &quot;Warning&quot;
-    }
-  }
-}
-</code></pre>
-</li>
-<li><p>Save and close the file (Ctrl+X, then Y, then Enter).</p>
-</li>
-</ol>
-<h3 id="4-create-a-systemd-service">4. Create a Systemd Service</h3>
-<ol>
-<li><p>Create a systemd service file:</p>
-<pre><code class="lang-bash">sudo nano /etc/systemd/system/xmpro-stream-host.service
-</code></pre>
-</li>
-<li><p>Add the following content:</p>
-<pre><code class="lang-ini">[Unit]
-Description=XMPro Stream Host
-After=network.target
+sudo apt-get install -y aspnetcore-runtime-8.0
+sudo apt-get install -y dotnet-runtime-8.0
 
-[Service]
-WorkingDirectory=/opt/xmpro/stream-host
-ExecStart=/opt/xmpro/stream-host/XMPro.StreamHost
-Restart=always
-RestartSec=10
-SyslogIdentifier=xmpro-stream-host
-User=root
-Environment=ASPNETCORE_ENVIRONMENT=Production
+# Install Libssl
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
+sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
 
-[Install]
-WantedBy=multi-user.target
+# Downgrade Libcurl
+sudo apt-get remove -y libcurl4
+wget http://archive.ubuntu.com/ubuntu/pool/main/c/curl3/libcurl3_7.58.0-2ubuntu2_amd64.deb
+sudo dpkg -i libcurl3_7.58.0-2ubuntu2_amd64.deb
+sudo apt-mark hold libcurl3
+
+
 </code></pre>
+<h2 id="install">Install</h2>
+<p>When you are ready, you may install the Stream Host by using the following command:</p>
+<p><em><code>sudo dpkg -i /home/adminuser/xmpro-stream-host.deb</code></em></p>
+<p>During the installation process, you will be asked a few questions:</p>
+<ul>
+<li><p>&quot;<em>Enter a Friendly Name for this Stream Host</em>&quot;</p>
+<p>This is the name that appears when you view the Stream Hosts online.</p>
 </li>
-<li><p>Save and close the file (Ctrl+X, then Y, then Enter).</p>
+<li><p>&quot;<em>Enter Server Url to connect to</em>&quot;</p>
+<p>This is the server where Data Stream Designer is hosted, for example: &quot;<em>https://mysampleserver/datastreamdesigner/</em>&quot;. Please note that this URL needs to end in a forward slash.</p>
 </li>
-<li><p>Reload the systemd daemon:</p>
-<pre><code class="lang-bash">sudo systemctl daemon-reload
-</code></pre>
+<li><p>&quot;<em>Enter Collection Id</em>&quot;</p>
+<p>This is the ID of your Collection and can be copied from Data Stream Designer.</p>
 </li>
-<li><p>Enable the service to start on boot:</p>
-<pre><code class="lang-bash">sudo systemctl enable xmpro-stream-host
-</code></pre>
+<li><p>&quot;<em>Enter collection secret Key</em>&quot;</p>
+<p>This is the secret key of your Collection and can be copied from Data Stream Designer.</p>
 </li>
-<li><p>Start the service:</p>
-<pre><code class="lang-bash">sudo systemctl start xmpro-stream-host
-</code></pre>
+<li><p>&quot;<em>Enter encryption key</em>&quot;</p>
+<p>This is the key that the Stream Host will use to encrypt or decrypt secure <a href="https://docs.xmpro.com/docs/data-stream-designer/concepts/agents/#agent-components">user settings</a>, for example, a SQL Server password.</p>
 </li>
-</ol>
-<h2 id="running-as-a-non-root-user-recommended">Running as a Non-Root User (Recommended)</h2>
-<p>For better security, it's recommended to run the Stream Host as a non-root user:</p>
-<ol>
-<li><p>Create a dedicated user for the Stream Host:</p>
-<pre><code class="lang-bash">sudo useradd -r -s /bin/false xmpro
-</code></pre>
-</li>
-<li><p>Change the ownership of the Stream Host directory:</p>
-<pre><code class="lang-bash">sudo chown -R xmpro:xmpro /opt/xmpro/stream-host
-</code></pre>
-</li>
-<li><p>Update the systemd service file:</p>
-<pre><code class="lang-bash">sudo nano /etc/systemd/system/xmpro-stream-host.service
-</code></pre>
-</li>
-<li><p>Change the <code>User</code> line from <code>root</code> to <code>xmpro</code>:</p>
-<pre><code class="lang-ini">User=xmpro
-</code></pre>
-</li>
-<li><p>Save and close the file, then reload the daemon and restart the service:</p>
-<pre><code class="lang-bash">sudo systemctl daemon-reload
-sudo systemctl restart xmpro-stream-host
-</code></pre>
-</li>
-</ol>
-<h2 id="verifying-the-installation">Verifying the Installation</h2>
-<p>To verify that the Stream Host is running correctly:</p>
-<ol>
-<li><p>Check the service status:</p>
-<pre><code class="lang-bash">sudo systemctl status xmpro-stream-host
-</code></pre>
-<p>You should see &quot;active (running)&quot; in the output.</p>
-</li>
-<li><p>Check the logs:</p>
-<pre><code class="lang-bash">sudo journalctl -u xmpro-stream-host -f
-</code></pre>
-</li>
-<li><p>Log into Data Stream Designer, navigate to the Collections page, and select the Collection you used in the Connection Profile. The Stream Host should appear in the Devices list with a status of &quot;Online&quot;.</p>
-</li>
-</ol>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>If your Stream Host is not appearing in the Collection:</p>
-<ol>
-<li><p>Check the service status:</p>
-<pre><code class="lang-bash">sudo systemctl status xmpro-stream-host
-</code></pre>
-</li>
-<li><p>View the logs:</p>
-<pre><code class="lang-bash">sudo journalctl -u xmpro-stream-host -f
-</code></pre>
-</li>
-<li><p>Verify that the Connection Profile was correctly configured.</p>
-</li>
-<li><p>Ensure that the machine has internet access and can reach the XMPro server.</p>
-</li>
-<li><p>Check if any firewall rules are blocking the connection:</p>
-<pre><code class="lang-bash">sudo ufw status
-</code></pre>
-</li>
-<li><p>For more detailed troubleshooting, refer to the <a href="index.html#troubleshooting">Troubleshooting section</a> in the main Stream Host documentation.</p>
-</li>
-</ol>
-<h2 id="uninstalling">Uninstalling</h2>
-<p>To uninstall the Stream Host:</p>
-<ol>
-<li><p>Stop and disable the service:</p>
-<pre><code class="lang-bash">sudo systemctl stop xmpro-stream-host
-sudo systemctl disable xmpro-stream-host
-</code></pre>
-</li>
-<li><p>Remove the service file:</p>
-<pre><code class="lang-bash">sudo rm /etc/systemd/system/xmpro-stream-host.service
-sudo systemctl daemon-reload
-</code></pre>
-</li>
-<li><p>Remove the Stream Host directory:</p>
-<pre><code class="lang-bash">sudo rm -rf /opt/xmpro/stream-host
-</code></pre>
-</li>
-<li><p>(Optional) Remove the user if you created one:</p>
-<pre><code class="lang-bash">sudo userdel xmpro
-</code></pre>
-</li>
-</ol>
+</ul>
+<p>These settings can be found in Data Stream Designer:</p>
+<p><img src="../../../images/image-1489.png" alt="Collection details in Data Stream Designer"></p>
+<h2 id="uninstall">Uninstall</h2>
+<p>To uninstall a Stream Host, use the following command:</p>
+<p><em><code>sudo dpkg -r xmpro-stream-host</code></em></p>
+<p>The Stream Host will then be removed. Some files, such as logs, may not be removed because they were created after the installation.</p>
+<h2 id="next-step-agents--connectors">Next Step: Agents &amp; Connectors</h2>
+<p>The stream host installation is complete. Please click below to install the default Agents &amp; Connectors:</p>
+<ul>
+<li><a href="../install-connectors.html">Install Connectors</a></li>
+</ul>
 
 </article>
 

@@ -97,17 +97,11 @@
 <h5>Note</h5>
 <p>You can right-click on the application name in IIS and choose &quot;<em>Explore</em>&quot;.</p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: open-sub-mgr-app.png</p>
-</div>
+<p><img src="../../../images/open-sub-mgr-app.png" alt="Open Subscription Manager application"></p>
 <ol start="2">
 <li>Open the <em>web.config</em> file.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: open-web-config.png</p>
-</div>
+<p><img src="../../../images/open-web-config.png" alt="Open web.config file"></p>
 <ol start="3">
 <li>Scroll down to the &quot;<em>xmpro</em>&quot; section.</li>
 </ol>
@@ -121,10 +115,7 @@
 <li><p>Specify the metadata address of your AD FS, as per the image below:</p>
 </li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: SSO_ADFS_web_config_metadata_address.png</p>
-</div>
+<p><img src="../../../images/sso-adfs-web-config-metadata-address.png" alt="ADFS web config metadata address"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Set the correct URL for the metadataAddress value. An example of how the URL might look is &quot;_<a href="https://adfs.domain.com/federationmetadata/2007-06/federationmetadata.xml_%22">https://adfs.domain.com/federationmetadata/2007-06/federationmetadata.xml_&quot;</a>.</p>
@@ -133,10 +124,7 @@
 <ol start="6">
 <li>Copy the &quot;<em>baseUrl</em>&quot; value in the web.config - you will need it later in this guide.</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: SSO_AzureAD_web_config_baseUrl.png</p>
-</div>
+<p><img src="../../../images/sso-azuread-web-config-baseurl.png" alt="Azure AD web config baseUrl"></p>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>You will use this value to create a relying party trust between the Subscription Manager application and AD FS</p>
@@ -145,39 +133,24 @@
 <ol>
 <li>Log on to your AD FS server and go to Tools –&gt; AD FS Management</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: open-ad-fs-management.png</p>
-</div>
+<p><img src="../../../images/open-ad-fs-management.png" alt="Open AD FS Management"></p>
 <h3 id="relying-party-trust">Relying Party Trust</h3>
 <ol start="2">
 <li>Click <em>Add Relying Party Trust</em></li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: click-on-add-relying-trust.png</p>
-</div>
+<p><img src="../../../images/click-on-add-relying-trust.png" alt="Click on Add Relying Party Trust"></p>
 <ol start="3">
 <li>Select <em>Claims aware</em> and click Start</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: select-claims-aware.png</p>
-</div>
+<p><img src="../../../images/select-claims-aware.png" alt="Select Claims aware"></p>
 <ol start="4">
 <li>Select <em>Enter data about the relying party manually</em> and click Next</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: add-data-manually.png</p>
-</div>
+<p><img src="../../../images/add-data-manually.png" alt="Add data manually"></p>
 <ol start="5">
 <li>Choose a display name and click Next and Next again</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: choose-a-display-name.png</p>
-</div>
+<p><img src="../../../images/choose-a-display-name.png" alt="Choose a display name"></p>
 <ol start="6">
 <li>Select <em>Enable support for the WS-Federation Passive protocol</em>, add the URL and click Next</li>
 </ol>
@@ -185,20 +158,14 @@
 <h5>Note</h5>
 <p>This is the base URL you copied from the web.config file.</p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: wsf-protocol.png</p>
-</div>
+<p><img src="../../../images/wsf-protocol.png" alt="WS-Federation protocol"></p>
 <ol start="7">
 <li><p>Add the identifier for the application. Use the URL for Subscription Manager</p>
 </li>
 <li><p>Add the URL and click Next</p>
 </li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: unique-identifier.png</p>
-</div>
+<p><img src="../../../images/unique-identifier.png" alt="Unique identifier"></p>
 <ol start="9">
 <li>Choose an access control policy and click Next. Continue to the last screen</li>
 </ol>
@@ -206,49 +173,33 @@
 <h5>Note</h5>
 <p>For this article, we are going to choose <em>Permit everyone</em></p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: access-control-policy.png</p>
-</div>
+<p><img src="../../../images/access-control-policy.png" alt="Access control policy"></p>
 <h3 id="claims-issuance-policy">Claims Issuance Policy</h3>
 <ol start="10">
 <li>Select <em>Configure claims issuance policy for this application</em> and finish</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: last-screen.png</p>
-</div>
+<p><img src="../../../images/last-screen.png" alt="Last screen"></p>
 <ol start="11">
 <li>In the AD FS Management window, click <em>Edit Claim Issuance Policy…</em> and click <em>Add Rule</em></li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: edit-claim-insurance-policy.png</p>
-</div>
+<p><img src="../../../images/edit-claim-insurance-policy.png" alt="Edit claim issuance policy"></p>
 <ol start="12">
 <li>In the <em>Claim rule template</em> drop-down, select <em>Send LDAP Attributes as Claims</em> and click Next</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Image not available: LDAP.png</p>
-</div>
+<p><img src="../../../images/ldap.png" alt="LDAP attributes as claims"></p>
 <ol start="13">
 <li>Choose a name for the rule and map the claims</li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Images not available: Edit-Rule.png, Choose-a-name-for-the-rule.png</p>
-</div>
+<p><img src="../../../images/edit-rule.png" alt="Edit Rule"></p>
+<p><img src="../../../images/choose-a-name-for-the-rule.png" alt="Choose a name for the rule"></p>
 <h2 id="login-to-subscription-manager-using-ad-fs">Login to Subscription Manager using AD FS</h2>
 <p>Now you should be ready. If you navigate to the Subscription Manager application, you will see the AD FS login option. Log in with your AD FS credentials.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You will be asked to link your account when you sign in for the first time. If so, fill in your information and click Link Account</p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Images not available: add-adfs-credentials.png, adfs-button.png</p>
-</div>
+<p><img src="../../../images/add-adfs-credentials.png" alt="Add ADFS credentials"></p>
+<p><img src="../../../images/adfs-button.png" alt="ADFS login button"></p>
 
 </article>
 
