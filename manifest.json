@@ -17647,6 +17647,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/rego.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/rego.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/remote-receivers-publishers-example-1.png",
       "output": {
         "resource": {
@@ -62837,6 +62847,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/404-PREVENTION-SOLUTION.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/ADMINISTRATION-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/ADMINISTRATION-MIGRATION-PLAN.html"
         }
       },
       "version": ""
