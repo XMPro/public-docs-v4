@@ -100,11 +100,11 @@
 <p>We have chosen not to implement hard limits like similar products e.g. Microsoft ADX, as the data sources our customers use are wide and varied.</p>
 <div class="NOTE">
 <h5>Note</h5>
-</div>
 <p>Read the article below to improve your understanding of factors that impact performance.</p>
 <ul>
 <li><a href="../../resources/faqs/implementation.html#a-look-beneath-the-hood-of-xmpro-charts-and-time-series-charts">A look beneath the hood of XMPro Charts and Time Series Analysis</a></li>
 </ul>
+</div>
 <h3 id="connector-selection">Connector Selection</h3>
 <p>Choose either a Connector designed for large volumes of data (e.g. <a href="https://xmpro.gitbook.io/tsc-sql-server-connector/">TSC SQL Server Connector</a>) - or one that does not reload with each interaction (e.g. <a href="https://xmpro.gitbook.io/sql-server-connector/">SQL Server Connector</a>).</p>
 <p>If there isn't a specialized TSC Connector available for your data source yet, you can utilize the <a href="../../how-tos/connectors/building-connectors.html#itscconnector">ITSCConnector</a> interface to build one.</p>
@@ -116,8 +116,8 @@
 <p><a href="../common-properties.html#appearance">See the Common Properties article for more details on common appearance properties.</a></p>
 <h4 id="show-legend">Show Legend</h4>
 <p>Determines if the legend is displayed or not.</p>
-<p>![](../../images/Show Legend.png)</p>
-<p>![](../../images/Hide Legend.png)</p>
+<p><img src="../../images/show-legend.png" alt=""></p>
+<p><img src="../../images/hide-legend.png" alt=""></p>
 <h4 id="x-axis-label-format">X Axis Label Format</h4>
 <p>Determines how the date is formatted on the x-axis of the chart and pan &amp; zoom panel.</p>
 <table>
@@ -130,26 +130,26 @@
 <tbody>
 <tr>
 <td>12-Hour Clock (2 Lines)</td>
-<td style="text-align: center;">![](../../images/12-Hour Clock (2 Lines).png)</td>
+<td style="text-align: center;"><img src="../../images/12-hour-clock-2-lines.png" alt=""></td>
 </tr>
 <tr>
 <td>12-Hour Clock (1 Line)</td>
-<td style="text-align: center;">![](../../images/12-Hour Clock (1 Line).png)</td>
+<td style="text-align: center;"><img src="../../images/12-hour-clock-1-line.png" alt=""></td>
 </tr>
 <tr>
 <td>24-Hour Clock (2 Lines)</td>
-<td style="text-align: center;">![](../../images/24-Hour Clock (2 Lines).png)</td>
+<td style="text-align: center;"><img src="../../images/24-hour-clock-2-lines.png" alt=""></td>
 </tr>
 <tr>
 <td>24-Hour Clock (1 Line)</td>
-<td style="text-align: center;">![](../../images/24-Hour Clock (1 Line).png)</td>
+<td style="text-align: center;"><img src="../../images/24-hour-clock-1-line.png" alt=""></td>
 </tr>
 </tbody>
 </table>
 <h4 id="enable-toolbar">Enable Toolbar</h4>
 <p>Determines whether the toolbar is displayed or not. The toolbar contains the button to change the y-axis type and the ellipsis menu.</p>
-<p>![](../../images/Enable Toolbar.png)</p>
-<p>![](../../images/Disable Toolbar.png)</p>
+<p><img src="../../images/enable-toolbar.png" alt=""></p>
+<p><img src="../../images/disable-toolbar.png" alt=""></p>
 <h4 id="enable-display-grid">Enable Display Grid</h4>
 <p>Determines whether the ellipsis menu contains the Display Grid option, which shows the selected data in a grid.</p>
 <h4 id="enable-download-as-csv">Enable Download as CSV</h4>
@@ -166,15 +166,15 @@
 <tbody>
 <tr>
 <td>Full</td>
-<td style="text-align: center;">![](../../images/Pan &amp; Zoom Full.png)</td>
+<td style="text-align: center;"><img src="../../images/pan-and-zoom-full.png" alt=""></td>
 </tr>
 <tr>
 <td>Compact</td>
-<td style="text-align: center;">![](../../images/Pan &amp; Zoom Compact.png)</td>
+<td style="text-align: center;"><img src="../../images/pan-and-zoom-compact.png" alt=""></td>
 </tr>
 <tr>
 <td>Hidden</td>
-<td style="text-align: center;">![](../../images/Pan &amp; Zoom Hidden.png)</td>
+<td style="text-align: center;"><img src="../../images/pan-and-zoom-hidden.png" alt=""></td>
 </tr>
 </tbody>
 </table>
@@ -187,8 +187,8 @@
 <p>This determines the starting date for the Pan &amp; Zoom. The end date of the Time Series Chart is determined by the row with the latest timestamp. The Pan &amp; Zoom range will update automatically with live data.</p>
 <div class="NOTE">
 <h5>Note</h5>
-</div>
 <p>The static range is used unless <a href="time-series-analysis.html#range-dynamic-start">Dynamic Start</a> and <a href="time-series-analysis.html#range-dynamic-end">Dynamic End</a> are not zero.</p>
+</div>
 <h4 id="range---dynamic-start">Range - Dynamic Start</h4>
 <p>This determines the starting date for the Pan &amp; Zoom. If changed dynamically at runtime, the Pan &amp; Zoom range will reload to reflect the new start.</p>
 <p>The Dynamic Start date must be before the Dynamic End date.</p>
@@ -198,12 +198,12 @@
 <p>This determines the time interval initially selected in the Pan &amp; Zoom component and, correspondingly, the line chart. The selection will always start at the right side of the Pan &amp; Zoom component.</p>
 <h4 id="initial-selection-unit-of-time">Initial Selection Unit of Time</h4>
 <p>This determines which unit of time measurement is applied to the <a href="time-series-analysis.html#initial-selection">initial selection</a> value. The options are Minutes, Days, or Hours.</p>
-<figure><img src="../../.gitbook/assets/Initial Selection Unit of Time.png" alt=""><figcaption></figcaption></figure>
+<p><img src="../../images/initial-selection-unit-of-time.png" alt=""></p>
 <p>Upon launching the application, the initial selection and the unit of time can be observed on the interval timeline.</p>
-<figure><img src="../../.gitbook/assets/image-1117.png" alt=""><figcaption></figcaption></figure>
+<p><img src="../../images/image-1117.png" alt=""></p>
 <h4 id="display-avg-min-max-and-envelope">Display Avg, Min, Max, and Envelope</h4>
 <p>This determines whether the line chart will display only the average values as a plain line, or the minimum, maximum, and envelope over the selected Interval Size.</p>
-<p>![](../../images/Display Avg, Min, Max, and Envelope.png)</p>
+<p><img src="../../images/display-avg-min-max-and-envelope.png" alt=""></p>
 <h4 id="show-tooltip-on-hover">Show Tooltip On Hover</h4>
 <p>This determines whether a tooltip will appear when the cursor hovers over a line. The tooltip will display the values of the hovered point on the line.</p>
 <p><img src="../../images/Tooltip.png" alt=""></p>
@@ -217,10 +217,10 @@
 <h4 id="default-y-axis-type">Default Y Axis Type</h4>
 <p>This determines the default Y Axis type, which can be changed at run-time using the button at the top-left corner of the line chart.</p>
 <p>If set to &quot;Stacked&quot; the selected parameters will be separated into different panes stacked vertically. If set to &quot;Shared&quot; the selected parameters will share a single pane with a single y-axis from the lowest to highest values in any line. If set to &quot;Overlap&quot;, the selected parameters will share a single pane with multiple y-axes, with the lowest and highest value of each line chart displayed on the axis at the bottom and top.</p>
-<p>![](../../images/Y Axis Type.gif)</p>
+<p><img src="../../images/y-axis-type.gif" alt=""></p>
 <h4 id="show-dots">Show Dots</h4>
 <p>Determines whether the points on the lines will display as dots.</p>
-<p>![](../../images/Show Dots.png)</p>
+<p><img src="../../images/show-dots.png" alt=""></p>
 <h4 id="interpolation-function">Interpolation Function</h4>
 <p>This property allows you to define how the lines behave in the line charts.</p>
 <table>
@@ -272,12 +272,12 @@
 <p>The Alerts for selected Recommendations will be displayed at run-time as markers on the chart: the Alert's created time is used as the timestamp and its title as the text.</p>
 <div class="NOTE">
 <h5>Note</h5>
-</div>
 <p>Known limitations:</p>
 <ul>
 <li>The marker title space is limited and the Alert title may be truncated.</li>
 <li>Some HTML special characters (e.g.<code>&lt;</code>) used in the Alert title will be encoded.</li>
 </ul>
+</div>
 <h4 id="entity-id">Entity ID</h4>
 <p>Specify an <em>Entity ID</em> field to filter the Recommendation Alerts.</p>
 <h3 id="data-source">Data Source</h3>
@@ -287,7 +287,6 @@
 <p>The Data Source property is required for the Time Series Chart.</p>
 <div class="NOTE">
 <h5>Note</h5>
-</div>
 <p>Known limitations:</p>
 <ul>
 <li>SQL is not advised because large volumes of data may cause read issues and/or performance issues. Azure Data Explorer is the recommended time series data source.</li>
@@ -299,6 +298,7 @@
 </ul>
 </li>
 </ul>
+</div>
 <h3 id="data">Data</h3>
 <h4 id="timestamp-expression">Timestamp Expression</h4>
 <p>This is the column that the data will base its x-axis on. It must be a Date Time type column. For efficient performance, it is recommended to have an index in descending order on this column in your database.</p>
