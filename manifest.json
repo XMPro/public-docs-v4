@@ -10017,6 +10017,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/100-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/100-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/100_1.png",
       "output": {
         "resource": {
@@ -10087,10 +10097,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/64-1-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/64-1-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/64_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/64_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/65-1-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/65-1-1.png"
         }
       },
       "version": ""
@@ -10127,10 +10157,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/68-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/68-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/68.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/68.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/68_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/68_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/69-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/69-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/69.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/69.png"
         }
       },
       "version": ""
@@ -10167,6 +10237,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/70-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/70-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/70.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/70.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/70_1.png",
       "output": {
         "resource": {
@@ -10187,6 +10277,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/72-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/72-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/72.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/72.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/72_1.png",
       "output": {
         "resource": {
@@ -10201,6 +10311,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/72gjOJT5Cj.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/73-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/73-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/73.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/73.png"
         }
       },
       "version": ""
@@ -10247,10 +10377,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/77-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/77-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/77.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/77.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/77_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/77_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/78-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/78-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/78.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/78.png"
         }
       },
       "version": ""
@@ -10307,10 +10477,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/82-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/82-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/82.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/82.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/82_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/82_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/83-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/83-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/83.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/83.png"
         }
       },
       "version": ""
@@ -10327,10 +10537,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/84-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/84-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/84.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/84.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/84_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/84_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/85-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/85-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/85.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/85.png"
         }
       },
       "version": ""
@@ -10347,10 +10597,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/86-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/86-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/86.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/86.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/86_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/86_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/87-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/87-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/87.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/87.png"
         }
       },
       "version": ""
@@ -10367,6 +10657,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/88-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/88-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/88.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/88.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/88_1.png",
       "output": {
         "resource": {
@@ -10377,10 +10687,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/89-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/89-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/89.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/89.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/89_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/89_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/90-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/90-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/90.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/90.png"
         }
       },
       "version": ""
@@ -10417,6 +10767,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/93-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/93-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/93.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/93.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/93_1.png",
       "output": {
         "resource": {
@@ -10447,10 +10817,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/96-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/96-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/96.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/96.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/96_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/96_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/97-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/97-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/97.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/97.png"
         }
       },
       "version": ""
@@ -11201,6 +11611,36 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/access-control-policy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ad-s3bucket.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ad-s3bucket.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ad-upgrade-pathdns.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ad-upgrade-pathdns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ad.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ad.png"
         }
       },
       "version": ""
@@ -13687,6 +14127,86 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/aws-ad-install-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-ad-install-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/aws-ad-options.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-ad-options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/aws-architecture-as-of-march-1-2024x1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-architecture-as-of-march-1-2024x1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/aws-db-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-db-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/aws-db.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-db.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/aws-upgrade-ds-db.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-upgrade-ds-db.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/aws-upgrade-package-dns.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/aws-upgrade-package-dns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/azure-architecture-as-of-nov-11-2024x1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/azure-architecture-as-of-nov-11-2024x1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/azure-armtemplate-delete.png",
       "output": {
         "resource": {
@@ -14137,10 +14657,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/db-config-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/db-config-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/default-category.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/default-category.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/delete-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/delete-1.png"
         }
       },
       "version": ""
@@ -14191,6 +14731,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/drag_ds_arrow.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ds-installation-finish.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ds-installation-finish.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ds.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ds.png"
         }
       },
       "version": ""
@@ -14281,6 +14841,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/encrypt-value.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/encryption-certificate-resized.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/encryption-certificate-resized.png"
         }
       },
       "version": ""
@@ -14527,6 +15097,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1049.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1049.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-105.png",
       "output": {
         "resource": {
@@ -14717,6 +15297,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1195.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1195.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1196.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1196.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1200.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1200.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1210.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1210.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1230.png",
       "output": {
         "resource": {
@@ -14761,6 +15381,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1256.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1260.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1260.png"
         }
       },
       "version": ""
@@ -14847,6 +15477,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1286.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1286.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-129.png",
       "output": {
         "resource": {
@@ -14871,6 +15511,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1303.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1304.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1304.png"
         }
       },
       "version": ""
@@ -14977,6 +15627,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1374.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1374.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1379.png",
       "output": {
         "resource": {
@@ -14997,6 +15657,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1382.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1382.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1391.png",
       "output": {
         "resource": {
@@ -15011,6 +15681,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1394.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-140.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-140.png"
         }
       },
       "version": ""
@@ -15057,10 +15737,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1434.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1434.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1441.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1441.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1446.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1446.png"
         }
       },
       "version": ""
@@ -15081,6 +15781,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1455.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-146.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-146.png"
         }
       },
       "version": ""
@@ -15137,6 +15847,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1505.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1505.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1513.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1513.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1518.png",
       "output": {
         "resource": {
@@ -15151,6 +15881,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1520.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1532.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1532.png"
         }
       },
       "version": ""
@@ -15277,6 +16017,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1642.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1642.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1644.png",
       "output": {
         "resource": {
@@ -15377,6 +16127,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1694.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1694.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1700.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1700.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1707.png",
       "output": {
         "resource": {
@@ -15451,6 +16221,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1748.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1749.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1749.png"
         }
       },
       "version": ""
@@ -15537,6 +16317,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1797.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1797.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-180.png",
       "output": {
         "resource": {
@@ -15567,6 +16357,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1835.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1835.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1836.png",
       "output": {
         "resource": {
@@ -15591,6 +16391,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1840.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1846.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1846.png"
         }
       },
       "version": ""
@@ -15647,10 +16457,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-210.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-210.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-214.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-214.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-222.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-222.png"
         }
       },
       "version": ""
@@ -15857,6 +16687,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-314.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-314.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-320.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-320.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-330.png",
       "output": {
         "resource": {
@@ -15871,6 +16721,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-333.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-338.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-338.png"
         }
       },
       "version": ""
@@ -15897,10 +16757,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-374.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-374.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-379.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-379.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-385.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-385.png"
         }
       },
       "version": ""
@@ -15931,6 +16811,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-403.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-406.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-406.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-410.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-410.png"
         }
       },
       "version": ""
@@ -16131,6 +17031,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-567.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-578.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-578.png"
         }
       },
       "version": ""
@@ -16347,6 +17257,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-689.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-689.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-696.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-696.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-7.png",
       "output": {
         "resource": {
@@ -16447,6 +17377,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-74.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-74.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-746.png",
       "output": {
         "resource": {
@@ -16537,6 +17477,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-8-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-8-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-81.png",
       "output": {
         "resource": {
@@ -16577,10 +17527,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-846.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-846.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-849.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/image-849.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-852.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-852.png"
         }
       },
       "version": ""
@@ -16667,6 +17637,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-907.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-907.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-910.png",
       "output": {
         "resource": {
@@ -16701,6 +17681,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-921.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-925.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-925.png"
         }
       },
       "version": ""
@@ -16761,6 +17751,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-949.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-962.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-962.png"
         }
       },
       "version": ""
@@ -19337,6 +20337,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/installation-finish-ad.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/installation-finish-ad.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/installation-install-xmpro.png",
       "output": {
         "resource": {
@@ -19501,6 +20511,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/lgub9xbnke.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/license-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/license-3.png"
         }
       },
       "version": ""
@@ -20037,10 +21057,60 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/signing-certificate-resized.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/signing-certificate-resized.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/signup.png",
       "output": {
         "resource": {
           "relative_path": "docs/images/signup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sm.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sm1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sm1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sm2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sm2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/sm3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/sm3.png"
         }
       },
       "version": ""
@@ -20627,10 +21697,50 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/installation/deployment/on-premise.md",
+      "source_relative_path": "docs/installation/deployment/windows-server-2022/index.md",
       "output": {
         ".html": {
-          "relative_path": "docs/installation/deployment/on-premise.html"
+          "relative_path": "docs/installation/deployment/windows-server-2022/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation/deployment/windows-server-2022/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation/deployment/windows-server-2022/install.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation/deployment/windows-server-2022/prerequisites.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation/deployment/windows-server-2022/prerequisites.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation/deployment/windows-server-2022/troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation/deployment/windows-server-2022/troubleshooting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation/deployment/windows-server-2022/upgrade.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation/deployment/windows-server-2022/upgrade.html"
         }
       },
       "version": ""
@@ -23046,6 +24156,506 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-11.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-12.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-12.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-13.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-13.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-14.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-14.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-15.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-15.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-16.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-16.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-17.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-17.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-18.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-18.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-19.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-19.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-20.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-20.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-21.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-21.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-22.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-22.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-23.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-23.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-24.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-24.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-25.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-25.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-26.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-26.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-27.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-27.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-28.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-28.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-29.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-29.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-30.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-30.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-31.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-31.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-32.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-32.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-33.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-33.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-34.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-34.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-35.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-35.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-36.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-36.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-37.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-37.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-38.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-38.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-39.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-39.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-40.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-40.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-41.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-41.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-42.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-42.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-43.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-43.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-44.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-44.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-45.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-45.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-46.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-46.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-47.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-47.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-48.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-48.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-49.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-49.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-50.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-50.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-51.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-51.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-install-9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-install-9.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/installation/index.md",
       "output": {
@@ -23401,6 +25011,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/release-notes/v4.4.18.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/release-notes/v4.4.19.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/release-notes/v4.4.19.html"
         }
       },
       "version": ""
