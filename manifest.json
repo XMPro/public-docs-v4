@@ -10957,6 +10957,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/C1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/C1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/C4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/C4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/C6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/C6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Cardinal.png",
       "output": {
         "resource": {
@@ -11061,6 +11091,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Configure-Health-Check-setup-step-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Connector_Configuration.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Connector_Configuration.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Connector_Configuration_Packager.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Connector_Configuration_Packager.png"
         }
       },
       "version": ""
@@ -11481,6 +11531,126 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/MonotoneX.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-3-(1).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-3-(1).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---Create-Recommendation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---View-Recommendation-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---View-Recommendation-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Recommendations---View-Recommendation.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Recommendations---View-Recommendation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Rules---Create-Rule-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Rules---Create-Rule-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Rules---Create-Rule-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Rules---Create-Rule-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Rules---Create-Rule-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Rules---Create-Rule-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Rules---View-Timeline-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Rules---View-Timeline-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Recommendations---Manage-Rules---View-Timeline-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Recommendations---Manage-Rules---View-Timeline-3.png"
         }
       },
       "version": ""
@@ -14447,6 +14617,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/business-case-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/business-case-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/business-case-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/business-case-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/business-roles-management.png",
       "output": {
         "resource": {
@@ -14567,6 +14757,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/collection-delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/collection-delete.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/collection-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/collection-key.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/collection-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/collection-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/concepts-landing-page.png",
       "output": {
         "resource": {
@@ -14581,6 +14801,66 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/configure-openai.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-5-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-5-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connectors-9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connectors-9.png"
         }
       },
       "version": ""
@@ -14681,6 +14961,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/data-streams.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/Collection.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/Collection.PNG"
         }
       },
       "version": ""
@@ -14817,6 +15107,176 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/Started On.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/Started On.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/Stream Load.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/Stream Load.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/agents/agents-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/agents/agents-8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/agents/upgrade-agent-version-steps.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/agents/upgrade-agent-version-steps.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/agent-excluded.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/agent-excluded.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/copy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/enable.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/enable.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/image-1470.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/image-1470.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/image-80.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/image-80.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/included-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/included-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/context-menu/main.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/context-menu/main.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/errors/ER_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/errors/ER_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/errors/ER_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/errors/ER_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/errors/ER_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/errors/ER_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/errors/ER_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/errors/ER_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/errors/ER_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/errors/ER_5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/errors/ER_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/errors/ER_6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/data-streams/image-1678.png",
       "output": {
         "resource": {
@@ -14937,6 +15397,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/stream-error.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/stream-error.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/data-streams/timeline/adding-timeline-note.png",
       "output": {
         "resource": {
@@ -14981,6 +15451,116 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/data-streams/timeline/timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/image-1005.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/image-1005.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/image-1333.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/image-1333.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/manage-ds-howtoopen2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/manage-ds-howtoopen2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/troubleshoot-10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/troubleshoot-10.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/troubleshoot-11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/troubleshoot-11.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/troubleshoot-9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/troubleshoot-9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/ts-1-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/ts-1-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/ts-2-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/ts-2-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/ts-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/ts-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/ts-5-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/ts-5-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/data-streams/troubleshooting/ts-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/data-streams/troubleshooting/ts-6.png"
         }
       },
       "version": ""
@@ -20947,6 +21527,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/integrity-check-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/integrity-check-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/integrity-check-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/integrity-check-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/integrity-check-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/integrity-check-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/integrity-check-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/integrity-check-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/integrity-check-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/integrity-check-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/km6ddwl6yp.gif",
       "output": {
         "resource": {
@@ -21111,6 +21741,76 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/logo2-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-export2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-export2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-filter.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-filter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-max1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-max1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-max2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-max2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-refresh.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-refresh.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-timeline-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-timeline-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/logs-view-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/logs-view-logs.png"
         }
       },
       "version": ""
@@ -21627,6 +22327,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/notes-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/notes-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/notes-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/notes-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/open-ad-fs-management.png",
       "output": {
         "resource": {
@@ -21827,6 +22547,86 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/recurrent-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/recurrent-8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/rego.png",
       "output": {
         "resource": {
@@ -21841,6 +22641,36 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/rego2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/remote-receivers-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/remote-receivers-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/remote-receivers-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/remote-receivers-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/remote-receivers-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/remote-receivers-3.png"
         }
       },
       "version": ""
