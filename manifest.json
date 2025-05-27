@@ -11657,6 +11657,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/ReworkNotifTemplates1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ReworkNotifTemplates1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/ReworkNotifTemplates2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/ReworkNotifTemplates2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Step.png",
       "output": {
         "resource": {
@@ -22387,6 +22407,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/notifications1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/notifications1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/notifications2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/notifications2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/notifications5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/notifications5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/notifications6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/notifications6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/open-ad-fs-management.png",
       "output": {
         "resource": {
@@ -23191,6 +23251,46 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/tab-hide-navigate.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/template1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/template1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/template2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/template2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/template5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/template5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/template6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/template6.png"
         }
       },
       "version": ""
