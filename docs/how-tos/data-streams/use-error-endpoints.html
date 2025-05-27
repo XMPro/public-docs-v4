@@ -103,28 +103,28 @@
 <li>Click on <em>Save</em>.</li>
 <li>To view the error data, click on <em>Publish</em>.</li>
 </ol>
-<p><img src="/docs/assets/data-streams/errors/ER_1.png" alt="Connecting the red error endpoint to an Event Printer agent"></p>
-<p><img src="/docs/assets/data-streams/errors/ER_2.png" alt="Saving the data stream with error endpoint connection"></p>
+<p><img src="../../images/data-streams/errors/ER_1.png" alt="Connecting the red error endpoint to an Event Printer agent"></p>
+<p><img src="../../images/data-streams/errors/ER_2.png" alt="Saving the data stream with error endpoint connection"></p>
 <ol start="4">
 <li>Click on <em>Live View</em>.</li>
 <li>Click on the Event Printer to display errors that occur during runtime.</li>
 <li>Click on Save.</li>
 </ol>
-<p><img src="/docs/assets/data-streams/errors/ER_3.png" alt="Selecting the Event Printer in Live View to monitor errors"></p>
+<p><img src="../../images/data-streams/errors/ER_3.png" alt="Selecting the Event Printer in Live View to monitor errors"></p>
 <p>The data printed for the Error Endpoint includes the AgentID of the Agent that had the error, as well as the timestamp of when the error occurred. The message of the error is also printed. The exact data from the data points are also printed.</p>
 <p>Instead of using the Event Printer to print errors, Error Endpoints can also connect to actions that trigger at the time of the error. For example, the following will send an email to a configured email address if an error occurs.</p>
-<p><img src="/docs/assets/data-streams/errors/ER_4.png" alt="Connecting an error endpoint to an Email Sender agent"></p>
+<p><img src="../../images/data-streams/errors/ER_4.png" alt="Connecting an error endpoint to an Email Sender agent"></p>
 <h2 id="handling-multiple-errors-from-error-endpoints">Handling multiple errors from Error Endpoints</h2>
 <p>A Union can be used to handle multiple errors at a time. To use the union Agent to do this, follow the steps below:</p>
 <ol>
 <li>Under the <em>Transformation Agents</em>, drag and drop a <em>Union</em> Agent onto the Data Stream.</li>
 </ol>
-<p><img src="/docs/assets/data-streams/errors/ER_5.png" alt="Adding a Union agent to combine multiple error streams"></p>
+<p><img src="../../images/data-streams/errors/ER_5.png" alt="Adding a Union agent to combine multiple error streams"></p>
 <ol start="2">
 <li>Connect the error endpoints of multiple Agents to the union.</li>
 <li>Add another Agent to deal with all the errors at the same time.</li>
 </ol>
-<p><img src="/docs/assets/data-streams/errors/ER_6.png" alt="Connecting multiple error endpoints to a Union agent for centralized error handling"></p>
+<p><img src="../../images/data-streams/errors/ER_6.png" alt="Connecting multiple error endpoints to a Union agent for centralized error handling"></p>
 
 </article>
 

@@ -96,16 +96,16 @@
 <h5>Note</h5>
 <p>Only non-virtual agents could trigger all breakpoints inside the Agent's code. This will also allow you to access any local environment (database, server, etc.) that you will use for testing.</p>
 </div>
-<p><img src="/docs/images/debugging-package-manager.png" alt="Package Manager Configuration"></p>
+<p><img src="../../images/debugging-package-manager.png" alt="Package Manager Configuration"></p>
 <ul>
 <li>Add the Packaged Agent in the Data Stream Designer by following the <a href="manage-agents.html#adding-an-agent">Adding an Agent</a> article.</li>
 <li>Install the XMPro Stream Host by following the <a href="../stream-host.html#how-to-install-a-stream-host">Install a Stream Host</a> article. Within the installation wizard, select Console Application as the Host Type.</li>
 </ul>
-<p><img src="/docs/images/debugging-install-stream-host.png" alt="Install Stream Host"></p>
+<p><img src="../../images/debugging-install-stream-host.png" alt="Install Stream Host"></p>
 <ul>
 <li>Create a new Data Stream for testing the agent and select the collection profile you used during Installation of Stream Host.</li>
 </ul>
-<p><img src="/docs/images/debugging-create-data-stream.png" alt="Create Data Stream"></p>
+<p><img src="../../images/debugging-create-data-stream.png" alt="Create Data Stream"></p>
 <ul>
 <li>Add the created Agent in the Data Stream and Save.</li>
 <li>Run the Stream Host as Admin and Publish the Data Stream for the first time. A cache folder will be created inside the Stream Host folder which will be used later on.</li>
@@ -114,30 +114,30 @@
 <ul>
 <li>Build the Agent Project to generate a dll. If built using the Debug configuration, the dll usually would be found inside the folder [Project folder]/bin/Debug/netstandard2.1.</li>
 </ul>
-<p><img src="/docs/images/debugging-build-agent.png" alt="Build Agent"></p>
-<p><img src="/docs/images/debugging-built-dll.png" alt="Built dll location"></p>
+<p><img src="../../images/debugging-build-agent.png" alt="Build Agent"></p>
+<p><img src="../../images/debugging-built-dll.png" alt="Built dll location"></p>
 <ul>
 <li>Replace the Agent dll on the Stream Host installation folder under Cache/[Agent Id]/[Agent Version] with the one generated.</li>
 </ul>
-<p><img src="/docs/images/debugging-destination-folder.png" alt="Destination folder"></p>
+<p><img src="../../images/debugging-destination-folder.png" alt="Destination folder"></p>
 <ul>
 <li>To determine an Agent's id, export a JSON from the XMP file of the agent via Package Manager and determine the value from the <code>Id</code> property.</li>
 </ul>
-<p><img src="/docs/images/debugging-export-json.png" alt="Export JSON"></p>
-<p><img src="/docs/images/debugging-json-file.png" alt="JSON file"></p>
+<p><img src="../../images/debugging-export-json.png" alt="Export JSON"></p>
+<p><img src="../../images/debugging-json-file.png" alt="JSON file"></p>
 <ul>
 <li>Run Stream Host as Admin.</li>
 <li>Run Visual Studio as Admin and open Agent solution.</li>
 <li>Add a breakpoint in the Agent's code.</li>
 <li>Attach <code>XMPro.StreamHost.Console.exe</code> to process. By default, Visual Studio shortcut is <code>ctrl + alt + p</code>.</li>
 </ul>
-<p><img src="/docs/images/debugging-attach-process.png" alt="Attach a Process"></p>
+<p><img src="../../images/debugging-attach-process.png" alt="Attach a Process"></p>
 <ul>
 <li>Publish the test Data Stream on the Data Stream Designer to initiate debugging.</li>
 </ul>
 <h3 id="common-issues">Common Issues</h3>
 <h4 id="issue-access-to-path-is-denied-when-publishing-a-data-stream">Issue: 'Access to Path is denied' when publishing a Data Stream</h4>
-<p><img src="/docs/images/debugging-access-denied.png" alt="Access to path is denied"></p>
+<p><img src="../../images/debugging-access-denied.png" alt="Access to path is denied"></p>
 <ul>
 <li>Make sure that Stream Host is ran in Administrator Mode</li>
 </ul>
@@ -156,7 +156,7 @@
 <li>Potential issue can lie in dll not containing the expected changes. Cleaning and rebuilding the agent may solve this issue.</li>
 </ul>
 <h4 id="issue-sorry-something-went-wrong-error-when-configuring-an-agent">Issue: 'Sorry, something went wrong.' error when configuring an agent</h4>
-<p><img src="/docs/images/debugging-error-configuring.png" alt="Error when configuring agent"></p>
+<p><img src="../../images/debugging-error-configuring.png" alt="Error when configuring agent"></p>
 <ul>
 <li>Make sure that stream host is running for non-virtual agents.</li>
 <li>If the agent is supposedly virtual, repackage the agent as non-virtual temporarily to be able to access your local environment settings</li>

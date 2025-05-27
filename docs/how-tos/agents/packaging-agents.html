@@ -91,13 +91,13 @@
 <p>The XMPro Package Manager is a Windows 11 desktop application that enables you to package a new Agent or update details for an existing Agent. <a href="../../concepts/agent/">See the Agent article for more information on Agents</a>.</p>
 <p>This application takes you through the process of specifying all the properties your Agent requires, adding or changing the controls for each of the user settings, and uploading the DLL files of the <a href="building-agents.html">Agent code</a>. It will provide you, upon completion, with a file that can be uploaded to Data Stream Designer after which you can build Data Streams using the Agent.</p>
 <p>You can download the software from the Microsoft Windows 10 Store or by clicking <a href="https://www.microsoft.com/en-us/p/xmpro-package-manager/9n3f4wnslgzk?activetab=pivot:overviewtab">here</a>.</p>
-<p><img src="/docs/images/package-manager.png" alt="XMPro Package Manager"></p>
+<p><img src="../../images/package-manager.png" alt="XMPro Package Manager"></p>
 <p>After installing the XMPro Package Manager, launch the application from the Microsoft Store or search for &quot;XMPro Package Manager&quot; in the Start menu and then click on &quot;XMPro Package Manager&quot;.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You can run multiple instances of Package Manager at the same time. This side-by-side comparison is helpful when developing a new Agent that is similar to another; or comparing different versions of the same Agent.</p>
 </div>
-<p><img src="/docs/images/package-manager-interface.png" alt="XMPro Package Manager interface"></p>
+<p><img src="../../images/package-manager-interface.png" alt="XMPro Package Manager interface"></p>
 <h2 id="new--import"><strong>New / Import</strong></h2>
 <p>On the first screen of the application, you can either create a new Agent package or import and update an existing one.</p>
 <div class="NOTE">
@@ -106,10 +106,10 @@
 <p>When you import an existing package, you have the option to export the package as a JSON file. This is useful either to compare packages or for source control and version management.</p>
 <p>You can also import the JSON file from an existing package, which is particularly useful if you need to modify translations added through the <a href="#include-multilingual-support">Include Multilingual Support</a> feature.</p>
 </div>
-<p><img src="/docs/images/new-import-package.png" alt="New or import package"></p>
+<p><img src="../../images/new-import-package.png" alt="New or import package"></p>
 <h2 id="details"><strong>Details</strong></h2>
 <p>The Details form allows you to configure the properties of an Agent. These properties are listed and explained below.</p>
-<p><img src="/docs/images/package-manager-details.png" alt="Package Manager Details"></p>
+<p><img src="../../images/package-manager-details.png" alt="Package Manager Details"></p>
 <h3 id="name"><strong>Name</strong></h3>
 <p>The name of the Agent is what the Agent will be known as once it is uploaded to the Data Stream Designer platform, for example, &quot;<em>Jupyter Notebook</em>&quot;.</p>
 <h3 id="category">Category</h3>
@@ -163,7 +163,7 @@
 <p>The name of the Output Endpoints should match what has been defined in the Agent's code.</p>
 </div>
 <p>To remove an existing Endpoint, scroll down in the list until you see it, select the Endpoint and click on the <em>Delete</em> button.</p>
-<p><img src="/docs/images/endpoints-config.png" alt="Endpoints configuration"></p>
+<p><img src="../../images/endpoints-config.png" alt="Endpoints configuration"></p>
 <h2 id="references"><strong>References</strong></h2>
 <p>The References form is where you upload the file(s) required for the Agent to execute. Only files in the <em>Selected File(s)</em> list will be included in the package, and any DLLs must be created in .NET.</p>
 <p>To upload a file, click the <em>Browse</em> button next to the <em>DLL File(s)</em> field and navigate to where the files are located. Select all the files needed and click the <em>Add</em> button to add them to the <em>Selected File(s)</em> list.</p>
@@ -194,7 +194,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="/docs/images/references-config.png" alt="References configuration"></p>
+<p><img src="../../images/references-config.png" alt="References configuration"></p>
 <h2 id="settings"><strong>Settings</strong></h2>
 <p>Depending on what your Agent does, it might require that the user provide certain information, such as a server URL, username, or password. For each of these information fields (or <em>settings</em>), you need to specify which control should be used and what each control represents, for example, the Jupyter Notebook Agent will require the user to add a server URL. The user should provide this value using a text-box control. Thus, you need to create a control with a type of &quot;TextBox&quot; and a caption that reads &quot;Server URL&quot; in the XMPro Package Manager application.</p>
 <p>The following controls are available to be used to capture user input:</p>
@@ -344,7 +344,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="/docs/images/settings-config.png" alt="Settings configuration"></p>
+<p><img src="../../images/settings-config.png" alt="Settings configuration"></p>
 <h3 id="adding-settings"><strong>Adding Settings</strong></h3>
 <p>Settings are grouped logically into one or more groups, such as authentication, criteria, and output.</p>
 <p>Create a group first, then add controls for settings to the group. To do this, follow the steps below:</p>
@@ -362,8 +362,8 @@
 <li>Select the options that apply from the list of check-boxes.</li>
 <li>Click <em>Save</em>.</li>
 </ol>
-<p><img src="/docs/images/add-group.png" alt="Adding a group"></p>
-<p><img src="/docs/images/add-setting.png" alt="Adding a setting"></p>
+<p><img src="../../images/add-group.png" alt="Adding a group"></p>
+<p><img src="../../images/add-setting.png" alt="Adding a setting"></p>
 <h2 id="output"><strong>Output</strong></h2>
 <h3 id="export-as-json-file"><strong>Export as JSON file</strong></h3>
 <p>Tick the checkbox <strong>Export as JSON file too?</strong> if you would like to export the file as JSON too. It will later be saved to the same directory as the XMP file with the file name <em>category_name_version</em>.json.</p>
@@ -382,14 +382,14 @@
 <li>Override the automated translations by editing the JSON file and repackaging it with an incremented version number.</li>
 </ul>
 </div>
-<p><img src="/docs/images/output-config.png" alt="Output configuration"></p>
+<p><img src="../../images/output-config.png" alt="Output configuration"></p>
 <h3 id="configure-openai"><strong>Configure OpenAI</strong></h3>
 <ol>
 <li>Click <em>Configure OpenAI</em>.</li>
 <li>A form will open for you to add or modify the OpenAI Endpoint and Api Key.</li>
 <li>Click <em>Save.</em></li>
 </ol>
-<p><img src="/docs/images/configure-openai.png" alt="Configure OpenAI"></p>
+<p><img src="../../images/configure-openai.png" alt="Configure OpenAI"></p>
 <h2 id="review-details"><strong>Review: Details</strong></h2>
 <p>Lastly, you can navigate back through the steps to review the details that you've specified. If you are satisfied, complete the wizard by clicking the Save button below before navigating to the folder where you would like the package to be exported. Your package will be created with the file name <em>category_name_version</em>.xmp.</p>
 <div class="NOTE">
@@ -400,7 +400,7 @@
 <li>ensure you select a different location folder or increment the version to avoid overwriting the original.</li>
 </ul>
 </div>
-<p><img src="/docs/images/success-message.png" alt="Success message"></p>
+<p><img src="../../images/success-message.png" alt="Success message"></p>
 <h2 id="further-reading"><strong>Further Reading</strong></h2>
 <ul>
 <li><a href="manage-agents.html">How to upload your new Agent to Data Stream Designer</a></li>

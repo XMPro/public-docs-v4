@@ -166,7 +166,7 @@ throw new NotImplementedException();
 </div>
 <h2 id="iagent">IAgent</h2>
 <p><em>IAgent</em> is the primary interface that must be implemented by all Agents as it provides the structure for the workings of the Agent. After implementing this interface, there are several methods you have to add to your project that forms part of this predefined structure.</p>
-<p><img src="/docs/images/agent-settings.png" alt="Agent settings"></p>
+<p><img src="../../images/agent-settings.png" alt="Agent settings"></p>
 <h3 id="settingsconfigurations"><strong>Settings/Configurations</strong></h3>
 <p>Some Agents need to be provided with configurations by the user, for example, for a CSV listener Agent to get records from a CSV file, it needs the following:</p>
 <ul>
@@ -186,7 +186,7 @@ throw new NotImplementedException();
 <li>Group (Payload)</li>
 <li>Grid</li>
 </ul>
-<p><img src="/docs/images/settings-template.png" alt="Settings template"></p>
+<p><img src="../../images/settings-template.png" alt="Settings template"></p>
 <p>Each control has a <em>Key</em>, which uniquely identifies it in the template and allows the Agent code to access its value at any time. To get the value contained in a setting, use the following code:</p>
 <pre><code class="lang-csharp">string mySetting = parameters[&quot;myUniqueKey&quot;];
 </code></pre>
@@ -316,7 +316,7 @@ var pOuts = args.ParentOutputs;
 </div>
 <h2 id="ipublisherror">IPublishError</h2>
 <p>An Agent can publish messages to an error endpoint by implementing the <em>IPublishesError</em> interface. An unhandled error in an Agent will be captured and error information will be published to the error endpoint.</p>
-<p><img src="/docs/images/error-endpoint.png" alt="Error endpoint in Stream Integration Manager"></p>
+<p><img src="../../images/error-endpoint.png" alt="Error endpoint in Stream Integration Manager"></p>
 <p>Implement the interface member:</p>
 <pre><code class="lang-csharp">public event EventHandler&lt;OnErrorArgs&gt; OnPublishError;
 </code></pre>
