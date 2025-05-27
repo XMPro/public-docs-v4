@@ -16287,6 +16287,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1115.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1115.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1117.png",
       "output": {
         "resource": {
@@ -16487,6 +16497,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1279.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1279.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1280.png",
       "output": {
         "resource": {
@@ -16581,6 +16601,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1309.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1310.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1310.png"
         }
       },
       "version": ""
@@ -16891,6 +16921,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1489.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1491.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1491.png"
         }
       },
       "version": ""
