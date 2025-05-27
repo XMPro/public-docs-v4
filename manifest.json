@@ -66810,6 +66810,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "migration/HOW-TOS-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/HOW-TOS-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "migration/MIGRATION-TRACKER.md",
       "output": {
         ".html": {
