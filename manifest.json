@@ -17,26 +17,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "DOCFX-BUILD-WARNINGS-BREAKDOWN.md",
-      "output": {
-        ".html": {
-          "relative_path": "DOCFX-BUILD-WARNINGS-BREAKDOWN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "DOCFX-WARNING-RESOLUTION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "DOCFX-WARNING-RESOLUTION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
@@ -11417,6 +11397,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Imagery Hybrid.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Imagery Hybrid.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Imagery.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Imagery.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Install_On-Prem_IIS.png",
       "output": {
         "resource": {
@@ -11487,20 +11487,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Map_GeoJSON.PNG",
+      "source_relative_path": "docs/images/Map_GeoJSON.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/Map_GeoJSON.PNG"
+          "relative_path": "docs/images/Map_GeoJSON.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/Map_ImageTilt.PNG",
+      "source_relative_path": "docs/images/Map_ImageTilt.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/Map_ImageTilt.PNG"
+          "relative_path": "docs/images/Map_ImageTilt.png"
         }
       },
       "version": ""
@@ -11511,6 +11511,36 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/MonotoneX.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Oceans.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Oceans.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/OpenStreetMap.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/OpenStreetMap.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/PageValidation1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/PageValidation1.png"
         }
       },
       "version": ""
@@ -11657,6 +11687,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Search-Reco-Alerts.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Search-Reco-Alerts.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/Step.png",
       "output": {
         "resource": {
@@ -11751,6 +11791,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Tooltip.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/Topographic.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Topographic.png"
         }
       },
       "version": ""
@@ -15097,6 +15147,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/darkgrey.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/darkgrey.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/data-repeater-box-appearance-properties.png",
       "output": {
         "resource": {
@@ -15117,10 +15177,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/data-streams/Collection.PNG",
+      "source_relative_path": "docs/images/data-streams/Collection.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/data-streams/Collection.PNG"
+          "relative_path": "docs/images/data-streams/Collection.png"
         }
       },
       "version": ""
@@ -15257,20 +15317,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/data-streams/Started On.PNG",
+      "source_relative_path": "docs/images/data-streams/Started On.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/data-streams/Started On.PNG"
+          "relative_path": "docs/images/data-streams/Started On.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "docs/images/data-streams/Stream Load.PNG",
+      "source_relative_path": "docs/images/data-streams/Stream Load.png",
       "output": {
         "resource": {
-          "relative_path": "docs/images/data-streams/Stream Load.PNG"
+          "relative_path": "docs/images/data-streams/Stream Load.png"
         }
       },
       "version": ""
@@ -16577,6 +16637,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1153.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1153.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1163.png",
       "output": {
         "resource": {
@@ -17107,6 +17177,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1403.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1403.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1409.png",
       "output": {
         "resource": {
@@ -17251,6 +17331,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-147.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1471.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1471.png"
         }
       },
       "version": ""
@@ -17607,6 +17697,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1684.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1684.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1685.png",
       "output": {
         "resource": {
@@ -17691,6 +17791,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1714.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1716.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1716.png"
         }
       },
       "version": ""
@@ -17787,6 +17897,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1757.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1757.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-176.png",
       "output": {
         "resource": {
@@ -17801,6 +17921,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1761.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1765.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1765.png"
         }
       },
       "version": ""
@@ -18427,6 +18557,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-395.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-395.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-403.png",
       "output": {
         "resource": {
@@ -18477,6 +18617,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-420.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-420.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-429.png",
       "output": {
         "resource": {
@@ -18501,6 +18651,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-443.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-450.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-450.png"
         }
       },
       "version": ""
@@ -18887,6 +19047,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-672.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-672.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-674.png",
       "output": {
         "resource": {
@@ -19231,6 +19401,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-839.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-844.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-844.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-845.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-845.png"
         }
       },
       "version": ""
@@ -22397,6 +22587,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/lightgrey.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/lightgrey.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/live-feed-block.png",
       "output": {
         "resource": {
@@ -22977,6 +23177,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/menu-collapse.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/menu-collapse.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/menu-hide-on-mouse-leave.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/menu-hide-on-mouse-leave.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/menu-submenu.gif",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/menu-submenu.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/metablock-enhance-chart-display.png",
       "output": {
         "resource": {
@@ -23031,6 +23261,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/nLryP9xJvq.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/nationalgeo.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/nationalgeo.png"
         }
       },
       "version": ""
@@ -24077,6 +24317,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/streets night.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/streets night.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/streets.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/streets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/success-message.png",
       "output": {
         "resource": {
@@ -24131,6 +24391,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/template6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/terrain.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/terrain.png"
         }
       },
       "version": ""
@@ -69614,86 +69884,6 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/404-PREVENTION-SOLUTION.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/404-PREVENTION-SOLUTION.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/COMPLETE-INSTALLATION-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/COMPLETE-INSTALLATION-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/CONNECTORS-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/CONNECTORS-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/CONTRIBUTOR-GUIDE.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/CONTRIBUTOR-GUIDE.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/FOLDER-MIGRATION-SUMMARY.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/FOLDER-MIGRATION-SUMMARY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/HOW-TOS-MIGRATION-PLAN.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/HOW-TOS-MIGRATION-PLAN.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/MIGRATION-TRACKER.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/MIGRATION-TRACKER.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "migration/OUTSTANDING-MIGRATION-WORK.md",
-      "output": {
-        ".html": {
-          "relative_path": "migration/OUTSTANDING-MIGRATION-WORK.html"
         }
       },
       "version": ""
