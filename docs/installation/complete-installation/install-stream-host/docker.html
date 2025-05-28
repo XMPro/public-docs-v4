@@ -91,7 +91,7 @@
 <p>The Stream Host Docker image is available from XMPro Platform v4.4.2+.</p>
 <p>If your installation requires multiple Stream Hosts, please be aware that Stream Host <a href="../../../how-tos/stream-host.html#how-to-override-variables">Variable Overrides</a> must be applied as environment variables when running as a Container - enabling frictionless automation when creating multiple Stream Host instances.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<h3 id="hardware-and-software"><strong>Hardware and Software</strong></h3>
+<h3 id="hardware-and-software">Hardware and Software</h3>
 <p>A container runtime tool capable of running Docker images, such as <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a>.</p>
 <p>The XMPro Docker Stream Host image has already met the rest of the <a href="../../install.html#hardware-requirements"><strong>hardware</strong> requirements</a> and <a href="../../install.html#software-requirements"><strong>software</strong> requirements</a>.</p>
 <h3 id="configuration-settings">Configuration Settings</h3>
@@ -160,7 +160,7 @@
 <p>Using the <code>latest</code> tag stores a copy of the image on your system. This cached version may not be the latest release if a newer release has since been published.</p>
 <p>We recommend specifying the specific version or re-pulling the image if a newer release has occurred since your last Stream Host docker install.</p>
 </div>
-<h3 id="image-flavors"><strong>Image Flavors</strong></h3>
+<h3 id="image-flavors">Image Flavors</h3>
 <p>A Stream Host running a Data Stream must provide the capabilities to run each Agents in the Data Stream. Choose your image depending on the capabilities that are required.</p>
 <table>
 <thead>
@@ -201,7 +201,7 @@
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt
 </code></pre>
-<h2 id="run-examples"><strong>Run Examples</strong></h2>
+<h2 id="run-examples">Run Examples</h2>
 <p>Please see the following examples to run Stream Host as a Container:</p>
 <ul>
 <li><a href="docker.html#docker-run">Docker Run</a></li>
@@ -220,11 +220,11 @@ xm__xmpro__Gateway__Rank=&lt;Rank&gt;
 <p>Run the Stream Host using the following command. Specify the version or add &quot;<code>--pull always</code>&quot; to ensure you're using the newest release.</p>
 <pre><code class="lang-bash">docker run --env-file=envfile --name stream-host xmpro.azurecr.io/stream-host:latest
 </code></pre>
-<h4 id="stop"><strong>Stop</strong></h4>
+<h4 id="stop">Stop</h4>
 <p>Stop the Stream Host using the following command.</p>
 <pre><code class="lang-bash">docker rm -f stream-host
 </code></pre>
-<h3 id="docker-compose"><strong>Docker Compose</strong></h3>
+<h3 id="docker-compose">Docker Compose</h3>
 <p>Create a file called <code>compose.yaml</code> in your working directory and paste the following (replacing <code>&lt;values&gt;</code> with the actual <a href="docker.html#configuration-settings">Configuration Settings</a>):</p>
 <pre><code class="lang-yml">services:
   stream-host:
@@ -248,7 +248,7 @@ xm__xmpro__Gateway__Rank=&lt;Rank&gt;
 <p>In the same working directory as<code>compose.yaml</code>, run the following command to start the Stream Host.</p>
 <pre><code class="lang-bash">docker-compose up -d stream-host 
 </code></pre>
-<h4 id="stop-1"><strong>Stop</strong></h4>
+<h4 id="stop-1">Stop</h4>
 <p>In the same working directory as<code>compose.yaml</code>, run the following command to stop the Stream Host.</p>
 <pre><code class="lang-bash">docker-compose down
 </code></pre>

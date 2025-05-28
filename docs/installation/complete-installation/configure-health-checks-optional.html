@@ -90,14 +90,14 @@
 <div class="video-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/W1LWcSUrgTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<h2 id="overview"><strong>Overview</strong></h2>
+<h2 id="overview">Overview</h2>
 <p><a href="https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-6.0">Health checks</a> are the industry standard for the initial diagnostic step of the troubleshooting process, which provides information about the health and readiness of XMPro services. The health checks achieve this by performing periodic evaluations of connected services - each of which returns a status of healthy or unhealthy.</p>
 <p>The health checks are disabled by default. Once the health checks are turned on, you can opt to view them in the <a href="#health-ui">Health UI</a> or add the <a href="#health-endpoints">endpoints</a> to your existing business application health monitoring IT solution.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>It is also possible to include <a href="#adding-third-party-endpoints">third-party endpoints</a> - enabling you to monitor all of your health checks in a central location.</p>
 </div>
-<h2 id="health-endpoints"><strong>Health Endpoints</strong></h2>
+<h2 id="health-endpoints">Health Endpoints</h2>
 <p>Each XMPro service has an endpoint that can be accessed to determine its overall health. The following health checks are performed to test different dependencies:</p>
 <ol>
 <li>Connection to other XMPro services</li>
@@ -137,7 +137,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="health-ui"><strong>Health UI</strong></h2>
+<h2 id="health-ui">Health UI</h2>
 <p>The UI provides a user-friendly display of the responses from the health endpoints.</p>
 <p>To access the health checks performed, visit the health UI of any of the services using the health-ui path. For example, <em><a href="https://xmpro-ad-sample.azurewebsites.net/health-ui.">https://xmpro-ad-sample.azurewebsites.net/health-ui.</a></em></p>
 <p><em>The health check for XMPro AI was added in v4.4.5.</em></p>

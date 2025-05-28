@@ -98,19 +98,19 @@
 <p>XMPro has a <a href="https://documentation.xmpro.com/resources/integrations">library of Agents</a> available to use. To acquire any of these Agents, please contact your XMPro sales representative or write to us at <a href="mailto:support@xmpro.com">support@xmpro.com</a>. Alternatively, since Agents can be written by anyone that has some knowledge of programming and has access to the required technologies, you can write your own Agent by following <a href="../../how-tos/agents/building-agents.html">these</a> instructions.</p>
 <h2 id="categories">Categories</h2>
 <p>In Data Steam Designer, Agents are divided into different categories, depending on the overall function they perform. There are six different categories available: <em>Action Agents</em>, <em>Context Providers</em>, <em>Listeners, Transformations, AI &amp; Machine Learning, Recommendations,</em> and <em>Functions</em>. To be able to distinguish them properly, they have been tagged with a certain color as well as an abbreviation. These categories are separate from the <a href="../category.html">App and Data Stream Categories</a>.</p>
-<h3 id="action-agents"><strong>Action Agents</strong></h3>
+<h3 id="action-agents">Action Agents</h3>
 <p>An Action Agent is an Agent that consumes events in a stream and then performs internal or external (third-party) actions, e.g. sending notifications or performing data warehouse updates. Action Agents output a response after each event has been processed. For example, the Azure SQL Action Agent writes data to an Azure SQL database.</p>
-<h3 id="context-providers"><strong>Context Providers</strong></h3>
+<h3 id="context-providers">Context Providers</h3>
 <p>Context providers are Agents that provide context to a stream by consuming reference or static data and making it available. For example, the <em>SQL Server Context Provider</em> provides static data to the Data Stream by reading the data in a database table and sending it to the next Agent.</p>
-<h3 id="listeners"><strong>Listeners</strong></h3>
+<h3 id="listeners">Listeners</h3>
 <p>Listeners are Agents that listen for data or events from sensors and third-party systems. For example, the <em>MQTT Listener</em> listens for data from sensors as it is posted to MQTT.</p>
-<h3 id="transformations"><strong>Transformations</strong></h3>
+<h3 id="transformations">Transformations</h3>
 <p>Transformation Agents alter the shape or form of data. For example, the <em>Join Transformation</em> joins data it receives from two separate data sources.</p>
-<h3 id="ai--machine-learning"><strong>AI &amp; Machine Learning</strong></h3>
+<h3 id="ai--machine-learning">AI &amp; Machine Learning</h3>
 <p>AI &amp; Machine Learning Agents allow you to run advanced AI to transform the data. For example, <em>Azure ML, IBM Watson, and Jupyter Notebook</em>.</p>
-<h3 id="recommendations"><strong>Recommendations</strong></h3>
+<h3 id="recommendations">Recommendations</h3>
 <p>Recommendation Agents are related to Recommendations and let you complete actions such as running recommendations, updating recommendations, and more.</p>
-<h3 id="functions"><strong>Functions</strong></h3>
+<h3 id="functions">Functions</h3>
 <p>Functions perform specific mathematical or statistical operations on data. For example, the <em>FFT Function</em> performs forward FFT calculations on the data it receives.</p>
 <h2 id="settings">Settings</h2>
 <p>An Agent consists of code and user settings. The code defines the actions an Agent performs in any Data Stream. The settings are the input for the code that executes, provided by the user when adding the Agent to a Data Stream, such as authentication credentials.</p>

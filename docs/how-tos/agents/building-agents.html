@@ -87,15 +87,15 @@
         <article data-uid="">
 <h1 id="building-agents">Building Agents</h1>
 
-<h2 id="overview"><strong>Overview</strong></h2>
+<h2 id="overview">Overview</h2>
 <p>To get started with developing a new Agent, create a new C# library project in Visual Studio and import the <a href="https://www.nuget.org/packages/XMPro.IOT.Framework/">XMPro.IoT.Framework</a> NuGet package. When writing the code for an Agent, you will have to implement a number of interfaces. Which interfaces to implement depends on the category under which your Agent will fall:</p>
 <h3 id="listeners">Listeners</h3>
 <p>Listeners are created by implementing <em>IAgent</em> and <em>IPollingAgent</em> interfaces. To push the events to the next receiver, the <em>OnPublish</em> event should be invoked and the events should be passed as arguments.</p>
-<h3 id="action-agents-functions"><strong>Action Agents/ Functions</strong></h3>
+<h3 id="action-agents-functions">Action Agents/ Functions</h3>
 <p>Action Agents are created by implementing the <em>IAgent</em> and <em>IReceivingAgent</em> interfaces. The <em>Receive</em> method will be called every time events are received by this Agent. To publish these events again, the same logic as per the Listener Agent can be used.</p>
-<h3 id="context-providers"><strong>Context Providers</strong></h3>
+<h3 id="context-providers">Context Providers</h3>
 <p>Context Providers are created by implementing the <em>IAgent</em>, <em>IPollingAgent</em> interfaces. They are very similar to Listeners; however, Context Providers publish all available records/events when polled instead of only publishing the newer/changed ones.</p>
-<h3 id="transformations"><strong>Transformations</strong></h3>
+<h3 id="transformations">Transformations</h3>
 <p>Transformations are implemented in a similar way as Action Agents, except that all Transformations should have the <em>Require Input Map</em> flag set to <em>false</em> and must not implement the <em>GetInputAttributes</em> method, hence it should be:</p>
 <pre><code class="lang-csharp">public IEnumerable&lt;XMIoT.Framework.Attribute&gt; GetIntputAttributes(string endpoint, IDictionary&lt;string, string&gt; parameters)
 {
@@ -167,7 +167,7 @@ throw new NotImplementedException();
 <h2 id="iagent">IAgent</h2>
 <p><img src="images/building-agents-1.png" alt="Config Blade"></p>
 <p><em>IAgent</em> is the primary interface that must be implemented by all Agents as it provides the structure for the workings of the Agent. After implementing this interface, there are several methods you have to add to your project that forms part of this predefined structure.</p>
-<h3 id="settingsconfigurations"><strong>Settings/Configurations</strong></h3>
+<h3 id="settingsconfigurations">Settings/Configurations</h3>
 <p>Some Agents need to be provided with configurations by the user, for example, for a CSV listener Agent to get records from a CSV file, it needs the following:</p>
 <ul>
 <li>Polling interval (in seconds)</li>
@@ -288,16 +288,16 @@ var decryptedVal = request.DecryptedValue;
 <p>Advanced users, however, can use this method to decide to opt-out of Polling settings, by returning false. The <em>parameters</em> method parameter will contain the Stream Object's Configuration, allowing you to determine whether to return true to opt-in, or false to opt out, depending on what settings the user has selected. Opting out will cause the PollingInterval setting to not appear in the configuration tab, and the Poll method to never be called when the Stream is published.</p>
 <p>This may be useful when the agent you are building can be configured to either actively query its configured third-party system for data at regular intervals, or set up a persistent connection to the third-party service and passively wait for that connection to deliver data.</p>
 <p>If the Agent does not need to query for data at regular intervals, or perform other work or logic on a specific schedule, it is recommended to not implement <em>IPollingAgent</em> rather than always returning false from the <em>RequiresPolling</em> method.</p>
-<h2 id="ireceivingagent"><strong>IReceivingAgent</strong></h2>
+<h2 id="ireceivingagent">IReceivingAgent</h2>
 <p>If your Agent is required to receive inputs from other Agents, you should implement the <em>IReceivingAgent</em> interface.</p>
 <h3 id="input-payload">Input Payload</h3>
 <p>Each Agent is responsible to inform the <em>Engine</em> about the structure of the payload it consumes. To achieve this in your Agent, implement the following method:</p>
 <pre><code class="lang-csharp">IEnumerable&lt;Attribute&gt; GetInputAttributes(string endpoint, IDictionary&lt;string, string&gt; parameters)
 </code></pre>
 <p>This method returns a collection consisting of Attribute, which is a type that represents the name and type of a given attribute in the incoming payload.</p>
-<h4 id="input-mapping"><strong>Input Mapping</strong></h4>
+<h4 id="input-mapping">Input Mapping</h4>
 <p>In most cases, if an incoming payload structure is supposed to be different from what the parent is sending, i.e. the Input Payload has been specified above, the user will have to map parent outputs to the current Agent's inputs. To enable this, mark the <em>Require Input Map</em> flag as true in the Stream Integration Manager when packaging the Agent.</p>
-<h4 id="endpoint"><strong>Endpoint</strong></h4>
+<h4 id="endpoint">Endpoint</h4>
 <p>Each Agent can have a number of input and output <a href="../../concepts/agent/#endpoints">endpoints</a>. Endpoints are the points where incoming or outgoings arrows are connected. Each endpoint consists of a <em>Name&lt;String&gt;</em> attribute. You will be passed an endpoint name when queried for an <em>Input</em> payload definition. Be sure to specify the endpoint name when querying the parent's output payload definition.</p>
 <h3 id="parent-outputs">Parent Outputs</h3>
 <p>All receiving Agents can query the structure of parent Agent outputs connected at a given endpoint by invoking an event, as demonstrated in the example below:</p>

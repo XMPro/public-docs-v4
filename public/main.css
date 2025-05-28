@@ -39,6 +39,87 @@
 
 /* Dark theme variables are defined in root */
 
+/* GitBook-style Header Spacing */
+article h1 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--xmpro-border-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+article h2 {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  padding-top: 16px;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+article h3 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+article h4 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+article h5 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+article h6 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Ensure first header after article start doesn't have extra top margin */
+article > h1:first-child,
+article > h2:first-child,
+article > h3:first-child,
+article > h4:first-child,
+article > h5:first-child,
+article > h6:first-child {
+  margin-top: 0;
+}
+
+/* Add spacing between consecutive headers */
+article h1 + h2,
+article h2 + h3,
+article h3 + h4,
+article h4 + h5,
+article h5 + h6 {
+  margin-top: 24px;
+}
+
+/* Paragraph spacing after headers */
+article h1 + p,
+article h2 + p,
+article h3 + p,
+article h4 + p,
+article h5 + p,
+article h6 + p {
+  margin-top: 16px;
+}
+
+/* General paragraph spacing */
+article p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
 
 #logo {
   content: var(--xmpro-current-logo-url);
@@ -324,6 +405,15 @@ code {
 .IMPORTANT > *:first-child:not(h5),
 .WARNING > *:first-child:not(h5),
 .CAUTION > *:first-child:not(h5) {
+  margin-top: 0;
+}
+
+/* Remove top margin from paragraphs in callout blocks to align with icons */
+.TIP p,
+.NOTE p,
+.IMPORTANT p,
+.WARNING p,
+.CAUTION p {
   margin-top: 0;
 }
 

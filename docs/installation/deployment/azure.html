@@ -223,21 +223,21 @@
 <h2 id="known-issues">Known Issues</h2>
 <h3 id="notebook-upgrades-with-arm-deployments">Notebook Upgrades with ARM Deployments</h3>
 <p>When upgrading XMPro instances that use AI Notebooks installed via ARM deployments, you may encounter known issues with the automated upgrade process. These issues primarily affect the Notebook components during ARM-based upgrades.</p>
-<h4 id="impact-and-scope"><strong>Impact and Scope</strong></h4>
+<h4 id="impact-and-scope">Impact and Scope</h4>
 <ul>
 <li>This issue affects users who deploy via ARM and already have AI Notebooks installed</li>
 <li>The issue primarily appears during upgrades to version 4.4.18 and later</li>
 <li>The problem involves compatibility between the ARM template and current Azure implementation</li>
 </ul>
-<h4 id="workaround-manual-notebook-deployment"><strong>Workaround: Manual Notebook Deployment</strong></h4>
+<h4 id="workaround-manual-notebook-deployment">Workaround: Manual Notebook Deployment</h4>
 <p>While automated Notebook upgrades via ARM deployments may fail, you can successfully upgrade Notebooks using the following manual deployment process:</p>
-<h4 id="prerequisites-1"><strong>Prerequisites</strong></h4>
+<h4 id="prerequisites-1">Prerequisites</h4>
 <ol>
 <li>Bash terminal</li>
 <li>Azure CLI 2</li>
 <li>Helm 3.X</li>
 </ol>
-<h4 id="manual-deployment-steps"><strong>Manual Deployment Steps</strong></h4>
+<h4 id="manual-deployment-steps">Manual Deployment Steps</h4>
 <ol>
 <li><strong>Login and validate connection to the correct subscription</strong></li>
 </ol>
@@ -316,7 +316,7 @@ az account show
 <pre><code class="lang-bash">kubectl delete pods --all -n prod
 </code></pre>
 <h3 id="issues">Issues</h3>
-<h3 id="1-notebook-urls-are-mismatched"><strong>1. Notebook URLs are mismatched</strong></h3>
+<h3 id="1-notebook-urls-are-mismatched">1. Notebook URLs are mismatched</h3>
 <p>The URLs for notebook should be in sync in all the places:</p>
 <ul>
 <li>AI AppService &gt; Environment Vars &gt; xmpro:aidesigner:jupyterUrl</li>

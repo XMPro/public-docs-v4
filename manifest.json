@@ -17,6 +17,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "MISSING-FILES-AND-IMAGES-REPORT.md",
+      "output": {
+        ".html": {
+          "relative_path": "MISSING-FILES-AND-IMAGES-REPORT.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
