@@ -96,12 +96,12 @@
 <p><img src="../../images/image-1409.png" alt=""></p>
 <h2 id="new--import"><strong>New / Import</strong></h2>
 <p>On the first screen of the application, you can either create a new Connector package or import and update an existing one.</p>
-<p>{% hint style=&quot;info&quot; %}
-Use the arrows at the bottom of the page section to move forward or backward in the application.<br>
-<br>
-When you import an existing package, you have the option to export the package as a JSON file. This is useful either to compare packages or for source control and version management.</p>
-<p>You can also import the JSON file from an existing package, which is particularly useful if you need to modify translations added through the <a href="packaging-connectors.html#include-multilingual-support">Include Multilingual Support</a> feature.
-{% endhint %}</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use the arrows at the bottom of the page section to move forward or backward in the application.</p>
+<p>When you import an existing package, you have the option to export the package as a JSON file. This is useful either to compare packages or for source control and version management.</p>
+<p>You can also import the JSON file from an existing package, which is particularly useful if you need to modify translations added through the <a href="packaging-connectors.html#include-multilingual-support">Include Multilingual Support</a> feature.</p>
+</div>
 <p><img src="../../images/image-1002.png" alt=""></p>
 <h2 id="details"><strong>Details</strong></h2>
 <p>The Details form allows you to specify or edit the properties of a Connector. These properties are listed and explained below.</p>
@@ -112,17 +112,19 @@ When you import an existing package, you have the option to export the package a
 <p>The description is a brief explanation of what the Connector does, for example, “<em>This Connector allows you to read/update a SQL Database table</em>“.</p>
 <h3 id="version"><strong>Version</strong></h3>
 <p>The <a href="../../concepts/version.html">version</a> of the Connector. Any real number is acceptable, for example, &quot;<em>1.02</em>&quot;.</p>
-<p>{% hint style=&quot;danger&quot; %}
-If you make a change to an existing Connector, make sure you increment the version number as Application Designer will not allow you to upload two of the same Connectors with the same version.
-{% endhint %}</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If you make a change to an existing Connector, make sure you increment the version number as Application Designer will not allow you to upload two of the same Connectors with the same version.</p>
+</div>
 <h3 id="entry-point"><strong>Entry Point</strong></h3>
 <p>The entry point is the namespace and class name of the actual Connector’s DLL file.</p>
 <p>For example, if a Connector with the class name “<em>Connector”</em> is located in the <em>XMPro.AzureSQLConnectors</em> namespace, the Entry Endpoint for it would be “<em>XMPro.AzureSQLConnectors.Connector”.</em></p>
 <h3 id="icon-file"><strong>Icon File</strong></h3>
 <p>The icon used to represent your Connector. Click the <em>Browse</em> button, navigate to where you’ve stored the file via the Explorer and select the new image file.</p>
-<p>{% hint style=&quot;info&quot; %}
-It is recommended that you upload either a JPG or PNG file with a size of 64×64 pixels to accommodate for retina displays.
-{% endhint %}</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It is recommended that you upload either a JPG or PNG file with a size of 64×64 pixels to accommodate for retina displays.</p>
+</div>
 <h2 id="references"><strong>References</strong></h2>
 <p>The References form is where you upload the file(s) required for the Connector to execute. Only files in the <em>Selected File(s)</em> list will be included in the package, and any DLLs must be created in .NET.</p>
 <p>To upload a file, click the <em>Browse</em> button next to the <em>DLL File(s)</em> field and navigate to where the files are located. Select all the files needed and click the <em>Add</em> button to add them to the <em>Selected File(s)</em> list.</p>
@@ -174,13 +176,14 @@ It is recommended that you upload either a JPG or PNG file with a size of 64×64
 <li>You are connected to the internet.</li>
 <li>Open AI is configured (Click <a href="packaging-connectors.html#configure-openai-api">here</a> for instructions on how to do so).</li>
 </ul>
-<p>{% hint style=&quot;info&quot; %}</p>
+<div class="NOTE">
+<h5>Note</h5>
 <ul>
 <li>Only the Connector Description, Properties and Static Helptext are translated. Internal messages and dynamic Helptext added when <a href="building-connectors.html">building the Connector</a> are not included.</li>
 <li>Multilingual support requires XMPro App Designer v4.4.16+.</li>
-<li>Override the automated translations by editing the JSON file and repackaging it with an incremented version number.
-{% endhint %}</li>
+<li>Override the automated translations by editing the JSON file and repackaging it with an incremented version number.</li>
 </ul>
+</div>
 <p><img src="../../images/pm-output-1.png" alt=""></p>
 <h3 id="configure-openai-api"><strong>Configure OpenAI API</strong></h3>
 <ol>
@@ -188,24 +191,26 @@ It is recommended that you upload either a JPG or PNG file with a size of 64×64
 <li>A form will open for you to add or modify the OpenAI Endpoint and Api Key.</li>
 <li>Click <em>Save.</em></li>
 </ol>
-<figure><img src="../../images/pm-config-openai.png" alt=""><figcaption></figcaption></figure>
+<p><img src="../../images/pm-config-openai.png" alt="PM Config OpenAI"></p>
 <h2 id="review-details"><strong>Review: Details</strong></h2>
 <p>Lastly, you can navigate back through the steps to review the details that you’ve specified. If you are satisfied, complete the wizard by clicking the Save button below before navigating to the folder where you would like the package to be exported. Your package will be created with the file name <em>category_name_version</em>.xmp.</p>
-<p>{% hint style=&quot;info&quot; %}
-If you imported an existing file, take care to:</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you imported an existing file, take care to:</p>
 <ul>
 <li>either click 'Save as new Connector' to generate a new Connector, or click 'Save' to generate a new version of the original Connector.</li>
-<li>ensure you select a different location folder or increment the version to avoid overwriting the original.
-{% endhint %}</li>
+<li>ensure you select a different location folder or increment the version to avoid overwriting the original.</li>
 </ul>
+</div>
 <p><img src="../../images/pm-success-connector.png" alt=""></p>
 <h2 id="further-reading"><strong>Further Reading</strong></h2>
 <ul>
 <li><a href="manage-connectors.html">How to upload your new Connector to Application Designer</a></li>
 </ul>
-<p>{% hint style=&quot;info&quot; %}
-You need to have the correct permissions set against your user to be able to edit and upload Connectors. This is a role not typically given to all users.
-{% endhint %}</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You need to have the correct permissions set against your user to be able to edit and upload Connectors. This is a role not typically given to all users.</p>
+</div>
 
 </article>
 

@@ -7467,66 +7467,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/how-tos/connectors/configure-connectors.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/how-tos/connectors/configure-connectors.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/how-tos/connectors/manage-connector-instances.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/how-tos/connectors/manage-connector-instances.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/how-tos/connectors/manage-connector-logs.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/how-tos/connectors/manage-connector-logs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/how-tos/connectors/manage-connector-packages.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/how-tos/connectors/manage-connector-packages.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/how-tos/connectors/manage-connector-subscriptions.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/how-tos/connectors/manage-connector-subscriptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/how-tos/connectors/manage-connector-versions.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/how-tos/connectors/manage-connector-versions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/how-tos/connectors/manage-connectors.md",
       "output": {
         ".html": {
@@ -11091,26 +11031,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/Configure-Health-Check-setup-step-3.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Connector_Configuration.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Connector_Configuration.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "docs/images/Connector_Configuration_Packager.png",
-      "output": {
-        "resource": {
-          "relative_path": "docs/images/Connector_Configuration_Packager.png"
         }
       },
       "version": ""
@@ -14941,6 +14861,26 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/configure-openai.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connector-configuration-packager.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connector-configuration-packager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/connector-configuration.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/connector-configuration.png"
         }
       },
       "version": ""
@@ -23057,6 +22997,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/pm-config-openai.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/pm-config-openai.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/pm-output-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/pm-output-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/pm-success-connector.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/pm-success-connector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/pmxlg5fgsr.gif",
       "output": {
         "resource": {
@@ -23431,6 +23401,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/set-log-level.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/settings-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/settings-template.png"
         }
       },
       "version": ""
