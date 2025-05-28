@@ -165,8 +165,8 @@ throw new NotImplementedException();
 <p>The <em>IPollingAgent</em> interface is not strictly required for <em>Listeners</em> or <em>Context Providers</em>, however, it is generally used in most cases. Not implementing <em>IPollingAgent</em> for a <em>Listener</em> or <em>Context Provider</em> should be considered an advanced option.</p>
 </div>
 <h2 id="iagent">IAgent</h2>
+<p><img src="images/building-agents-1.png" alt="Config Blade"></p>
 <p><em>IAgent</em> is the primary interface that must be implemented by all Agents as it provides the structure for the workings of the Agent. After implementing this interface, there are several methods you have to add to your project that forms part of this predefined structure.</p>
-<p><img src="../../images/agent-settings.png" alt="Agent settings"></p>
 <h3 id="settingsconfigurations"><strong>Settings/Configurations</strong></h3>
 <p>Some Agents need to be provided with configurations by the user, for example, for a CSV listener Agent to get records from a CSV file, it needs the following:</p>
 <ul>
@@ -316,17 +316,13 @@ var pOuts = args.ParentOutputs;
 </div>
 <h2 id="ipublisherror">IPublishError</h2>
 <p>An Agent can publish messages to an error endpoint by implementing the <em>IPublishesError</em> interface. An unhandled error in an Agent will be captured and error information will be published to the error endpoint.</p>
-<p><img src="../../images/error-endpoint.png" alt="Error endpoint in Stream Integration Manager"></p>
+<p><img src="images/building-agents-3.png" alt="Add On Error Endpoint Config Checkbox"></p>
 <p>Implement the interface member:</p>
 <pre><code class="lang-csharp">public event EventHandler&lt;OnErrorArgs&gt; OnPublishError;
 </code></pre>
 <p>To push the error to the next Agent, the <em>OnPublishError</em> event should be invoked, and the error information should be passed as arguments:</p>
 <pre><code class="lang-csharp">this.OnPublishError?.Invoke(this, new OnErrorArgs(AgentId, Timestamp, Source, Error, DetailedError, Data));
 </code></pre>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Error endpoints should be enabled in XMPro Stream Integration Manager when packaging the Agent. This can be done by selecting the &quot;Add On Error Endpoint?&quot; checkbox. See the image on the right for an example.</p>
-</div>
 <h2 id="example">Example</h2>
 <p>The code below is an example of a basic MQTT Listener Agent. Take note of how the interfaces and methods have been implemented.</p>
 <div class="NOTE">

@@ -7037,6 +7037,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/how-tos/agents/images/building-agents-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/agents/images/building-agents-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/how-tos/agents/images/building-agents-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/how-tos/agents/images/building-agents-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/how-tos/agents/images/bulk-upload-category-fail.PNG",
       "output": {
         "resource": {
@@ -12057,6 +12077,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/agent-settings-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/agent-settings-config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/agent-settings.png",
       "output": {
         "resource": {
@@ -15987,6 +16017,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/endpoints-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/endpoints-config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/error-endpoint.png",
       "output": {
         "resource": {
@@ -16211,6 +16251,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-(1491).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1002.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1002.png"
         }
       },
       "version": ""
@@ -16487,6 +16537,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1163.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1163.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1183.png",
       "output": {
         "resource": {
@@ -16581,6 +16641,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1244.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1247.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1247.png"
         }
       },
       "version": ""
@@ -16817,6 +16887,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1331.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1331.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1337.png",
       "output": {
         "resource": {
@@ -16987,6 +17067,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1409.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1409.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1418.png",
       "output": {
         "resource": {
@@ -17041,6 +17131,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-1441.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1443.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1443.png"
         }
       },
       "version": ""
@@ -17757,6 +17857,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-1823.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1823.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-1824.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-1824.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-1835.png",
       "output": {
         "resource": {
@@ -17927,6 +18047,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/image-246.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-246.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/image-249.png",
       "output": {
         "resource": {
@@ -18061,6 +18191,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-304.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-306.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-306.png"
         }
       },
       "version": ""
@@ -18741,6 +18881,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/image-689.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/image-69.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/image-69.png"
         }
       },
       "version": ""
@@ -22467,6 +22617,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/manage-categories-create-category-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-categories-create-category-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/manage-category-category-timeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-category-category-timeline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/manage-category-delete-category-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-category-delete-category-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/manage-category-delete-category.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/manage-category-delete-category.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/manage-landing-pages-1.png",
       "output": {
         "resource": {
@@ -23177,6 +23367,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/references-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/references-config.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/rego.png",
       "output": {
         "resource": {
@@ -23401,6 +23601,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/set-log-level.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/settings-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/settings-config.png"
         }
       },
       "version": ""
@@ -69254,6 +69464,16 @@
       "output": {
         ".html": {
           "relative_path": "migration/COMPLETE-INSTALLATION-MIGRATION-PLAN.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration/CONNECTORS-MIGRATION-PLAN.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration/CONNECTORS-MIGRATION-PLAN.html"
         }
       },
       "version": ""
