@@ -6616,6 +6616,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/files/recommendation-notification-template.zip",
+      "output": {
+        "resource": {
+          "relative_path": "docs/files/recommendation-notification-template.zip"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started/browser-requirements.md",
       "output": {
