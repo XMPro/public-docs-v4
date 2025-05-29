@@ -75,37 +75,29 @@
 
 <p>This directory contains comprehensive testing approaches for the XMPro documentation site that has been migrated from GitBook to DocFX.</p>
 <h2 id="testing-categories">Testing Categories</h2>
-<h3 id="1-link-and-reference-validation">1. Link and Reference Validation</h3>
+<h3 id="1-docfx-build-validation">1. DocFX Build Validation</h3>
 <ul>
-<li><strong>Broken Link Detection</strong>: Validates all internal and external hyperlinks</li>
-<li><strong>Image Reference Validation</strong>: Ensures all image references point to existing files</li>
-<li><strong>Cross-reference Validation</strong>: Checks DocFX cross-references between pages</li>
-</ul>
-<h3 id="2-content-integrity-testing">2. Content Integrity Testing</h3>
+<li><strong>Build Error Detection</strong>: Ensures DocFX builds without any errors</li>
+<li><strong>Warning Analysis</strong>: Identifies and fails on any DocFX warnings including:
 <ul>
-<li><strong>GitBook to DocFX Comparison</strong>: Compares content structure between source and target</li>
-<li><strong>Markdown Syntax Validation</strong>: Ensures proper markdown formatting</li>
-<li><strong>Metadata Validation</strong>: Checks required frontmatter and page metadata</li>
+<li><strong>InvalidFileLink</strong>: Broken internal links, missing images, and invalid file references</li>
+<li><strong>InvalidBookmark</strong>: Broken anchor/bookmark references within documents</li>
 </ul>
-<h3 id="3-visual-regression-testing">3. Visual Regression Testing</h3>
+</li>
+<li><strong>Metadata Validation</strong>: Checks for missing or invalid frontmatter metadata</li>
+<li><strong>Cross-reference Validation</strong>: Verifies all internal document references resolve correctly</li>
+</ul>
+<h3 id="2-visual-regression-testing">2. Visual Regression Testing</h3>
 <ul>
 <li><strong>Screenshot Comparison</strong>: Detects visual changes in rendered pages</li>
 <li><strong>Responsive Design Testing</strong>: Validates documentation on different screen sizes</li>
 <li><strong>Theme Consistency</strong>: Ensures consistent styling across pages</li>
 </ul>
-<h3 id="4-search-functionality-testing">4. Search Functionality Testing</h3>
-<ul>
-<li><strong>Search Index Validation</strong>: Ensures all content is properly indexed</li>
-<li><strong>Search Result Accuracy</strong>: Tests search relevance and results</li>
-<li><strong>Search Performance</strong>: Monitors search response times</li>
-</ul>
 <h2 id="test-scripts">Test Scripts</h2>
 <ul>
-<li><code>validate-links.ps1</code> - Comprehensive link and image validation</li>
-<li><code>compare-content.ps1</code> - GitBook to DocFX content comparison</li>
+<li><code>validate-docfx-build.ps1</code> - DocFX build validation with error/warning detection (includes link and image validation)</li>
 <li><code>visual-regression.ps1</code> - Visual regression testing setup</li>
-<li><code>validate-images.ps1</code> - Image reference and file validation</li>
-<li><code>search-test.ps1</code> - Search functionality testing</li>
+<li><code>run-all-tests.ps1</code> - Runs all validation tests in sequence</li>
 </ul>
 <h2 id="running-tests">Running Tests</h2>
 <h3 id="prerequisites">Prerequisites</h3>
@@ -119,8 +111,8 @@
 ./run-all-tests.ps1
 
 # Run specific test category
-./validate-links.ps1
-./compare-content.ps1 -SourcePath &quot;../gitbook&quot; -TargetPath &quot;../docs&quot;
+./validate-docfx-build.ps1  # Includes link and image validation
+./visual-regression.ps1     # Visual testing only
 </code></pre>
 <h2 id="cicd-integration">CI/CD Integration</h2>
 <p>Tests are designed to run in Azure Pipelines. See <code>azure-pipelines-tests.yml</code> for the test pipeline configuration.</p>
