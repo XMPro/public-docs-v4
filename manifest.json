@@ -24757,6 +24757,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/whats-new-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/whats-new-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/whats-new-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/whats-new-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/whats-new-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/whats-new-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/images/whats-new-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/whats-new-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/wmyursyfny.gif",
       "output": {
         "resource": {
