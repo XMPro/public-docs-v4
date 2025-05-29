@@ -17,6 +17,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "BATCH-3-CHANGES-SUMMARY.md",
+      "output": {
+        ".html": {
+          "relative_path": "BATCH-3-CHANGES-SUMMARY.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "MISSING-FILES-AND-IMAGES-REPORT.md",
       "output": {
         ".html": {
@@ -31,6 +41,16 @@
       "output": {
         ".html": {
           "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SELECTIVE-FIXES-SUMMARY.md",
+      "output": {
+        ".html": {
+          "relative_path": "SELECTIVE-FIXES-SUMMARY.html"
         }
       },
       "version": ""
@@ -1077,6 +1097,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/actions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/actions/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/advanced/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/advanced/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/blocks-toolbox/advanced/metablock.md",
       "output": {
         ".html": {
@@ -1261,6 +1301,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/blocks-toolbox/basic/image.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/basic/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/basic/index.html"
         }
       },
       "version": ""
@@ -1481,6 +1531,16 @@
       "output": {
         "resource": {
           "relative_path": "docs/blocks-toolbox/device-input/images/visual-media-capture-required.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/device-input/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/device-input/index.html"
         }
       },
       "version": ""
@@ -4227,6 +4287,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/layout/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/layout/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/blocks-toolbox/layout/layout-grid.md",
       "output": {
         ".html": {
@@ -4507,6 +4577,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/recommendations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/recommendations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/blocks-toolbox/recommendations/recommendation-alert-discussion.md",
       "output": {
         ".html": {
@@ -4631,6 +4711,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/blocks-toolbox/visualizations/image-map.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/blocks-toolbox/visualizations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/blocks-toolbox/visualizations/index.html"
         }
       },
       "version": ""
