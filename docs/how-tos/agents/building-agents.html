@@ -88,7 +88,7 @@
 <h1 id="building-agents">Building Agents</h1>
 
 <h2 id="overview">Overview</h2>
-<p>To get started with developing a new Agent, create a new C# library project in Visual Studio and import the <a href="https://www.nuget.org/packages/XMPro.IOT.Framework/">XMPro.IoT.Framework</a> NuGet package. When writing the code for an Agent, you will have to implement a number of interfaces. Which interfaces to implement depends on the category under which your Agent will fall:</p>
+<p>To get started with developing a new Agent, create a new C# library project in Visual Studio and import the <a href="https://www.nuget.org/packages/XMPro.IOT.Framework/index.md">XMPro.IoT.Framework</a> NuGet package. When writing the code for an Agent, you will have to implement a number of interfaces. Which interfaces to implement depends on the category under which your Agent will fall:</p>
 <h3 id="listeners">Listeners</h3>
 <p>Listeners are created by implementing <em>IAgent</em> and <em>IPollingAgent</em> interfaces. To push the events to the next receiver, the <em>OnPublish</em> event should be invoked and the events should be passed as arguments.</p>
 <h3 id="action-agents-functions">Action Agents/ Functions</h3>

@@ -91,8 +91,8 @@
 <h5>Note</h5>
 <p>It is recommended that you read this documentation along with the articles listed below to improve your understanding of how Stream Hosts and Collections work.</p>
 <ul>
-<li><a href="agent/">Agents</a></li>
-<li><a href="data-stream/">Data Stream Processing</a></li>
+<li><a href="agent/index.html">Agents</a></li>
+<li><a href="data-stream/index.html">Data Stream Processing</a></li>
 </ul>
 </div>
 <h2 id="overview">Overview</h2>
@@ -102,7 +102,7 @@
 <p>Video 1: How XMPro Stream Hosts and Collections Enable Scalable, Real-Time Data Processing</p>
 </blockquote>
 <h3 id="stream-hosts">Stream Hosts</h3>
-<p>A Stream Host is an application that can be <a href="#stream-host-installation">installed</a> as a Docker container, a Windows Service, or a Console Application. Stream Hosts enable Data Streams to run and execute actions and are also responsible for getting the configurations of <a href="agent/virtual-vs-non-virtual-agents.html">Non-Virtual Agents</a>. In other words, the Stream Host application needs to be running for <a href="agent/">Agents</a> in a <a href="data-stream/">Data Stream</a> to process the data, according to the design of the Stream.</p>
+<p>A Stream Host is an application that can be <a href="#stream-host-installation">installed</a> as a Docker container, a Windows Service, or a Console Application. Stream Hosts enable Data Streams to run and execute actions and are also responsible for getting the configurations of <a href="agent/virtual-vs-non-virtual-agents.html">Non-Virtual Agents</a>. In other words, the Stream Host application needs to be running for <a href="agent/index.html">Agents</a> in a <a href="data-stream/index.html">Data Stream</a> to process the data, according to the design of the Stream.</p>
 <p>Both <a href="agent/virtual-vs-non-virtual-agents.html">Virtual and Non-Virtual</a> Agents essentially run on a Stream Host, but how they are handled at design time differs greatly. Non-Virtual Agents require a Stream Host to be online for Data Stream Designer to be able to get their configurations, but Virtual Agents don't need a Stream Host to be running.</p>
 <div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/-f2TRr-OQSY?rel=0" frameborder="0" allowfullscreen="true"></iframe></div>
 <h3 id="collections">Collections</h3>
@@ -257,7 +257,7 @@
 <li><em>Action_Agent_B</em>, which is associated with <em>Collection_B</em></li>
 </ul>
 <p><em>Listener_A</em> needs to communicate to <em>Action_Agent_B</em>, but they belong to different Collections. As a result, the engine will automatically use the Remote Receiver and Publisher to pass data from one Collection to another.</p>
-<p>Please note that only <a href="http://mqtt.org/">MQTT</a> is currently supported for this functionality.</p>
+<p>Please note that only <a href="http://mqtt.org/index.md">MQTT</a> is currently supported for this functionality.</p>
 <p><strong>Example:</strong></p>
 <p>Consider a stream that has the following Agents:</p>
 <ol>

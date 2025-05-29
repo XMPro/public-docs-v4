@@ -89,7 +89,7 @@
 
 <h2 id="data-stream-and-agent-configuration">Data Stream and Agent Configuration</h2>
 <h3 id="user-settings">User Settings</h3>
-<p>All <a href="../agent/">Agents</a> will individually be associated with a <a href="../collection.html">Collection</a>. This Collection may or may not be different from the default Collection set for your Data Stream. This setting will always be listed among the rest of the user settings.</p>
+<p>All <a href="../agent/index.html">Agents</a> will individually be associated with a <a href="../collection.html">Collection</a>. This Collection may or may not be different from the default Collection set for your Data Stream. This setting will always be listed among the rest of the user settings.</p>
 <p>There are a number of Agents that do not require any settings, for example, the Event Printer Agent. This Agent simply prints events and you do not need to specify settings such as a server URL, username, password, or upload a file.</p>
 <p>Other Agents, however, require settings to be filled in before you can successfully run the stream. For example, consider having a CSV listener Agent in your Data Stream. The CSV listener Agent will require you to specify the following values:</p>
 <ul>
@@ -97,7 +97,7 @@
 <li>Upload a CSV file</li>
 <li>Specify the CSV definition (name of each column in the CSV file along with what data type the values in each column are)</li>
 </ul>
-<p>If these values have been provided correctly, the data will be read from the CSV file you specified when you <a href="../../how-tos/publish/">publish</a> your stream.</p>
+<p>If these values have been provided correctly, the data will be read from the CSV file you specified when you <a href="../../how-tos/publish/index.html">publish</a> your stream.</p>
 <p><img src="images/image-451.png" alt=""></p>
 <h2 id="input-mapping-and-arrow-configuration">Input Mapping and Arrow Configuration</h2>
 <p>Some Agents allow inputs to be mapped if the <em>Require Input Map</em> property has been set to <em>true</em> during <a href="../../how-tos/agents/packaging-agents.html">packaging</a>. What Input Mapping allows you to do is to specify that a specific Agent receives its input in a specific structure. This causes the arrows leading to an Agent to be made configurable and will allow the user to map the inputs of an agent to incoming attributes, for example:</p>
