@@ -298,7 +298,7 @@ var decryptedVal = request.DecryptedValue;
 <h4 id="input-mapping">Input Mapping</h4>
 <p>In most cases, if an incoming payload structure is supposed to be different from what the parent is sending, i.e. the Input Payload has been specified above, the user will have to map parent outputs to the current Agent's inputs. To enable this, mark the <em>Require Input Map</em> flag as true in the Stream Integration Manager when packaging the Agent.</p>
 <h4 id="endpoint">Endpoint</h4>
-<p>Each Agent can have a number of input and output <a href="../../concepts/agent/#endpoints">endpoints</a>. Endpoints are the points where incoming or outgoings arrows are connected. Each endpoint consists of a <em>Name&lt;String&gt;</em> attribute. You will be passed an endpoint name when queried for an <em>Input</em> payload definition. Be sure to specify the endpoint name when querying the parent's output payload definition.</p>
+<p>Each Agent can have a number of input and output <a href="../../concepts/agent/index.html#endpoints">endpoints</a>. Endpoints are the points where incoming or outgoings arrows are connected. Each endpoint consists of a <em>Name&lt;String&gt;</em> attribute. You will be passed an endpoint name when queried for an <em>Input</em> payload definition. Be sure to specify the endpoint name when querying the parent's output payload definition.</p>
 <h3 id="parent-outputs">Parent Outputs</h3>
 <p>All receiving Agents can query the structure of parent Agent outputs connected at a given endpoint by invoking an event, as demonstrated in the example below:</p>
 <pre><code class="lang-csharp">var args = new OnRequestParentOutputAttributesArgs(this.UniqueId, &quot;Input&quot;);
