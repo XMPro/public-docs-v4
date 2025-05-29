@@ -6627,16 +6627,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started/browser-requirements.sample.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/getting-started/browser-requirements.sample.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/getting-started/end-to-end-use-case.md",
       "output": {
         ".html": {
@@ -27457,6 +27447,96 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-8.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/installation/images/windows-server-2022-9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/installation/images/windows-server-2022-9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/installation/images/windows-server-2022-install-10.png",
       "output": {
         "resource": {
@@ -27957,16 +28037,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/installation/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/installation/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/installation/install.md",
       "output": {
         ".html": {
@@ -28061,6 +28131,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/release-notes/archived/v4.2.3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/release-notes/archived/v4.3.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/release-notes/archived/v4.3.0.html"
         }
       },
       "version": ""

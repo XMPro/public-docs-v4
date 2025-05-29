@@ -96,7 +96,7 @@
 <h2 id="metablock-properties">Metablock Properties</h2>
 <h3 id="behavior">Behavior</h3>
 <h4 id="presentation-file-html">Presentation File (HTML)</h4>
-<p>Upload the HTML script file that will be rendered in your Metablock, which is used to create dynamic blocks that may display data from a <a href="metablock.html#data-source">Data Source</a> or from <a href="metablock.html#value-mapping-optional">Value Mapping</a>.</p>
+<p>Upload the HTML script file that will be rendered in your Metablock, which is used to create dynamic blocks that may display data from a <a href="metablock.html#data-source">Data Source</a> or from <a href="metablock.html#value-mapping">Value Mapping</a>.</p>
 <pre><code class="lang-html">&lt;div class=&quot;foo&quot;&gt;bar&lt;/div&gt;
 </code></pre>
 <p>Alternatively, you can write your scripts in a single HTML file that includes both CSS and JavaScript. This approach is ideal for smaller applications.</p>
@@ -130,7 +130,7 @@
 <h4 id="common-properties">Common Properties</h4>
 <p>Common properties include: <em>filter, sort, show # of results,</em> and <em>skip # of results</em>;</p>
 <p><a href="../common-properties.html#data-source">See the Common Properties article for more details on common Data Source properties.</a></p>
-<p>To use the Data Source property, include these predefined JavaScript functions in your <a href="metablock.html#script-file-javascript-optional">Script File</a>:</p>
+<p>To use the Data Source property, include these predefined JavaScript functions in your <a href="metablock.html#script-file-javascript">Script File</a>:</p>
 <pre class="language-javascript"><code class="lang-javascript"><strong>// Access data source when the metablcok is loaded (optional) 
 </strong><strong>function onDataLoaded(data){
 </strong>  //Access a value from the data source
@@ -210,7 +210,7 @@ function onDataChanged(data, changes){
 </ul>
 <h4 id="proxy-requests">Proxy Requests</h4>
 <p>Tick to proxy requests on the AD Server before being forwarded to the actual request. This is ticked by default when using an encrypted server variable on the value mapping, but you can opt in to use it even without any encrypted server variable.</p>
-<p>To use Value Mapping, include this predefined JavaScript function in your <a href="metablock.html#script-file-javascript-optional">Script File</a>:</p>
+<p>To use Value Mapping, include this predefined JavaScript function in your <a href="metablock.html#script-file-javascript">Script File</a>:</p>
 <pre><code class="lang-javascript">// Access Value mapping data when the metablock is loaded (optional)
 function onValueMappingLoaded(data){
     //Apply a value from the value mapping
@@ -254,7 +254,7 @@ function onValueMappingLoaded(data){
 </div>
 <h3 id="autodesk-visualize-2d--3d-models">Autodesk: visualize 2D &amp; 3D models</h3>
 <p>Access and visualize your engineering data and designs from the cloud using <a href="https://aps.autodesk.com/index.md">Autodesk Platform Services</a> (APS, formerly Forge).</p>
-<p>Leverage <a href="metablock.html#value-mapping-optional">Value Mapping</a> when embedding the <a href="https://aps.autodesk.com/en/docs/viewer/v7/developers_guide/overview/index.md">APS Viewer</a> in XMPro App Pages to display interactive 2D and 3D views of your designs.</p>
+<p>Leverage <a href="metablock.html#value-mapping">Value Mapping</a> when embedding the <a href="https://aps.autodesk.com/en/docs/viewer/v7/developers_guide/overview/index.md">APS Viewer</a> in XMPro App Pages to display interactive 2D and 3D views of your designs.</p>
 <p><strong>Note</strong>: This is a simple example to demonstrate the APS Viewer API using an unauthenticated repository. Refer to the authenticated use case for a more complex example that includes security measures for credentials.</p>
 <p><img src="../../images/autodesk-forge-viewer-img.png" alt="Autodesk Platform Services Viewer example without authentication"></p>
 <p><em>Fig 3: Autodesk Platform Services Viewer example without authentication</em></p>
@@ -491,7 +491,7 @@ app.listen(port, () =&gt; {
 <li>Launch the page</li>
 </ol>
 <h3 id="example-files">Example Files</h3>
-<p>Refer to the simple <a href="metablock.html#autodesk-visualize-2d-and-3d-models">Autodesk</a> use case for a complete set of files for this example.</p>
+<p>Refer to the simple <a href="#autodesk-visualize-2d--3d-models">Autodesk</a> use case for a complete set of files for this example.</p>
 <h2 id="security-features">Security Features</h2>
 <p>We have added security features in Metablock to safeguard the users from potential attacks, When developing applications, we have selectively enabled the following features:</p>
 <ul>
