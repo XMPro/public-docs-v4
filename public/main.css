@@ -503,3 +503,13 @@ code {
   color: #1d4ed8;
   text-decoration: underline;
 }
+
+/* Adaptive Images for Dark Mode */
+/* Add white background to all integration icons in dark mode */
+[data-bs-theme="dark"] img[style*="height:20px"] {
+  background-color: white;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+

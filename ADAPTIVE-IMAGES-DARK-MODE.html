@@ -76,60 +76,28 @@
 <h2 id="overview">Overview</h2>
 <p>This document describes the CSS-based approach for dynamically handling dark images in light/dark themes without maintaining separate image versions.</p>
 <h2 id="implementation">Implementation</h2>
-<h3 id="css-rules-added-to-maincss">CSS Rules Added to main.css</h3>
-<ol>
-<li><p><strong>Manual Classes for Flexible Control</strong></p>
-<pre><code class="lang-css">/* Automatically invert dark logos/icons in dark mode */
-[data-bs-theme=&quot;dark&quot;] .auto-invert {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-/* For images that need brightness adjustment */
-[data-bs-theme=&quot;dark&quot;] .auto-brighten {
-  filter: brightness(0) invert(1);
+<h3 id="css-rule-added-to-maincss">CSS Rule Added to main.css</h3>
+<p><strong>Universal White Background for Icons</strong></p>
+<pre><code class="lang-css">/* Add white background to all integration icons in dark mode */
+[data-bs-theme=&quot;dark&quot;] img[style*=&quot;height:20px&quot;] {
+  background-color: white;
+  padding: 2px;
+  border-radius: 4px;
 }
 </code></pre>
-</li>
-<li><p><strong>Automatic Rules for Common Dark Logos</strong></p>
-<pre><code class="lang-css">/* Specific adjustments for integration logos */
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;openai-logo&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;Azure AI&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;AzureSQL&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;Azure ML&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;azure&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;mongodb&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;mysql&quot;] {
-  filter: invert(0.85) hue-rotate(180deg);
-}
-</code></pre>
-</li>
-<li><p><strong>Preserve Colorful Logos</strong></p>
-<pre><code class="lang-css">/* Preserve colorful logos that should not be inverted */
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;Salesforce&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;Twilio&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;ifm&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;MOVUS&quot;],
-[data-bs-theme=&quot;dark&quot;] img[src*=&quot;Amber&quot;] {
-  filter: none;
-}
-</code></pre>
-</li>
-</ol>
+<p>This rule automatically adds a white background to all icons that have <code>style=&quot;height:20px&quot;</code> (which includes all integration icons) when in dark mode.</p>
 <h2 id="usage">Usage</h2>
-<h3 id="option-1-automatic-already-applied">Option 1: Automatic (Already Applied)</h3>
-<p>Images with filenames containing &quot;azure&quot;, &quot;openai-logo&quot;, &quot;mongodb&quot;, etc. will automatically be inverted in dark mode.</p>
-<h3 id="option-2-manual-classes">Option 2: Manual Classes</h3>
-<p>For new dark images that need inversion:</p>
-<pre><code class="lang-html">&lt;img src=&quot;images/dark-logo.png&quot; class=&quot;auto-invert&quot; style=&quot;height:20px;&quot;&gt;
-</code></pre>
-<p>For images needing brightness adjustment:</p>
-<pre><code class="lang-html">&lt;img src=&quot;images/dark-icon.png&quot; class=&quot;auto-brighten&quot; style=&quot;height:20px;&quot;&gt;
-</code></pre>
+<p>All images with <code>style=&quot;height:20px&quot;</code> automatically get a white background in dark mode. This includes:</p>
+<ul>
+<li>All integration icons in the tables</li>
+<li>Any other small icons with the same height styling</li>
+</ul>
+<p>No additional classes or markup changes are required.</p>
 <h2 id="how-it-works">How It Works</h2>
 <ol>
-<li><strong>CSS Filters</strong>: Uses <code>filter: invert()</code> to flip dark pixels to light</li>
-<li><strong>Hue Rotation</strong>: <code>hue-rotate(180deg)</code> preserves color relationships after inversion</li>
-<li><strong>Attribute Selectors</strong>: <code>img[src*=&quot;pattern&quot;]</code> targets images by filename patterns</li>
+<li><strong>White Background</strong>: Adds a white background behind icons in dark mode</li>
+<li><strong>Padding</strong>: 2px padding ensures the icon doesn't touch the background edge</li>
+<li><strong>Border Radius</strong>: 4px radius provides subtle rounded corners</li>
 <li><strong>Theme Detection</strong>: <code>[data-bs-theme=&quot;dark&quot;]</code> applies rules only in dark mode</li>
 </ol>
 <h2 id="benefits">Benefits</h2>
