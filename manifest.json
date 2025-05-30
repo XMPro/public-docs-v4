@@ -17,6 +17,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "ADAPTIVE-IMAGES-DARK-MODE.md",
+      "output": {
+        ".html": {
+          "relative_path": "ADAPTIVE-IMAGES-DARK-MODE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "BATCH-3-CHANGES-SUMMARY.md",
       "output": {
         ".html": {
