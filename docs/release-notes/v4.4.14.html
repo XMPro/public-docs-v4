@@ -104,6 +104,11 @@
 <h2 id="stream-host">Stream Host</h2>
 <table><thead><tr><th width="157">Change Type</th><th>Description</th></tr></thead><tbody><tr><td>Fix</td><td><em>I accidentally used the incorrect password on an MQTT agent and published the data stream. The stream did not start due to the connection error on the agent, but I noticed the agent continues attempting to connect to the MQTT broker.</em><br>The Stream Host ensures that if a data stream fails to start or is unpublished, all of that stream's agents (whose <em>Create()</em> methods have already run) are <a href="../how-tos/agents/building-agents.html#destroy">destroyed</a>.</td></tr></tbody></table>
 
+
+  <div class="last-modified">
+    <hr />
+    <p><small><em>Last modified: May 30, 2025</em></small></p>
+  </div>
 </article>
 
 

@@ -512,4 +512,26 @@ code {
   border-radius: 4px;
 }
 
+/* Last Modified Date Styling */
+.last-modified {
+  margin-top: 48px;
+  padding-top: 24px;
+  color: var(--xmpro-text-muted);
+  font-size: 0.875rem;
+}
+
+.last-modified hr {
+  margin-bottom: 12px;
+  border-color: var(--xmpro-border-color);
+  opacity: 0.25;
+}
+
+.last-modified p {
+  margin: 0;
+}
+
+.last-modified em {
+  font-style: normal;
+}
+
 
