@@ -24967,6 +24967,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/installation/complete-installation/install-stream-host/docker-legacy.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation/complete-installation/install-stream-host/docker-legacy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/installation/complete-installation/install-stream-host/docker.md",
       "output": {
         ".html": {
