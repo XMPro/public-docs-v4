@@ -69617,16 +69617,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/resources/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/resources/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/resources/integrations.md",
       "output": {
         ".html": {
