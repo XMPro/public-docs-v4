@@ -877,6 +877,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/assets/images/image-viewer.html",
+      "output": {
+        "resource": {
+          "relative_path": "docs/assets/images/image-viewer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/assets/pdfs/Chart_Comparison_Appendix.pdf",
       "output": {
         "resource": {

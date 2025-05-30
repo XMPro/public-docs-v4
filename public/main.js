@@ -25,5 +25,25 @@ export default {
         }
       }
     };
+    
+    // Add click handlers for images to open them with XMPro favicon
+    document.addEventListener('click', function(e) {
+      // Check if clicked element is an image inside article content
+      if (e.target.tagName === 'IMG' && e.target.closest('article')) {
+        e.preventDefault();
+        
+        // Get the image source
+        let imgSrc = e.target.src;
+        
+        // Convert absolute URL to relative path if needed
+        if (imgSrc.includes(window.location.origin)) {
+          imgSrc = imgSrc.replace(window.location.origin, '');
+        }
+        
+        // Open the image in the custom viewer
+        const viewerUrl = '/docs/assets/images/image-viewer.html?img=' + encodeURIComponent(imgSrc);
+        window.open(viewerUrl, '_blank');
+      }
+    });
   },
 }
