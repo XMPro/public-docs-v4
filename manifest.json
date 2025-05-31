@@ -1,6 +1,6 @@
 {
   "sitemap": {
-    "baseUrl": "https://xmpro.github.io/public-docs-pages/",
+    "baseUrl": "https://xmpro.github.io/public-docs-v4.4/",
     "changefreq": "daily",
     "priority": 0.5
   },
@@ -68080,36 +68080,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/FAQ_Run_Recommendation.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/FAQ_Run_Recommendation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Installation_Install XMPro.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Installation_Install XMPro.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/What_is_XMPro_Search_Dark.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/What_is_XMPro_Search_Dark.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/What_is_XMPro_Search_Light.png",
       "output": {
         "resource": {
@@ -68130,20 +68100,20 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/favicon.png",
+      "source_relative_path": "images/faq-run-recommendation.png",
       "output": {
         "resource": {
-          "relative_path": "images/favicon.png"
+          "relative_path": "images/faq-run-recommendation.png"
         }
       },
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/image.png",
+      "source_relative_path": "images/favicon.png",
       "output": {
         "resource": {
-          "relative_path": "images/image.png"
+          "relative_path": "images/favicon.png"
         }
       },
       "version": ""
