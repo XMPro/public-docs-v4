@@ -3,7 +3,6 @@
 export default {
   start: () => {
     // Startup script goes here
-    console.log("xmpro-template/public/main.js loaded");
     
     // Add click handler to all images
     document.addEventListener('click', function(e) {
