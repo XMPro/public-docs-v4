@@ -22,7 +22,6 @@
   --xmpro-link-hover-color: var(--xmpro-accent);
   --xmpro-border-color: #333333;
   --xmpro-code-bg: #2d2d2d;
-  --xmpro-current-logo-url: url('../../images/logo-dark.png');
   --xmpro-bg-color: var(--xmpro-dark);
   --xmpro-navbar-bg: var(--xmpro-darker);
 }
@@ -32,7 +31,6 @@
   --xmpro-text-muted: #6c757d;
   --xmpro-border-color: #dee2e6;
   --xmpro-code-bg: #f8f9fa;
-  --xmpro-current-logo-url: url('../../images/logo-light.png');
   --xmpro-bg-color: var(--xmpro-lighter);
   --xmpro-navbar-bg: var(--xmpro-light);
 }
@@ -43,7 +41,6 @@
 
 
 #logo {
-  content: var(--xmpro-current-logo-url);
   max-height: 36px;
 }
 
