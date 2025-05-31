@@ -1,0 +1,101 @@
+/* XMPro Custom Styling for DocFX */
+
+
+:root {
+  --xmpro-primary: #00B0F0;
+  --xmpro-secondary: #6c757d;
+  --xmpro-dark: #1A1A1A;
+  --xmpro-darker: #121212;
+  --xmpro-light: #f8f9fa;
+  --xmpro-lighter: #ffffff;
+  --xmpro-accent: #0091D1;
+  --xmpro-success: #28a745;
+  --xmpro-info: #17a2b8;
+  --xmpro-warning: #ffc107;
+  --xmpro-danger: #dc3545;
+  
+  /* Additional styling variables - Dark theme defaults */
+  --xmpro-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --xmpro-text-color: #ffffff;
+  --xmpro-text-muted: #a0a0a0;
+  --xmpro-link-color: var(--xmpro-primary);
+  --xmpro-link-hover-color: var(--xmpro-accent);
+  --xmpro-border-color: #333333;
+  --xmpro-code-bg: #2d2d2d;
+  --xmpro-current-logo-url: url('../../images/logo-dark.png');
+  --xmpro-bg-color: var(--xmpro-dark);
+  --xmpro-navbar-bg: var(--xmpro-darker);
+}
+
+[data-bs-theme="light"] {
+  --xmpro-text-color: #212529;
+  --xmpro-text-muted: #6c757d;
+  --xmpro-border-color: #dee2e6;
+  --xmpro-code-bg: #f8f9fa;
+  --xmpro-current-logo-url: url('../../images/logo-light.png');
+  --xmpro-bg-color: var(--xmpro-lighter);
+  --xmpro-navbar-bg: var(--xmpro-light);
+}
+
+[data-bs-theme="dark"] {
+  /* Dark theme variables are now in root */
+}
+
+
+#logo {
+  content: var(--xmpro-current-logo-url);
+  max-height: 36px;
+}
+
+/* Apply XMPro styling to elements */
+body {
+  font-family: var(--xmpro-font-family);
+  background-color: var(--xmpro-bg-color);
+  color: var(--xmpro-text-color);
+}
+
+a {
+  color: var(--xmpro-link-color);
+}
+
+a:hover {
+  color: var(--xmpro-link-hover-color);
+}
+
+.navbar {
+  background-color: var(--xmpro-navbar-bg);
+  border-bottom: 1px solid var(--xmpro-border-color);
+}
+
+.sidenav {
+  background-color: var(--xmpro-bg-color);
+  border-right: 1px solid var(--xmpro-border-color);
+}
+
+.toc .nav > li > a {
+  color: var(--xmpro-text-muted);
+}
+
+.toc .nav > li > a:hover,
+.toc .nav > li > a:focus {
+  color: var(--xmpro-text-color);
+}
+
+.toc .nav > li.active > a {
+  color: var(--xmpro-primary);
+}
+
+code {
+  background-color: var(--xmpro-code-bg);
+  border: 1px solid var(--xmpro-border-color);
+}
+
+.btn-primary {
+  background-color: var(--xmpro-primary);
+  border-color: var(--xmpro-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--xmpro-accent);
+  border-color: var(--xmpro-accent);
+}

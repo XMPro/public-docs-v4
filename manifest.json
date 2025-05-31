@@ -16,16 +16,6 @@
       }
     },
     {
-      "type": "Resource",
-      "source_relative_path": ".nojekyll",
-      "output": {
-        "resource": {
-          "relative_path": ".nojekyll"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "ADAPTIVE-IMAGES-DARK-MODE.md",
       "output": {
@@ -22931,16 +22921,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/images/y6pglcopxd.gif"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/index.html"
         }
       },
       "version": ""
