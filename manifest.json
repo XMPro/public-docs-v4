@@ -16,6 +16,16 @@
       }
     },
     {
+      "type": "Resource",
+      "source_relative_path": ".nojekyll",
+      "output": {
+        "resource": {
+          "relative_path": ".nojekyll"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "ADAPTIVE-IMAGES-DARK-MODE.md",
       "output": {

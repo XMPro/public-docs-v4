@@ -1,9 +1,92 @@
-
-<div class="row">
-  <div class="col-md-9">
-    <article class="content" id="_content" data-uid="">
-      <h1 id="" data-uid="">Metablock</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Metablock | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Metablock | XMPro ">
       
+      
+      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/docs/blocks-toolbox/advanced/metablock.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="metablock">Metablock</h1>
+
 <p>Metablock allows pro-code designers to leverage libraries to add their dynamic blocks in XMPro using script files.</p>
 <p>We recommend leveraging generative AI to write the scripts. This approach can significantly streamline the development process and enhance the functionality of the blocks.</p>
 <div class="NOTE">
@@ -518,70 +601,30 @@ app.listen(port, () =&gt; {
 &lt;span&gt;foo&lt;/span&gt;   
 </code></pre>
 
-    
+
   <div class="last-modified">
     <hr />
     <p><small><em>Last modified: May 29, 2025</em></small></p>
   </div>
 </article>
-  </div>
-  <div class="col-md-3">
 
-    <div class="sidenav hide-when-search">
-      <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-      <div class="sidetoggle collapse" id="sidetoggle">
-        <div id="sidetoc"></div>
+
+
       </div>
-    </div>
-  </div>
-</div>
 
-<style>
-  .page-description {
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--bs-border-color);
-  }
-  
-  .page-description p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 0;
-    color: var(--bs-secondary-color);
-  }
-  
-  /* Dark mode support */
-  [data-bs-theme="dark"] .page-description p {
-    color: var(--bs-secondary-color);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .page-description p {
-      font-size: 1rem;
-    }
-  }
-</style>
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
 
-<script>
-  // Hide descriptions that are just version numbers or dates
-  document.addEventListener('DOMContentLoaded', function() {
-    const descriptionElement = document.querySelector('.page-description p');
-    if (descriptionElement) {
-      const descriptionText = descriptionElement.textContent.trim();
-      
-      // Patterns to hide: version numbers (like "v4.4.0", "4.4.0"), dates (like "13 Mar 2024", "2024-03-13")
-      const versionPattern = /^v?\d+\.\d+(\.\d+)?$/;
-      const datePattern1 = /^\d{1,2}\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}$/i;
-      const datePattern2 = /^\d{4}-\d{2}-\d{2}$/;
-      const datePattern3 = /^\d{2}\/\d{2}\/\d{4}$/;
-      
-      if (versionPattern.test(descriptionText) || 
-          datePattern1.test(descriptionText) || 
-          datePattern2.test(descriptionText) ||
-          datePattern3.test(descriptionText)) {
-        descriptionElement.parentElement.style.display = 'none';
-      }
-    }
-  });
-</script>
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
