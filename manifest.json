@@ -37,6 +37,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "CLAUDE.md",
+      "output": {
+        ".html": {
+          "relative_path": "CLAUDE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "MISSING-FILES-AND-IMAGES-REPORT.md",
       "output": {
         ".html": {

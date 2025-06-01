@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>XMPro Documentation Contributor Guide | XMPro </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="XMPro Documentation Contributor Guide | XMPro ">
+      <meta name="description" content="XMPro official documentation - Learn how to use XMPro&#39;s intelligent digital twin suite for real-time operational intelligence and automated decision-making.">
+      
+      <link rel="icon" href="images/favicon.png">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://xmpro.visualstudio.com/XMPro%20Development/_git/xmpro-development?path=public-documentation/CONTRIBUTING.md&amp;version=GB20290-migrate-public-docs&amp;line=1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/logo-light.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="xmpro-documentation-contributor-guide">XMPro Documentation Contributor Guide</h1>
+
+<h2 id="quick-start">Quick Start</h2>
+<ol>
+<li><strong>Install DocFX</strong>: <code>dotnet tool install -g docfx</code></li>
+<li><strong>Clone the repository</strong> and checkout a new branch</li>
+<li><strong>Make your changes</strong>:
+<ul>
+<li>Add new pages in appropriate folders</li>
+<li>Edit existing markdown files</li>
+<li>Add images to <code>/docs/images/</code></li>
+</ul>
+</li>
+<li><strong>Preview locally</strong>:
+<pre><code class="lang-bash">cd public-documentation
+docfx --serve
+</code></pre>
+</li>
+<li><strong>Verify</strong> at http://localhost:8080</li>
+<li><strong>Commit</strong> with descriptive message</li>
+<li><strong>Create a pull request</strong></li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>This guide outlines the process for contributing to the XMPro documentation. Whether you're adding new content, updating existing pages, or fixing issues, this guide will help you maintain consistency and quality across the documentation.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Git</strong> - For version control</li>
+<li><strong>Text Editor</strong> - VS Code, Sublime, or any markdown editor</li>
+<li><strong>Web Browser</strong> - For testing the migrated documentation</li>
+<li><strong>Access to the Repository</strong> - Clone permissions for the XMPro documentation repository</li>
+<li><strong>DocFX</strong> - Documentation generation tool (see installation below)</li>
+<li><strong>.NET SDK</strong> - Required for DocFX (version 6.0 or later)</li>
+</ol>
+<h3 id="installing-docfx">Installing DocFX</h3>
+<p>DocFX is the tool that converts our markdown files into a static website. You need to install it to preview and build the documentation locally.</p>
+<h4 id="install-as-net-tool-recommended">Install as .NET Tool (Recommended)</h4>
+<pre><code class="lang-bash"># Install DocFX globally
+dotnet tool install -g docfx
+
+# Verify installation
+docfx --version
+</code></pre>
+<h2 id="understanding-docfx-formats">Understanding DocFX Formats</h2>
+<h3 id="key-features">Key Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>DocFX Syntax</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Notes/Hints</strong></td>
+<td><code>&gt; [!NOTE]</code><br><code>&gt; Content</code></td>
+<td>Information boxes</td>
+</tr>
+<tr>
+<td><strong>Warnings</strong></td>
+<td><code>&gt; [!WARNING]</code><br><code>&gt; Content</code></td>
+<td>Warning messages</td>
+</tr>
+<tr>
+<td><strong>Tips</strong></td>
+<td><code>&gt; [!TIP]</code><br><code>&gt; Content</code></td>
+<td>Helpful tips</td>
+</tr>
+<tr>
+<td><strong>Cautions</strong></td>
+<td><code>&gt; [!CAUTION]</code><br><code>&gt; Content</code></td>
+<td>Critical warnings</td>
+</tr>
+<tr>
+<td><strong>Images</strong></td>
+<td><code>![](../../images/image.png)</code></td>
+<td>All images in central <code>/images/</code> folder</td>
+</tr>
+<tr>
+<td><strong>Video Embeds</strong></td>
+<td>HTML iframe in div container</td>
+<td>YouTube/Vimeo embeds</td>
+</tr>
+<tr>
+<td><strong>File Downloads</strong></td>
+<td>Direct links to files</td>
+<td><code>/docs/assets/files/example.zip</code></td>
+</tr>
+<tr>
+<td><strong>Code Blocks</strong></td>
+<td>Standard markdown with language</td>
+<td><code> ```javascript</code></td>
+</tr>
+<tr>
+<td><strong>Internal Links</strong></td>
+<td>Absolute paths from docs root</td>
+<td><code>/docs/path/to/page.md</code></td>
+</tr>
+<tr>
+<td><strong>External Links</strong></td>
+<td>Full URLs with protocol</td>
+<td><code>https://example.com</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup">Setup</h2>
+<h3 id="1-repository-setup">1. Repository Setup</h3>
+<pre><code class="lang-bash"># Clone the repository
+git clone [repository-url]
+cd xmpro-development-ubuntu
+
+# Checkout the migration branch
+git checkout 20290-migrate-public-docs
+
+# Navigate to documentation folder
+cd public-documentation
+</code></pre>
+<h3 id="2-docfx-local-development">2. DocFX Local Development</h3>
+<h4 id="building-the-documentation">Building the Documentation</h4>
+<p>To build the documentation without serving it:</p>
+<pre><code class="lang-bash"># Build the documentation
+docfx docfx.json
+
+# This creates the static site in the _site directory
+# Useful for checking build errors without starting a server
+</code></pre>
+<h4 id="serving-the-documentation-locally">Serving the Documentation Locally</h4>
+<p>To build and serve the documentation with live preview:</p>
+<pre><code class="lang-bash"># Build and serve with auto-refresh
+docfx docfx.json --serve
+
+# The site will be available at http://localhost:8080
+# The console will show build output and any errors
+</code></pre>
+<p><strong>Alternative port:</strong> If port 8080 is in use:</p>
+<pre><code class="lang-bash"># Serve on a different port
+docfx docfx.local.json --serve -p 8081
+</code></pre>
+<h4 id="development-workflow">Development Workflow</h4>
+<ol>
+<li><p><strong>Start the DocFX server</strong> in one terminal:</p>
+<pre><code class="lang-bash">cd public-documentation
+docfx docfx.json --serve
+</code></pre>
+<p>Keep this terminal open to see build errors and warnings.</p>
+</li>
+<li><p><strong>Make your changes</strong> in another terminal or editor:</p>
+<ul>
+<li>Edit markdown files</li>
+<li>Add images</li>
+<li>Update navigation</li>
+</ul>
+</li>
+<li><p><strong>Rebuild to see changes</strong>:</p>
+<ul>
+<li>DocFX does NOT auto-rebuild on file changes</li>
+<li>You must manually rebuild after making changes</li>
+<li>In the DocFX terminal, press <code>Ctrl+C</code> to stop</li>
+<li>Run <code>docfx docfx.json --serve</code> again</li>
+<li>Refresh your browser</li>
+</ul>
+</li>
+</ol>
+<h4 id="common-docfx-commands">Common DocFX Commands</h4>
+<pre><code class="lang-bash"># Build only (no server)
+docfx
+
+# Build and serve
+docfx --serve
+
+# Build with verbose logging (helpful for debugging)
+docfx -v
+
+# Clean build (removes _site directory first)
+rm -rf _site &amp;&amp; docfx
+
+# Serve on custom port
+docfx --serve -p 3000
+</code></pre>
+<h4 id="understanding-docfx-output">Understanding DocFX Output</h4>
+<p>When you run DocFX, you'll see output like:</p>
+<pre><code>[23-01-06 10:30:45.123]Info:[MetadataCommand]Begin building metadata...
+[23-01-06 10:30:45.456]Info:[MetadataCommand]Completed building metadata.
+[23-01-06 10:30:45.789]Info:[BuildCommand]Begin building document...
+[23-01-06 10:30:46.123]Warning:[BuildCommand.BuildCore.Build Document]Invalid cross reference &quot;xref:missing-page&quot;.
+[23-01-06 10:30:47.456]Info:[BuildCommand]Completed building document.
+Serving &quot;_site&quot; on http://localhost:8080
+</code></pre>
+<ul>
+<li><strong>Info</strong> messages: Normal operation</li>
+<li><strong>Warning</strong> messages: Issues to fix (broken links, missing images)</li>
+<li><strong>Error</strong> messages: Must fix before deployment</li>
+</ul>
+<h4 id="configuration-file">Configuration File</h4>
+<p>The project uses a single DocFX configuration file:</p>
+<ul>
+<li><strong><code>docfx.json</code></strong> - Main configuration file
+<ul>
+<li>Used for both local development and production</li>
+<li>Optimized build settings</li>
+<li>Used by CI/CD pipeline</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-migration-tools">3. Migration Tools</h3>
+<p>Use the custom slash commands for migration:</p>
+<ul>
+<li><code>/project:public-documents:migrate-page</code> for individual pages</li>
+<li><code>/project:public-documents:migrate-folder</code> for entire folders</li>
+</ul>
+<h3 id="directory-structure">Directory Structure</h3>
+<pre><code>public-documentation/
+├── docs/                  # All documentation content
+│   ├── images/           # All images (kebab-case naming)
+│   ├── assets/           # Other downloadable files
+│   │   └── files/        # Downloadable resources
+│   ├── getting-started/  # Getting started guides
+│   ├── how-tos/          # How-to guides
+│   ├── concepts/         # Conceptual documentation
+│   ├── blocks-toolbox/   # Blocks and widgets documentation
+│   └── *.md             # Root level pages
+├── docfx.json            # DocFX configuration
+├── toc.yml               # Main table of contents
+└── _site/                # Generated site (git ignored)
+</code></pre>
+<h2 id="contribution-workflow">Contribution Workflow</h2>
+<h3 id="step-0-verify-docfx-is-working">Step 0: Verify DocFX is Working</h3>
+<p>Before starting any documentation work, ensure DocFX is properly set up:</p>
+<pre><code class="lang-bash"># Navigate to the documentation folder
+cd public-documentation
+
+# Build and serve the documentation
+docfx --serve
+
+# Open http://localhost:8080 in your browser
+# You should see the XMPro documentation site
+</code></pre>
+<p>If you encounter errors:</p>
+<ul>
+<li>Check that DocFX is installed: <code>docfx --version</code></li>
+<li>Ensure you're in the correct directory</li>
+<li>Look for error messages in the console output</li>
+</ul>
+<h3 id="1-create-a-new-branch">1. Create a New Branch</h3>
+<p>Before starting work:</p>
+<pre><code class="lang-bash"># Ensure you're on the main branch and up to date
+git checkout main
+git pull origin main
+
+# Create a new branch for your work
+git checkout -b docs/your-feature-name
+# Examples:
+# git checkout -b docs/add-ai-agent-guide
+# git checkout -b docs/update-installation-steps
+# git checkout -b docs/fix-broken-images
+</code></pre>
+<h3 id="2-making-changes">2. Making Changes</h3>
+<h4 id="adding-a-new-page">Adding a New Page</h4>
+<ol>
+<li><p><strong>Choose the right location</strong>:</p>
+<ul>
+<li><code>/docs/getting-started/</code> - For onboarding and setup guides</li>
+<li><code>/docs/how-tos/</code> - For step-by-step tutorials</li>
+<li><code>/docs/concepts/</code> - For explanations of concepts and features</li>
+<li><code>/docs/blocks-toolbox/</code> - For documentation about specific blocks</li>
+</ul>
+</li>
+<li><p><strong>Create the markdown file</strong>:</p>
+<pre><code class="lang-bash"># Example: Creating a new how-to guide
+touch docs/how-tos/configure-ai-agents.md
+</code></pre>
+</li>
+<li><p><strong>Add front matter</strong> (optional but recommended):</p>
+<pre><code class="lang-yaml">---
+title: How to Configure AI Agents
+description: Learn how to set up and configure AI agents in XMPro
+---
+</code></pre>
+</li>
+<li><p><strong>Write your content</strong> using proper markdown and DocFX features</p>
+</li>
+<li><p><strong>Add to table of contents</strong> (toc.yml or section-specific toc.yml):</p>
+<pre><code class="lang-yaml">- name: Configure AI Agents
+  href: configure-ai-agents.md
+</code></pre>
+</li>
+</ol>
+<h4 id="editing-existing-pages">Editing Existing Pages</h4>
+<ol>
+<li><p><strong>Locate the file</strong> you want to edit in the <code>/docs/</code> directory</p>
+</li>
+<li><p><strong>Make your changes</strong>:</p>
+<ul>
+<li>Fix typos or grammatical errors</li>
+<li>Update outdated information</li>
+<li>Add new sections or examples</li>
+<li>Improve clarity or formatting</li>
+</ul>
+</li>
+<li><p><strong>Follow the style guide</strong>:</p>
+<ul>
+<li>Use clear, concise language</li>
+<li>Include code examples where helpful</li>
+<li>Add screenshots for UI-related content</li>
+<li>Keep paragraphs short and scannable</li>
+</ul>
+</li>
+</ol>
+<h4 id="adding-images">Adding Images</h4>
+<ol>
+<li><p><strong>Name your images</strong> using kebab-case:</p>
+<ul>
+<li>✅ <code>configure-ai-agent-dialog.png</code></li>
+<li>✅ <code>data-stream-overview.jpg</code></li>
+<li>❌ <code>Configure AI Agent Dialog.png</code></li>
+<li>❌ <code>DataStreamOverview.jpg</code></li>
+</ul>
+</li>
+<li><p><strong>Save images</strong> to <code>/docs/images/</code></p>
+</li>
+<li><p><strong>Reference in markdown</strong>:</p>
+<pre><code class="lang-markdown">![Configure AI Agent Dialog](../../images/configure-ai-agent-dialog.png)
+</code></pre>
+</li>
+<li><p><strong>Add captions</strong> when helpful:</p>
+<pre><code class="lang-markdown">![Configure AI Agent Dialog](../../images/configure-ai-agent-dialog.png)
+*Figure 1: The AI Agent configuration dialog*
+</code></pre>
+</li>
+</ol>
+<h3 id="docfx-syntax-guide">DocFX Syntax Guide</h3>
+<h4 id="notes-and-alerts">Notes and Alerts</h4>
+<pre><code class="lang-markdown">&gt; [!NOTE]
+&gt; This is general information that users should know.
+
+&gt; [!TIP]
+&gt; This is a helpful tip or best practice.
+
+&gt; [!WARNING]
+&gt; This is important information that could cause issues if ignored.
+
+&gt; [!CAUTION]
+&gt; This is critical information that could cause serious problems.
+</code></pre>
+<h4 id="code-blocks">Code Blocks</h4>
+<pre><code class="lang-markdown">```javascript
+const agent = new XMProAgent({
+  name: &quot;Temperature Monitor&quot;,
+  interval: 5000
+});
+</code></pre>
+<pre><code class="lang-bash"># Install XMPro CLI
+npm install -g @xmpro/cli
+</code></pre>
+<pre><code>
+#### Video Embeds
+```html
+&lt;div class=&quot;video-container&quot;&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; 
+            src=&quot;https://www.youtube.com/embed/VIDEO_ID&quot; 
+            frameborder=&quot;0&quot; 
+            allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; 
+            allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="links">Links</h4>
+<p><strong>Internal Links</strong> (to other documentation pages):</p>
+<pre><code class="lang-markdown"># Use absolute paths from the docs root
+[Getting Started](/docs/getting-started/index.md)
+[Configure Variables](/docs/how-tos/manage-variables.md)
+
+# For same-directory links, you can use relative paths
+[Related Topic](./related-topic.md)
+</code></pre>
+<p><strong>External Links</strong>:</p>
+<pre><code class="lang-markdown">[XMPro Website](https://xmpro.com)
+[GitHub Repository](https://github.com/xmpro/documentation)
+</code></pre>
+<p><strong>Anchor Links</strong> (to sections on the same page):</p>
+<pre><code class="lang-markdown">[See configuration section](#configuration)
+
+## Configuration
+Content here...
+</code></pre>
+<h4 id="tables">Tables</h4>
+<pre><code class="lang-markdown">| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| name | string | required | The agent name |
+| interval | number | 5000 | Poll interval in ms |
+| enabled | boolean | true | Whether agent is active |
+</code></pre>
+<h4 id="downloadable-files">Downloadable Files</h4>
+<ol>
+<li><strong>Save files</strong> to <code>/docs/assets/files/</code></li>
+<li><strong>Reference with direct links</strong>:
+<pre><code class="lang-markdown">[Download Installation Guide](/docs/assets/files/installation-guide.pdf)
+[Download Configuration Template](/docs/assets/files/config-template.zip)
+</code></pre>
+</li>
+</ol>
+<h3 id="3-test-your-changes">3. Test Your Changes</h3>
+<h4 id="build-and-preview">Build and Preview</h4>
+<ol>
+<li><p><strong>Rebuild DocFX</strong>:</p>
+<pre><code class="lang-bash">cd public-documentation
+# Stop the current server if running (Ctrl+C)
+# Rebuild and serve
+docfx --serve
+</code></pre>
+</li>
+<li><p><strong>Check the console</strong> for:</p>
+<ul>
+<li>Build errors (red text) - Must fix before committing</li>
+<li>Warnings (yellow text) - Should fix if possible</li>
+<li>Missing file references</li>
+<li>Invalid cross-references</li>
+</ul>
+</li>
+<li><p><strong>Test in browser</strong>:</p>
+<ul>
+<li>Navigate to http://localhost:8080</li>
+<li>Find your new or edited page(s)</li>
+<li>Verify all images load (check for 404s)</li>
+<li>Test all links work correctly</li>
+<li>Check video embeds play</li>
+<li>Ensure formatting looks good</li>
+<li>Test on different screen sizes</li>
+</ul>
+</li>
+<li><p><strong>Quality checklist</strong>:</p>
+<ul>
+<li>[ ] Content is accurate and up-to-date</li>
+<li>[ ] Images display correctly</li>
+<li>[ ] All links work (internal and external)</li>
+<li>[ ] Code blocks have proper syntax highlighting</li>
+<li>[ ] Notes/alerts use appropriate types</li>
+<li>[ ] Navigation includes your new page (if applicable)</li>
+<li>[ ] No spelling or grammar errors</li>
+<li>[ ] Follows the documentation style guide</li>
+</ul>
+</li>
+</ol>
+<h4 id="debugging-build-errors">Debugging Build Errors</h4>
+<p>If DocFX reports errors:</p>
+<pre><code class="lang-bash"># Get more detailed error information
+docfx docfx.json -v
+
+# Common errors and fixes:
+# &quot;Invalid cross reference&quot; - Check the link syntax
+# &quot;File not found&quot; - Verify file paths and names
+# &quot;Invalid metadata&quot; - Check YAML front matter
+</code></pre>
+<h3 id="4-commit-changes">4. Commit Changes</h3>
+<ol>
+<li><p><strong>Stage your changes</strong>:</p>
+<pre><code class="lang-bash">git add docs/path/to/your-file.md
+git add docs/images/your-new-images.png
+git add toc.yml  # If you modified it
+</code></pre>
+</li>
+<li><p><strong>Write a clear commit message</strong>:</p>
+<pre><code class="lang-bash">git commit -m &quot;docs: Add guide for configuring AI agents
+
+- Added comprehensive setup instructions
+- Included troubleshooting section
+- Added screenshots for each configuration step&quot;
+</code></pre>
+<p>Commit message format:</p>
+<ul>
+<li>Start with <code>docs:</code> for documentation changes</li>
+<li>Use present tense (&quot;Add&quot; not &quot;Added&quot; in the subject)</li>
+<li>Keep the first line under 50 characters</li>
+<li>Add details in the body if needed</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-create-a-pull-request">5. Create a Pull Request</h3>
+<ol>
+<li><p><strong>Push your branch</strong>:</p>
+<pre><code class="lang-bash">git push origin docs/your-feature-name
+</code></pre>
+</li>
+<li><p><strong>Create the PR</strong> on GitHub/GitLab:</p>
+<ul>
+<li>Give it a descriptive title</li>
+<li>Fill out the PR template (if available)</li>
+<li>Link any related issues</li>
+<li>Request review from appropriate team members</li>
+</ul>
+</li>
+<li><p><strong>PR description should include</strong>:</p>
+<ul>
+<li>What changes you made</li>
+<li>Why the changes were needed</li>
+<li>Any special testing instructions</li>
+<li>Screenshots if UI-related</li>
+</ul>
+</li>
+</ol>
+<h2 id="common-documentation-patterns">Common Documentation Patterns</h2>
+<h3 id="step-by-step-guides">Step-by-Step Guides</h3>
+<pre><code class="lang-markdown">## How to Configure Email Notifications
+
+### Prerequisites
+- Admin access to XMPro
+- SMTP server details
+- Valid email addresses
+
+### Steps
+
+1. **Navigate to Settings**
+   
+   Click on the settings icon in the top navigation bar.
+   
+   ![Settings Icon](../../images/settings-icon.png)
+
+2. **Select Email Configuration**
+   
+   From the settings menu, choose &quot;Email Configuration&quot;.
+   
+   &gt; [!NOTE]
+   &gt; You need administrator privileges to access this section.
+
+3. **Enter SMTP Details**
+   
+   Fill in the following fields:
+   - **Server**: Your SMTP server address
+   - **Port**: Usually 587 for TLS or 465 for SSL
+   - **Username**: Your SMTP username
+   - **Password**: Your SMTP password
+   
+   ```json
+   {
+     &quot;server&quot;: &quot;smtp.example.com&quot;,
+     &quot;port&quot;: 587,
+     &quot;username&quot;: &quot;notifications@example.com&quot;,
+     &quot;enableSSL&quot;: true
+   }
+</code></pre>
+<ol start="4">
+<li><p><strong>Test the Configuration</strong></p>
+<p>Click &quot;Send Test Email&quot; to verify your settings.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Check your spam folder if the test email doesn't arrive.</p>
+</div>
+</li>
+</ol>
+<pre><code>
+### Concept Explanations
+
+```markdown
+## Understanding Data Streams
+
+Data Streams are the backbone of XMPro's real-time data processing capabilities. They allow you to:
+
+- **Collect** data from various sources
+- **Transform** data using visual workflows  
+- **Analyze** data in real-time
+- **Act** on insights immediately
+
+### Key Components
+
+#### 1. Agents
+Agents are the building blocks of data streams. Each agent performs a specific function:
+
+- **Listener Agents**: Collect data from sources
+- **Context Agents**: Add contextual information
+- **Transformation Agents**: Modify or enrich data
+- **Action Agents**: Trigger actions based on data
+
+#### 2. Connections
+Connections define how data flows between agents...
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="docfx-issues">DocFX Issues</h3>
+<ol>
+<li><p><strong>DocFX Command Not Found</strong></p>
+<pre><code class="lang-bash"># Verify installation
+dotnet tool list -g
+
+# Reinstall if needed
+dotnet tool install -g docfx
+
+# Or check PATH if manually installed
+echo $PATH
+</code></pre>
+</li>
+<li><p><strong>Port Already in Use</strong></p>
+<pre><code class="lang-bash"># Use a different port
+docfx --serve -p 8081
+
+# Or find and kill the process using port 8080
+# On Linux/Mac:
+lsof -i :8080
+kill -9 [PID]
+
+# On Windows:
+netstat -ano | findstr :8080
+taskkill /PID [PID] /F
+</code></pre>
+</li>
+<li><p><strong>Build Hangs or Is Slow</strong></p>
+<ul>
+<li>Clean the output directory: <code>rm -rf _site</code></li>
+<li>Check for circular references in toc.yml</li>
+<li>Reduce console verbosity if too much output</li>
+</ul>
+</li>
+</ol>
+<h3 id="common-issues-and-solutions">Common Issues and Solutions</h3>
+<h4 id="404-image-errors">404 Image Errors</h4>
+<ul>
+<li><strong>Problem</strong>: Images not loading in the preview</li>
+<li><strong>Solution</strong>:
+<ol>
+<li>Check image filename uses kebab-case</li>
+<li>Verify image is in <code>/docs/images/</code></li>
+<li>Check the path in your markdown is correct</li>
+<li>Remember: all image paths should be <code>../../images/filename.ext</code></li>
+</ol>
+</li>
+</ul>
+<h4 id="broken-internal-links">Broken Internal Links</h4>
+<ul>
+<li><strong>Problem</strong>: Links to other pages return 404</li>
+<li><strong>Solution</strong>:
+<ol>
+<li>Use absolute paths from docs root: <code>/docs/path/to/page.md</code></li>
+<li>Ensure the target file exists</li>
+<li>Check for typos in the path</li>
+<li>Don't include <code>.html</code> extension in links</li>
+</ol>
+</li>
+</ul>
+<h4 id="build-warnings">Build Warnings</h4>
+<ul>
+<li><strong>Problem</strong>: DocFX shows warnings during build</li>
+<li><strong>Common warnings and fixes</strong>:
+<ul>
+<li><code>Invalid cross reference</code> - Fix the link syntax</li>
+<li><code>File not found</code> - Check file paths and names</li>
+<li><code>Duplicate uid</code> - Ensure unique identifiers</li>
+<li><code>Invalid metadata</code> - Fix YAML front matter</li>
+</ul>
+</li>
+</ul>
+<h4 id="formatting-issues">Formatting Issues</h4>
+<ul>
+<li><strong>Problem</strong>: Content doesn't display as expected</li>
+<li><strong>Solutions</strong>:
+<ul>
+<li>Ensure proper markdown syntax</li>
+<li>Check for unclosed HTML tags</li>
+<li>Verify code blocks have proper language tags</li>
+<li>Use preview to catch issues early</li>
+</ul>
+</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="writing-style">Writing Style</h3>
+<ol>
+<li><p><strong>Be Clear and Concise</strong></p>
+<ul>
+<li>Use simple, direct language</li>
+<li>Avoid jargon unless necessary</li>
+<li>Define technical terms on first use</li>
+<li>Keep sentences and paragraphs short</li>
+</ul>
+</li>
+<li><p><strong>Be Consistent</strong></p>
+<ul>
+<li>Use the same terminology throughout</li>
+<li>Follow existing naming conventions</li>
+<li>Maintain consistent formatting</li>
+<li>Use the same voice and tone</li>
+</ul>
+</li>
+<li><p><strong>Be Helpful</strong></p>
+<ul>
+<li>Anticipate user questions</li>
+<li>Provide examples and screenshots</li>
+<li>Include troubleshooting sections</li>
+<li>Link to related topics</li>
+</ul>
+</li>
+</ol>
+<h3 id="content-guidelines">Content Guidelines</h3>
+<ol>
+<li><p><strong>Structure Your Content</strong></p>
+<ul>
+<li>Start with an overview</li>
+<li>Use descriptive headings</li>
+<li>Break complex topics into sections</li>
+<li>Include a summary for long articles</li>
+</ul>
+</li>
+<li><p><strong>Use Visual Aids</strong></p>
+<ul>
+<li>Add screenshots for UI instructions</li>
+<li>Include diagrams for complex concepts</li>
+<li>Use code examples liberally</li>
+<li>Annotate images when helpful</li>
+</ul>
+</li>
+<li><p><strong>Make it Scannable</strong></p>
+<ul>
+<li>Use bullet points and numbered lists</li>
+<li>Bold important terms</li>
+<li>Include a table of contents for long pages</li>
+<li>Use tables for comparing options</li>
+</ul>
+</li>
+</ol>
+<h3 id="technical-writing-tips">Technical Writing Tips</h3>
+<ol>
+<li><p><strong>For How-To Guides</strong></p>
+<ul>
+<li>Start with prerequisites</li>
+<li>Number each step</li>
+<li>Include expected outcomes</li>
+<li>Add troubleshooting section</li>
+</ul>
+</li>
+<li><p><strong>For Concept Docs</strong></p>
+<ul>
+<li>Explain the &quot;why&quot; before the &quot;how&quot;</li>
+<li>Use analogies when helpful</li>
+<li>Include real-world examples</li>
+<li>Link to related how-tos</li>
+</ul>
+</li>
+<li><p><strong>For Reference Docs</strong></p>
+<ul>
+<li>Use consistent structure</li>
+<li>Include all parameters/options</li>
+<li>Provide examples for each</li>
+<li>Keep descriptions brief</li>
+</ul>
+</li>
+</ol>
+<h3 id="image-guidelines">Image Guidelines</h3>
+<ol>
+<li><p><strong>Screenshots</strong></p>
+<ul>
+<li>Capture at reasonable resolution</li>
+<li>Highlight important areas</li>
+<li>Crop to focus on relevant parts</li>
+<li>Use consistent window sizes</li>
+</ul>
+</li>
+<li><p><strong>Diagrams</strong></p>
+<ul>
+<li>Keep them simple and clear</li>
+<li>Use consistent colors/styles</li>
+<li>Include a legend if needed</li>
+<li>Save as PNG for quality</li>
+</ul>
+</li>
+<li><p><strong>Naming</strong></p>
+<ul>
+<li>Use descriptive names</li>
+<li>Include feature/page context</li>
+<li>Always use kebab-case</li>
+<li>Add version numbers if needed</li>
+</ul>
+</li>
+</ol>
+<h2 id="pre-commit-checklist">Pre-Commit Checklist</h2>
+<p>Before creating your pull request:</p>
+<h3 id="content-quality">Content Quality</h3>
+<ul>
+<li>[ ] Content is accurate and up-to-date</li>
+<li>[ ] Writing is clear and concise</li>
+<li>[ ] Technical information is correct</li>
+<li>[ ] Examples work as described</li>
+<li>[ ] No spelling or grammar errors</li>
+</ul>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ul>
+<li>[ ] DocFX builds without errors</li>
+<li>[ ] All images load correctly (no 404s)</li>
+<li>[ ] All links work (internal and external)</li>
+<li>[ ] Code blocks have syntax highlighting</li>
+<li>[ ] Videos play properly (if applicable)</li>
+<li>[ ] Downloadable files are accessible (if applicable)</li>
+</ul>
+<h3 id="formatting">Formatting</h3>
+<ul>
+<li>[ ] Follows markdown best practices</li>
+<li>[ ] Uses appropriate DocFX features</li>
+<li>[ ] Consistent with existing docs</li>
+<li>[ ] Properly structured headings</li>
+<li>[ ] Images use kebab-case naming</li>
+</ul>
+<h3 id="documentation-standards">Documentation Standards</h3>
+<ul>
+<li>[ ] Includes necessary screenshots</li>
+<li>[ ] Has appropriate warnings/notes</li>
+<li>[ ] Cross-references related topics</li>
+<li>[ ] Updated table of contents</li>
+<li>[ ] Follows the style guide</li>
+</ul>
+<h2 id="review-process">Review Process</h2>
+<h3 id="what-reviewers-look-for">What Reviewers Look For</h3>
+<ol>
+<li><p><strong>Technical Accuracy</strong></p>
+<ul>
+<li>Information is correct</li>
+<li>Code examples work</li>
+<li>Instructions are complete</li>
+</ul>
+</li>
+<li><p><strong>Quality</strong></p>
+<ul>
+<li>Well-written and clear</li>
+<li>Properly formatted</li>
+<li>Good structure and flow</li>
+</ul>
+</li>
+<li><p><strong>Consistency</strong></p>
+<ul>
+<li>Matches documentation style</li>
+<li>Uses standard terminology</li>
+<li>Follows established patterns</li>
+</ul>
+</li>
+</ol>
+<h3 id="addressing-feedback">Addressing Feedback</h3>
+<ol>
+<li><strong>Make requested changes</strong> promptly</li>
+<li><strong>Ask for clarification</strong> if needed</li>
+<li><strong>Update your PR</strong> with fixes</li>
+<li><strong>Respond to comments</strong> when done</li>
+</ol>
+<h3 id="after-approval">After Approval</h3>
+<ol>
+<li><strong>Squash commits</strong> if requested</li>
+<li><strong>Ensure CI passes</strong> (if applicable)</li>
+<li><strong>Merge</strong> when given the go-ahead</li>
+</ol>
+<h2 id="getting-help">Getting Help</h2>
+<p>If you encounter issues:</p>
+<ol>
+<li><strong>Check the DocFX console output</strong> - It usually tells you exactly what's wrong</li>
+<li><strong>Review this guide</strong> for common issues and solutions</li>
+<li><strong>Look at already migrated pages</strong> for examples</li>
+<li><strong>Check DocFX documentation</strong> at <a href="https://dotnet.github.io/docfx/">https://dotnet.github.io/docfx/</a></li>
+<li><strong>Contact the project lead</strong> with:
+<ul>
+<li>The exact error message</li>
+<li>The file you're working on</li>
+<li>What you've already tried</li>
+</ul>
+</li>
+<li><strong>Document new issues</strong> in this guide for future contributors</li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
+<h3 id="documentation-tools">Documentation Tools</h3>
+<ul>
+<li><a href="https://dotnet.github.io/docfx/">DocFX Documentation</a></li>
+<li><a href="https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html">DocFX Tutorial</a></li>
+<li><a href="https://www.markdownguide.org/">Markdown Guide</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></li>
+</ul>
+<h3 id="writing-resources">Writing Resources</h3>
+<ul>
+<li><a href="https://developers.google.com/style">Google Developer Documentation Style Guide</a></li>
+<li><a href="https://docs.microsoft.com/en-us/style-guide/welcome/">Microsoft Writing Style Guide</a></li>
+<li><a href="https://www.writethedocs.org/guide/">Write the Docs</a></li>
+</ul>
+<h3 id="xmpro-specific">XMPro Specific</h3>
+<ul>
+<li><a href="https://xmpro.com">XMPro Website</a></li>
+<li><a href="https://support.xmpro.com">XMPro Support</a></li>
+<li><a href="https://community.xmpro.com">XMPro Community</a></li>
+</ul>
+<h2 id="need-help">Need Help?</h2>
+<p>If you have questions or run into issues:</p>
+<ol>
+<li><strong>Check existing documentation</strong> for examples</li>
+<li><strong>Search closed PRs</strong> for similar changes</li>
+<li><strong>Ask in the team chat</strong> (Slack/Teams)</li>
+<li><strong>Create an issue</strong> for bugs or unclear documentation</li>
+<li><strong>Tag relevant team members</strong> in your PR</li>
+</ol>
+<p>Remember: Good documentation helps users succeed with XMPro!</p>
+
+
+  <div class="last-modified">
+    <hr />
+    <p><small><em>Last modified: June 01, 2025</em></small></p>
+  </div>
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright © 2025 XMPro. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
