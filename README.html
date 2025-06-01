@@ -125,9 +125,18 @@
 <li>Install .NET 8.0 SDK (required for the latest version of DocFX)</li>
 <li>Install DocFX: <code>dotnet tool install -g docfx</code></li>
 <li>Navigate to the public-documentation directory: <code>cd public-documentation</code></li>
-<li>Run <code>docfx docfx.json</code> to build the site</li>
+<li>Run <code>docfx docfx.local.json</code> to build the site (faster, without PDF generation)
+<ul>
+<li>For production builds with PDF: <code>docfx docfx.json</code> (slower, includes PDF generation)</li>
+</ul>
+</li>
 <li>The generated site will be in the <code>public-documentation/_site</code> folder</li>
 </ol>
+<h3 id="configuration-files">Configuration Files</h3>
+<ul>
+<li><code>docfx.json</code> - Production configuration (includes PDF generation)</li>
+<li><code>docfx.local.json</code> - Local development configuration (excludes PDF generation for faster builds)</li>
+</ul>
 <h2 id="file-structure">File Structure</h2>
 <ul>
 <li><code>public-documentation/docfx.json</code> - Configuration file for DocFX</li>
