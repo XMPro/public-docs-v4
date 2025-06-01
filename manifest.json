@@ -17,26 +17,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "ADAPTIVE-IMAGES-DARK-MODE.md",
-      "output": {
-        ".html": {
-          "relative_path": "ADAPTIVE-IMAGES-DARK-MODE.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "BATCH-3-CHANGES-SUMMARY.md",
-      "output": {
-        ".html": {
-          "relative_path": "BATCH-3-CHANGES-SUMMARY.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "CLAUDE.md",
       "output": {
         ".html": {
@@ -57,30 +37,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "MISSING-FILES-AND-IMAGES-REPORT.md",
-      "output": {
-        ".html": {
-          "relative_path": "MISSING-FILES-AND-IMAGES-REPORT.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
           "relative_path": "README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "SELECTIVE-FIXES-SUMMARY.md",
-      "output": {
-        ".html": {
-          "relative_path": "SELECTIVE-FIXES-SUMMARY.html"
         }
       },
       "version": ""
