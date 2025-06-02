@@ -37,6 +37,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "DEPLOYMENT_OPTIONS.md",
+      "output": {
+        ".html": {
+          "relative_path": "DEPLOYMENT_OPTIONS.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "PR-DESCRIPTION.md",
+      "output": {
+        ".html": {
+          "relative_path": "PR-DESCRIPTION.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
