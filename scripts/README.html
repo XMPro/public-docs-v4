@@ -73,234 +73,34 @@
         <article data-uid="">
 <h1 id="documentation-scripts">Documentation Scripts</h1>
 
-<p>This directory contains scripts to help with documentation management and migration.</p>
-<h2 id="copy-missing-imagesps1">copy-missing-images.ps1</h2>
-<p>This PowerShell script copies missing images with snake case names.</p>
-<h3 id="description">Description</h3>
-<p>During the migration from GitBook to DocFX, image files with spaces in their names may not render correctly. This script checks for missing images referenced in markdown files and creates copies of existing images with the snake case names.</p>
-<h3 id="usage">Usage</h3>
-<pre><code class="lang-powershell"># Basic usage - copies missing images with snake case names
-.\copy-missing-images.ps1
+<p>This directory contains scripts used by the documentation build pipeline.</p>
+<h2 id="active-scripts-used-by-build-pipeline">Active Scripts (Used by Build Pipeline)</h2>
+<h3 id="update-last-modifiedpy">update-last-modified.py</h3>
+<p>This Python script updates the last modified dates in documentation files based on Git commit history.</p>
+<h4 id="description">Description</h4>
+<p>During the pre-build phase, this script injects Git commit dates into the YAML front matter of markdown files. This allows the documentation to display accurate &quot;last modified&quot; information for each page.</p>
+<h4 id="usage">Usage</h4>
+<pre><code class="lang-bash"># Run from the public-documentation directory
+python3 scripts/update-last-modified.py
 </code></pre>
-<h3 id="output">Output</h3>
-<p>The script provides detailed information about the copying process, including:</p>
-<ul>
-<li>The number of image files processed</li>
-<li>The number of image files copied</li>
-<li>The number of errors encountered</li>
-<li>Details about each file copied or skipped</li>
-</ul>
-<p>Example console output:</p>
-<pre><code>=== Copy Missing Images ===
-Images Directory: C:\git\xmpro-development\public-documentation\docs\images
-
-Copied: image (595).png -&gt; image_595.png
-Skipping: image_107.png (already exists)
-Error: Original file not found - Chart example.gif
-
-=== Summary ===
-Total files to process: 35
-Files copied: 1
-Errors: 1
-Done!
+<p>This script is automatically executed by the Azure DevOps pipeline during the build process.</p>
+<h3 id="add-last-modified-to-htmlpy">add-last-modified-to-html.py</h3>
+<p>This Python script adds last modified date information to the generated HTML files.</p>
+<h4 id="description-1">Description</h4>
+<p>After DocFX generates the static HTML files, this script processes them to inject the last modified date information that was previously added to the markdown files. This ensures the dates are visible to users viewing the documentation.</p>
+<h4 id="usage-1">Usage</h4>
+<pre><code class="lang-bash"># Run from the public-documentation directory after DocFX build
+python3 scripts/add-last-modified-to-html.py
 </code></pre>
-<h2 id="rename-images-to-snake-caseps1">rename-images-to-snake-case.ps1</h2>
-<p>This PowerShell script renames image files to lower snake case and updates markdown files with the new image names.</p>
-<h3 id="description-1">Description</h3>
-<p>During the migration from GitBook to DocFX, image files with spaces in their names may not render correctly. This script automates the process of renaming these image files to lower snake case (replacing spaces with underscores and converting to lowercase) and updating all markdown files that reference these images to use the new filenames.</p>
-<h3 id="usage-1">Usage</h3>
-<pre><code class="lang-powershell"># Basic usage - renames image files and updates markdown files using default parameters
-.\rename-images-to-snake-case.ps1
-
-# Use custom image and docs directories
-.\rename-images-to-snake-case.ps1 -ImagesDir &quot;C:\path\to\images&quot; -DocsDir &quot;C:\path\to\docs&quot;
-
-# Dry run - shows what would be done without actually renaming files
-.\rename-images-to-snake-case.ps1 -DryRun
-</code></pre>
-<h3 id="parameters">Parameters</h3>
-<ul>
-<li><strong>ImagesDir</strong>: Path to the directory containing the images to rename. Default is '../docs/images'.</li>
-<li><strong>DocsDir</strong>: Path to the directory containing the markdown files to update. Default is '../docs'.</li>
-<li><strong>LogFile</strong>: Path to the log file where the script will write its output. Default is 'rename-images-to-snake-case.log' in the current directory.</li>
-<li><strong>DryRun</strong>: If specified, the script will only show what would be done without actually renaming files.</li>
-</ul>
-<h3 id="output-1">Output</h3>
-<p>The script creates a log file with detailed information about the renaming process, including:</p>
-<ul>
-<li>The number of image files found</li>
-<li>The number of image files renamed</li>
-<li>The number of markdown files found</li>
-<li>The number of markdown files updated</li>
-<li>Details about each file renamed and updated</li>
-</ul>
-<p>Example console output:</p>
-<pre><code>=== Rename Images to Snake Case ===
-Images Directory: C:\git\xmpro-development\public-documentation\docs\images
-Docs Directory: C:\git\xmpro-development\public-documentation\docs
-Log File: C:\git\xmpro-development\public-documentation\scripts\rename-images-to-snake-case.log
-Dry Run: False
-
-Found 85 image files.
-
-Renaming: Chart example.gif -&gt; chart_example.gif
-  Success: File renamed
-Renaming: image (595).png -&gt; image_595.png
-  Success: File renamed
-...
-
-=== Updating Markdown Files ===
-Found 1466 markdown files.
-
-Updating: chart.md
-  Success: File updated
-...
-
-=== Summary ===
-Total image files: 85
-Renamed image files: 42
-Total markdown files: 1466
-Updated markdown files: 23
-Done!
-</code></pre>
-<h2 id="replace-placeholder-contentps1">replace-placeholder-content.ps1</h2>
-<p>This PowerShell script replaces placeholder content in DocFX pages with original content from GitBook, converting GitBook-specific markup to DocFX-compatible markdown.</p>
-<h3 id="description-2">Description</h3>
-<p>During the migration from GitBook to DocFX, placeholder pages were created for content that needs to be migrated. This script automates the process of replacing these placeholder pages with the original content from GitBook. It also handles the conversion of GitBook-specific markup to DocFX-compatible markdown, including:</p>
+<p>This script is automatically executed by the Azure DevOps pipeline during the post-build phase.</p>
+<h2 id="pipeline-integration">Pipeline Integration</h2>
+<p>Both scripts are integrated into the Azure DevOps build pipeline:</p>
 <ol>
-<li>Converting image paths from GitBook format (<code>../../.gitbook/assets/image.png</code>) to DocFX format (<code>../images/image.png</code>)</li>
-<li>Converting GitBook hint blocks (<code>{% hint style=&quot;info&quot; %}...{% endhint %}</code>) to DocFX note blocks (<code>&gt; [!NOTE]...</code>)</li>
-<li>Converting GitBook warning blocks (<code>{% hint style=&quot;warning&quot; %}...{% endhint %}</code>) to DocFX warning blocks (<code>&gt; [!WARNING]...</code>)</li>
-<li>Converting GitBook embed blocks (<code>{% embed url=&quot;...&quot; %}</code>) to simple markdown links</li>
-<li>Converting GitBook figure blocks with captions to standard markdown images with alt text</li>
+<li><strong>Pre-build</strong>: <code>update-last-modified.py</code> runs to update markdown files with Git commit dates</li>
+<li><strong>Build</strong>: DocFX generates the static site</li>
+<li><strong>Post-build</strong>: <code>add-last-modified-to-html.py</code> runs to inject dates into the generated HTML</li>
 </ol>
-<p>The script reads a CSV file containing a list of placeholder pages (generated by <code>find-placeholder-pages.ps1</code>), finds the corresponding GitBook source files, and copies the content from GitBook to replace the placeholder content in DocFX, applying the necessary conversions.</p>
-<h3 id="usage-2">Usage</h3>
-<pre><code class="lang-powershell"># Basic usage - replaces placeholder content using default parameters
-.\replace-placeholder-content.ps1
-
-# Use a custom CSV file
-.\replace-placeholder-content.ps1 -CsvPath &quot;custom-placeholder-pages.csv&quot;
-
-# Specify custom GitBook and DocFX paths
-.\replace-placeholder-content.ps1 -GitBookRoot &quot;C:\path\to\gitbook\docs&quot; -DocFxRoot &quot;C:\path\to\docfx\docs&quot;
-</code></pre>
-<h3 id="parameters-1">Parameters</h3>
-<ul>
-<li><strong>CsvPath</strong>: Path to the CSV file containing the list of placeholder pages. Default is 'placeholder-pages.csv' in the parent directory.</li>
-<li><strong>GitBookRoot</strong>: Path to the root directory of the GitBook documentation. Default is '../gitbook/docs'.</li>
-<li><strong>DocFxRoot</strong>: Path to the root directory of the DocFX documentation. Default is '../docs'.</li>
-<li><strong>LogFile</strong>: Path to the log file where the script will write its output. Default is 'replace-placeholder-content.log' in the current directory.</li>
-</ul>
-<h3 id="output-2">Output</h3>
-<p>The script creates a log file with detailed information about the replacement process, including:</p>
-<ul>
-<li>The number of placeholder pages processed</li>
-<li>The number of successful replacements</li>
-<li>The number of failed replacements</li>
-<li>Details about each page processed, including the DocFX path, GitBook path, and whether the replacement was successful</li>
-</ul>
-<p>Example console output:</p>
-<pre><code>=== Replace Placeholder Content ===
-CSV Path: C:\git\xmpro-development\public-documentation\placeholder-pages.csv
-GitBook Root: C:\git\xmpro-development\public-documentation\gitbook\docs
-DocFX Root: C:\git\xmpro-development\public-documentation\docs
-Log File: C:\git\xmpro-development\public-documentation\scripts\replace-placeholder-content.log
-
-Found 30 placeholder pages in the CSV file.
-Processing: metablock.md
-  DocFX Path: C:\git\xmpro-development\public-documentation\docs\blocks-toolbox\advanced\metablock.md
-  GitBook Path: C:\git\xmpro-development\public-documentation\gitbook\docs\blocks-toolbox\advanced\metablock.md
-  Success: Content replaced
-...
-
-=== Summary ===
-Total pages processed: 30
-Successful replacements: 23
-Failed replacements: 7
-Check the log file for details on failed replacements.
-Done!
-</code></pre>
-<h2 id="find-placeholder-pagesps1">find-placeholder-pages.ps1</h2>
-<p>This PowerShell script identifies placeholder markdown files in the documentation and exports the list to a CSV file.</p>
-<h3 id="description-3">Description</h3>
-<p>During the migration from GitBook to DocFX, placeholder pages were created for content that needs to be migrated. This script helps identify these placeholder pages by searching for the text:</p>
-<pre><code>This is a placeholder page for content that needs to be migrated.
-
-*This file was automatically generated by the check-missing-pages script.*
-</code></pre>
-<p>The script generates a CSV file with the following information:</p>
-<ul>
-<li>FileName: The name of the markdown file</li>
-<li>FilePath: The relative path to the file from the public-documentation directory</li>
-<li>Directory: The directory containing the file</li>
-</ul>
-<p>It also provides a summary showing the distribution of placeholder files by directory.</p>
-<h3 id="usage-3">Usage</h3>
-<pre><code class="lang-powershell"># Basic usage - finds placeholder pages and exports to CSV
-.\find-placeholder-pages.ps1
-
-# Open the CSV file automatically after generation
-.\find-placeholder-pages.ps1 -OpenCsv
-</code></pre>
-<h3 id="output-3">Output</h3>
-<p>The script creates a CSV file named <code>placeholder-pages-[timestamp].csv</code> in the public-documentation directory.</p>
-<p>Example console output:</p>
-<pre><code>=== Placeholder Pages Finder ===
-
-Searching through 1466 markdown files...
-
-Found placeholder: docs\blocks-toolbox\advanced\metablock.md
-Found placeholder: docs\blocks-toolbox\visualizations\autodesk-forge-1.md
-...
-
-=== Summary ===
-
-Found 30 placeholder files.
-
-Distribution by directory:
-
-Directory                                       Count
----------                                       -----
-docs\blocks-toolbox\visualizations                 20
-docs\how-tos\connectors                             6
-docs\installation                                   2
-docs\resources\faqs\external-content\blogs\2015     1
-docs\blocks-toolbox\advanced                        1
-
-Results exported to: C:\git\xmpro-development\public-documentation\placeholder-pages-20250517-192302.csv
-</code></pre>
-<h3 id="migration-status-as-of-may-17-2025">Migration Status (as of May 17, 2025)</h3>
-<p>The migration status has been significantly improved with the use of the <code>replace-placeholder-content.ps1</code> script. Out of 30 placeholder pages:</p>
-<ul>
-<li><strong>23 pages successfully migrated</strong> - Content has been successfully copied from GitBook to DocFX</li>
-<li><strong>7 pages still need migration</strong> - These files don't have corresponding GitBook sources and need manual attention</li>
-</ul>
-<p>The remaining pages that need migration are:</p>
-<ol>
-<li><p><strong>Connector Management (6 files)</strong> - Documentation for managing connectors:</p>
-<ul>
-<li>configure-connectors.md</li>
-<li>manage-connector-instances.md</li>
-<li>manage-connector-logs.md</li>
-<li>manage-connector-packages.md</li>
-<li>manage-connector-subscriptions.md</li>
-<li>manage-connector-versions.md</li>
-</ul>
-</li>
-<li><p><strong>Blog Post (1 file)</strong> - One blog post with a problematic filename:</p>
-<ul>
-<li>herding-cats-what-enterprise-architects-need-to-know-about-business process-management.md</li>
-</ul>
-</li>
-</ol>
-<h3 id="next-steps">Next Steps</h3>
-<ol>
-<li>Investigate why the connector management documentation is missing from the GitBook source</li>
-<li>Create the missing connector management documentation manually if needed</li>
-<li>Fix the blog post with the problematic filename (contains a space in &quot;business process&quot;)</li>
-<li>Verify that all migrated content displays correctly, especially images</li>
-</ol>
+<p>These scripts are essential for maintaining accurate documentation timestamps and should not be removed.</p>
 
 </article>
 
