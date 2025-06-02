@@ -534,4 +534,11 @@ code {
   font-style: normal;
 }
 
+/* Always make XMPro Platform (first nav item) active */
+.navbar-nav > li:first-child > a,
+.navbar-nav > li:first-child.nav-item > a.nav-link,
+.navbar-nav > .nav-item:first-child > .nav-link {
+  color: var(--bs-navbar-active-color) !important;
+}
+
 

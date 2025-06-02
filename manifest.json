@@ -5996,16 +5996,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "docs/faqs.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/faqs.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "docs/files/recommendation-notification-template.zip",
       "output": {
