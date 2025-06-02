@@ -105,7 +105,7 @@
 <li>Connection to Redis Cache</li>
 </ol>
 <p>The raw JSON of the results can be accessed through the health path of the service's URL. For example, <em><a href="https://xmpro-ad-sample.azurewebsites.net/health">https://xmpro-ad-sample.azurewebsites.net/health</a></em></p>
-<p><img src="../images/health-endpoint-result.png" alt="Fig 1: Healthy JSON output using Postman"></p>
+<p><img src="../../images/health-endpoint-result.png" alt="Fig 1: Healthy JSON output using Postman"></p>
 <p>Below is the description for each entry in the health check:</p>
 <table>
 <thead>
@@ -141,7 +141,7 @@
 <p>The UI provides a user-friendly display of the responses from the health endpoints.</p>
 <p>To access the health checks performed, visit the health UI of any of the services using the health-ui path. For example, <em><a href="https://xmpro-ad-sample.azurewebsites.net/health-ui.">https://xmpro-ad-sample.azurewebsites.net/health-ui.</a></em></p>
 <p><em>The health check for XMPro AI was added in v4.4.5.</em></p>
-<p><img src="../images/health-ui.png" alt="Fig 2: The Health Checks interface"></p>
+<p><img src="../../images/health-ui.png" alt="Fig 2: The Health Checks interface"></p>
 <h2 id="configure-health-checks">Configure Health Checks</h2>
 <p>The following steps describe how to turn on the health check functionality.</p>
 <h3 id="application-designer">Application Designer</h3>
@@ -154,7 +154,7 @@
 <h5>Note</h5>
 <p>This feature flag turns on both the <code>/health</code> and <code>/health-ui</code> endpoints.</p>
 </div>
-<p><img src="../images/Configure-Health-Check-setup-step-1.png" alt="Fig 3: Step 3"></p>
+<p><img src="../../images/configure-health-check-setup-step-1.png" alt="Fig 3: Step 3"></p>
 <ol start="4">
 <li>Configure the URLs you want to include in the health checks within the <code>healthChecks</code> object. The standard endpoint for each XMPro service is <code>/health/ping</code>.</li>
 </ol>
@@ -198,7 +198,7 @@
   ]
 }
 </code></pre>
-<p><img src="../images/Configure-Health-Check-setup-step-2.png" alt="Fig 4: Step 4 and 5"></p>
+<p><img src="../../images/configure-health-check-setup-step-2.png" alt="Fig 4: Step 4 and 5"></p>
 <ol start="6">
 <li>Save the file.</li>
 <li>Restart the Application Designer service.</li>
@@ -258,7 +258,7 @@
 <li>Add third-party endpoints to the <code>healthChecks</code> object.</li>
 <li>Save the file and restart the XMPro product service.</li>
 </ol>
-<p><img src="../images/Configure-Health-Check-setup-step-3.png" alt="Fig 5: Step 3"></p>
+<p><img src="../../images/configure-health-check-setup-step-3.png" alt="Fig 5: Step 3"></p>
 <p>Below are the properties in this configuration when including other URLs in the health check:</p>
 <table>
 <thead>
