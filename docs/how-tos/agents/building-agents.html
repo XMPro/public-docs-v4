@@ -88,7 +88,7 @@
 <h1 id="building-agents">Building Agents</h1>
 
 <h2 id="overview">Overview</h2>
-<p>To get started with developing a new Agent, create a new C# library project in Visual Studio and import the <a href="https://www.nuget.org/packages/XMPro.IOT.Framework/index.md">XMPro.IoT.Framework</a> NuGet package. When writing the code for an Agent, you will have to implement a number of interfaces. Which interfaces to implement depends on the category under which your Agent will fall:</p>
+<p>To get started with developing a new Agent, create a new C# library project in Visual Studio and import the <a href="https://www.nuget.org/packages/XMPro.IOT.Framework/">XMPro.IoT.Framework</a> NuGet package. When writing the code for an Agent, you will have to implement a number of interfaces. Which interfaces to implement depends on the category under which your Agent will fall:</p>
 <h3 id="listeners">Listeners</h3>
 <p>Listeners are created by implementing <em>IAgent</em> and <em>IPollingAgent</em> interfaces. To push the events to the next receiver, the <em>OnPublish</em> event should be invoked and the events should be passed as arguments.</p>
 <h3 id="action-agents-functions">Action Agents/ Functions</h3>
@@ -110,6 +110,7 @@ throw new NotImplementedException();
 <li><a href="building-agents.html#ipolling-agent">IPollingAgent</a></li>
 <li><a href="building-agents.html#ireceivingagent">IReceivingAgent</a></li>
 <li><a href="building-agents.html#ipublisherror">IPublishesError</a></li>
+<li><a href="building-agents.html#iagentlogger">IAgentLogger</a> (v4.4.19)</li>
 </ul>
 <p>The matrix below shows which interface needs to be implemented for which category Agent:</p>
 <table>
@@ -120,6 +121,7 @@ throw new NotImplementedException();
 <th>IPollingAgent</th>
 <th>IReceivingAgent</th>
 <th>IPublishesError</th>
+<th>IAgentLogger</th>
 </tr>
 </thead>
 <tbody>
@@ -129,11 +131,13 @@ throw new NotImplementedException();
 <td>Recommended</td>
 <td>Optional</td>
 <td>Optional</td>
+<td>Optional</td>
 </tr>
 <tr>
 <td><em>Context Provider</em></td>
 <td>Required</td>
 <td>Recommended</td>
+<td>Optional</td>
 <td>Optional</td>
 <td>Optional</td>
 </tr>
@@ -143,6 +147,7 @@ throw new NotImplementedException();
 <td>Optional</td>
 <td>Required</td>
 <td>Optional</td>
+<td>Optional</td>
 </tr>
 <tr>
 <td><em>Action Agent/ Function</em></td>
@@ -150,12 +155,14 @@ throw new NotImplementedException();
 <td>Optional</td>
 <td>Required</td>
 <td>Optional</td>
+<td>Optional</td>
 </tr>
 <tr>
-<td><em>AI &amp; Machine Learning</em></td>
+<td><em>AI &amp; Machine Learning / Gen AI</em></td>
 <td>Required</td>
 <td>Optional</td>
 <td>Required</td>
+<td>Optional</td>
 <td>Optional</td>
 </tr>
 </tbody>
@@ -323,6 +330,124 @@ var pOuts = args.ParentOutputs;
 <p>To push the error to the next Agent, the <em>OnPublishError</em> event should be invoked, and the error information should be passed as arguments:</p>
 <pre><code class="lang-csharp">this.OnPublishError?.Invoke(this, new OnErrorArgs(AgentId, Timestamp, Source, Error, DetailedError, Data));
 </code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Error endpoints should be enabled in XMPro Stream Integration Manager when packaging the Agent. This can be done by selecting the &quot;Add On Error Endpoint?&quot; checkbox. See the image above for an example.</p>
+</div>
+<h2 id="iagentlogger">IAgentLogger</h2>
+<p>An Agent can output logging to the the <a href="../data-streams/check-data-stream-logs.html#view-data-stream-logs">Data Stream Logs</a> by implementing the <em>IAgentLogger</em> interface. Like <a href="building-agents.html#ipublisherror">IPublishError</a>, this can be used for errors, but it can also be used to log information or warning messages too.</p>
+<p>The prerequisite to use this interface are <a href="https://www.nuget.org/packages/XMPro.IOT.Framework/">XMPro.IoT.Framework</a> v4.4.19+ and Data Stream Designer v4.4.19+.</p>
+<ol>
+<li><p>Add an empty constructor to your Agent entry point class and another constructor that accepts an IAgentLogger. See following code for the contents of the two constructors:</p>
+<pre><code class="lang-csharp">private readonly AgentLoggerProxy _loggerProxy;
+
+public BaseAgent
+{
+    _loggerProxy = new AgentLoggerProxy();
+}
+
+public BaseAgent(IAgentLogger logger)
+{
+    _loggerProxy = new AgentLoggerProxy(logger);
+}
+</code></pre>
+</li>
+<li><p>The IAgentLogger interface contains the logging methods but a proxy class is needed to execute it to avoid compatibility issues with older SH and DS. Create the AgentLoggerProxy class with the following contents:</p>
+<pre><code class="lang-csharp">public class AgentLoggerProxy
+{
+    private readonly object? _logger;
+    private readonly Type? _loggerType;
+    private readonly Dictionary&lt;string, MethodInfo?&gt; _methods;
+
+    public AgentLoggerProxy(object? logger = null)
+    {
+        _logger = logger;
+        _loggerType = logger?.GetType();
+        _methods = new Dictionary&lt;string, MethodInfo?&gt;();
+
+        if (logger != null)
+        {
+            // Cache all method infos
+            _methods[&quot;LogInfo&quot;] = _loggerType?.GetMethod(&quot;LogInfo&quot;,
+                new[] { typeof(string), typeof(object[]) });
+
+            _methods[&quot;LogErrorWithException&quot;] = _loggerType?.GetMethod(&quot;LogError&quot;,
+                new[] { typeof(Exception), typeof(string), typeof(object[]) });
+
+            _methods[&quot;LogError&quot;] = _loggerType?.GetMethod(&quot;LogError&quot;,
+                new[] { typeof(string), typeof(object[]) });
+
+            _methods[&quot;LogWarning&quot;] = _loggerType?.GetMethod(&quot;LogWarning&quot;,
+                new[] { typeof(string), typeof(object[]) });
+
+            _methods[&quot;LogDebug&quot;] = _loggerType?.GetMethod(&quot;LogDebug&quot;,
+                new[] { typeof(string), typeof(object[]) });
+        }
+    }
+
+    public void LogInfo(string messageTemplate, params object[] args)
+    {
+        if (_logger != null &amp;&amp; _methods[&quot;LogInfo&quot;] != null)
+        {
+            _methods[&quot;LogInfo&quot;]!.Invoke(_logger, new object[] { messageTemplate, args });
+        }
+    }
+
+    public void LogError(Exception ex, string messageTemplate, params object[] args)
+    {
+        if (_logger != null &amp;&amp; _methods[&quot;LogErrorWithException&quot;] != null)
+        {
+            _methods[&quot;LogErrorWithException&quot;]!.Invoke(_logger, new object[] { ex, messageTemplate, args });
+        }
+    }
+
+    public void LogError(string messageTemplate, params object[] args)
+    {
+        if (_logger != null &amp;&amp; _methods[&quot;LogError&quot;] != null)
+        {
+            _methods[&quot;LogError&quot;]!.Invoke(_logger, new object[] { messageTemplate, args });
+        }
+    }
+
+    public void LogWarning(string messageTemplate, params object[] args)
+    {
+        if (_logger != null &amp;&amp; _methods[&quot;LogWarning&quot;] != null)
+        {
+            _methods[&quot;LogWarning&quot;]!.Invoke(_logger, new object[] { messageTemplate, args });
+        }
+    }
+
+    public void LogDebug(string messageTemplate, params object[] args)
+    {
+        if (_logger != null &amp;&amp; _methods[&quot;LogDebug&quot;] != null)
+        {
+            _methods[&quot;LogDebug&quot;]!.Invoke(_logger, new object[] { messageTemplate, args });
+        }
+    }
+
+    public bool HasLogger =&gt; _logger != null;
+}
+</code></pre>
+</li>
+<li><p>Call the logging methods of the proxy class. This will now display the logs on Stream Host.</p>
+<pre><code class="lang-csharp">protected void LogMessage(string source, string message)
+{
+    if (_loggerProxy.HasLogger)
+    {
+        loggerProxy.LogInfo($&quot;[{source}] {message}&quot;);
+    }
+}
+
+protected void LogError(Exception? ex, string message)
+{
+    if (_loggerProxy.HasLogger)
+    {
+        _loggerProxy.LogError(ex, message);
+    }
+}
+</code></pre>
+</li>
+</ol>
 <h2 id="example">Example</h2>
 <p>The code below is an example of a basic MQTT Listener Agent. Take note of how the interfaces and methods have been implemented.</p>
 <div class="NOTE">
