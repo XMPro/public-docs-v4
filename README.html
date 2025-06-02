@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>DocFX Documentation Pipeline | XMPro </title>
+      <title>XMPro Public Documentation | XMPro </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="DocFX Documentation Pipeline | XMPro ">
+      <meta name="title" content="XMPro Public Documentation | XMPro ">
       <meta name="description" content="XMPro official documentation - Learn how to use XMPro&#39;s intelligent digital twin suite for real-time operational intelligence and automated decision-making.">
       
       <link rel="icon" href="images/favicon.png">
@@ -71,86 +71,134 @@
         </div>
 
         <article data-uid="">
-<h1 id="docfx-documentation-pipeline">DocFX Documentation Pipeline</h1>
+<h1 id="xmpro-public-documentation">XMPro Public Documentation</h1>
 
-<p>This repository contains the source files for the documentation site and an Azure DevOps CI/CD pipeline to automatically build and deploy the documentation.</p>
-<h2 id="how-it-works">How It Works</h2>
-<p>The Azure DevOps pipeline follows this workflow:</p>
+<p>This repository contains the source files for the XMPro public documentation site, built using DocFX static site generator and deployed via Azure DevOps CI/CD pipeline.</p>
+<h2 id="-quick-start">🚀 Quick Start</h2>
+<p>For detailed setup and contribution instructions, see <a href="CONTRIBUTING.html">CONTRIBUTING.md</a>.</p>
+<pre><code class="lang-bash"># Install DocFX
+dotnet tool install -g docfx
+
+# Navigate to documentation folder
+cd public-documentation
+
+# Build and serve locally
+docfx --serve
+
+# View at http://localhost:8080
+</code></pre>
+<h2 id="-project-structure">📁 Project Structure</h2>
+<pre><code>public-documentation/
+├── docs/                  # All documentation content
+│   ├── images/           # All images (kebab-case naming)
+│   ├── assets/           # Other downloadable files
+│   │   ├── files/        # PDFs, ZIPs, etc.
+│   │   └── images/       # Image viewer HTML
+│   ├── getting-started/  # Getting started guides
+│   ├── how-tos/          # Step-by-step tutorials
+│   ├── concepts/         # Conceptual documentation
+│   ├── blocks-toolbox/   # Blocks and widgets docs
+│   └── *.md             # Root level pages
+├── images/               # Site-level images (logos, icons)
+├── xmpro-template/       # Custom DocFX template
+├── docfx.json           # DocFX configuration
+├── toc.yml              # Main table of contents
+├── index.md             # Home page
+└── _site/               # Generated site (git ignored)
+</code></pre>
+<h2 id="-contributing">📝 Contributing</h2>
+<p>Please read <a href="CONTRIBUTING.html">CONTRIBUTING.md</a> for:</p>
+<ul>
+<li>Detailed setup instructions</li>
+<li>Development workflow</li>
+<li>DocFX syntax guide</li>
+<li>Writing guidelines</li>
+<li>Testing procedures</li>
+<li>Pull request process</li>
+</ul>
+<p>The contribution guide contains everything you need to know about contributing to the XMPro documentation.</p>
+<h2 id="-deployment-pipeline">🚢 Deployment Pipeline</h2>
+<h3 id="how-it-works">How It Works</h3>
 <ol>
-<li>Triggers when changes are pushed to the <code>main</code> branch or when pull requests targeting the <code>main</code> branch are created</li>
-<li>Builds the DocFX documentation site</li>
-<li>If the build is successful and the changes are on the <code>main</code> branch, commits the generated <code>_site</code> folder to the <a href="https://github.com/XMPro/public-docs-site.git">public-docs-site repository</a></li>
+<li><p><strong>Triggers</strong> on:</p>
+<ul>
+<li>Push to <code>main</code> branch</li>
+<li>Pull requests targeting <code>main</code></li>
+</ul>
+</li>
+<li><p><strong>Build Process</strong>:</p>
+<ul>
+<li>Builds DocFX documentation</li>
+<li>Validates all internal links and images (external URLs are not checked)</li>
+<li>Generates search index</li>
+</ul>
+</li>
+<li><p><strong>Deployment</strong> (main branch only):</p>
+<ul>
+<li>Deploys to multiple version-specific GitHub repositories</li>
+<li>Updates GitHub Pages sites automatically</li>
+</ul>
+</li>
 </ol>
 <h3 id="pipeline-configuration">Pipeline Configuration</h3>
 <ul>
-<li><code>azure-pipelines.yml</code> - Azure DevOps pipeline definition</li>
+<li><code>azure-pipelines.yml</code> - Main pipeline definition</li>
+<li><code>templates/</code> - Reusable pipeline templates</li>
 </ul>
-<h2 id="setup-requirements">Setup Requirements</h2>
-<p>To use this pipeline, you need to set up the following:</p>
+<h3 id="setup-requirements">Setup Requirements</h3>
 <ol>
-<li><p>Create a GitHub Personal Access Token (PAT) with the following permissions:</p>
+<li><p><strong>GitHub PAT Token</strong>:</p>
 <ul>
-<li>If the target repository is private: <code>repo</code> scope (Full control of private repositories)</li>
-<li>If the target repository is public: <code>public_repo</code> scope (Access to public repositories)</li>
+<li>Create a classic Personal Access Token</li>
+<li>Grant <code>repo</code> or <code>public_repo</code> scope</li>
+<li>Ensure write access to target repositories</li>
 </ul>
-<p>These permissions are required to push to the target repository (<code>https://github.com/XMPro/public-docs-site.git</code>)</p>
-<p><strong>Important</strong>: Make sure the GitHub account associated with the PAT has write access to the target repository. If you're getting a 403 error (Permission denied), it means the account doesn't have the necessary permissions to push to the repository.</p>
-<p>The pipeline now uses a classic PAT token stored in the <code>DOCS_DEPLOY_PAT_CLASSIC</code> variable, which should have the necessary permissions to push directly to the target repository.</p>
 </li>
-<li><p>Add the classic PAT as a pipeline variable or secret:</p>
+<li><p><strong>Azure DevOps Configuration</strong>:</p>
 <ul>
-<li>Go to your Azure DevOps project</li>
-<li>Navigate to Pipelines &gt; Library</li>
-<li>Create a new Variable Group or edit an existing one</li>
-<li>Add a new variable named <code>DOCS_DEPLOY_PAT_CLASSIC</code></li>
-<li>Set the value to your GitHub classic PAT</li>
-<li>Check the &quot;Keep this value secret&quot; option</li>
-<li>Save the variable group</li>
-</ul>
-<p>Alternatively, you can add it directly to your pipeline:</p>
-<ul>
-<li>Go to your pipeline</li>
-<li>Click &quot;Edit&quot;</li>
-<li>Click the &quot;Variables&quot; button</li>
-<li>Add a new variable named <code>DOCS_DEPLOY_PAT_CLASSIC</code></li>
-<li>Set the value to your GitHub classic PAT</li>
-<li>Check the &quot;Keep this value secret&quot; option</li>
-<li>Save the pipeline</li>
+<li>Add PAT as <code>DOCS_DEPLOY_PAT_CLASSIC</code> variable</li>
+<li>Mark as secret in pipeline settings</li>
 </ul>
 </li>
 </ol>
-<h2 id="local-development">Local Development</h2>
-<p>To build the documentation locally:</p>
-<ol>
-<li>Install .NET 8.0 SDK (required for the latest version of DocFX)</li>
-<li>Install DocFX: <code>dotnet tool install -g docfx</code></li>
-<li>Navigate to the public-documentation directory: <code>cd public-documentation</code></li>
-<li>Run <code>docfx docfx.local.json</code> to build the site (faster, without PDF generation)
+<h2 id="-configuration">🔧 Configuration</h2>
+<h3 id="main-configuration">Main Configuration</h3>
 <ul>
-<li>For production builds with PDF: <code>docfx docfx.json</code> (slower, includes PDF generation)</li>
+<li><code>docfx.json</code> - Production configuration
+<ul>
+<li>Includes all features</li>
+<li>Used by CI/CD pipeline</li>
+<li>Optimized build settings</li>
 </ul>
 </li>
-<li>The generated site will be in the <code>public-documentation/_site</code> folder</li>
+</ul>
+<h3 id="key-settings">Key Settings</h3>
+<pre><code class="lang-json">{
+  &quot;build&quot;: {
+    &quot;content&quot;: [&quot;**/*.{md,yml}&quot;],
+    &quot;resource&quot;: [&quot;images/**&quot;, &quot;docs/**&quot;],
+    &quot;output&quot;: &quot;_site&quot;,
+    &quot;template&quot;: [&quot;default&quot;, &quot;modern&quot;, &quot;xmpro-template&quot;]
+  }
+}
+</code></pre>
+<h2 id="-troubleshooting">🐛 Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<ol>
+<li><p><strong>DocFX command not found</strong>:</p>
+<pre><code class="lang-bash">dotnet tool install -g docfx
+</code></pre>
+</li>
+<li><p><strong>Port 8080 in use</strong>:</p>
+<pre><code class="lang-bash">docfx --serve -p 8081
+</code></pre>
+</li>
 </ol>
-<h3 id="configuration-files">Configuration Files</h3>
-<ul>
-<li><code>docfx.json</code> - Production configuration (includes PDF generation)</li>
-<li><code>docfx.local.json</code> - Local development configuration (excludes PDF generation for faster builds)</li>
-</ul>
-<h2 id="file-structure">File Structure</h2>
-<ul>
-<li><code>public-documentation/docfx.json</code> - Configuration file for DocFX</li>
-<li><code>public-documentation/index.md</code> - Main landing page</li>
-<li><code>public-documentation/toc.yml</code> - Table of contents</li>
-<li><code>public-documentation/docs/</code> - Documentation content</li>
-<li><code>azure-pipelines.yml</code> - Azure DevOps pipeline definition</li>
-<li><code>.gitignore</code> - Configured to ignore the <code>_site</code> folder in this repository</li>
-</ul>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>The <code>_site</code> folder is ignored in this repository (via <code>.gitignore</code>) because it contains the build output that is automatically deployed to the target repository.</li>
-<li>Only changes to the <code>main</code> branch will trigger a deployment to the target repository.</li>
-</ul>
+<p>For detailed troubleshooting and common issues, see the <a href="CONTRIBUTING.html#troubleshooting">Troubleshooting section</a> in CONTRIBUTING.md.</p>
+<h2 id="-license">📄 License</h2>
+<p>Copyright © 2025 XMPro. All rights reserved.</p>
+<hr>
+<p>For detailed contribution guidelines, see <a href="CONTRIBUTING.html">CONTRIBUTING.md</a></p>
 
 </article>
 

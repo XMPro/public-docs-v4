@@ -203,7 +203,7 @@ function onDataChanged(data, changes){
 <p>If you wish to define value mappings for run-time use, you can configure user-defined key-value pairs. These values remain static during application rendering.</p>
 <p>The Value Mapping opens a new blade to setup the Key and Value configuration. The options for the Value Source are Static, <a href="../../how-tos/apps/use-dynamic-properties.html">Dynamic</a>, <a href="../../how-tos/apps/use-expression-properties.html">Expression</a> and <a href="../../concepts/variable.html">Variables</a>.</p>
 <p>When selecting Server Variables as a Source for the Value Mapping, the list of unencrypted Server Variables will be displayed. Tick the <strong>Encrypt</strong> checkbox to use an encrypted Server Variable for values like keys, secrets, or password.</p>
-<p>Encrypted Server Variables will not have their value available immediately on the Metablock. Instead, you can use them inside a Fetch/XHR request or a Websocket/MQTT message before being forwarded to the actual target.</p>
+<p>From v4.4.18, encrypted Server Variables will not have their value available immediately on the Metablock. Instead, you can use them inside a Fetch/XHR request or a Websocket/MQTT message before being forwarded to the actual target.</p>
 <ul>
 <li><strong>Fetch/XHR Request -</strong> You can use encrypted server variables as part of the URL, Header, or Body of the Fetch/XHR request.</li>
 <li><strong>Websocket/MQTT Message -</strong> You can use encrypted server variables as part of the Websocket message. For MQTT Messages, you can use it as part of the following message types: Connect (Username and Password), Publish (Payload), and Subscribe (Subscribe Topics)</li>
@@ -500,7 +500,7 @@ app.listen(port, () =&gt; {
 <li>Modal Dialogs</li>
 <li>JavaScript Features</li>
 <li>External Resources</li>
-<li>Allowed Downloads</li>
+<li>Allowed Downloads (v4.4.18)</li>
 </ul>
 <p>Additionally, Metablock allows the use of specific hardware APIs for enhanced application capabilities, including camera, encrypted-media, full-screen, geo-location, speaker, accelerometer, gyroscope, magnetometer, and midi.</p>
 <h2 id="faqs">FAQs</h2>
@@ -517,7 +517,7 @@ app.listen(port, () =&gt; {
 }
 </code></pre>
 <h3 id="how-can-i-load-multiple-script-files">How can I load multiple script files?</h3>
-<p>To load external script files, include a script block like you would usually do on an html file. The same thing applies for styles/css files.</p>
+<p>From v4.4.18, you can load external script files by including a script block - the same as you would usually do in a html file. The same applies to style/CSS files.</p>
 <pre><code class="lang-html">&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>You can also reference resources (js, css, image) uploaded on your <strong>App Files</strong> folder by following the correct format for the URL when referencing. Prefix the path with <strong>&quot;./AppFiles/&quot;</strong> and append the path of the App Files resource:</p>
