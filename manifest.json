@@ -17,56 +17,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "CLAUDE.md",
-      "output": {
-        ".html": {
-          "relative_path": "CLAUDE.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "CONTRIBUTING.md",
-      "output": {
-        ".html": {
-          "relative_path": "CONTRIBUTING.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "DEPLOYMENT_OPTIONS.md",
-      "output": {
-        ".html": {
-          "relative_path": "DEPLOYMENT_OPTIONS.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "PR-DESCRIPTION.md",
-      "output": {
-        ".html": {
-          "relative_path": "PR-DESCRIPTION.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "README.md",
-      "output": {
-        ".html": {
-          "relative_path": "README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/administration/administrative-accounts.md",
       "output": {
         ".html": {

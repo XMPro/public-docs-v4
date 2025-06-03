@@ -1,11 +1,11 @@
 Deployment Information
 ======================
-Deployed to: v4.4 (latest)
+Deployed to: v4.4
 Repository: public-docs-v4.4
 Deployment Type: Manual
-Timestamp: 2025-06-03 03:52:38 UTC
-Build ID: 41407
-Build Number: 20250603.5
+Timestamp: 2025-06-03 05:15:55 UTC
+Build ID: 41420
+Build Number: 20250603.9
 Source Branch: 20290-migrate-public-docs
-Commit SHA: b8051286a0ad3dd937032088e7994122a877c496
+Commit SHA: 817b910672611a9ced925086e6fab1b0d3f72114
 Triggered By: Daniel King
