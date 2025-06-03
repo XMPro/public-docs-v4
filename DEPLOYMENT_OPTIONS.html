@@ -74,68 +74,64 @@
 <h1 id="xmpro-documentation-deployment">XMPro Documentation Deployment</h1>
 
 <h2 id="overview">Overview</h2>
-<p>The XMPro documentation pipeline uses a manual selection approach for deployments, giving you complete control over which version repositories receive updates.</p>
+<p>The XMPro documentation pipeline uses a stage-based approach with manual approvals, giving you complete control over which version repositories receive updates.</p>
 <h2 id="how-it-works">How It Works</h2>
 <p><strong>File</strong>: <code>azure-pipelines.yml</code></p>
 <h3 id="pipeline-features">Pipeline Features</h3>
 <ul>
-<li>Manually triggered with simple parameter selection</li>
-<li>Choose which versions to deploy to (v4.4, v4.5, or both)</li>
-<li>Mandatory approval step before deployment for safety</li>
+<li>Stage-based deployment with independent approvals</li>
+<li>Each version has its own deployment stage</li>
+<li>Manual approval required for each deployment</li>
 <li>Clear deployment tracking and history</li>
+<li>24-hour approval timeout for safety</li>
 </ul>
-<h3 id="parameters">Parameters</h3>
-<p>When you run the pipeline, you'll see these options:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Deploy to v4.4 (latest)</strong></td>
-<td>Check to deploy to v4.4 repository</td>
-<td>✅ Checked</td>
-</tr>
-<tr>
-<td><strong>Deploy to v4.5</strong></td>
-<td>Check to deploy to v4.5 repository</td>
-<td>❌ Unchecked</td>
-</tr>
-</tbody>
-</table>
-<p><em>Note: Manual approval is always required for all deployments</em></p>
-<h2 id="usage-examples">Usage Examples</h2>
-<h3 id="deploy-to-v44-only-default">Deploy to v4.4 Only (Default)</h3>
-<pre><code>☑ Deploy to v4.4 (latest)
-☐ Deploy to v4.5
+<h3 id="pipeline-stages">Pipeline Stages</h3>
+<p>The pipeline consists of these stages:</p>
+<pre><code>Build Documentation ✓
+    ├─&gt; Deploy to v4.4 (latest) [Awaiting Approval]
+    └─&gt; Deploy to v4.5 [Awaiting Approval]
+            └─&gt; Deployment Summary
 </code></pre>
+<p>Each deployment stage can be independently approved or rejected.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="running-the-pipeline">Running the Pipeline</h3>
+<p>When you trigger the pipeline, it will:</p>
+<ol>
+<li><strong>Build</strong> the documentation automatically</li>
+<li><strong>Present deployment stages</strong> for approval</li>
+<li><strong>Wait</strong> for manual approval (up to 24 hours)</li>
+<li><strong>Deploy</strong> only to approved stages</li>
+<li><strong>Summarize</strong> the results</li>
+</ol>
+<h3 id="deployment-scenarios">Deployment Scenarios</h3>
+<h4 id="deploy-to-v44-only">Deploy to v4.4 Only</h4>
+<ul>
+<li>Click &quot;Resume&quot; on the v4.4 approval</li>
+<li>Click &quot;Reject&quot; on the v4.5 approval (or let it timeout)</li>
+</ul>
 <p>Perfect for: Updates to the current stable version</p>
-<h3 id="deploy-to-both-versions">Deploy to Both Versions</h3>
-<pre><code>☑ Deploy to v4.4 (latest)
-☑ Deploy to v4.5
-</code></pre>
+<h4 id="deploy-to-both-versions">Deploy to Both Versions</h4>
+<ul>
+<li>Click &quot;Resume&quot; on both v4.4 and v4.5 approvals</li>
+</ul>
 <p>Perfect for: Bug fixes and documentation improvements that apply to both versions</p>
-<h3 id="deploy-to-v45-only">Deploy to v4.5 Only</h3>
-<pre><code>☐ Deploy to v4.4 (latest)
-☑ Deploy to v4.5
-</code></pre>
+<h4 id="deploy-to-v45-only">Deploy to v4.5 Only</h4>
+<ul>
+<li>Click &quot;Reject&quot; on the v4.4 approval (or let it timeout)</li>
+<li>Click &quot;Resume&quot; on the v4.5 approval</li>
+</ul>
 <p>Perfect for: v4.5-specific features or preview documentation</p>
-<h3 id="build-only-no-deployment">Build Only (No Deployment)</h3>
-<pre><code>☐ Deploy to v4.4 (latest)
-☐ Deploy to v4.5
-</code></pre>
-<p>Perfect for: Testing build without deployment (no approval stage will be triggered)</p>
+<h4 id="build-only-no-deployment">Build Only (No Deployment)</h4>
+<ul>
+<li>Click &quot;Reject&quot; on both approvals (or let them timeout)</li>
+</ul>
+<p>Perfect for: Testing build without deployment</p>
 <h2 id="deployment-process">Deployment Process</h2>
 <ol>
 <li><p><strong>Trigger Pipeline</strong></p>
 <ul>
 <li>Via Azure DevOps UI</li>
-<li>Select deployment parameters</li>
-<li>Add optional notes</li>
+<li>No parameters needed - just run the pipeline</li>
 </ul>
 </li>
 <li><p><strong>Build Stage</strong></p>
@@ -145,44 +141,43 @@
 <li>Build artifacts created</li>
 </ul>
 </li>
-<li><p><strong>Approval Stage</strong> (always required)</p>
+<li><p><strong>Approval Stages</strong> (one per version)</p>
 <ul>
-<li>Pipeline pauses for manual approval</li>
-<li>Approvers see deployment configuration</li>
-<li>Must approve before deployment proceeds</li>
+<li>Each deployment stage pauses for manual approval</li>
+<li>Approvers see deployment target information</li>
+<li>Click &quot;Resume&quot; to deploy or &quot;Reject&quot; to skip</li>
 <li><strong>⏰ Timeout: 24 hours</strong> - If no action is taken, the deployment is automatically rejected</li>
 </ul>
 </li>
-<li><p><strong>Deploy Stage</strong></p>
+<li><p><strong>Deploy Stages</strong></p>
 <ul>
-<li>Deploys only to selected repositories</li>
+<li>Deploys only to approved repositories</li>
 <li>Creates deployment tracking files</li>
 <li>Updates git history</li>
 </ul>
 </li>
 <li><p><strong>Summary Stage</strong></p>
 <ul>
-<li>Shows deployment results</li>
-<li>Lists what was deployed where</li>
+<li>Runs after all deployments complete</li>
+<li>Provides guidance on viewing results</li>
 </ul>
 </li>
 </ol>
-<h2 id="running-the-pipeline">Running the Pipeline</h2>
+<h2 id="running-the-pipeline-1">Running the Pipeline</h2>
 <h3 id="via-azure-devops-ui">Via Azure DevOps UI</h3>
 <ol>
 <li>Navigate to Pipelines</li>
 <li>Find the documentation pipeline</li>
 <li>Click &quot;Run pipeline&quot;</li>
-<li>Configure parameters</li>
-<li>Click &quot;Run&quot;</li>
+<li>Click &quot;Run&quot; (no parameters to configure)</li>
+<li>Wait for build to complete</li>
+<li>Approve desired deployment stages</li>
 </ol>
 <h3 id="via-azure-cli">Via Azure CLI</h3>
-<pre><code class="lang-bash"># Run with default parameters
+<pre><code class="lang-bash"># Run the pipeline
 az pipelines run --name &quot;XMPro Documentation&quot; --branch main
 
-# Run with custom parameters
-az pipelines run --name &quot;XMPro Documentation&quot; --branch main \
-  --parameters deployToV44=true deployToV45=true
+# Note: Approvals must be done through the Azure DevOps UI
 </code></pre>
 <h2 id="deployment-tracking">Deployment Tracking</h2>
 <p>Each deployment creates:</p>
@@ -217,9 +212,9 @@ Build: 20240206.1
 </li>
 <li><p><strong>Approval Process</strong></p>
 <ul>
-<li>Review all changes before approving</li>
+<li>Review all changes before clicking &quot;Resume&quot;</li>
 <li>Verify deployment targets are correct</li>
-<li>Use good commit messages for context</li>
+<li>Click &quot;Reject&quot; to skip unwanted deployments</li>
 </ul>
 </li>
 <li><p><strong>Test Before Deploying</strong></p>
