@@ -79,10 +79,10 @@
 <p><strong>File</strong>: <code>azure-pipelines.yml</code></p>
 <h3 id="pipeline-features">Pipeline Features</h3>
 <ul>
-<li>Manually triggered with parameter selection</li>
-<li>Choose which versions to deploy to</li>
-<li>Optional approval step before deployment</li>
-<li>Add deployment notes for tracking</li>
+<li>Manually triggered with simple parameter selection</li>
+<li>Choose which versions to deploy to (v4.4, v4.5, or both)</li>
+<li>Mandatory approval step before deployment for safety</li>
+<li>Clear deployment tracking and history</li>
 </ul>
 <h3 id="parameters">Parameters</h3>
 <p>When you run the pipeline, you'll see these options:</p>
@@ -105,16 +105,6 @@
 <td>Check to deploy to v4.5 repository</td>
 <td>❌ Unchecked</td>
 </tr>
-<tr>
-<td><strong>Work Item ID</strong></td>
-<td>Azure DevOps work item ID</td>
-<td>Empty (required)</td>
-</tr>
-<tr>
-<td><strong>Deployment Notes</strong></td>
-<td>Optional notes about the deployment</td>
-<td>Empty</td>
-</tr>
 </tbody>
 </table>
 <p><em>Note: Manual approval is always required for all deployments</em></p>
@@ -122,29 +112,21 @@
 <h3 id="deploy-to-v44-only-default">Deploy to v4.4 Only (Default)</h3>
 <pre><code>☑ Deploy to v4.4 (latest)
 ☐ Deploy to v4.5
-Work Item ID: 12345
-Deployment Notes: [Updated API documentation]
 </code></pre>
 <p>Perfect for: Updates to the current stable version</p>
 <h3 id="deploy-to-both-versions">Deploy to Both Versions</h3>
 <pre><code>☑ Deploy to v4.4 (latest)
 ☑ Deploy to v4.5
-Work Item ID: 12346
-Deployment Notes: [Fixed broken links in installation guide]
 </code></pre>
 <p>Perfect for: Bug fixes and documentation improvements that apply to both versions</p>
 <h3 id="deploy-to-v45-only">Deploy to v4.5 Only</h3>
 <pre><code>☐ Deploy to v4.4 (latest)
 ☑ Deploy to v4.5
-Work Item ID: 12347
-Deployment Notes: [v4.5 preview features documentation]
 </code></pre>
 <p>Perfect for: v4.5-specific features or preview documentation</p>
 <h3 id="build-only-no-deployment">Build Only (No Deployment)</h3>
 <pre><code>☐ Deploy to v4.4 (latest)
 ☐ Deploy to v4.5
-Work Item ID: 12348
-Deployment Notes: [Test build only]
 </code></pre>
 <p>Perfect for: Testing build without deployment (no approval stage will be triggered)</p>
 <h2 id="deployment-process">Deployment Process</h2>
@@ -200,9 +182,7 @@ az pipelines run --name &quot;XMPro Documentation&quot; --branch main
 
 # Run with custom parameters
 az pipelines run --name &quot;XMPro Documentation&quot; --branch main \
-  --parameters deployToV44=true deployToV45=true \
-  deploymentNotes=&quot;Critical security update&quot; \
-  requireApproval=false
+  --parameters deployToV44=true deployToV45=true
 </code></pre>
 <h2 id="deployment-tracking">Deployment Tracking</h2>
 <p>Each deployment creates:</p>
@@ -212,42 +192,22 @@ az pipelines run --name &quot;XMPro Documentation&quot; --branch main \
 Deployed to: v4.4 (latest)
 Repository: public-docs-v4.4
 Deployment Type: Manual
-Work Item ID: 12345
 Timestamp: 2024-02-06 14:30:45 UTC
 Build ID: 12345
 Build Number: 20240206.1
 Source Branch: main
 Commit SHA: abc123def
 Triggered By: John Doe
-
-Deployment Notes:
-Updated API documentation
 </code></pre>
 <h3 id="git-commit-message">Git Commit Message</h3>
 <pre><code>Manual deployment from branch main
-Work Item: 12345
 Last change: docs: Update API reference
 Author: Jane Smith
 Deployed by: John Doe
 Build: 20240206.1
-Notes: Updated API documentation
 </code></pre>
 <h2 id="best-practices">Best Practices</h2>
 <ol>
-<li><p><strong>Always Provide Work Item ID</strong></p>
-<ul>
-<li>Every deployment must be associated with a work item</li>
-<li>Use the correct Azure DevOps work item ID</li>
-<li>Ensures full traceability of changes</li>
-</ul>
-</li>
-<li><p><strong>Use Clear Deployment Notes</strong></p>
-<ul>
-<li>Describe what changed</li>
-<li>Mention affected versions</li>
-<li>Reference specific documentation sections</li>
-</ul>
-</li>
 <li><p><strong>Select Appropriate Versions</strong></p>
 <ul>
 <li>New features → Latest only</li>
@@ -259,7 +219,7 @@ Notes: Updated API documentation
 <ul>
 <li>Review all changes before approving</li>
 <li>Verify deployment targets are correct</li>
-<li>Check deployment notes for context</li>
+<li>Use good commit messages for context</li>
 </ul>
 </li>
 <li><p><strong>Test Before Deploying</strong></p>
@@ -275,7 +235,7 @@ docfx --serve
 <li><strong>Maximum Safety</strong>: Mandatory approval prevents accidental deployments</li>
 <li><strong>Flexibility</strong>: Different strategies for different changes</li>
 <li><strong>Visibility</strong>: Clear record of deployments</li>
-<li><strong>Simplicity</strong>: Easy to understand and use</li>
+<li><strong>Simplicity</strong>: Only two checkboxes to configure</li>
 <li><strong>Accountability</strong>: Every deployment is reviewed and approved</li>
 </ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
